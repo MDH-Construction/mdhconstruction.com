@@ -1,0 +1,305 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+a:hover {
+  color: $secondary;
+}
+
+.height-fit-content {
+  height: fit-content;
+}
+
+.width-fit-content {
+  width: fit-content;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $primary;
+    transform: scale(1.2);
+  }
+}
+
+.text-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+.text-white-link {
+  color: white;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.no-decoration {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.text-link-on-white {
+  color: $purple;
+  font-weight: 600;
+  font-style: italic;
+  border-bottom: 3px solid $primary;
+  cursor: pointer;
+  &:active,
+  &:hover {
+    color: $purple;
+    text-decoration: underline;
+  }
+}
+
+// Typography
+.text-white-75 {
+  color: fade-out($white, 0.25);
+}
+
+.text-purple {
+  color: $purple !important;
+  a {
+    color: $purple !important;
+  }
+}
+
+.text-bronze {
+  color: $bronze;
+}
+
+.text-silver {
+  color: $silver;
+}
+
+.text-gold {
+  color: $gold;
+}
+
+.text-stroke-primary {
+  -webkit-text-stroke: $primary 1px;
+}
+
+.text-stroke-secondary {
+  -webkit-text-stroke: $secondary 1px;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: $white 1px;
+}
+
+.text-stroke-purple {
+  -webkit-text-stroke: $purple 1px;
+}
+
+.bg-texture-1 {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($white, 0.9)} 0%,
+    #{fade-out($white, 0.9)} 100%
+  );
+  background-repeat: repeat !important;
+  background-size: 50px 50px !important;
+  width: 100% !important;
+  opacity: 1 !important;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-dark-blue {
+  background-color: $darkBlue;
+}
+
+.bg-light-gray {
+  background-color: $lightGray;
+}
+
+.bg-img-gray-gradient {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out(#343a40, 0.1)} 0%,
+    #{fade-out(#343a40, 0.1)} 100%
+  ) !important;
+  background-position: center !important;
+  background-repeat: repeat !important;
+  background-attachment: scroll !important;
+  background-size: inherit !important;
+  opacity: 1 !important;
+
+  @include media-breakpoint-up(md) {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
+}
+
+// Custom horizontal rules
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: $primary;
+}
+
+hr.divider-long {
+  max-width: 25vw;
+  border-width: 0.2rem;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $secondary;
+  width: 16rem;
+}
+
+hr.secondary {
+  border-color: $secondary;
+}
+
+// Page section padding
+.page-section {
+  padding: 8rem 0;
+}
+
+.drop-shadow {
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.3));
+  & img {
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.3));
+  }
+}
+
+.drop-shadow-dark {
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+  & img {
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.svg-size {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-size-logo {
+  width: 175px;
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.bg-texture-2 {
+  background-color: $white;
+  background-image: url('../images/textures/brilliant.png');
+  width: 100%;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.bg-texture-3 {
+  background-color: $white;
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-eyes.png');
+  width: 100%;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.bg-img-page-top {
+  height: 50%;
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($purple, 0.1)} 0%,
+    #{fade-out($purple, 0.1)} 100%
+  );
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1 !important;
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.clip-triangle-down {
+  clip-path: polygon(0 90%, 0 0, 500% 0, 50vw 100%);
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wiggle {
+  display: inline-block;
+  animation: wiggle 2.5s infinite;
+}
+
+.wiggle:hover {
+  animation: none;
+}
+
+.scale-up {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $primary;
+    transform: scale(1.2);
+  }
+}
+
+.ml-1-25 {
+  margin-left: 1.25rem !important;
+}
+
+@include media-breakpoint-up(lg) {
+  hr.light {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .hide-xs {
+    margin: 0 !important;
+    a {
+      display: none;
+    }
+  }
+}

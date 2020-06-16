@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Header from '../components/Header/Header';
+import Header from '../components/Layout/Header/Header';
 import PricingPage__Body from '../components/Pricing/Page/PricingPage__Body';
 
 const PricingPage = () => {

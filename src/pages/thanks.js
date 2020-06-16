@@ -3,8 +3,8 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Helmet from 'react-helmet';
-import Header from '../components/Header/Header';
-import Body from '../components/Body/Body';
+import Header from '../components/Layout/Header/Header';
+import Body from '../components/Layout/Body/Body';
 
 const ThanksPage = () => {
   const data = useStaticQuery(graphql`

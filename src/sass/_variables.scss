@@ -14,13 +14,76 @@ $bronze: #b08d57;
 $silver: #aaa9ad;
 $gold: #d4af37;
 $gray: #343a40;
+$darkGray: #212529;
 
 // Set primary color to green
-$primary: $green !default;
-$secondary: $teal !default;
+$primary: hsl(30, 100, 48) !default;
+$secondary: hsl(0, 0, 45) !default;
+
+// Site Header
+
+$headerBg: white;
+$imageOverlay: black;
+
+// Site Navigation
+
+$navLinkColor: $secondary;
+$navLinkActive: $primary;
+$navLinkHover: $primary;
+$navButtonColor: $primary;
+$navButtonText: white;
+$navButtonActive: $primary;
+$navButtonHover: $primary;
+$navDropdownText: white;
+$navDropdownTextBg: $primary;
+$navDropdownTextHover: $primary;
+$navDropdownTextBgHover: $lightGray;
+$navDropdownBg: $secondary;
+$navDropdownBorder: solid 1px lightgray;
+// Banner
+
+$bannerH1Color: white;
+$bannerH2Color: #fff8dc;
+$pageBannerH1Color: #fff8dc;
+$pageBannerH2Color: white;
+
+// Main Content
+
+$pageBackground: hsl(36, 100, 96);
+$pageTextColor: hsl(0, 0, 23);
+$pageLinkColor: $primary;
+$h1Color: hsl(30, 100, 13);
+$h2Color: hsl(27, 82, 37);
+$h3Color: $secondary;
+
+// Prefooter
+
+$preFooterBg: hsl(0, 0, 71);
+$preFooterTextColor: white;
+
+// Footer
+
+$footerBg: $secondary;
+$footerTextColor: white;
+$footerLinkColor: white;
+$footerLinkHoverColor: $primary;
+$footerHeadingTextColor: $primary;
+$footerIconColor: $primary;
+
+// Button Block
+
+$buttonBgColor: $primary;
+$buttonBgColorHover: $secondary;
+$buttonTextColor: white;
+$buttonTextColorHover: $primary;
+$buttonBorder: 2px white solid;
+$buttonBorderHover: 2px white solid;
+$buttonBorderRadius: 0.1em;
+$buttonFontSize: 1.1em;
+$buttonFontWeight: 700;
 
 // Font overrides
-$font-family-sans-serif: 'Merriweather Sans', -apple-system, BlinkMacSystemFont,
+$font-family-sans-serif: 'Titillium Web', -apple-system, BlinkMacSystemFont,
   'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
 

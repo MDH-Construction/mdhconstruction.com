@@ -5,12 +5,52 @@ html {
   height: 100%;
 }
 
+body {
+  background-color: $pageBackground;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: $h1Color;
+}
+
+h2 {
+  color: $h2Color;
+}
+
+h3 {
+  color: $h3Color;
+}
+
 *:focus {
   outline: none;
 }
 
 a:hover {
   color: $secondary;
+}
+
+main {
+  // background-color: $pageBackground;
+  color: $pageTextColor;
+  a {
+    color: $pageLinkColor;
+  }
+}
+
+ul.check {
+  list-style-image: url(../images/check-mark-mdh-construction-plymouth-ma.png);
 }
 
 .height-fit-content {
@@ -113,16 +153,16 @@ a:hover {
   opacity: 1 !important;
 }
 
-.bg-purple {
-  background-color: $purple;
-}
-
 .bg-dark-blue {
   background-color: $darkBlue;
 }
 
 .bg-light-gray {
   background-color: $lightGray;
+}
+
+.bg-dark-gray {
+  background-color: $darkGray;
 }
 
 .bg-img-gray-gradient {
@@ -163,6 +203,10 @@ hr.light {
   width: 16rem;
 }
 
+hr.primary {
+  border-color: $primary;
+}
+
 hr.secondary {
   border-color: $secondary;
 }
@@ -170,6 +214,13 @@ hr.secondary {
 // Page section padding
 .page-section {
   padding: 8rem 0;
+}
+
+.no-drop-shadow {
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)) !important;
+  & img {
+    filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)) !important;
+  }
 }
 
 .drop-shadow {
@@ -183,6 +234,20 @@ hr.secondary {
   filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
   & img {
     filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+}
+
+.drop-shadow-darker {
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 1));
+  & img {
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 1));
+  }
+}
+
+.glow {
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+  & img {
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
   }
 }
 
@@ -217,8 +282,8 @@ hr.secondary {
   padding-bottom: calc(10rem - #{$navbar-height});
   background: linear-gradient(
     to bottom,
-    #{fade-out($purple, 0.1)} 0%,
-    #{fade-out($purple, 0.1)} 100%
+    #{fade-out($imageOverlay, 0.7)} 0%,
+    #{fade-out($imageOverlay, 0.7)} 100%
   );
 
   background-position: center;
@@ -227,7 +292,13 @@ hr.secondary {
   background-size: cover;
   opacity: 1 !important;
   h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
+    color: $pageBannerH1Color;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    color: $pageBannerH2Color;
   }
 
   @include media-breakpoint-up(lg) {
@@ -236,11 +307,21 @@ hr.secondary {
     }
     h1 {
       font-size: 3rem;
+      color: $pageBannerH1Color;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: $pageBannerH2Color;
     }
   }
   @include media-breakpoint-up(xl) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3.8rem;
+      color: $pageBannerH1Color;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: $pageBannerH2Color;
     }
   }
 }

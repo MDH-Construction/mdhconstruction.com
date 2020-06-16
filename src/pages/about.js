@@ -1,23 +1,47 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import AboutPage__Header from '../components/About/Page/AboutPage__Header';
-import AboutPage__Body from '../components/About/Page/AboutPage__Body';
+import Header from '../components/Layout/Header/Header';
+import About__Body from '../components/Page__About/About__Body';
 
-const AboutPage = () => (
-  <Layout>
-    <SEO
-      title="About John Grattan"
-      description="Who is John Grattan? Well, I'm a lifelong resident of Plymouth, MA, a fanatic of Boston sports and a strong believer that success starts with helping others. Visit my site to learn more about my background, education and work in the community. If you're interested in SEO & Web Design, give me a call at (401) 216-9868 and we'll figure out how to optimize your business website."
-      canonicalLink="https://johngrattan.com/about/"
-    />
-    <AboutPage__Header
-      Tag="header"
-      className="bg-img-page-top"
-      hOne="About Me"
-    />
-    <AboutPage__Body className="py-md-5 bg-texture-1" />
-  </Layout>
-);
+const AboutPage = () => {
+  const data = useStaticQuery(graphql`
+    query AboutPageQ {
+      masthead: file(
+        relativePath: {
+          eq: "images/about-mdh-construction-general-contractor-plymouth-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
+
+  const imageDataHeader = data.masthead.childImageSharp.fluid;
+
+  return (
+    <Layout>
+      <SEO
+        title="About Us | Licensed General Contractor from Plymouth, MA"
+        description="About Us | Licensed General Contractor from Plymouth, MA"
+        canonicalLink="https://www.mdhconstruction.com/about/"
+      />
+      <Header
+        Tag="header"
+        className="bg-img-page-top"
+        fluid={imageDataHeader}
+        hOne="About MDH Construction"
+        hTwo="A Reliable, Family Owned And Operated Business"
+        alt="About MDH Construction"
+      />
+      <About__Body />
+    </Layout>
+  );
+};
 
 export default AboutPage;

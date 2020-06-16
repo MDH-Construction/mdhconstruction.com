@@ -72,6 +72,9 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
 
       <meta name="description" content={metaDescription} />
 
+      {/* REMOVE WHEN LIVE */}
+      <meta name="robots" content="noindex" />
+
       {/* Open Graph tags */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />

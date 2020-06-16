@@ -1,7 +1,7 @@
 {
-  "name": "john-grattan-site",
+  "name": "mdh-construction",
   "private": true,
-  "description": "My personal Digital Marketing freelance site",
+  "description": "MDH Construction business website",
   "version": "0.1.0",
   "author": "John Grattan <contact@johngrattan.com>",
   "dependencies": {
@@ -28,7 +28,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",

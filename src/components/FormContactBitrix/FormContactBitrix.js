@@ -8,78 +8,25 @@ const FormContactBitrix = ({ formname }) => {
   const [contact, setContact] = useState({
     firstName: '',
     lastName: '',
-    phoneNumber: '',
+    phone: '',
     email: '',
-    company: '',
-    jobTitle: '',
-    service: '',
-    budget: '',
+    projectLocation: '',
+    projectType: '',
+    findUs: '',
   });
 
   const {
     firstName,
     lastName,
-    phoneNumber,
+    phone,
     email,
-    company,
-    jobTitle,
-    service,
-    budget,
+    projectLocation,
+    projectType,
+    findUs,
   } = contact;
 
   const handleChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value });
-
-  // const [firstName, setFirstName] = useState('');
-  // const [lastName, setLastName] = useState('');
-  // const [phoneNumber, setPhoneNumber] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [website, setWebsite] = useState('');
-  // const [company, setCompany] = useState('');
-  // const [jobTitle, setJobTitle] = useState('');
-  // const [availability, setAvailability] = useState('');
-  // const [service, setService] = useState('');
-  // const [budget, setBudget] = useState('');
-
-  // const handleFirstName = e => {
-  //   setFirstName(e.target.value);
-  // };
-
-  // const handleLastName = e => {
-  //   setLastName(e.target.value);
-  // };
-
-  // const handlePhoneNumber = e => {
-  //   setPhoneNumber(e.target.value);
-  // };
-
-  // const handleEmail = e => {
-  //   setEmail(e.target.value);
-  // };
-
-  // const handleWebsite = e => {
-  //   setWebsite(e.target.value);
-  // };
-
-  // const handleCompany = e => {
-  //   setCompany(e.target.value);
-  // };
-
-  // const handleJobTitle = e => {
-  //   setJobTitle(e.target.value);
-  // };
-
-  // const handleAvailability = e => {
-  //   setAvailability(e.target.value);
-  // };
-
-  // const handleService = e => {
-  //   setService(e.target.value);
-  // };
-
-  // const handleBudget = e => {
-  //   setBudget(e.target.value);
-  // };
 
   const handleSubmit = async e => {
     e.preventDefault();
@@ -92,27 +39,20 @@ const FormContactBitrix = ({ formname }) => {
             NAME: `${firstName}`,
             LAST_NAME: `${lastName}`,
             SECOND_NAME: `${firstName}`,
-            PHONE: [{ VALUE: `${phoneNumber}`, VALUE_TYPE: 'WORK' }],
+            PHONE: [{ VALUE: `${phone}`, VALUE_TYPE: 'WORK' }],
             EMAIL: [{ VALUE: `${email}`, VALUE_TYPE: 'WORK' }],
-            COMPANY_TITLE: `${company}`,
-            POST: `${jobTitle}`,
+            // COMPANY_TITLE: `${company}`,
+            // POST: `${jobTitle}`,
             CURRENCY_ID: 'USD',
             OPPORTUNITY: `${budget}`,
             COMMENTS: `
             This lead came from my contact form.<br/><br/>
             <strong>Name</strong>: ${firstName} ${lastName}<br/>
-            <strong>Phone</strong>: ${phoneNumber}<br/>
+            <strong>Phone</strong>: ${phone}<br/>
             <strong>Email</strong>: ${email}<br/>
-            <strong>Company</strong>: ${company}<br/>
-            <strong>Job Title</strong>: ${jobTitle}<br/>
-            <strong>Service</strong>: ${service}<br/>
-            <strong>Budget</strong>: ${budget}<br/><br/><br/>
-            <strong>Budget Ranges</strong>:<br/><br/>
-            $500 - $1,000<br/>
-            $1,000 - $2,000<br/>
-            $2,000 - $5,000<br/>
-            $5,000 - $10,000<br/>
-            $10,000+<br/>
+            <strong>Project Location</strong>: ${projectLocation}<br/>
+            <strong>Project Type</strong>: ${projectType}<br/>
+            <strong>How Did You Find Us?</strong>: ${findUs}<br/><br/><br/>
             `,
           },
         }
@@ -125,7 +65,6 @@ const FormContactBitrix = ({ formname }) => {
     <Form
       name={formname}
       method="POST"
-      // action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
@@ -143,6 +82,7 @@ const FormContactBitrix = ({ formname }) => {
             type="text"
             value={firstName}
             onChange={handleChange}
+            placeholder="John"
             required
           />
         </Form.Group>
@@ -155,6 +95,7 @@ const FormContactBitrix = ({ formname }) => {
             type="text"
             value={lastName}
             onChange={handleChange}
+            placeholder="Smith"
             required
           />
         </Form.Group>
@@ -163,116 +104,131 @@ const FormContactBitrix = ({ formname }) => {
       <Form.Row>
         <Form.Group as={Col} controlId="formContactBixtrixPhone">
           <Form.Label>
-            Phone Number <span className="text-danger">*</span>
+            Phone <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control
-            name="phoneNumber"
+            name="phone"
             type="tel"
-            value={phoneNumber}
+            value={phone}
             onChange={handleChange}
+            placeholder="(123) 456-7890"
             required
           />
         </Form.Group>
         <Form.Group as={Col} controlId="formContactBixtrixEmail">
           <Form.Label>
-            Business Email <span className="text-danger">*</span>
+            Email <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control
             name="email"
             type="email"
             value={email}
             onChange={handleChange}
+            placeholder="name@email.com"
             required
           />
         </Form.Group>
       </Form.Row>
 
       <Form.Row>
-        <Form.Group as={Col} controlId="formContactBixtrixCompanyName">
+        <Form.Group as={Col} controlId="formContactBixtrixProjectLocation">
           <Form.Label>
-            Company <span className="text-danger">*</span>
+            Project Location <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control
-            name="company"
+            name="projectLocation"
             type="text"
-            value={company}
+            value={projectLocation}
             onChange={handleChange}
+            placeholder="Plymouth, MA"
             required
           />
         </Form.Group>
-        <Form.Group as={Col} controlId="formContactBixtrixJobTitle">
+        <Form.Group as={Col} controlId="formContactBixtrixProjectType">
           <Form.Label>
-            Job Title <span className="text-danger">*</span>
+            Project Type <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control
-            name="jobTitle"
-            type="text"
-            value={jobTitle}
-            onChange={handleChange}
-            required
-          />
-        </Form.Group>
-      </Form.Row>
-
-      <Form.Row>
-        <Form.Group as={Col} controlId="formContactBixtrixService">
-          <Form.Label>
-            Service of Interest <span className="text-danger">*</span>
-          </Form.Label>
-          <Form.Control
-            name="service"
+            name="projectType"
             as="select"
-            value={service}
+            value={projectType}
             onChange={handleChange}
             required
           >
             <option value="" disabled hidden>
               Choose One...
             </option>
-            <option value="SEO: Site Audit">SEO: Site Audit</option>
-            <option value="SEO: Full-Service" className="bg-light">
-              SEO: Full-Service
+            <option value="Exterior: Addition/New Construction">
+              Exterior: Addition/New Construction
             </option>
-            <option value="Website: New Build">Website: New Build</option>
-            <option value="Website: Redesign" className="bg-light">
-              Website: Redesign
+            <option value="Exterior: Roofing/Siding" className="bg-light">
+              Exterior: Roofing/Siding
             </option>
-            <option value="Marketing: PPC Ads">Marketing: PPC Ads</option>
-            <option value="Marketing: Social Media" className="bg-light">
-              Marketing: Social Media
+            <option value="Exterior: Gutters/Downspouts">
+              Exterior: Gutters/Downspouts
             </option>
-            <option value="Marketing: Email Automation">
-              Marketing: Email Automation
+            <option value="Exterior: Deck/Porch" className="bg-light">
+              Exterior: Deck/Porch
             </option>
-            <option value="SEO + Website + Marketing" className="bg-light">
-              SEO + Website + Marketing
+            <option value="Exterior: Windows/Doors">
+              Exterior: Windows/Doors
+            </option>
+            <option
+              value="Interior: Kitchen/Bathroom/Basement Remodel"
+              className="bg-light"
+            >
+              Interior: Kitchen/Bathroom/Basement Remodel
+            </option>
+            <option value="Interior: Flooring/Tiling">
+              Interior: Flooring/Tiling
+            </option>
+            <option value="Insulation: Mass Save Program" className="bg-light">
+              Insulation: Mass Save Program
+            </option>
+            <option value="Weatherization: Air Sealing/Stripping">
+              Weatherization: Air Sealing/Stripping
+            </option>
+            <option
+              value="Other: Painting/Handyman/Debris"
+              className="bg-light"
+            >
+              Other: Painting/Handyman/Debris
             </option>
           </Form.Control>
         </Form.Group>
+      </Form.Row>
 
-        <Form.Group as={Col} controlId="formContactBixtrixIndustry">
+      <Form.Row>
+        <Form.Group as={Col} controlId="formContactBixtrixFindUs">
           <Form.Label>
-            Budget <span className="text-danger">*</span>
+            How Did You Find Us? <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control
-            name="budget"
+            name="findUs"
             as="select"
-            value={budget}
+            value={findUs}
             onChange={handleChange}
             required
           >
             <option value="" disabled hidden>
               Choose One...
             </option>
-            <option value="500.00">$500 - $1,000</option>
-            <option value="1000.00" className="bg-light">
-              $1,000 - $2,000
+            <option value="Angie's List">Angie's List</option>
+            <option value="Facebook" className="bg-light">
+              Facebook
             </option>
-            <option value="2000.00">$2,000 - $5,000</option>
-            <option value="5000.00" className="bg-light">
-              $5,000 - $10,000
+            <option value="Family/Friend">Family/Friend</option>
+            <option value="Google/Bing" className="bg-light">
+              Google/Bing
             </option>
-            <option value="10000.00">$10,000+</option>
+            <option value="HomeAdvisor">HomeAdvisor</option>
+            <option value="Lawn/Truck Ad" className="bg-light">
+              Lawn/Truck Ad
+            </option>
+            <option value="Referral">Referral</option>
+            <option value="Website (Yellowpages, etc.)" className="bg-light">
+              Website (Yellowpages, etc.)
+            </option>
           </Form.Control>
         </Form.Group>
       </Form.Row>

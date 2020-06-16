@@ -3,12 +3,12 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
 const Button = ({ btnlink, btnlabel, btnsolid }) => {
-  const solid = 'btn btn-primary btn-xl drop-shadow-dark';
+  const solid = 'btn btn-xl drop-shadow';
   const outline = 'btn btn-outline-light btn-xl-outline drop-shadow-dark';
 
   return (
     <Link to={btnlink} className={btnsolid ? solid : outline}>
-      <span>{btnlabel}</span>
+      <span className="drop-shadow">{btnlabel}</span>
     </Link>
   );
 };

@@ -1,3 +1,3 @@
-# John Grattan - Portfolio Website
+# MDH Construction - Business Website
 
-## https://johngrattan.com/
+## https://www.mdhconstruction.com/

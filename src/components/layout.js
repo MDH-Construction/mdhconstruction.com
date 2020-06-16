@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Navbar from './Navbar/Navbar';
-import FooterSectionPage from './Footer/FooterSectionPage/FooterSectionPage';
+import Navbar from './Layout/Navbar/Navbar';
+import Footer from './Layout/Footer/Footer';
 import './layout.scss';
 
 const getScrollNode = element => {
@@ -54,7 +54,7 @@ export default class Layout extends React.Component {
       <div className={className} ref={this.siteContainer} id="page-top">
         <Navbar />
         <main>{this.props.children}</main>
-        <FooterSectionPage className="bg-texture-1" />
+        <Footer className="bg-texture-1" />
       </div>
     );
   }

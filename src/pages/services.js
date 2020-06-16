@@ -1,23 +1,47 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import ServicesPage__Header from '../components/Services/Page/ServicesPage__Header';
-import ServicesPage__Body from '../components/Services/Page/ServicesPage__Body';
+import Header from '../components/Layout/Header/Header';
+import About__Body from '../components/Page__About/About__Body';
 
-const ServicesPage = () => (
-  <Layout>
-    <SEO
-      title="SEO, Web Design, PPC, SMM, Email Marketing"
-      description="John Grattan SEO & Web Design offers full-service Digital Marketing options - SEO, Web Design, PPC, Social Media & Email Marketing. Call (401) 216-9868!"
-      canonicalLink="https://johngrattan.com/services/"
-    />
-    <ServicesPage__Header
-      Tag="header"
-      className="bg-img-page-top"
-      hOne="Digital Marketing Services"
-    />
-    <ServicesPage__Body className="py-md-5 bg-texture-1" />
-  </Layout>
-);
+const ServicesPage = () => {
+  const data = useStaticQuery(graphql`
+    query ServicesPageQ {
+      masthead: file(
+        relativePath: {
+          eq: "images/construction-services-roofing-siding-mdh-construction-plymouth-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
+
+  const imageDataHeader = data.masthead.childImageSharp.fluid;
+
+  return (
+    <Layout>
+      <SEO
+        title="Services | Licensed General Contractor from Plymouth, MA"
+        description="Services | Licensed General Contractor from Plymouth, MA"
+        canonicalLink="https://www.mdhconstruction.com/about/"
+      />
+      <Header
+        Tag="header"
+        className="bg-img-page-top"
+        fluid={imageDataHeader}
+        hOne="Construction Services"
+        hTwo="A Reliable, Family Owned And Operated Business"
+        alt="MDH Construction Services"
+      />
+      <About__Body />
+    </Layout>
+  );
+};
 
 export default ServicesPage;

@@ -1,0 +1,135 @@
+.bg-img-home {
+  padding-top: 8rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($imageOverlay, 0.7)} 0%,
+    #{fade-out($imageOverlay, 0.7)} 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1 !important;
+  h1 {
+    font-size: 1.3rem;
+    color: $bannerH1Color;
+  }
+  h2 {
+    font-size: 2.5rem;
+    color: $bannerH2Color;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 1.3rem;
+      color: $bannerH1Color;
+    }
+    h2 {
+      font-size: 3rem;
+      color: $bannerH2Color;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 1.8rem;
+      color: $bannerH1Color;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 3.8rem;
+      color: $bannerH2Color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#home-banner-section {
+  .btn-xl {
+    font-size: 1.2em !important;
+  }
+  position: relative;
+  z-index: 99;
+}
+
+#home-company-section {
+}
+
+.checklist {
+  background-color: #ffe0b2;
+  li {
+    padding-left: 3px;
+  }
+}
+#banner-contact-form {
+  .btn-xl {
+    font-size: 1em !important;
+  }
+}
+
+#home-trust-section {
+  max-height: 127px;
+}
+
+.home-trust-section {
+  div {
+    height: 127px;
+    max-height: 127px;
+  }
+  // img {
+  //   max-height: 127px;
+  // }
+}
+
+#home-services-section {
+  h4 {
+    font-size: 1em;
+  }
+}
+
+#home-reviews-section {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($imageOverlay, 0.4)} 0%,
+    #{fade-out($imageOverlay, 0.4)} 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1 !important;
+  .w-fit {
+    width: fit-content;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-color: $primary;
+  border: solid 7px $primary;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.carousel-control-next-icon {
+  background-color: $primary;
+  border: solid 7px $primary;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+.carousel-indicators li {
+  background-color: $secondary;
+}
+
+@include media-breakpoint-up(md) {
+  .bg-img-home {
+    padding-bottom: calc(11rem - #{$navbar-height});
+  }
+}

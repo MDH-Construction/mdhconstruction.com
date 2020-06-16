@@ -1,41 +1,47 @@
 .btn {
+  background-color: $buttonBgColor;
+  color: $buttonTextColor;
   font-family: $font-family-sans-serif;
   transition: all 0.3s ease-in-out;
+  border: $buttonBorder;
 
   &:hover {
-    color: $info;
+    background-color: $buttonBgColorHover !important;
+    color: $buttonTextColorHover !important;
     transform: scale(1.2);
-    border: 2px white solid;
+    border: $buttonBorderHover;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
   }
 }
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: $buttonFontSize;
+  font-weight: $buttonFontWeight;
   text-transform: uppercase;
-  border: none;
-  border-radius: 10rem;
+  border: $buttonBorderHover;
+  border-radius: $buttonBorderRadius;
 }
 
 .btn-xl-outline {
   padding: 1.2rem 2.2rem;
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: $buttonFontSize;
+  font-weight: $buttonFontWeight;
   text-transform: uppercase;
-  border: 1px solid white;
-  border-radius: 10rem;
+  border: $buttonBorder;
+  border-radius: $buttonBorderRadius;
 }
 
 .btn-nav {
-  font-weight: 700 !important;
+  background-color: $buttonBgColor !important;
+  color: $buttonTextColor !important;
+  font-weight: $buttonFontWeight !important;
   text-transform: uppercase !important;
-  border: none !important;
-  border-radius: 10rem !important;
-  color: $purple !important;
+  border: $buttonBorder !important;
+  border-radius: $buttonBorderRadius !important;
   &:active,
   &:hover {
-    color: $purple !important;
+    background-color: $buttonBgColorHover !important;
+    color: $buttonTextColorHover !important;
   }
 }

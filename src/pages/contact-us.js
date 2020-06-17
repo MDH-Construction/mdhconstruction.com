@@ -29,7 +29,7 @@ const ContactPage = () => {
       <SEO
         title="Contact Us | Licensed General Contractor from Plymouth, MA"
         description="Contact Us | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/about/"
+        canonicalLink="https://www.mdhconstruction.com/contact-us/"
       />
       <Header
         Tag="header"

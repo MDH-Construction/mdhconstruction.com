@@ -55,7 +55,7 @@ const Footer__ContactInfoSection = () => {
             </Container>
             <Container className="bg-white p-3">
               <p>
-                <strong className="text-dark">Let's Get Started!</strong>
+                <strong className="text-dark">Let The Work Begin!</strong>
               </p>
               <p className="text-dark">
                 A team of MDH Construction craftsmen will start your project on

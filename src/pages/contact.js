@@ -3,20 +3,15 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import Body from '../components/Layout/Body/Body';
+import Contact__Body from '../components/Page__Contact/Contact__Body';
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
     query ContactPageQ {
-      masthead: file(relativePath: { eq: "images/bg-img-thank-you.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+      masthead: file(
+        relativePath: {
+          eq: "images/about-mdh-construction-general-contractor-plymouth-ma.jpg"
         }
-      }
-      texture: file(
-        relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
         childImageSharp {
           fluid(quality: 100, maxWidth: 1920) {
@@ -28,32 +23,23 @@ const ContactPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
-  const imageDataBody = data.texture.childImageSharp.fluid;
 
   return (
     <Layout>
       <SEO
-        title="Thank you for submitting!"
-        description="Thank you for submitting and showing interest! I look forward to working with you and providing value through digital marketing to your business."
-        canonicalLink="https://johngrattan.com/thanks/"
+        title="Contact Us | Licensed General Contractor from Plymouth, MA"
+        description="Contact Us | Licensed General Contractor from Plymouth, MA"
+        canonicalLink="https://www.mdhconstruction.com/about/"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Thank You"
-        alt="John Grattan SEO & Web Design Thank You page header background - pile of letters spelling out thank you"
+        hOne="Contact MDH Construction"
+        hTwo="A Reliable, Family Owned And Operated Business"
+        alt="Contact MDH Construction"
       />
-      <Body
-        className="py-md-5 bg-texture-1"
-        fluid={imageDataBody}
-        hTwo="I appreciate your interest!"
-        alt="John Grattan SEO & Web Design Thank You background section"
-        text="You will receive an email shortly."
-        linkTo="/"
-        icon="fas fa-3x fa-home"
-        label="Return Home"
-      />
+      <Contact__Body />
     </Layout>
   );
 };

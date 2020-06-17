@@ -1,35 +1,47 @@
-.btn {
-  background-color: $buttonBgColor;
-  color: $buttonTextColor;
-  font-family: $font-family-sans-serif;
-  transition: all 0.3s ease-in-out;
-  border: $buttonBorder;
+.btn,
+.btn-primary,
+button {
+  background: $buttonBgColor !important;
+  background-color: $buttonBgColor !important;
+  color: $buttonTextColor !important;
+  font-family: $font-family-sans-serif !important;
+  transition: all 0.3s ease-in-out !important;
+  border: $buttonBorder !important;
 
   &:hover {
+    background: $buttonBgColorHover !important;
     background-color: $buttonBgColorHover !important;
     color: $buttonTextColorHover !important;
-    transform: scale(1.2);
-    border: $buttonBorderHover;
-    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5));
+    transform: scale(1.2) !important;
+    border: $buttonBorderHover !important;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)) !important;
   }
 }
 
 .btn-xl {
-  padding: 1.25rem 2.25rem;
-  font-size: $buttonFontSize;
-  font-weight: $buttonFontWeight;
-  text-transform: uppercase;
-  border: $buttonBorderHover;
-  border-radius: $buttonBorderRadius;
+  padding: 1.25rem 2.25rem !important;
+  font-size: $buttonFontSize !important;
+  font-weight: $buttonFontWeight !important;
+  text-transform: uppercase !important;
+  border: $buttonBorderHover !important;
+  border-radius: $buttonBorderRadius !important;
+
+  &:hover {
+    background-color: $buttonBgColorHover !important;
+    color: $buttonTextColorHover !important;
+    transform: scale(1.2) !important;
+    border: $buttonBorderHover !important;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)) !important;
+  }
 }
 
 .btn-xl-outline {
-  padding: 1.2rem 2.2rem;
-  font-size: $buttonFontSize;
-  font-weight: $buttonFontWeight;
-  text-transform: uppercase;
-  border: $buttonBorder;
-  border-radius: $buttonBorderRadius;
+  padding: 1.2rem 2.2rem !important;
+  font-size: $buttonFontSize !important;
+  font-weight: $buttonFontWeight !important;
+  text-transform: uppercase !important;
+  border: $buttonBorder !important;
+  border-radius: $buttonBorderRadius !important;
 }
 
 .btn-nav {

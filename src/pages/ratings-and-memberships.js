@@ -10,7 +10,7 @@ const RatingsPage = () => {
     query RatingsPageQ {
       masthead: file(
         relativePath: {
-          eq: "images/about-mdh-construction-general-contractor-plymouth-ma.jpg"
+          eq: "images/ratings-memberships-home-advisor-mdh-construction-plymouth-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -36,7 +36,7 @@ const RatingsPage = () => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         hOne="Ratings And Memberships"
-        hTwo="A Reliable, Family Owned And Operated Business"
+        hTwo="5-Star Reviews on Google, Facebook, HomeAdvisor & more"
         alt="Ratings And Memberships"
       />
       <Ratings__Body />

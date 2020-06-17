@@ -173,7 +173,7 @@ export default class Header extends React.Component {
                   </Link>
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
-                  <Link className="nav-link text-uppercase" to="/blog">
+                  <Link className="nav-link text-uppercase" to="/">
                     Blog
                   </Link>
                 </li>

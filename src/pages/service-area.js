@@ -10,7 +10,7 @@ const ServiceAreaPage = () => {
     query ServiceAreaPageQ {
       masthead: file(
         relativePath: {
-          eq: "images/about-mdh-construction-general-contractor-plymouth-ma.jpg"
+          eq: "images/mdh-construction-service-area-massachusetts-boston-ma-plymouth-ma.jpg"
         }
       ) {
         childImageSharp {

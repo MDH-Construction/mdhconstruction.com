@@ -8,7 +8,10 @@ import Home__Banner from '../components/Page__Home/Home__Banner/Home__Banner';
 import Home__Trust from '../components/Page__Home/Home__Trust/Home__Trust';
 import Home__Company from '../components/Page__Home/Home__Company/Home__Company';
 import Home__About from '../components/Page__Home/Home__About/Home__About';
-import Home__Services from '../components/Page__Home/Home__Services/Home__Services';
+import Home__Services__Roofing from '../components/Page__Home/Home__Services/Home__Services__Roofing';
+import Home__Services__Siding from '../components/Page__Home/Home__Services/Home__Services__Siding';
+import Home__Services__Gutters from '../components/Page__Home/Home__Services/Home__Services__Gutters';
+import Home__Services__Insulation from '../components/Page__Home/Home__Services/Home__Services__Insulation';
 import Home__Reviews from '../components/Page__Home/Home__Reviews/Home__Reviews';
 
 const IndexPage = () => {
@@ -47,7 +50,10 @@ const IndexPage = () => {
       <Home__Trust />
       <Home__Company />
       <Home__Reviews id="home-reviews-section" />
-      <Home__Services />
+      <Home__Services__Roofing />
+      <Home__Services__Siding />
+      <Home__Services__Gutters />
+      <Home__Services__Insulation />
       {/* <Header
         Tag="header"
         className="bg-img-page-top"

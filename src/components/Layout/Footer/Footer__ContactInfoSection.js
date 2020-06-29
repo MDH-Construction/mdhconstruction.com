@@ -4,13 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer__ContactInfoSection = () => {
   return (
-    <section className="footer-contact-info-section">
+    <section className="footer-contact-info-section py-0 pt-5 py-lg-5">
       <Container className="p-5">
         <h2 className="text-white mb-5 drop-shadow">
           Getting Started Is Easy!
         </h2>
         <Row className="justify-content-center">
-          <Col xs={12} md={4}>
+          <Col className="mb-5 mb-lg-0" xs={12} md={4}>
             <Container className="bg-primary p-3 text-center text-white">
               <span className="font-weight-bold lead drop-shadow">Step 1:</span>
             </Container>
@@ -34,7 +34,7 @@ const Footer__ContactInfoSection = () => {
               </p>
             </Container>
           </Col>
-          <Col xs={12} md={4}>
+          <Col className="mb-5 mb-lg-0" xs={12} md={4}>
             <Container className="bg-primary p-3 text-center text-white">
               <span className="font-weight-bold lead drop-shadow">Step 2:</span>
             </Container>
@@ -49,7 +49,7 @@ const Footer__ContactInfoSection = () => {
               </p>
             </Container>
           </Col>
-          <Col xs={12} md={4}>
+          <Col className="mb-5 mb-lg-0" xs={12} md={4}>
             <Container className="bg-primary p-3 text-center text-white">
               <span className="font-weight-bold lead drop-shadow">Step 3:</span>
             </Container>

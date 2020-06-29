@@ -41,16 +41,48 @@ a:hover {
   color: $secondary;
 }
 
-main {
-  // background-color: $pageBackground;
-  color: $pageTextColor;
+p {
   a {
+    text-decoration: dotted underline !important;
     color: $pageLinkColor;
+    &:hover {
+      text-decoration: underline !important;
+      text-decoration-color: $primary !important;
+    }
   }
+}
+
+main {
+  color: $pageTextColor;
 }
 
 ul.check {
   list-style-image: url(../images/check-mark-mdh-construction-plymouth-ma.png);
+}
+
+.no-px {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.accordion {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.accordionText {
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+.accordionIcon {
+  &:hover {
+    color: $secondary !important;
+    cursor: pointer;
+  }
 }
 
 .height-fit-content {

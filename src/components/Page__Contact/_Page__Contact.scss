@@ -1,0 +1,101 @@
+.bg-img-contact {
+  padding-top: 8rem;
+  padding-bottom: calc(10rem - #{$navbar-height});
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($imageOverlay, 0.7)} 0%,
+    #{fade-out($imageOverlay, 0.7)} 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1 !important;
+  h1 {
+    font-size: 2.5rem;
+    color: $pageBannerH1Color;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    color: $pageBannerH2Color;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+    p {
+      font-size: 1.15rem;
+    }
+    h1 {
+      font-size: 3rem;
+      color: $pageBannerH1Color;
+    }
+    h2 {
+      font-size: 1.3rem;
+      color: $pageBannerH2Color;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    h1 {
+      font-size: 3.8rem;
+      color: $pageBannerH1Color;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 1.8rem;
+      color: $pageBannerH2Color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+#contact-banner-section {
+  position: relative;
+  z-index: 99;
+}
+
+#contact-page {
+  .nap-text {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
+
+.neg-margin-top-contact-form {
+  margin-top: -50px !important;
+  margin-bottom: 5rem !important;
+  position: relative;
+}
+
+@include media-breakpoint-up(sm) {
+  .neg-margin-top-contact-form {
+    margin-top: -50px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(md) {
+  .neg-margin-top-contact-form {
+    margin-top: -50px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .neg-margin-top-contact-form {
+    margin-top: -50px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .neg-margin-top-contact-form {
+    margin-top: -50px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}

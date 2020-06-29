@@ -36,10 +36,10 @@ const Home__Banner = ({ className }) => {
       <Container id="home-banner-section" className="h-100">
         <Row className="h-100 align-items-center justify-content-center text-center">
           <Col lg={6} className="align-self-center">
-            <h2 className="px-sm-5 px-3 p-lg-3 drop-shadow-darker font-weight-bold">
+            <h2 className="px-sm-5 px-3 p-lg-3 mb-2 mb-lg-0 drop-shadow-darker font-weight-bold">
               Superior Craftsmanship & Unmatched Customer Care
             </h2>
-            <h1 className="px-sm-5 p-3 drop-shadow-darker font-weight-bold">
+            <h1 className="px-sm-5 p-3 mb-3 mb-lg-0 drop-shadow-darker font-weight-bold">
               <span className="text-primary">MDH Construction</span> Is Your
               Local General Contractor & Construction Company Located In{' '}
               <span className="text-primary">Plymouth, MA</span>

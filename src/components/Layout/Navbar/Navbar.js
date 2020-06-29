@@ -49,7 +49,7 @@ export default class Header extends React.Component {
               <span> </span>
             </Navbar.Toggle>
             <Navbar.Collapse id="navbarResponsive" aria-expanded="false">
-              <Nav className="navbar-nav ml-auto mt-2 my-lg-0">
+              <Nav className="navbar-nav ml-auto mt-2 my-lg-0 ">
                 {/* Desktop Menu */}
                 <li className="nav-item my-dropdown my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/about">
@@ -110,7 +110,6 @@ export default class Header extends React.Component {
                     </Col>
                   </Row>
                 </li>
-
                 <li className="nav-item my-dropdown my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/services">
                     Services <i className="fas fa-angle-down ml-1"></i>
@@ -180,107 +179,153 @@ export default class Header extends React.Component {
                 <li className="nav-item my-auto d-none d-lg-inline">
                   <Link
                     className="btn-nav nav-link text-uppercase py-2 ml-4 drop-shadow pointer"
-                    to="/contact"
+                    to="/contact-us"
                   >
                     <span className="drop-shadow">Contact</span>
                   </Link>
                 </li>
                 {/* Mobile Menu */}
                 <li className="nav-item mx-3 d-lg-none">
-                  <div className="row">
-                    <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
+                  <Container className="mt-5 bg-secondary border-menu-item-top">
+                    <div className="d-flex">
+                      <i className="fas fa-home mt-3 mr-3 text-white"></i>
                       <Link
-                        className="nav-button text-uppercase drop-shadow-dark"
+                        className="nav-button text-uppercase drop-shadow"
+                        to="/"
+                      >
+                        Home
+                      </Link>
+                    </div>
+                  </Container>
+                </li>
+                <li className="nav-item mx-3 d-lg-none">
+                  <Container className="bg-secondary border-menu-item">
+                    <div className="d-flex">
+                      <i className="fas fa-address-card mt-3 mr-3 text-white"></i>
+                      <Link
+                        className="nav-button text-uppercase drop-shadow"
                         to="/about"
                       >
                         About
                       </Link>
                     </div>
-                    <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
+                  </Container>
+                </li>
+                <li className="nav-item mx-3 d-lg-none">
+                  <Container className="bg-secondary border-menu-item">
+                    <div className="d-flex">
+                      <i className="fas fa-tools mt-3 mr-3 text-white"></i>
                       <Link
-                        className="nav-button text-uppercase drop-shadow-dark"
+                        className="nav-button text-uppercase drop-shadow"
                         to="/services"
                       >
                         Services
                       </Link>
                     </div>
-                  </div>
+                  </Container>
                 </li>
                 <li className="nav-item mx-3 d-lg-none">
-                  <div className="row">
-                    <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
+                  <Container className="bg-secondary border-menu-item">
+                    <div className="d-flex">
+                      <i className="fas fa-camera mt-3 mr-3 text-white"></i>
                       <Link
-                        className="nav-button text-uppercase drop-shadow-dark"
+                        className="nav-button text-uppercase drop-shadow"
                         to="/gallery"
                       >
                         Gallery
                       </Link>
                     </div>
-                    <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
-                      <Link
-                        className="nav-button text-uppercase drop-shadow-dark"
-                        to="/reviews"
-                      >
-                        Reviews
-                      </Link>
-                    </div>
-                  </div>
+                  </Container>
                 </li>
                 <li className="nav-item mx-3 d-lg-none">
-                  <div className="row">
-                    <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
+                  <Container className="bg-secondary border-menu-item">
+                    <div className="d-flex">
+                      <i className="fas fa-medal mt-3 mr-3 text-white"></i>
                       <Link
-                        className="nav-button text-uppercase drop-shadow-dark"
+                        className="nav-button text-uppercase drop-shadow"
+                        to="/testimonials"
+                      >
+                        Testimonials
+                      </Link>
+                    </div>
+                  </Container>
+                </li>
+                <li className="nav-item mx-3 d-lg-none">
+                  <Container className="bg-secondary border-menu-item">
+                    <div className="d-flex">
+                      <i className="fas fa-hard-hat mt-3 mr-3 text-white"></i>
+                      <Link
+                        className="nav-button text-uppercase drop-shadow"
                         to="/employment"
                       >
                         Employment
                       </Link>
                     </div>
-                    <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
+                  </Container>
+                </li>
+                <li className="nav-item mx-3 d-lg-none">
+                  <Container className="bg-secondary border-menu-item">
+                    <div className="d-flex">
+                      <i className="fas fa-pencil-alt mt-3 mr-3 text-white"></i>
                       <Link
-                        className="nav-button text-uppercase drop-shadow-dark"
+                        className="nav-button text-uppercase drop-shadow"
                         to="/blog"
                       >
                         Blog
                       </Link>
                     </div>
-                  </div>
+                  </Container>
                 </li>
                 <li className="nav-item mx-3 d-lg-none">
-                  <div className="row">
-                    <div className="col-12 mt-4 py-3 bg-primary container justify-content-center align-items-center">
-                      <Link
-                        className="nav-button text-uppercase text-dark"
-                        to="/contact"
+                  <Row>
+                    <Container>
+                      <Col
+                        xs={12}
+                        className="py-3 bg-primary container justify-content-center align-items-center border-menu-contact"
                       >
-                        Contact
-                      </Link>
-                    </div>
-                  </div>
+                        <Link
+                          className="nav-button text-uppercase text-white"
+                          to="/contact-us"
+                        >
+                          <span className="drop-shadow mobile-menu-contact-text">
+                            Contact
+                          </span>
+                        </Link>
+                      </Col>
+                    </Container>
+                  </Row>
                 </li>
                 <li className="nav-item mx-3 d-lg-none">
-                  <div className="row">
-                    <div className="col-6 py-3 bg-dark container justify-content-center align-items-center">
-                      <a
-                        className="nav-button text-uppercase drop-shadow-dark"
-                        href="tel:+14012169868"
+                  <Row>
+                    <Container>
+                      <Col
+                        xs={6}
+                        className="bg-secondary py-3 text-center justify-content-center align-items-center border-menu-item-bottom-left"
                       >
-                        <i className="fas fa-phone mr-3 text-primary"></i>Call
-                      </a>
-                    </div>
-                    <div className="col-6 py-3 bg-info container justify-content-center align-items-center">
-                      <a
-                        className="nav-button text-uppercase drop-shadow-dark"
-                        href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"
-                        target="_blank"
+                        <a
+                          className="nav-button text-uppercase drop-shadow-dark"
+                          href="tel:+14012169868"
+                        >
+                          <i className="fas fa-phone mr-3 text-white"></i>Call
+                        </a>
+                      </Col>
+                      <Col
+                        xs={6}
+                        className="bg-secondary py-3 text-center justify-content-center align-items-center border-menu-item-bottom-right"
                       >
-                        <i className="fas fa-envelope mr-3 text-primary"></i>
-                        Email
-                      </a>
-                    </div>
-                  </div>
+                        <a
+                          className="nav-button text-uppercase drop-shadow-dark"
+                          href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"
+                          target="_blank"
+                        >
+                          <i className="fas fa-envelope mr-3 text-white"></i>
+                          Email
+                        </a>
+                      </Col>
+                    </Container>
+                  </Row>
                 </li>
-                <div className="d-lg-none mt-4 mb-1 text-center text-white">
+                {/* <div className="d-lg-none mt-4 mb-1 text-center text-white">
                   <a href="#">
                     <i className="fab fa-2x fa-facebook px-2"></i>
                   </a>
@@ -299,7 +344,7 @@ export default class Header extends React.Component {
                   <a href="#">
                     <i className="fab fa-2x fa-github px-2"></i>
                   </a>
-                </div>
+                </div> */}
               </Nav>
             </Navbar.Collapse>
           </Container>

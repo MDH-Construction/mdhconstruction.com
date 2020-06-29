@@ -15,7 +15,7 @@ const Button = ({ btnlink, btnlabel, btnsolid }) => {
 
 Button.defaultProps = {
   btnlink: `/`,
-  btnlabel: `Click Here`,
+  btnlabel: `Request A Free, In-Home Estimate`,
   btnsolid: true,
 };
 

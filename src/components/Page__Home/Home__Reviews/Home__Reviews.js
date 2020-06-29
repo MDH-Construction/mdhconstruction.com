@@ -7,7 +7,7 @@ import Button from '../../Button/Button';
 const Home__Reviews = ({ className }) => {
   return (
     <section id="home-reviews-section">
-      <Container className="py-5">
+      <Container className="py-5 px-2 py-lg-5">
         <Carousel
           interval={null}
           className="mx-2 mx-lg-5 border rounded bg-light p-3 drop-shadow"

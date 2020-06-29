@@ -73,7 +73,7 @@ const FormContactBanner = ({ formname }) => {
       id="banner-contact-form"
       onSubmit={handleSubmit}
     >
-      <h3 className="mb-1">Request A Free Quote</h3>
+      <h3 className="mb-1 mt-3 mt-lg-0">Request A Free Quote</h3>
       <hr className="divider pb-3 drop-shadow" />
       <input type="hidden" name="form-name" value={formname} />
       <Form.Row>
@@ -217,7 +217,7 @@ const FormContactBanner = ({ formname }) => {
       </Form.Row>
       <div className="text-center">
         <Button
-          className="btn btn-xl drop-shadow-dark mt-4"
+          className="btn btn-xl drop-shadow-dark mt-4 mb-4 mb-lg-0"
           type="submit"
           value="Submit"
         >

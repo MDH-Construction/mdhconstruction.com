@@ -245,7 +245,7 @@ const FormContactBitrix = ({ formname }) => {
         </Form.Text>
         <div className="text-center mb-5 mb-lg-0">
           <Button
-            className="btn btn-xl drop-shadow-dark mt-4"
+            className="btn btn-xl drop-shadow mt-4"
             type="submit"
             value="Submit"
           >

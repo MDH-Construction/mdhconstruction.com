@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImgTruck from '../ImageComps/img-truck';
 import ImgMDHLogo from '../ImageComps/image-mdh-logo';
-
 import Button from '../Button/Button';
+import ImgEmploymentHelpWanted from '../ImageComps/img-employment-help-wanted';
+import ImgEmploymentReview from '../ImageComps/img-employment-review';
 
 const Employment__Body = ({ className }) => {
   return (
     <section id="about-page">
-      {/* <Container> */}
-      <Row>
-        {/* <Col xs={12} md={6}>
-          <ImgTruck />
-        </Col> */}
-        <Col className="py-3 py-lg-5" xs={12} md={12}>
-          <Container className="bg-white border rounded p-md-3 drop-shadow mb-5">
+      <Container fluid>
+        <Row className="bg-secondary p-3 justify-content-center">
+          <p className="display-4 text-white">We Are Hiring!</p>
+        </Row>
+        <Row>
+          <Col xs={12} md={6}>
+            <ImgEmploymentHelpWanted />
+          </Col>
+          <Col className="py-3 py-lg-5" xs={12} md={6}>
             <div className="text-center mt-3 mb-4">
               <ImgMDHLogo className="no-drop-shadow" />
             </div>
@@ -38,7 +40,25 @@ const Employment__Body = ({ className }) => {
               </a>
               .
             </p>
-          </Container>
+            <Container className="checklist mt-5 p-3 p-lg-3 justify-content-center align-items-center">
+              <h3>We Offer Our Employees...</h3>
+              <ul className="check">
+                <li>Competitive pay</li>
+                <li>Bonuses and incentives</li>
+                <li>Paid time off</li>
+                <li>Holidays</li>
+                <li>Continuing education</li>
+              </ul>
+            </Container>
+          </Col>
+        </Row>
+        <Row className="bg-secondary text-center justify-content-center mb-5">
+          <Col className="p-5" xs={10} md={6}>
+            <h2 className="text-white drop-shadow">Indeed Featured Review</h2>
+            <ImgEmploymentReview className="drop-shadow" />
+          </Col>
+        </Row>
+        <Row>
           <Container className="bg-white border rounded p-md-3 drop-shadow mb-5">
             <h2 className="bg-primary text-white p-3">
               <span className="drop-shadow">Current Openings</span>
@@ -98,31 +118,16 @@ const Employment__Body = ({ className }) => {
                 Note: A background check and pre-employment drug screening is
                 required for employment.
               </p>
-              <p className="font-weight-bold">
+              <p className="small">
                 MDH Construction is an equal opportunity employer. We pledge to
                 provide equal employment opportunities without regard to race,
                 color, creed, national origin, religion, sex, sexual
                 orientation, age, marital status or disability.
               </p>
             </Container>
-
-            <Container className="checklist mt-5 p-3 p-lg-3 justify-content-center align-items-center">
-              <h3>We Offer Our Employees...</h3>
-              <ul className="check">
-                <li>Competitive pay</li>
-                <li>Bonuses and incentives</li>
-                <li>Paid time off</li>
-                <li>Holidays</li>
-                <li>Continuing education</li>
-              </ul>
-            </Container>
-            <div className="text-center mt-5">
-              <Button btnlink="/" btnlabel="Contact Us Today" btn={true} />
-            </div>
           </Container>
-        </Col>
-      </Row>
-      {/* </Container> */}
+        </Row>
+      </Container>
     </section>
   );
 };

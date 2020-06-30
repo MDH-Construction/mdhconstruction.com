@@ -218,7 +218,7 @@ const FormContactPage = ({ formname }) => {
       </Form.Row>
       <div className="text-center">
         <Button
-          className="btn btn-xl drop-shadow-dark mt-4"
+          className="btn btn-xl drop-shadow mt-4"
           type="submit"
           value="Submit"
         >

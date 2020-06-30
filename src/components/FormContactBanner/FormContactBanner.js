@@ -217,7 +217,7 @@ const FormContactBanner = ({ formname }) => {
       </Form.Row>
       <div className="text-center">
         <Button
-          className="btn btn-xl drop-shadow-dark mt-4 mb-4 mb-lg-0"
+          className="btn btn-xl drop-shadow mt-4 mb-4 mb-lg-0"
           type="submit"
           value="Submit"
         >

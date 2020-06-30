@@ -132,7 +132,8 @@
   }
 
   .my-dropdown {
-    // position: relative;
+    // opacity: 0;
+    transition: all 1s ease-in-out !important;
   }
 
   .my-dropdown-menu {
@@ -144,8 +145,6 @@
     width: 100%;
     left: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out !important;
-
     a {
       color: $navDropdownText !important;
       background-color: $navDropdownTextBg !important;

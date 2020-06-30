@@ -6,11 +6,29 @@ import Header from '../components/Layout/Header/Header';
 import Gallery from '@browniebroke/gatsby-image-gallery';
 import '@browniebroke/gatsby-image-gallery/dist/style.css';
 import { Container } from 'react-bootstrap';
-import Gallery__Body from '../components/Page__Gallery/Gallery__Body';
 
 const GalleryPage = () => {
   const data = useStaticQuery(graphql`
     query GalleryPageQ {
+      beforeAfterImages: allFile(
+        filter: {
+          relativeDirectory: { eq: "images/gallery-imgs/before-after" }
+        }
+        sort: { fields: name }
+      ) {
+        edges {
+          node {
+            childImageSharp {
+              thumb: fluid(maxWidth: 500, maxHeight: 300) {
+                ...GatsbyImageSharpFluid
+              }
+              full: fluid(maxWidth: 1024) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
       deckImages: allFile(
         filter: { relativeDirectory: { eq: "images/gallery-imgs/decks" } }
         sort: { fields: name }
@@ -62,7 +80,6 @@ const GalleryPage = () => {
           }
         }
       }
-
       masthead: file(
         relativePath: {
           eq: "images/our-work-gallery-mdh-construction-general-contractor-plymouth-ma.jpg"
@@ -79,6 +96,9 @@ const GalleryPage = () => {
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
 
+  const beforeAfterImages = data.beforeAfterImages.edges.map(
+    ({ node }) => node.childImageSharp
+  );
   const deckImages = data.deckImages.edges.map(
     ({ node }) => node.childImageSharp
   );
@@ -100,22 +120,35 @@ const GalleryPage = () => {
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Gallery"
-        hTwo="See Our Work"
+        hOne="Construction Project Gallery"
+        hTwo="See Our Completed Decks and Remodels"
         alt="Gallery MDH Construction"
       />
-      {/* <Gallery__Body /> */}
       <section className="page-section" id="gallery-page">
+        <Container className="text-center">
+          <p className="lead font-weight-bold">
+            We take great pride in our work and love to display our completed
+            construction projects!
+          </p>
+          <p className="lead font-weight-bold mb-5 pb-5">
+            Take a look at our gallery to get ideas for your next project or
+            just to see our craftsmanship.
+          </p>
+        </Container>
         <Container className="mb-5 pb-5">
-          <h3>Deck Construction</h3>
+          <h2>Before & After</h2>
+          <Gallery images={beforeAfterImages} />
+        </Container>
+        <Container className="mb-5 pb-5">
+          <h2>Deck Construction</h2>
           <Gallery images={deckImages} />
         </Container>
         <Container className="mb-5 pb-5">
-          <h3>Kitchen Remodels</h3>
+          <h2>Kitchen Remodels</h2>
           <Gallery images={kitchenImages} />
         </Container>
         <Container className="mb-5">
-          <h3>Bathroom Remodels</h3>
+          <h2>Bathroom Remodels</h2>
           <Gallery images={bathroomImages} />
         </Container>
       </section>

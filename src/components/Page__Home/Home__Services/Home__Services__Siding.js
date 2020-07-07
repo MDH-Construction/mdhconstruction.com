@@ -10,57 +10,63 @@ const Home__Services__Siding = ({ className }) => {
     <section id="home-services-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
         <Row noGutters={true}>
-          <Col className="mt-5 mt-lg-0 drop-shadow" xs={12} md={6}>
+          <Col
+            className="mt-5 mt-lg-0 drop-shadow order-1 order-lg-1"
+            xs={12}
+            md={6}
+          >
             <ImgVinylSidingServices />
           </Col>
-          <Col className="py-3 py-lg-5 px-0 order-2" xs={12} md={6}>
+          <Col className="py-3 pb-lg-5 order-2 order-lg-2" xs={12} md={6}>
             <Container className="px-lg-5">
               <h2>Your Vinyl Siding Contractor</h2>
               <div className="text-center">
                 <ImgFullyLicensed className="mt-3 mb-5 drop-shadow" />
               </div>
               <p>
-                MDH Construction delivers affordable, high-quality services such
-                as{' '}
-                <Link to="/roof-replacement" className="font-weight-bolder">
-                  roof replacement
+                MDH Construction can help protect your residential home or
+                commercial buildings from the outside elements with various
+                siding options such as{' '}
+                <Link to="/vinyl-siding" className="font-weight-bolder">
+                  vinyl siding
                 </Link>
                 ,{' '}
-                <Link to="/roof-installation" className="font-weight-bolder">
-                  roof installation
+                <Link to="/wood-siding" className="font-weight-bolder">
+                  wood siding
                 </Link>
                 , and{' '}
-                <Link to="/roof-repair" className="font-weight-bolder">
-                  roof repair
-                </Link>{' '}
-                on residential homes and commercial buildings.
-              </p>
-              <p>
-                We use certified roofing products and high-grade materials to
-                provide protection, reliability and beautiful aesthetics for
-                your home or business. From [insert roof style, slope] to
-                [insert roof style, slopes] with [insert materials, asphalt
-                shingles] to [insert materials, wood shingles], we guarantee
-                premium solutions.
-              </p>
-              <p>
-                Years of experience with construction in Massachusetts has
-                refined our{' '}
-                <Link to="/roof-inspection" className="font-weight-bolder">
-                  roof inspection
-                </Link>{' '}
-                process and allows us to identify improper installations and
-                core problems that result in{' '}
-                <Link to="/roof-leaks" className="font-weight-bolder">
-                  roof leaks
+                <Link to="/fiber-cement-siding" className="font-weight-bolder">
+                  fiber-cement siding
                 </Link>
-                , exposure to elements, and inadequate attic ventilation.
+                .
+              </p>
+              <p>
+                We offer competitive pricing, premium materials, and expert
+                knowledge to get the job done right the first time. Our years of
+                experience will keep moisture out, prevent buckling and
+                excessive noise, and leave you satisfied with your new home
+                improvement.
+              </p>
+              <p>
+                Contact us today if you need any siding services such as{' '}
+                <Link to="/roof-installation" className="font-weight-bolder">
+                  siding installation
+                </Link>
+                ,{' '}
+                <Link to="/roof-replacement" className="font-weight-bolder">
+                  siding replacement
+                </Link>
+                , or{' '}
+                <Link to="/roof-repair" className="font-weight-bolder">
+                  siding repair
+                </Link>
+                .
               </p>
             </Container>
           </Col>
         </Row>
         <Container className="checklist mt-4 my-lg-5 p-3 p-lg-3 justify-content-center align-items-center drop-shadow rounded">
-          <h3 className="mb-3">Our Vinyl Siding Services</h3>
+          <h3 className="mb-3">Our Siding Services</h3>
           <hr className="divider pb-3" />
           <Row noGutters={true}>
             <Col xs={12} md={4}>
@@ -75,21 +81,21 @@ const Home__Services__Siding = ({ className }) => {
               <p className="font-weight-bold">We Provide:</p>
               <ul className="check mb-5">
                 <li>Premium materials</li>
-                <li>Various shingle types</li>
-                <li>An array of colors and choices</li>
+                <li>Various siding types & styles</li>
+                <li>An array of colors & choices</li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Deliver:</p>
               <ul className="check mb-5">
-                <li>Reliable roofing</li>
-                <li>Beautiful design</li>
+                <li>Reliable & durable siding</li>
+                <li>Beautiful design & curb appeal</li>
                 <li>100% satisfaction guaranteed</li>
               </ul>
             </Col>
           </Row>
           <h4 className="bg-secondary p-3 text-white mb-0">
-            Common Vinyl Siding Questions
+            Common Siding Questions
           </h4>
           <Accordion>
             <Card>

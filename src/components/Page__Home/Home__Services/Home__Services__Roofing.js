@@ -10,7 +10,7 @@ const Home__Services__Roofing = ({ className }) => {
     <section id="home-services-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
         <Row noGutters={true}>
-          <Col className="py-3 py-lg-5 order-2" xs={12} md={6}>
+          <Col className="py-3 py-lg-5 order-2 order-lg-1" xs={12} md={6}>
             <Container className="px-lg-5">
               <h2>Your Local Roofing Contractor</h2>
               <div className="text-center">
@@ -34,7 +34,7 @@ const Home__Services__Roofing = ({ className }) => {
               </p>
               <p>
                 We use certified roofing products and high-grade materials to
-                provide protection, reliability and beautiful aesthetics for
+                provide protection, reliability, and beautiful aesthetics for
                 your home or business. From{' '}
                 <strong>[insert roof style, slope]</strong> to{' '}
                 <strong>[insert roof style, slopes]</strong> with{' '}
@@ -57,7 +57,7 @@ const Home__Services__Roofing = ({ className }) => {
               </p>
             </Container>
           </Col>
-          <Col className="drop-shadow" xs={12} md={6}>
+          <Col className="drop-shadow order-1 order-lg-2" xs={12} md={6}>
             <ImgRoofingServices />
           </Col>
         </Row>
@@ -78,15 +78,15 @@ const Home__Services__Roofing = ({ className }) => {
               <p className="font-weight-bold">We Provide:</p>
               <ul className="check mb-5">
                 <li>Premium materials</li>
-                <li>Various shingle types</li>
-                <li>An array of colors and choices</li>
+                <li>Various shingle types & styles</li>
+                <li>An array of colors & choices</li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Deliver:</p>
               <ul className="check mb-5">
-                <li>Reliable roofing</li>
-                <li>Beautiful design</li>
+                <li>Reliable & durable roofing</li>
+                <li>Beautiful design & curb appeal</li>
                 <li>100% satisfaction guaranteed</li>
               </ul>
             </Col>

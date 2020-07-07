@@ -10,51 +10,62 @@ const Home__Services__Insulation = ({ className }) => {
     <section id="home-services-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
         <Row noGutters={true}>
-          <Col className="mt-5 mt-lg-0 drop-shadow" xs={12} md={6}>
+          <Col
+            className="mt-5 mt-lg-0 drop-shadow order-1 order-lg-1"
+            xs={12}
+            md={6}
+          >
             <ImgMassSaveInsulationServices />
           </Col>
-          <Col className="py-3 py-lg-5 order-2" xs={12} md={6}>
+          <Col className="py-3 pb-lg-5 order-2 order-lg-2" xs={12} md={6}>
             <Container className="px-lg-5">
               <h2>Your Local Mass Save Insulation Contractor</h2>
               <div className="text-center">
                 <ImgMassSave className="mt-3 mb-5 drop-shadow" />
               </div>
               <p>
-                MDH Construction delivers affordable, high-quality services such
-                as{' '}
-                <Link to="/roof-replacement" className="font-weight-bolder">
-                  roof replacement
+                MDH Construction is proud to be a{' '}
+                <Link to="/mass-save" className="font-weight-bolder">
+                  Mass Save Partner
+                </Link>{' '}
+                working with Massachusetts residential customers and business
+                owners to provide energy-efficient services such as{' '}
+                <Link to="/insulation" className="font-weight-bolder">
+                  insulation installation
+                </Link>{' '}
+                and{' '}
+                <Link to="/weatherization" className="font-weight-bolder">
+                  weatherization
+                </Link>
+                .
+              </p>
+              <p>
+                We offer various types of insulation, including{' '}
+                <Link to="/blown-in-insulation" className="font-weight-bolder">
+                  blown-in insulation
                 </Link>
                 ,{' '}
-                <Link to="/roof-installation" className="font-weight-bolder">
-                  roof installation
+                <Link
+                  to="/reflective-insulation"
+                  className="font-weight-bolder"
+                >
+                  reflective insulation
                 </Link>
                 , and{' '}
-                <Link to="/roof-repair" className="font-weight-bolder">
-                  roof repair
-                </Link>{' '}
-                on residential homes and commercial buildings.
-              </p>
-              <p>
-                We use certified roofing products and high-grade materials to
-                provide protection, reliability and beautiful aesthetics for
-                your home or business. From [insert roof style, slope] to
-                [insert roof style, slopes] with [insert materials, asphalt
-                shingles] to [insert materials, wood shingles], we guarantee
-                premium solutions.
-              </p>
-              <p>
-                Years of experience with construction in Massachusetts has
-                refined our{' '}
-                <Link to="/roof-inspection" className="font-weight-bolder">
-                  roof inspection
-                </Link>{' '}
-                process and allows us to identify improper installations and
-                core problems that result in{' '}
-                <Link to="/roof-leaks" className="font-weight-bolder">
-                  roof leaks
+                <Link
+                  to="/batt-and-rolled-insulation"
+                  className="font-weight-bolder"
+                >
+                  batt and rolled insulation
                 </Link>
-                , exposure to elements, and inadequate attic ventilation.
+                .
+              </p>
+              <p>
+                Keep the heat in during the winter and retain the cool air
+                during the summer with air sealing and weather stripping. We'll
+                send in our team of professionals to run thermal imaging tests
+                and blower door diagnostics to identify weatherization problems
+                throughout your home or business.
               </p>
             </Container>
           </Col>
@@ -66,25 +77,28 @@ const Home__Services__Insulation = ({ className }) => {
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Offer:</p>
               <ul className="check mb-5">
-                <li>Residential roofing</li>
-                <li>Commercial roofing</li>
-                <li>Emergency roof repair</li>
-                <li>Roof inspections</li>
+                <li>Blown-in insulation</li>
+                <li>Reflective insulation</li>
+                <li>Batt and rolled insulation</li>
+                <li>Air sealing</li>
+                <li>Weather stripping</li>
+                <li>Thermal imaging</li>
+                <li>Blower door diagnostics</li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Provide:</p>
               <ul className="check mb-5">
                 <li>Premium materials</li>
-                <li>Various shingle types</li>
-                <li>An array of colors and choices</li>
+                <li>Various insulation types & styles</li>
+                <li>Testing & diagnostics</li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Deliver:</p>
               <ul className="check mb-5">
-                <li>Reliable roofing</li>
-                <li>Beautiful design</li>
+                <li>Reliable & durable insulation</li>
+                <li>Professional energy-efficiency</li>
                 <li>100% satisfaction guaranteed</li>
               </ul>
             </Col>

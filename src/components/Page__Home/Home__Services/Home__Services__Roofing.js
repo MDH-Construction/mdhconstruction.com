@@ -35,12 +35,7 @@ const Home__Services__Roofing = ({ className }) => {
               <p>
                 We use certified roofing products and high-grade materials to
                 provide protection, reliability, and beautiful aesthetics for
-                your home or business. From{' '}
-                <strong>[insert roof style, slope]</strong> to{' '}
-                <strong>[insert roof style, slopes]</strong> with{' '}
-                <strong>[insert materials, asphalt shingles]</strong> to{' '}
-                <strong>[insert materials, wood shingles]</strong>, we guarantee
-                premium solutions.
+                your home or business.
               </p>
               <p>
                 Years of industry experience within Massachusetts has refined

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Carousel, CarouselItem } from 'react-bootstrap';
-import ImgJorg from '../../ImageComps/img-jorg-steinhage';
-import ImgFranklin from '../../ImageComps/img-franklin-t';
+import ImgJorg from '../../Images/Pages/Testimonials/img-jorg-steinhage';
+import ImgFranklin from '../../Images/Pages/Testimonials/img-franklin-t';
 import Button from '../../Button/Button';
 
 const Home__Reviews = ({ className }) => {
   return (
-    <section id="home-reviews-section">
+    <section className="py-5" id="home-reviews-section">
       <Container className="py-5 px-2 py-lg-5">
         <Carousel
           interval={null}

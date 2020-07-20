@@ -28,7 +28,7 @@ const ContactPage = () => {
     <Layout>
       <SEO
         title="Contact Us | Licensed General Contractor from Plymouth, MA"
-        description="Contact Us | Licensed General Contractor from Plymouth, MA"
+        description="Please feel free to give us a call, send us an email, or fill out our contact form and we'll be sure to answer any of your questions, comments, or concerns."
         canonicalLink="https://www.mdhconstruction.com/contact-us/"
       />
       <Header__Contact
@@ -38,7 +38,6 @@ const ContactPage = () => {
         hOne="Contact MDH Construction"
         hTwo="A Reliable, Family Owned And Operated Business"
         alt="Contact MDH Construction"
-        btnlabel="Jump To Contact Form"
       />
       <Contact__Body />
     </Layout>

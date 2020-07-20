@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
+import { Container, Row, Col } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Helmet from 'react-helmet';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderBlogPost from '../components/HeaderBlogPost/HeaderBlogPost';
-import ImgJgBlogPostPic from '../components/ImageComps/image-jg-headshot-green';
+import Blog__PostHeader from '../components/Page__Blog/Blog__PostHeader';
+import ImgMdhLogoFluid from '../components/Images/Logos/img-mdh-logo-fluid';
 import Button from '../components/Button/Button';
 import {
   EmailShareButton,
@@ -66,7 +67,7 @@ const BlogPostTemplate = ({ data }) => {
       <Helmet>
         <script type="application/ld+json">{structuredDataArticle}</script>
       </Helmet>
-      <HeaderBlogPost
+      <Blog__PostHeader
         Tag="header"
         className="bg-img-page-top"
         hOne={post.frontmatter.title}
@@ -74,39 +75,38 @@ const BlogPostTemplate = ({ data }) => {
         date={post.frontmatter.date}
         timeToRead={post.timeToRead}
       />
-      <section className="page-section">
-        <div className="container">
-          <div className="drop-shadow p-3 mb-5 bg-dark rounded">
-            <Link className="text-primary" to="/">
-              Home
-            </Link>
-            <span className="mx-3 text-secondary">/</span>
-            <Link className="text-primary" to="/blog">
-              Blog
-            </Link>
-            <span className="mx-3 text-secondary">/</span>
-            <Link className="text-primary" to="/blog/seo">
-              SEO
-            </Link>
-            <span className="mx-3 text-secondary">/</span>
-            <span className="text-white">{post.frontmatter.title}</span>
-          </div>
-          <div className="row mx-0 px-0 container justify-content-center">
-            <div className="px-0 col-lg-9 pr-lg-5">
-              <Img
-                className="container mb-5 drop-shadow-dark rounded"
-                fluid={post.frontmatter.image.childImageSharp.fluid}
-                alt={post.frontmatter.alt}
-              />
-              <MDXRenderer>{post.body}</MDXRenderer>
-            </div>
-            <div className="col-lg-3 mt-5 mt-lg-0 height-fit-content p-3 bg-dark border border-dark rounded drop-shadow">
-              <p className="text-white text-center">Share this article!</p>
-              <div className="row justify-content-around mb-5">
+      <Container className="mt-5">
+        <div className="drop-shadow p-3 mb-5 bg-white rounded">
+          <Link className="font-weight-bold" to="/">
+            Home
+          </Link>
+          <span className="mx-3 text-secondary">/</span>
+          <Link className="font-weight-bold" to="/blog">
+            Blog
+          </Link>
+          <span className="mx-3 text-secondary">/</span>
+
+          <span className="text-secondary">{post.frontmatter.title}</span>
+        </div>
+        <Row className="mx-0 px-0 mb-5 mb-lg-0 container justify-content-center">
+          <Col lg={9} className="px-0 pr-lg-5">
+            <Img
+              className="container mb-5 drop-shadow-dark rounded"
+              fluid={post.frontmatter.image.childImageSharp.fluid}
+              alt={post.frontmatter.alt}
+            />
+            <MDXRenderer>{post.body}</MDXRenderer>
+          </Col>
+          <div className="col-lg-3 mt-5 mt-lg-0 height-fit-content p-3 bg-white rounded drop-shadow">
+            <p className="text-dark font-weight-bold text-center mb-4">
+              Share this article!
+            </p>
+            <Row className="justify-content-around mb-5">
+              <Col className="text-center" xs={12} md={8} lg={12}>
                 <FacebookShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  className="pointer drop-shadow"
+                  className="pointer drop-shadow px-md-3"
                 >
                   <FacebookIcon
                     url={post.frontmatter.url}
@@ -117,7 +117,7 @@ const BlogPostTemplate = ({ data }) => {
                 <TwitterShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  className="pointer drop-shadow"
+                  className="pointer drop-shadow px-md-3"
                 >
                   <TwitterIcon
                     url={post.frontmatter.url}
@@ -128,7 +128,7 @@ const BlogPostTemplate = ({ data }) => {
                 <LinkedinShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  className="pointer drop-shadow"
+                  className="pointer drop-shadow px-md-3"
                 >
                   <LinkedinIcon
                     url={post.frontmatter.url}
@@ -139,7 +139,7 @@ const BlogPostTemplate = ({ data }) => {
                 <EmailShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  className="pointer drop-shadow"
+                  className="pointer drop-shadow px-md-3"
                 >
                   <EmailIcon
                     url={post.frontmatter.url}
@@ -147,41 +147,37 @@ const BlogPostTemplate = ({ data }) => {
                     round={true}
                   />
                 </EmailShareButton>
-              </div>
-              <p className="lead mb-4 text-white bg-info drop-shadow text-center">
-                <strong>About the author</strong>
-              </p>
-              <ImgJgBlogPostPic />
-              <div className="text-center text-white mt-3">
-                <strong className="">John Grattan</strong>
-                <small className="d-block mt-0">
-                  SEO Manager & Lead Developer
-                </small>
-              </div>
-              <hr className="light" />
-              <p className="text-left text-white">
-                John Grattan is a one-man digital marketing agency from
-                Plymouth, MA.
-              </p>
-              <p className="text-left text-white">
-                John helps small businesses adapt to the latest technologies by
-                personalizing digital marketing strategies —
-                <strong className="text-secondary">
-                  centered on custom, responsive websites
-                </strong>{' '}
-                — to help generate leads and improve customer experience.
-              </p>
-              <div className="text-center mb-3 mt-4">
-                <Button
-                  btnlabel="Learn More"
-                  btnlink="/about"
-                  btnsolid={true}
-                />
-              </div>
+              </Col>
+            </Row>
+            <p className="lead mb-5 py-1 text-dark bg-secondary rounded drop-shadow text-center">
+              <strong className="text-white">About the author</strong>
+            </p>
+            <Col className="mx-auto" xs={12} md={8} lg={12}>
+              <ImgMdhLogoFluid className="no-drop-shadow" />
+            </Col>
+            <div className="text-center text-dark mt-3">
+              <strong className="">{post.frontmatter.author}</strong>
+              <small className="d-block mt-0">[NEED JOB TITLE]</small>
+            </div>
+            <hr className="light" />
+            <p className="text-left text-dark">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+              eius minima inventore sunt, omnis quidem quod. Eveniet odio
+              officiis id modi fugit tempora ab unde neque sapiente debitis,
+              harum accusantium.
+            </p>
+            <p className="text-left text-dark">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
+              mollitia tenetur beatae possimus, dolorum dolores non distinctio
+              libero tempora provident totam? Alias distinctio sed accusamus rem
+              minus animi explicabo reprehenderit?
+            </p>
+            <div className="text-center mb-3 mt-4">
+              <Button btnlabel="About Us" btnlink="/about" btnsolid={true} />
             </div>
           </div>
-        </div>
-      </section>
+        </Row>
+      </Container>
     </Layout>
   );
 };

@@ -33,18 +33,47 @@ h3 {
   color: $h3Color;
 }
 
+li {
+  margin-bottom: 0.5em;
+}
+
 *:focus {
   outline: none;
 }
 
-a:hover {
-  color: $secondary;
+a {
+  &:hover {
+    color: $secondary !important;
+  }
+  i {
+    &:hover {
+      color: $white !important;
+    }
+  }
+}
+
+.dotted-underline {
+  text-decoration: dotted !important;
+  &:hover {
+    color: $secondary !important;
+    text-decoration: underline !important;
+  }
+}
+
+.underline {
+  text-decoration: underline !important;
+  &:hover {
+    color: $secondary !important;
+    text-decoration: underline !important;
+  }
 }
 
 p {
   a {
+    cursor: pointer !important;
     text-decoration: dotted underline !important;
     color: $pageLinkColor;
+    font-weight: bolder;
     &:hover {
       text-decoration: underline !important;
       text-decoration-color: $primary !important;
@@ -58,6 +87,10 @@ main {
 
 ul.check {
   list-style-image: url(../images/check-mark-mdh-construction-plymouth-ma.png);
+}
+
+.fa-mobile-4x {
+  font-size: 3em;
 }
 
 .no-px {
@@ -98,8 +131,17 @@ ul.check {
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    color: $primary;
+    color: $primary !important;
     transform: scale(1.2);
+  }
+}
+
+.accordion-animation {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -157,22 +199,6 @@ ul.check {
   color: $gold;
 }
 
-.text-stroke-primary {
-  -webkit-text-stroke: $primary 1px;
-}
-
-.text-stroke-secondary {
-  -webkit-text-stroke: $secondary 1px;
-}
-
-.text-stroke-white {
-  -webkit-text-stroke: $white 1px;
-}
-
-.text-stroke-purple {
-  -webkit-text-stroke: $purple 1px;
-}
-
 .bg-texture-1 {
   background: linear-gradient(
     to bottom,
@@ -183,6 +209,14 @@ ul.check {
   background-size: 50px 50px !important;
   width: 100% !important;
   opacity: 1 !important;
+}
+
+.bg-headline-bar {
+  background-color: $bgHeadlineBarColor;
+}
+
+.bg-contact-bar {
+  background-color: $bgContactBarColor;
 }
 
 .bg-dark-blue {
@@ -405,6 +439,9 @@ hr.secondary {
 @include media-breakpoint-up(lg) {
   hr.light {
     width: 12rem;
+  }
+  .fa-mobile-4x {
+    font-size: 4em;
   }
 }
 

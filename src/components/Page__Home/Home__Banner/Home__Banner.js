@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
-import ImgFullyLicensed from '../../ImageComps/img-fully-licensed';
+import ImgFullyLicensed from '../../Images/Logos/img-fully-licensed';
 import Button from '../../Button/Button';
-import FormContactBanner from '../../FormContactBanner/FormContactBanner';
+import FormHomePage from '../../FormHomePage/FormHomePage';
 
 const Home__Banner = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -46,7 +46,7 @@ const Home__Banner = ({ className }) => {
             </h1>
           </Col>
           <Col lg={6}>
-            <FormContactBanner formname="form-contact-banner" />
+            <FormHomePage />
           </Col>
         </Row>
       </Container>

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
-import ImgRoofingServices from '../../ImageComps/img-roofing-services';
-import ImgFullyLicensed from '../../ImageComps/img-fully-licensed';
+import ImgRoofingServices from '../../Images/Pages/Home/img-roofing-services';
+import ImgFullyLicensed from '../../Images/Logos/img-fully-licensed';
 import Button from '../../Button/Button';
 
 const Home__Services__Roofing = ({ className }) => {
   return (
-    <section id="home-services-section">
+    <section id="home-roofing-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
         <Row noGutters={true}>
           <Col className="py-3 py-lg-5 order-2 order-lg-1" xs={12} md={6}>
@@ -90,7 +90,7 @@ const Home__Services__Roofing = ({ className }) => {
             Common Roofing Questions
           </h4>
           <Accordion>
-            <Card>
+            <Card className="accordion-animation">
               <Accordion.Toggle as={Card.Header} eventKey="0">
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
@@ -108,7 +108,7 @@ const Home__Services__Roofing = ({ className }) => {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <Card className="accordion-animation">
               <Accordion.Toggle as={Card.Header} eventKey="1">
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
@@ -126,7 +126,7 @@ const Home__Services__Roofing = ({ className }) => {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <Card className="accordion-animation">
               <Accordion.Toggle as={Card.Header} eventKey="2">
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
@@ -149,9 +149,9 @@ const Home__Services__Roofing = ({ className }) => {
 
         <Container
           fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
+          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow border-top border-bottom border-secondary"
         >
-          <i className="text-center text-secondary fas fa-4x fa-tools mb-4"></i>
+          <i className="text-center text-secondary fas fa-4x fa-tools my-4"></i>
           <h2>Are you interested in our roofing services?</h2>
           <p className="lead font-weight-bold">
             Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
@@ -167,7 +167,7 @@ const Home__Services__Roofing = ({ className }) => {
               </div>
             </Col>
             <Col xs={12} md={6}>
-              <div className="text-center text-lg-left mt-5 ml-md-2">
+              <div className="text-center text-lg-left mt-5 mb-4 ml-md-2">
                 <Button
                   btnlink="/contact-us"
                   btnlabel="Get A Roofing Quote"

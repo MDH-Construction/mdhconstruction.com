@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link, Image } from 'gatsby';
+import { Link } from 'gatsby';
 import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
-import ImgMDHLogo from '../../ImageComps/image-mdh-logo';
-import ImgMdhTruckMenu from '../../ImageComps/img-mdh-truck-menu';
-import ImgTopRatedMenu from '../../ImageComps/img-top-rated-menu';
-import ImgLicensedMenu from '../../ImageComps/img-licensed-menu';
-import ImgServiceAreaMenu from '../../ImageComps/img-service-area-menu';
-import ImgExteriorServicesMenu from '../../ImageComps/img-exterior-services-menu';
-import ImgInteriorServicesMenu from '../../ImageComps/img-interior-services-menu';
-import ImgInsulationServicesMenu from '../../ImageComps/img-insulation-services-menu';
+import ImgMDHLogo from '../../Images/Logos/img-mdh-logo';
+import ImgMdhTruckMenu from '../../Images/Nav/img-mdh-truck-menu';
+import ImgTopRatedMenu from '../../Images/Nav/img-top-rated-menu';
+import ImgLicensedMenu from '../../Images/Nav/img-licensed-menu';
+import ImgServiceAreaMenu from '../../Images/Nav/img-service-area-menu';
+import ImgExteriorServicesMenu from '../../Images/Nav/img-exterior-services-menu';
+import ImgInteriorServicesMenu from '../../Images/Nav/img-interior-services-menu';
+import ImgInsulationServicesMenu from '../../Images/Nav/img-insulation-services-menu';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -172,7 +172,7 @@ export default class Header extends React.Component {
                   </Link>
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
-                  <Link className="nav-link text-uppercase" to="/">
+                  <Link className="nav-link text-uppercase" to="/blog">
                     Blog
                   </Link>
                 </li>

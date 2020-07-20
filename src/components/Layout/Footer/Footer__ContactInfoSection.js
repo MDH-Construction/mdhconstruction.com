@@ -21,9 +21,9 @@ const Footer__ContactInfoSection = () => {
                 </strong>
               </p>
               <p className="text-dark">
-                Complete and submit the form below and we'll contact you to
-                schedule an in-home appointment. If you’d prefer, you can also
-                contact us by phone at{' '}
+                Complete our form below and we'll contact you to schedule an
+                in-home appointment. If you’d prefer, you can also contact us by
+                phone at{' '}
                 <a
                   className="font-weight-bold text-primary"
                   href="tel:+17742696002"

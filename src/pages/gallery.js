@@ -20,10 +20,10 @@ const GalleryPage = () => {
           node {
             childImageSharp {
               thumb: fluid(maxWidth: 500, maxHeight: 300) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
+              full: fluid(quality: 100, maxWidth: 1024) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -37,10 +37,10 @@ const GalleryPage = () => {
           node {
             childImageSharp {
               thumb: fluid(maxWidth: 270, maxHeight: 270) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
+              full: fluid(quality: 100, maxWidth: 1024) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -54,10 +54,10 @@ const GalleryPage = () => {
           node {
             childImageSharp {
               thumb: fluid(maxWidth: 270, maxHeight: 270) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
+              full: fluid(quality: 100, maxWidth: 1024) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -71,10 +71,10 @@ const GalleryPage = () => {
           node {
             childImageSharp {
               thumb: fluid(maxWidth: 270, maxHeight: 270) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(maxWidth: 1024) {
-                ...GatsbyImageSharpFluid
+              full: fluid(quality: 100, maxWidth: 1024) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -144,11 +144,11 @@ const GalleryPage = () => {
           <Gallery images={deckImages} />
         </Container>
         <Container className="mb-5 pb-5">
-          <h2>Kitchen Remodels</h2>
+          <h2>Kitchen Remodeling</h2>
           <Gallery images={kitchenImages} />
         </Container>
         <Container className="mb-5">
-          <h2>Bathroom Remodels</h2>
+          <h2>Bathroom Remodeling</h2>
           <Gallery images={bathroomImages} />
         </Container>
       </section>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImgTruck from '../../ImageComps/img-truck';
+import ImgTruck from '../../Images/Pages/Home/img-truck';
+import ImgMdhLogo from '../../Images/Logos/img-mdh-logo';
 import Button from '../../Button/Button';
 
 const Home__Company = ({ className }) => {
@@ -18,7 +19,7 @@ const Home__Company = ({ className }) => {
               <p>
                 MDH Construction remains committed to superior craftsmanship and
                 unmatched customer care. Our team of highly qualified tradesmen
-                take great pride in their work. Centrally located in{' '}
+                takes great pride in their work. Centrally located in{' '}
                 <Link
                   to="/plymouth-ma-construction"
                   className="font-weight-bolder"
@@ -38,8 +39,8 @@ const Home__Company = ({ className }) => {
                   className="font-weight-bolder"
                 >
                   South Shore
-                </Link>{' '}
-                and{' '}
+                </Link>
+                , and{' '}
                 <Link
                   to="/cape-cod-construction"
                   className="font-weight-bolder"
@@ -55,23 +56,91 @@ const Home__Company = ({ className }) => {
                 <h3>Why We're Different</h3>
                 <ul className="check">
                   <li>
-                    We hire expert tradesman and provide them with regular,
+                    <span className="font-weight-bold text-secondary">
+                      LICENSED
+                    </span>{' '}
+                    home improvement contractor and construction supervisor in
+                    Massachusetts
+                  </li>
+                  <li>
+                    <span className="font-weight-bold text-secondary">
+                      INSURED
+                    </span>{' '}
+                    with full-coverage liability insurance and maintain workers'
+                    compensation
+                  </li>
+                  <li>
+                    {' '}
+                    <span className="font-weight-bold text-secondary">
+                      HIRE LOCAL
+                    </span>{' '}
+                    expert tradesman and provide employees with regular,
                     continuing education
                   </li>
-                  <li>We treat our clients and their property with respect</li>
                   <li>
-                    We aim to start and complete projects on or ahead of
-                    schedule
+                    {' '}
+                    <span className="font-weight-bold text-secondary">
+                      ACCOUNTABLE
+                    </span>{' '}
+                    because we <em>actually</em> do the work, not separate
+                    subcontractors
                   </li>
-                  <li>We guarantee 100% satisfaction</li>
+                  <li>
+                    {' '}
+                    <span className="font-weight-bold text-secondary">
+                      HONEST
+                    </span>{' '}
+                    with all our clients and always treat their property with
+                    respect
+                  </li>
+                  <li>
+                    <span className="font-weight-bold text-secondary">
+                      COMMITTED
+                    </span>{' '}
+                    to starting and completing projects on or ahead of schedule
+                  </li>
+                  <li>
+                    {' '}
+                    <span className="font-weight-bold text-secondary">
+                      GUARANTEE
+                    </span>{' '}
+                    100% satisfaction with our work
+                  </li>
                 </ul>
               </Container>
-              <div className="text-center mt-5 mb-4 mb-lg-0">
-                <Button btnlink="/" btnlabel="Learn More About Us" btn={true} />
-              </div>
             </Container>
           </Col>
         </Row>
+        <Container
+          fluid
+          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow border-top border-bottom border-light"
+        >
+          <ImgMdhLogo className="text-center my-4 no-drop-shadow" />
+          <h2>Are you looking for a local construction company?</h2>
+          <p className="lead font-weight-bold">
+            Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
+          </p>
+          <Row noGutters={true}>
+            <Col xs={12} md={6}>
+              <div className="text-center text-lg-right mt-5 mr-md-2">
+                <Button
+                  btnlink="/services"
+                  btnlabel="See More About Us"
+                  btnsolid={false}
+                />
+              </div>
+            </Col>
+            <Col xs={12} md={6}>
+              <div className="text-center text-lg-left mt-5 mb-4 ml-md-2">
+                <Button
+                  btnlink="/contact-us"
+                  btnlabel="Get A Free Quote"
+                  btn={true}
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </Container>
     </section>
   );

@@ -29,9 +29,21 @@ const Footer = () => {
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Company</h5>
+              <h5 className="text-uppercase mb-4">Navigation</h5>
               <Link className="d-flex footer-link" to="/">
                 About
+              </Link>
+              <Link className="d-flex footer-link" to="/">
+                Who We Are
+              </Link>
+              <Link className="d-flex footer-link" to="/">
+                Licensing and Insurance
+              </Link>
+              <Link className="d-flex footer-link" to="/">
+                Ratings and Memberships
+              </Link>
+              <Link className="d-flex footer-link" to="/">
+                Service Area
               </Link>
               <Link className="d-flex footer-link" to="/">
                 Services
@@ -49,31 +61,52 @@ const Footer = () => {
                 Contact
               </Link>
             </Col>
+
             <Col
               xs={12}
               md={4}
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Top Services</h5>
-              <Link className="d-flex footer-link" to="/">
-                Roofing Installation and Repair
-              </Link>
-              <Link className="d-flex footer-link" to="/">
-                Siding Installation and Repair
-              </Link>
-              <Link className="d-flex footer-link" to="/">
-                Gutters and Downspouts
-              </Link>
-              <Link className="d-flex footer-link" to="/">
-                Additions and New Construction
-              </Link>
-              <Link className="d-flex footer-link" to="/">
-                Mass Save Home Insulation
-              </Link>
-              <Link className="d-flex footer-link" to="/">
-                Kitchen and Bathroom Remodeling
-              </Link>
+              <h5 className="text-uppercase mb-4">Partners</h5>
+              <div className="text-sans-serif d-flex py-12">
+                <a href="#">HomeAdvisor</a>
+              </div>
+              <div className="text-sans-serif d-flex py-12">
+                <a href="#">AngiesList</a>
+              </div>
+              <div className="text-sans-serif d-flex py-12">
+                <a href="#">BuildZoom</a>
+              </div>
+              <div className="text-sans-serif d-flex py-12">
+                <a href="#">Mass Save</a>
+              </div>
+
+              <h5 className="text-uppercase mt-5 mb-4">Social Media</h5>
+              <div className="text-sans-serif d-flex py-2">
+                <a href="#">
+                  <i className="fab fa-2x fa-facebook mr-3"></i>
+                </a>
+                <a className="my-auto" href="#">
+                  <span className="ml-1 my-auto">Facebook</span>
+                </a>
+              </div>
+              <div className="text-sans-serif d-flex py-2">
+                <a href="#">
+                  <i className="fab fa-2x fa-instagram mr-3"></i>
+                </a>
+                <a className="my-auto" href="#">
+                  <span className="ml-2 my-auto">Instagram</span>
+                </a>
+              </div>
+              <div className="text-sans-serif d-flex py-2">
+                <a href="#">
+                  <i className="fab fa-2x fa-youtube mr-3"></i>
+                </a>
+                <a className="my-auto" href="#">
+                  <span className="my-auto">YouTube</span>
+                </a>
+              </div>
             </Col>
 
             <Col
@@ -82,7 +115,7 @@ const Footer = () => {
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Info</h5>
+              <h5 className="text-uppercase mb-4">Company</h5>
               <div className="text-sans-serif pt-2 d-flex mb-2">
                 <i className="fas fa-address-card mt-1"></i>
                 <Link to="/" className="ml-3">
@@ -102,14 +135,16 @@ const Footer = () => {
                   href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
                   target="_blank"
                 >
-                  michael.maher@mdhconstruction.com
+                  michael.maher
+                  <wbr />
+                  @mdhconstruction.com
                 </a>
               </div>
               <div className="text-sans-serif pt-2 d-flex mb-2">
                 <i className="fas fa-map-marker-alt mt-1"></i>
                 <a
                   className="ml-1-25"
-                  href="https://g.page/john-grattan-seo-web-design?share"
+                  href="https://goo.gl/maps/Q5eUufFZPqPNvxPLA"
                   target="_blank"
                 >
                   186 S Meadow Rd #2,
@@ -118,7 +153,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="text-sans-serif pt-2 d-flex mb-2">
-                <i className="far fa-clock mt-2"></i>
+                <i className="fas fa-clock mt-2"></i>
                 <Table className="ml-2" borderless size="sm">
                   <tbody>
                     <tr>
@@ -182,27 +217,6 @@ const Footer = () => {
                   </Link>
                 </p>
               </Col>
-              {/* <Col xs={12} md={4} className="small text-center">
-              {' '}
-              <a href="#">
-                <i className="fab fa-2x fa-facebook px-2"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-2x fa-instagram px-2"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-2x fa-twitter px-2"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-2x fa-youtube px-2"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-2x fa-linkedin px-2"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-2x fa-github px-2"></i>
-              </a>
-            </Col> */}
             </Row>
           </Container>
         </div>

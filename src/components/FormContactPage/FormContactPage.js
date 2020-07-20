@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
@@ -28,55 +26,20 @@ const FormContactPage = ({ formname }) => {
   const handleChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
-  // const handleSubmit = async e => {
-  //   e.preventDefault();
-  //   await axios.all([
-  //     axios.post(
-  //       'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
-  //       {
-  //         fields: {
-  //           TITLE: `${company} - ${service}`,
-  //           NAME: `${firstName}`,
-  //           LAST_NAME: `${lastName}`,
-  //           SECOND_NAME: `${firstName}`,
-  //           PHONE: [{ VALUE: `${phone}`, VALUE_TYPE: 'WORK' }],
-  //           EMAIL: [{ VALUE: `${email}`, VALUE_TYPE: 'WORK' }],
-  //           // COMPANY_TITLE: `${company}`,
-  //           // POST: `${jobTitle}`,
-  //           CURRENCY_ID: 'USD',
-  //           OPPORTUNITY: `${budget}`,
-  //           COMMENTS: `
-  //           This lead came from my contact form.<br/><br/>
-  //           <strong>Name</strong>: ${firstName} ${lastName}<br/>
-  //           <strong>Phone</strong>: ${phone}<br/>
-  //           <strong>Email</strong>: ${email}<br/>
-  //           <strong>Project Location</strong>: ${projectLocation}<br/>
-  //           <strong>Project Type</strong>: ${projectType}<br/>
-  //           <strong>How Did You Find Us?</strong>: ${findUs}<br/><br/><br/>
-  //           `,
-  //         },
-  //       }
-  //     ),
-  //   ]);
-  //   navigate('/thanks/');
-  // };
-
-  // const phonePlace = {`$<i className="fas fa-phone mr-2"></i>Phone`}
-
   return (
     <Form
-      name={formname}
+      name="form-contact-page"
       method="POST"
       action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="rounded shadow p-2 p-md-4 bg-texture-3"
-      id="banner-contact-form"
-      // onSubmit={handleSubmit}
+      id="form-contact-page"
+      action="/thanks"
     >
-      <h3 className="mb-1">Request A Free Quote</h3>
+      <h3 className="mb-1 mt-3 mt-lg-0">Request A Free Quote</h3>
       <hr className="divider pb-3 drop-shadow" />
-      <input type="hidden" name="form-name" value={formname} />
+      <input type="hidden" name="form-name" value="form-contact-page" />
       <Form.Row>
         <Form.Group as={Col} controlId="formContactPageFirstName">
           <Form.Control
@@ -169,11 +132,14 @@ const FormContactPage = ({ formname }) => {
             <option value="Interior: Flooring/Tiling">
               Interior: Flooring/Tiling
             </option>
-            <option value="Insulation: Mass Save Program" className="bg-light">
-              Insulation: Mass Save Program
+            <option
+              value="Weatherization: Insulation/Mass Save Program"
+              className="bg-light"
+            >
+              Weatherization: Insulation/Mass Save Program
             </option>
-            <option value="Weatherization: Air Sealing/Stripping">
-              Weatherization: Air Sealing/Stripping
+            <option value="Weatherization: Air Sealing/Stripping/Diagnostics">
+              Weatherization: Air Sealing/Stripping/Diagnostics
             </option>
             <option
               value="Other: Painting/Handyman/Debris"
@@ -216,7 +182,7 @@ const FormContactPage = ({ formname }) => {
           </Form.Control>
         </Form.Group>
       </Form.Row>
-      <div className="text-center">
+      <div className="text-center mb-4 mb-lg-3">
         <Button
           className="btn btn-xl drop-shadow mt-4"
           type="submit"

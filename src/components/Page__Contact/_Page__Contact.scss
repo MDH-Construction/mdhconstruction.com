@@ -55,13 +55,26 @@
 
 #contact-banner-section {
   position: relative;
-  z-index: 99;
+  // z-index: 99;
 }
 
 #contact-page {
   .nap-text {
     font-size: 1.2em;
     font-weight: 600;
+  }
+}
+
+.nap-link {
+  font-size: 1.2em;
+  font-weight: 600;
+
+  text-decoration: dotted underline !important;
+  color: $pageLinkColor;
+  &:hover {
+    color: $secondary;
+    text-decoration: underline !important;
+    text-decoration-color: $primary !important;
   }
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImgHomeAdvisor from '../../ImageComps/img-home-advisor';
-import ImgAngiesList from '../../ImageComps/img-angies-list';
-import ImgMassSave from '../../ImageComps/img-mass-save';
-import ImgBBB from '../../ImageComps/img-bbb';
+import ImgHomeAdvisor from '../../Images/Logos/img-home-advisor';
+import ImgAngiesList from '../../Images/Logos/img-angies-list';
+import ImgMassSave from '../../Images/Logos/img-mass-save';
+import ImgBBB from '../../Images/Logos/img-bbb';
 
 const Home__Trust = ({ className }) => {
   return (

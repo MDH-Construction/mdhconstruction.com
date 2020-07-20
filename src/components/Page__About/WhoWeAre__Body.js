@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImgTruck from '../ImageComps/img-truck';
+import ImgTruck from '../Images/Pages/Home/img-truck';
 import Button from '../Button/Button';
 
 const WhoWeAre__Body = ({ className }) => {

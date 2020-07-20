@@ -13,11 +13,10 @@
 @import './Layout/Navbar/Navbar';
 @import './Button/Button';
 @import './Layout/Footer/Footer';
-@import './FormContact/FormContact';
-@import './FormEmail/FormEmail';
-@import './Page__Home/Styles/Page__Home';
 @import '../sass/seo-blog';
 
+@import './Page__Home/Styles/Page__Home';
 @import './Page__Contact/Page__Contact';
 @import './Page__Gallery/Page__Gallery';
+@import './Page__Blog/Page__Blog';
 @import './Blog/Styles/Blog';

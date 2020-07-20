@@ -27,8 +27,8 @@ const EmploymentPage = () => {
   return (
     <Layout>
       <SEO
-        title="Employment | Licensed General Contractor from Plymouth, MA"
-        description="Employment | Licensed General Contractor from Plymouth, MA"
+        title="Employment | Competitive Pay, Bonuses & Incentives, PTO"
+        description="If you have a set of skills that relate to the home improvement, remodeling, or commercial construction industries, we want to hear from you!"
         canonicalLink="https://www.mdhconstruction.com/employment/"
       />
       <Header

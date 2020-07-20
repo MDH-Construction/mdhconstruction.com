@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
-import ImgMassSaveInsulationServices from '../../ImageComps/img-mass-save-insulation-services';
-import ImgMassSave from '../../ImageComps/img-mass-save';
+import ImgMassSaveInsulationServices from '../../Images/Pages/Home/img-mass-save-insulation-services';
+import ImgMassSave from '../../Images/Logos/img-mass-save';
 import Button from '../../Button/Button';
 
 const Home__Services__Insulation = ({ className }) => {
   return (
-    <section id="home-services-section">
+    <section id="home-insulation-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
         <Row noGutters={true}>
           <Col
@@ -107,7 +107,7 @@ const Home__Services__Insulation = ({ className }) => {
             Common Insulation Questions
           </h4>
           <Accordion>
-            <Card>
+            <Card className="accordion-animation">
               <Accordion.Toggle as={Card.Header} eventKey="0">
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
@@ -125,7 +125,7 @@ const Home__Services__Insulation = ({ className }) => {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <Card className="accordion-animation">
               <Accordion.Toggle as={Card.Header} eventKey="1">
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
@@ -143,7 +143,7 @@ const Home__Services__Insulation = ({ className }) => {
                 </Card.Body>
               </Accordion.Collapse>
             </Card>
-            <Card>
+            <Card className="accordion-animation">
               <Accordion.Toggle as={Card.Header} eventKey="2">
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
@@ -166,9 +166,9 @@ const Home__Services__Insulation = ({ className }) => {
 
         <Container
           fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
+          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow border-top border-bottom border-secondary"
         >
-          <i className="text-center text-secondary fas fa-4x fa-tools mb-4"></i>
+          <i className="text-center text-secondary fas fa-4x fa-tools my-4"></i>
           <h2>Are you interested in our insulation services?</h2>
           <p className="lead font-weight-bold">
             Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
@@ -184,7 +184,7 @@ const Home__Services__Insulation = ({ className }) => {
               </div>
             </Col>
             <Col xs={12} md={6}>
-              <div className="text-center text-lg-left mt-5 ml-md-2">
+              <div className="text-center text-lg-left mt-5 mb-4 ml-md-2">
                 <Button
                   btnlink="/contact-us"
                   btnlabel="Get An Insulation Quote"

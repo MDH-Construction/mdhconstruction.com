@@ -27,9 +27,9 @@ const TestimonialsPage = () => {
   return (
     <Layout>
       <SEO
-        title="Testimonials | Licensed General Contractor from Plymouth, MA"
+        title="Testimonials | 5-Star Reviews on Google, FB, HomeAdvisor"
         description="Testimonials | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/who-we-are/"
+        canonicalLink="https://www.mdhconstruction.com/testimonials/"
       />
       <Header
         Tag="header"

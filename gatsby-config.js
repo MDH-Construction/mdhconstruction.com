@@ -13,7 +13,7 @@ module.exports = {
     title: `MDH Construction | Roofing, Siding, Insulation | Plymouth, MA`,
     description: `John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
     author: `John Grattan SEO & Web Design`,
-    image: 'images/mdh-construction-general-contractor-plymouth-ma-logo.jpg',
+    image: `images/mdh-construction-general-contractor-plymouth-ma-logo.jpg`,
     siteUrl,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
-    'gatsby-plugin-robots-txt',
+    `gatsby-plugin-robots-txt`,
     // {
     //   resolve: 'gatsby-plugin-mailchimp',
     //   options: {

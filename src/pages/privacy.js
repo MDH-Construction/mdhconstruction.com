@@ -10,7 +10,7 @@ const PrivacyPage = () => {
     query PrivacyPageQ {
       masthead: file(
         relativePath: {
-          eq: "images/reviews-google-facebook-home-advisor-mdh-construction-plymouth-ma.jpg"
+          eq: "images/privacy-policy-mdh-construction-general-contractor-plymouth-ma.jpg"
         }
       ) {
         childImageSharp {
@@ -27,16 +27,16 @@ const PrivacyPage = () => {
   return (
     <Layout>
       <SEO
-        title="Privacy | 5-Star Reviews on Google, FB, HomeAdvisor"
-        description="Privacy | Licensed General Contractor from Plymouth, MA"
+        title="Privacy Policy | Your Privacy Is Critically Important To Us"
+        description="Privacy Policy | Your Privacy Is Critically Important To Us"
         canonicalLink="https://www.mdhconstruction.com/privacy/"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Privacy"
-        hTwo="Privacy"
+        hOne="Privacy Policy"
+        hTwo="Your privacy is critically important to us"
         alt="Privacy"
       />
       <Privacy__Body />

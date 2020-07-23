@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import About__Body from '../components/Page__About/About__Body';
+import Services__Body from '../components/Page__Services/Services__Body';
 
 const ServicesPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,10 +36,10 @@ const ServicesPage = () => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         hOne="Construction Services"
-        hTwo="A Reliable, Family Owned And Operated Business"
+        hTwo="Gutters, Insulation, Decks, Windows, Doors & More"
         alt="MDH Construction Services"
       />
-      <About__Body />
+      <Services__Body />
     </Layout>
   );
 };

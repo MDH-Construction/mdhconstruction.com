@@ -124,7 +124,7 @@ const GalleryPage = () => {
         hTwo="See Our Completed Decks and Remodels"
         alt="Gallery MDH Construction"
       />
-      <section className="page-section" id="gallery-page">
+      <section id="gallery-page">
         <Container className="text-center">
           <p className="lead font-weight-bold">
             We take great pride in our work and love to display our completed

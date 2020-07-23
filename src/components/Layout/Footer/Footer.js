@@ -18,9 +18,9 @@ const Footer = () => {
 
   return (
     <footer>
-      <Footer__ContactInfoSection />
-      <Footer__ContactFormSection className="bg-img-footer-contact" />
-      <section className="footer-bg">
+      <Footer__ContactInfoSection className="section-no-margin" />
+      <Footer__ContactFormSection className="bg-img-footer-contact section-no-margin" />
+      <section className="footer-bg section-no-margin">
         <Container className="p-5">
           <Row className="justify-content-around align-items-baseline">
             <Col
@@ -137,7 +137,9 @@ const Footer = () => {
                 >
                   michael.maher
                   <wbr />
-                  @mdhconstruction.com
+                  @mdhconstruction
+                  <wbr />
+                  .com
                 </a>
               </div>
               <div className="text-sans-serif pt-2 d-flex mb-2">

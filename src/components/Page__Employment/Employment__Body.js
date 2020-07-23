@@ -8,7 +8,7 @@ import ImgEmploymentReview from '../Images/Pages/Employment/img-employment-revie
 
 const Employment__Body = ({ className }) => {
   return (
-    <section id="about-page">
+    <section className="section-no-margin" id="about-page">
       <Container fluid>
         <Row className="bg-secondary p-3 justify-content-center">
           <Col>
@@ -17,7 +17,7 @@ const Employment__Body = ({ className }) => {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={6} className="px-0">
             <ImgEmploymentHelpWanted className="mt-3 mt-lg-0 mb-3 mb-lg-0" />
           </Col>
           <Col className="py-3 py-lg-5" xs={12} lg={6}>
@@ -47,13 +47,21 @@ const Employment__Body = ({ className }) => {
             </p>
             <Container className="checklist mt-5 mb-5 mb-md-0 p-3 justify-content-center align-items-center">
               <h3>We Offer Our Employees:</h3>
-              <ul className="check">
-                <li>Competitive pay</li>
-                <li>Bonuses and incentives</li>
-                <li>Paid time off</li>
-                <li>Holidays</li>
-                <li>Continuing education</li>
-              </ul>
+              <Row>
+                <Col xs={12} lg={6}>
+                  <ul className="check">
+                    <li>Competitive pay</li>
+                    <li>Bonuses and incentives</li>
+                    <li>Paid time off</li>
+                  </ul>
+                </Col>
+                <Col xs={12} lg={6}>
+                  <ul className="check">
+                    <li>Holidays</li>
+                    <li>Continuing education</li>
+                  </ul>
+                </Col>
+              </Row>
             </Container>
           </Col>
         </Row>

@@ -1,0 +1,111 @@
+main {
+  color: $pageTextColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: $h1Color;
+}
+
+h2 {
+  color: $h2Color;
+}
+
+h3 {
+  color: $h3Color;
+}
+
+a {
+  &:hover {
+    color: $secondary !important;
+  }
+  i {
+    &:hover {
+      color: $white !important;
+    }
+  }
+}
+
+p {
+  a {
+    cursor: pointer !important;
+    text-decoration: dotted underline !important;
+    color: $pageLinkColor;
+    font-weight: bolder;
+    &:hover {
+      text-decoration: underline !important;
+      text-decoration-color: $primary !important;
+    }
+  }
+}
+
+.no-decoration {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.dotted-underline {
+  text-decoration: dotted !important;
+  &:hover {
+    color: $secondary !important;
+    text-decoration: underline !important;
+  }
+}
+
+.underline {
+  text-decoration: underline !important;
+  &:hover {
+    color: $secondary !important;
+    text-decoration: underline !important;
+  }
+}
+
+.fa-mobile-4x {
+  font-size: 3em;
+}
+
+.text-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
+.text-white-link {
+  color: white;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.text-link-on-white {
+  color: $purple;
+  font-weight: 600;
+  font-style: italic;
+  border-bottom: 3px solid $primary;
+  cursor: pointer;
+  &:active,
+  &:hover {
+    color: $purple;
+    text-decoration: underline;
+  }
+}
+
+.text-white-75 {
+  color: fade-out($white, 0.25);
+}
+
+@include media-breakpoint-up(lg) {
+  .fa-mobile-4x {
+    font-size: 4em;
+  }
+}

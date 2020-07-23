@@ -9,7 +9,12 @@
 @import '~bootstrap/scss/bootstrap';
 
 // Import custom styles
-@import '../sass/global';
+@import '../sass/global-animations-effects';
+@import '../sass/global-backgrounds';
+@import '../sass/global-bootstrap-components';
+@import '../sass/global-elements';
+@import '../sass/global-size-spacing';
+@import '../sass/global-text';
 @import './Layout/Navbar/Navbar';
 @import './Button/Button';
 @import './Layout/Footer/Footer';

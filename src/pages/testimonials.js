@@ -36,7 +36,7 @@ const TestimonialsPage = () => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         hOne="Testimonials"
-        hTwo="5-Star Reviews on Google, Facebook, HomeAdvisor & more"
+        hTwo="5-Star Reviews on Google, Facebook, BBB, HomeAdvisor, Angie's List"
         alt="Testimonials"
       />
       <Testimonials__Body />

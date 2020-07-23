@@ -35,8 +35,8 @@ const WhatWeDoPage = () => {
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="What We Do"
-        hTwo="A Reliable, Family Owned And Operated Business"
+        hOne="Licensing and Insurance"
+        hTwo="Fully Licensed in Massachusetts & Full Coverage Liability Insurance"
         alt="What We Do"
       />
       <WhatWeDo__Body />

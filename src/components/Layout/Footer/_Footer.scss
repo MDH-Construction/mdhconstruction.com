@@ -71,10 +71,10 @@ footer {
     text-align: left;
   }
   a {
-    color: $footerLinkColor;
+    color: $footerLinkColor !important;
     &:hover,
     &:active {
-      color: $footerLinkHoverColor;
+      color: $footerLinkHoverColor !important;
     }
   }
   p {

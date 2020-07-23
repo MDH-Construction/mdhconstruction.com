@@ -7,7 +7,7 @@ import Button from '../../Button/Button';
 
 const Home__Services__Gutters = ({ className }) => {
   return (
-    <section id="home-gutters-section">
+    <section className="section-no-margin" id="home-gutters-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
         <Row noGutters={true}>
           <Col className="py-3 pb-lg-5 order-2 order-lg-1" xs={12} md={6}>

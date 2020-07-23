@@ -1,0 +1,28 @@
+.accordion {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.accordionText {
+  &:hover {
+    color: $primary;
+    cursor: pointer;
+  }
+}
+
+.accordionIcon {
+  &:hover {
+    color: $secondary !important;
+    cursor: pointer;
+  }
+}
+
+.accordion-animation {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

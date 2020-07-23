@@ -6,13 +6,10 @@ import FormContactPage from '../FormContactPage/FormContactPage';
 const Contact__Body = ({ className }) => {
   return (
     <section id="contact-page">
-      <Col
-        xs={12}
-        md={7}
-        lg={5}
-        className="container neg-margin-top-contact-form"
-      >
-        <FormContactPage />
+      <Col xs={12} md={7} lg={5} className="mx-auto">
+        <Container className="neg-margin-top-contact-form">
+          <FormContactPage />
+        </Container>
       </Col>
       <Container
         fluid

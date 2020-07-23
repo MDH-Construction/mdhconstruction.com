@@ -7,7 +7,7 @@ import Button from '../../Button/Button';
 
 const Home__Company = ({ className }) => {
   return (
-    <section id="home-company-section">
+    <section className="section-no-margin" id="home-company-section">
       <Container fluid className="px-0">
         <Row noGutters={true}>
           <Col xs={12} md={6}>

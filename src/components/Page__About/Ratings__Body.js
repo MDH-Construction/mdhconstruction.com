@@ -16,8 +16,8 @@ import ImgMassSave from '../Images/Logos/img-mass-save';
 const Ratings__Body = ({ className }) => {
   return (
     <section id="about-page-ratings">
-      <Container className="py-lg-5">
-        <Container className="py-5">
+      <Container>
+        <Container className="pb-5">
           <Row>
             <Col xs={12} md={6} className="mb-4">
               <ImgMdhTopRated className="drop-shadow" />
@@ -132,7 +132,7 @@ const Ratings__Body = ({ className }) => {
           </div>
         </Container>
       </Container>
-      <Container className="py-5">
+      <Container className="pt-5">
         <Container className="py-5">
           <h2>Mass Save</h2>
           <p>

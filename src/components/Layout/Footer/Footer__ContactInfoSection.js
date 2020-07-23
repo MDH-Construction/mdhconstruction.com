@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer__ContactInfoSection = () => {
   return (
-    <section className="footer-contact-info-section py-0 pt-5 py-lg-5">
+    <section className="footer-contact-info-section py-0 pt-5 py-lg-5 section-no-margin">
       <Container className="p-5">
         <h2 className="text-white mb-5 drop-shadow">
           Getting Started Is Easy!

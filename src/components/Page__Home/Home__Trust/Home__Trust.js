@@ -8,7 +8,7 @@ import ImgBBB from '../../Images/Logos/img-bbb';
 
 const Home__Trust = ({ className }) => {
   return (
-    <section className="bg-secondary px-0 py-4">
+    <section className="bg-secondary px-0 py-4 section-no-margin">
       <Container className="text-center pb-1">
         <span className="lead text-white drop-shadow">
           Trusted By{' '}

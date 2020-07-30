@@ -4,9 +4,10 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Helmet from 'react-helmet';
 import Header from '../components/Layout/Header/Header';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Thanks__Body from '../components/Page__Thanks/Thanks__Body';
 
-const ThanksPage = () => {
+const ThanksPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query ThanksPageQ {
       masthead: file(
@@ -24,6 +25,12 @@ const ThanksPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+  const customCrumbLabel = location.pathname.replace('/', '');
+  const crumbCapitalized =
+    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -42,6 +49,11 @@ const ThanksPage = () => {
         hOne="Thanks"
         hTwo="Thank You"
         alt="Thanks"
+      />
+      <Breadcrumb
+        crumbs={crumbs}
+        crumbSeparator="/"
+        crumbLabel={crumbCapitalized}
       />
       <Thanks__Body />
     </Layout>

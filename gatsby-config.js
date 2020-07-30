@@ -25,6 +25,21 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
+
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+        usePathPrefix: '/',
+        crumbLabelUpdates: [
+          {
+            pathname: '/ratings-and-memberships',
+            crumbLabel: 'Ratings and Memberships',
+          },
+        ],
+      },
+    },
+
     // {
     //   resolve: 'gatsby-plugin-mailchimp',
     //   options: {

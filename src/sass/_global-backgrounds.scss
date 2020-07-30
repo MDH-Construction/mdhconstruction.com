@@ -48,11 +48,11 @@ body {
   background-color: $darkGray;
 }
 
-.bg-img-gray-gradient {
+.body-banner-img-gradient {
   background: linear-gradient(
     to bottom,
-    #{fade-out(#343a40, 0.1)} 0%,
-    #{fade-out(#343a40, 0.1)} 100%
+    #{fade-out(#743a00, 0.5)} 0%,
+    #{fade-out(#343a40, 0.5)} 100%
   ) !important;
   background-position: center !important;
   background-repeat: repeat !important;

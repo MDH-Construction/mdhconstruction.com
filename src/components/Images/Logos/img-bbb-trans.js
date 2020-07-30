@@ -2,18 +2,18 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const ImgEmploymentHelpWanted = ({ className }) => {
+const ImgBBBTrans = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ImgEmploymentHelpWantedQ {
+    query ImgBBBTransQ {
       image: file(
         relativePath: {
-          eq: "images/employment-help-wanted-mdh-construction-general-contractor-plymouth-ma.jpg"
+          eq: "images/bbb-better-business-buraeu-logo-trans-mdh-construction-plymouth-ma.png"
         }
       ) {
         id
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
+          fluid(quality: 100, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -23,10 +23,10 @@ const ImgEmploymentHelpWanted = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="Employment job opportunities with MDH Construction in Plymouth, MA"
+      alt="MDH Construction is an A+ Rated company by the Better Business Beraeu in Plymouth, MA"
       className={className}
     />
   );
 };
 
-export default ImgEmploymentHelpWanted;
+export default ImgBBBTrans;

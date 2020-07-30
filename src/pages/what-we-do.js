@@ -3,9 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import WhatWeDo__Body from '../components/Page__About/WhatWeDo__Body';
 
-const WhatWeDoPage = () => {
+const WhatWeDoPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query WhatWeDoPageQ {
       masthead: file(
@@ -23,6 +24,9 @@ const WhatWeDoPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <Layout>
@@ -39,6 +43,7 @@ const WhatWeDoPage = () => {
         hTwo="Fully Licensed in Massachusetts & Full Coverage Liability Insurance"
         alt="What We Do"
       />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="What We Do" />
       <WhatWeDo__Body />
     </Layout>
   );

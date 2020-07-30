@@ -3,9 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import ServiceArea__Body from '../components/Page__About/ServiceArea__Body';
 
-const ServiceAreaPage = () => {
+const ServiceAreaPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query ServiceAreaPageQ {
       masthead: file(
@@ -23,6 +24,9 @@ const ServiceAreaPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <Layout>
@@ -38,6 +42,11 @@ const ServiceAreaPage = () => {
         hOne="Service Area"
         hTwo="A Reliable, Family Owned And Operated Business"
         alt="Service Area"
+      />
+      <Breadcrumb
+        crumbs={crumbs}
+        crumbSeparator="/"
+        crumbLabel="Service Area"
       />
       <ServiceArea__Body />
     </Layout>

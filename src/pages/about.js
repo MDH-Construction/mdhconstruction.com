@@ -3,9 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import About__Body from '../components/Page__About/About__Body';
 
-const AboutPage = () => {
+const AboutPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query AboutPageQ {
       masthead: file(
@@ -23,6 +24,12 @@ const AboutPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+  const customCrumbLabel = location.pathname.replace('/', '');
+  const crumbCapitalized =
+    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -38,6 +45,11 @@ const AboutPage = () => {
         hOne="About MDH Construction"
         hTwo="A Reliable, Family Owned And Operated Business"
         alt="About MDH Construction"
+      />
+      <Breadcrumb
+        crumbs={crumbs}
+        crumbSeparator="/"
+        crumbLabel={crumbCapitalized}
       />
       <About__Body />
     </Layout>

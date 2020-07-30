@@ -6,16 +6,8 @@ import Button from '../Button/Button';
 
 const WhoWeAre__Body = ({ className }) => {
   return (
-    <section id="about-page">
+    <section className="section-container" id="about-page">
       <Container>
-        <p>
-          MDH Construction is a full-service, licensed and insured, general
-          contractor and construction company located in Plymouth,
-          Massachusetts. We offer a wide range of services in the areas of home
-          improvement, remodeling, and commercial construction. Our service area
-          covers much of eastern Massachusetts, including the Boston area, South
-          Shore, and Cape Cod.
-        </p>
         <h2>Our Values</h2>
         <h3>Superior Craftsmanship</h3>
         <p>

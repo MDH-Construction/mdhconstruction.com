@@ -1,15 +1,28 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Container } from 'react-bootstrap';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+import Gallery from '@browniebroke/gatsby-image-gallery';
+import '@browniebroke/gatsby-image-gallery/dist/style.css';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import Gallery from '@browniebroke/gatsby-image-gallery';
-import '@browniebroke/gatsby-image-gallery/dist/style.css';
-import { Container } from 'react-bootstrap';
+import Body__Banner from '../components/Layout/Body/Body__Banner';
 
-const GalleryPage = () => {
+const GalleryPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query GalleryPageQ {
+      bgimg: file(
+        relativePath: {
+          eq: "images/gallery-imgs/decks/Deck-Construction-Deck-Installation-MDH-Construction-Plymouth-Massachusetts-01.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(quality: 100, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
       beforeAfterImages: allFile(
         filter: {
           relativeDirectory: { eq: "images/gallery-imgs/before-after" }
@@ -95,6 +108,14 @@ const GalleryPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const imageDataBodyBanner = data.bgimg.childImageSharp.fluid;
+
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+  const customCrumbLabel = location.pathname.replace('/', '');
+  const crumbCapitalized =
+    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   const beforeAfterImages = data.beforeAfterImages.edges.map(
     ({ node }) => node.childImageSharp
@@ -121,20 +142,36 @@ const GalleryPage = () => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         hOne="Construction Project Gallery"
-        hTwo="See Our Completed Decks and Remodels"
+        hTwo="Before & After Photos, Decks, Remodels, & More"
         alt="Gallery MDH Construction"
       />
-      <section id="gallery-page">
-        <Container className="text-center">
-          <p className="lead font-weight-bold">
+      <Breadcrumb
+        crumbs={crumbs}
+        crumbSeparator="/"
+        crumbLabel={crumbCapitalized}
+      />
+      <Body__Banner
+        Tag="div"
+        className=""
+        fluid={imageDataBodyBanner}
+        alt="MDH Construction Services"
+        textLeftOne="Check out our"
+        textLeftTwo="completed work!"
+        textRight={
+          <p>
             We take great pride in our work and love to display our completed
             construction projects!
+            <br />
+            <br />
+            Take a look at our gallery to get ideas for your next home
+            improvement project or just to see our craftsmanship.
+            <br />
+            <br />
+            If you see anything you like, please let us know!
           </p>
-          <p className="lead font-weight-bold mb-5 pb-5">
-            Take a look at our gallery to get ideas for your next project or
-            just to see our craftsmanship.
-          </p>
-        </Container>
+        }
+      />
+      <section className="section-container" id="gallery-page">
         <Container className="mb-5 pb-5">
           <h2>Before & After</h2>
           <Gallery images={beforeAfterImages} />

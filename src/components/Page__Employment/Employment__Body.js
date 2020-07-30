@@ -1,55 +1,24 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
-import ImgMDHLogo from '../Images/Logos/img-mdh-logo';
+import ImgMDHLogoFluid from '../Images/Logos/img-mdh-logo-fluid';
 import ButtonExternal from '../ButtonExternal/ButtonExternal';
-import ImgEmploymentHelpWanted from '../Images/Pages/Employment/img-employment-help-wanted';
 import ImgEmploymentReview from '../Images/Pages/Employment/img-employment-review';
 
 const Employment__Body = ({ className }) => {
   return (
-    <section className="section-no-margin" id="about-page">
+    <section className="section-container" id="about-page">
       <Container fluid>
-        <Row className="bg-secondary p-3 justify-content-center">
-          <Col>
-            <p className="display-4 text-white text-center">We Are Hiring!</p>
-            <hr className="divider" />
-          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} lg={6} className="px-0">
-            <ImgEmploymentHelpWanted className="mt-3 mt-lg-0 mb-3 mb-lg-0" />
-          </Col>
-          <Col className="py-3 py-lg-5" xs={12} lg={6}>
-            <div className="text-center mb-4">
-              <ImgMDHLogo className="no-drop-shadow mt-3 mt-md-0" />
-            </div>
-            <p>
-              At MDH Construction we know that a company is only as good its
-              people. That is why we've built a team of tradesmen who care
-              deeply about the quality of their work and the clients we serve.
-            </p>
-            <p>
-              If you have a set of skills that relate to the home improvement,
-              remodeling, or commercial construction industries — and you
-              believe in quality workmanship and stellar customer care — we want
-              to hear from you! Please send your resume to{' '}
-              <a
-                className="font-weight-bold"
-                href="mailto:michael.maher@mdhconstruction.com?Subject=Job%20Email%20From%20Website"
-                target="_blank"
-              >
-                michael.maher
-                <wbr />
-                @mdhconstruction.com
-              </a>
-              .
-            </p>
-            <Container className="checklist mt-5 mb-5 mb-md-0 p-3 justify-content-center align-items-center">
+        <Row className="mb-5 pb-5">
+          <Col lg={6} className="mx-auto">
+            <Container className="text-center mb-4 p-lg-5">
+              <ImgMDHLogoFluid className="no-drop-shadow mx-3 mx-lg-5" />
+            </Container>
+            <Container className="checklist p-3 p-lg-4 mb-5 justify-content-center align-items-center">
               <h3>We Offer Our Employees:</h3>
               <Row>
                 <Col xs={12} lg={6}>
-                  <ul className="check">
+                  <ul className="check mb-2">
                     <li>Competitive pay</li>
                     <li>Bonuses and incentives</li>
                     <li>Paid time off</li>
@@ -64,21 +33,10 @@ const Employment__Body = ({ className }) => {
               </Row>
             </Container>
           </Col>
-        </Row>
-        <Row className="bg-secondary text-center justify-content-center py-5 mb-md-5">
           <Col className="p-5" xs={12} lg={6}>
-            <h2 className="text-white drop-shadow mb-2">
-              Indeed Featured Review
-            </h2>
+            <h2 className="drop-shadow mb-2">Indeed Featured Review</h2>
             <hr className="divider mb-5" />
             <ImgEmploymentReview className="drop-shadow rounded border" />
-            <div className="text-center mt-5">
-              <ButtonExternal
-                btnlink="https://www.indeed.com/cmp/Mdh-Construction"
-                btnlabel="See 5-Star Review On Indeed"
-                btn={true}
-              />
-            </div>
           </Col>
         </Row>
         <Row>

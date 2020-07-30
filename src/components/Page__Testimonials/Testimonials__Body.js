@@ -9,24 +9,8 @@ import ImgJorgInsulation from '../Images/Pages/Testimonials/img-jorg-insulation'
 
 const Testimonials__Body = ({ className }) => {
   return (
-    <section id="about-page">
+    <section className="section-container" id="about-page">
       <Container>
-        <Container>
-          <p className="lead">
-            At MDH Construction we establish lasting relationships with our
-            clients because of our high-quality and reliable service. When you
-            work with us you’ll become a customer for life, because superior
-            craftsmanship and unmatched customer care are our top priorities.
-          </p>
-          <p className="lead">
-            Supported by our Better Business Bureau A+ rating — as well as
-            customer reviews on Google, Facebook, HomeAdvisor, and Angie's List
-            — MDH Construction is consistently a top-rated contractor of
-            superior home improvement, remodeling, and commercial construction
-            services.
-          </p>
-        </Container>
-
         <Container className="px-0 py-5 py-lg-5">
           <h2 className="display-4">What People Are Saying...</h2>
 

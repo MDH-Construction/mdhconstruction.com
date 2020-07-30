@@ -54,7 +54,7 @@ export default class Layout extends React.Component {
       <div className={className} ref={this.siteContainer} id="page-top">
         <Navbar />
         <main>{this.props.children}</main>
-        <Footer className="bg-texture-1" />
+        <Footer />
       </div>
     );
   }

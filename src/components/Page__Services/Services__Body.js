@@ -8,244 +8,229 @@ import ImgInsulationServices from '../Images/img-insulation-services';
 
 const Services__Body = ({ className }) => {
   return (
-    <section id="about-page">
-      <Container>
-        <Container className="text-container">
-          <p className="lead">
-            MDH Construction has the knowledge and expertise to handle almost
-            any home improvement, remodeling, or commercial construction
-            project.
-          </p>
-          <p className="lead">
-            Whether the job is large or small, we take great pride in our
-            craftsmanship and want to help you meet your goals.
-          </p>
-          <p className="lead">
-            Our highly skilled professionals can assist you with a broad range
-            of services, including:
-          </p>
+    <section className="section-container" id="services-page">
+      <Container fluid className="px-0">
+        <Container className="">
+          <Row className="py-5">
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Full
+                <br />
+                Construction
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgExteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Full Construction Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                New
+                <br />
+                Additions
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgExteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our New Additions Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Renovations
+                <br />& Remodeling
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgInteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Renovation & Remodeling Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+          </Row>
+
+          <Row className="pt-lg-5 pb-lg-5 pt-0">
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Gutters &<br />
+                Downspouts
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgExteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Gutter & Downspout Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Insulation &<br />
+                Weatherization
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgInsulationServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Insulation & Weatherization Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Windows
+                <br />& Doors
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgExteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Window & Door Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+          </Row>
+
+          <Row className="py-5">
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Roofing
+                <br />& Siding
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgExteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Roofing & Siding Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Outdoor
+                <br />
+                Living
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgExteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Outdoor Living Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+            <Col className="bg-white mx-3 px-0 drop-shadow rounded">
+              <h2 className="bg-secondary text-white py-3 mb-0">
+                Other
+                <br />
+                Services
+              </h2>
+              <Container className="pt-0 pb-3 px-0">
+                <ImgInteriorServices />
+                <Container className="container-text px-3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    nostrum libero repudiandae quia voluptatibus rem asperiores
+                    doloribus, quam.
+                  </p>
+                </Container>
+                <Container className="text-center mb-4">
+                  <Button
+                    btnlink="/services"
+                    btnlabel="See Our Other Home & Business Services"
+                    btn={true}
+                  />
+                </Container>
+              </Container>
+            </Col>
+          </Row>
         </Container>
-
-        <Row className="py-5">
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Full
-              <br />
-              Construction
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgExteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Full Construction Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              New
-              <br />
-              Additions
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgExteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our New Additions Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Renovations
-              <br />& Remodeling
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgInteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Renovation & Remodeling Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-        </Row>
-
-        <Row className="py-5">
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Gutters &<br />
-              Downspouts
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgExteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Gutter & Downspout Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Insulation &<br />
-              Weatherization
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgInsulationServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Insulation & Weatherization Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Windows
-              <br />& Doors
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgExteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Window & Door Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-        </Row>
-
-        <Row className="py-5">
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Roofing
-              <br />& Siding
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgExteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Roofing & Siding Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Outdoor
-              <br />
-              Living
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgExteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Outdoor Living Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-          <Col className="bg-white mx-3 px-0 drop-shadow rounded">
-            <h2 className="bg-secondary text-white py-3 mb-0">
-              Other
-              <br />
-              Services
-            </h2>
-            <Container className="pt-0 pb-3 px-0">
-              <ImgInteriorServices />
-              <Container className="container-text px-3">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                  nostrum libero repudiandae quia voluptatibus rem asperiores
-                  doloribus, quam.
-                </p>
-              </Container>
-              <Container className="text-center mb-4">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See Our Other Home & Business Services"
-                  btn={true}
-                />
-              </Container>
-            </Container>
-          </Col>
-        </Row>
-
         {/* <h2>Renovations and Remodeling</h2>
         <ul>
           <li>Large renovations</li>

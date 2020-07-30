@@ -6,7 +6,9 @@ const ImgTruck = ({ className }) => {
   const data = useStaticQuery(graphql`
     query ImgTruckQ {
       image: file(
-        relativePath: { eq: "images/mdh-construction-truck-plymouth-ma.jpg" }
+        relativePath: {
+          eq: "images/pages/home/home-mdh-construction-truck-general-contractor-plymouth-massachusetts.jpg"
+        }
       ) {
         id
         childImageSharp {

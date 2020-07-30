@@ -3,9 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Privacy__Body from '../components/Page__Privacy/Privacy__Body';
 
-const PrivacyPage = () => {
+const PrivacyPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query PrivacyPageQ {
       masthead: file(
@@ -23,6 +24,12 @@ const PrivacyPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
+  const customCrumbLabel = location.pathname.replace('/', '');
+  const crumbCapitalized =
+    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -38,6 +45,11 @@ const PrivacyPage = () => {
         hOne="Privacy Policy"
         hTwo="Your privacy is critically important to us"
         alt="Privacy"
+      />
+      <Breadcrumb
+        crumbs={crumbs}
+        crumbSeparator="/"
+        crumbLabel={crumbCapitalized}
       />
       <Privacy__Body />
     </Layout>

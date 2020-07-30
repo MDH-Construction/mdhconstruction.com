@@ -3,9 +3,10 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Ratings__Body from '../components/Page__About/Ratings__Body';
 
-const RatingsPage = () => {
+const RatingsPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query RatingsPageQ {
       masthead: file(
@@ -23,6 +24,9 @@ const RatingsPage = () => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const {
+    breadcrumb: { crumbs },
+  } = pageContext;
 
   return (
     <Layout>
@@ -36,8 +40,13 @@ const RatingsPage = () => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         hOne="Ratings And Memberships"
-        hTwo="Better Business Buraeu, Mass Save, Home Advisor, & More"
+        hTwo="Better Business Bureau, Mass Save, Home Advisor, & More"
         alt="Ratings And Memberships"
+      />
+      <Breadcrumb
+        crumbs={crumbs}
+        crumbSeparator="/"
+        crumbLabel="Ratings and Memberships"
       />
       <Ratings__Body />
     </Layout>

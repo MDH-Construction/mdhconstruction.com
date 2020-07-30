@@ -8,7 +8,7 @@ const Blog__PostHeader = ({ className, hOne, author, date, timeToRead }) => {
     query Blog__PostHeaderQ {
       masthead: file(
         relativePath: {
-          eq: "images/mdh-construction-blog-general-contractor-plymouth-ma.jpg"
+          eq: "images/pages/blog/blog-pencils-pens-tools-mdh-construction-general-contractor-plymouth-massachusetts.jpg"
         }
       ) {
         childImageSharp {

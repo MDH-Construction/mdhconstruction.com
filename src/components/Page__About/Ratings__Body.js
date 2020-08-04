@@ -18,7 +18,7 @@ const Ratings__Body = ({ className }) => {
     <section className="section-no-margin-bottom" id="about-page-ratings">
       <Container>
         <Container className="pb-5">
-          <Row>
+          <Row className=" px-0 mx-0">
             <Col xs={12} md={6} className="mb-4">
               <ImgMdhTopRated className="drop-shadow" />
             </Col>
@@ -46,8 +46,8 @@ const Ratings__Body = ({ className }) => {
         </Container>
       </Container>
       <Container fluid className="px-0 mx-0">
-        <Row>
-          <Col xs={12} lg={6} className="bg-dark">
+        <Row className=" px-0 mx-0">
+          <Col xs={12} lg={6} className="bg-dark mx-0 px-0">
             <Container className="py-5">
               <h2 className="text-primary">Better Business Bureau</h2>
               <p className="text-white">
@@ -69,7 +69,7 @@ const Ratings__Body = ({ className }) => {
               </Row>
             </Container>
           </Col>
-          <Col xs={12} lg={6} className="bg-light">
+          <Col xs={12} lg={6} className="bg-light mx-0 px-0">
             <Container className="py-5">
               <h2>HomeAdvisor</h2>
               <p>
@@ -98,8 +98,8 @@ const Ratings__Body = ({ className }) => {
       </Container>
 
       <Container fluid className="px-0 mx-0">
-        <Row>
-          <Col xs={12} lg={6} className="bg-light">
+        <Row className=" px-0 mx-0">
+          <Col xs={12} lg={6} className="bg-light mx-0 px-0">
             <Container className="py-5">
               <h2>Angie's List</h2>
               <p>
@@ -115,7 +115,7 @@ const Ratings__Body = ({ className }) => {
               </Row>
             </Container>
           </Col>
-          <Col xs={12} lg={6} className="bg-dark">
+          <Col xs={12} lg={6} className="bg-dark mx-0 px-0">
             <Container className="py-5">
               <h2 className="text-primary">Mass Save</h2>
               <p className="text-white">

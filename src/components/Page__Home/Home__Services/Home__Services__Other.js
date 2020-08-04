@@ -5,7 +5,7 @@ import ImgGutterServices from '../../Images/Pages/Home/img-gutter-services';
 import ImgFullyLicensed from '../../Images/Logos/img-fully-licensed';
 import Button from '../../Button/Button';
 
-const Home__Services__Gutters = ({ className }) => {
+const Home__Services__Other = ({ className }) => {
   return (
     <section className="section-no-margin" id="home-gutters-section">
       <Container fluid className="px-0">
@@ -15,94 +15,93 @@ const Home__Services__Gutters = ({ className }) => {
           </Col>
           <Col className="py-3 py-lg-5 order-2 order-lg-2" xs={12} md={6}>
             <Container className="px-lg-5">
-              <h2>Your Gutter Installation Experts</h2>
+              <h2>Your Home Improvement Professionals</h2>
               <div className="text-center">
                 <ImgFullyLicensed className="mt-3 mb-5 drop-shadow" />
               </div>
               <p>
-                MDH Construction provides all your gutter services such as{' '}
+                MDH Construction offers all of your exterior & interior home
+                improvement services from{' '}
                 <Link to="/services" className="font-weight-bolder">
-                  gutter installation
+                  deck construction
                 </Link>
                 ,{' '}
                 <Link to="/services" className="font-weight-bolder">
-                  downspout installation
+                  window installation
                 </Link>
                 ,{' '}
                 <Link to="/services" className="font-weight-bolder">
-                  gutter cleaning
+                  door installation
                 </Link>
                 , and{' '}
                 <Link to="/services" className="font-weight-bolder">
-                  gutter repair
+                  roof repair
+                </Link>
+                , to{' '}
+                <Link to="/services" className="font-weight-bolder">
+                  flooring and tiling
+                </Link>
+                ,{' '}
+                <Link to="/services" className="font-weight-bolder">
+                  interior & exterior painting
+                </Link>
+                ,{' '}
+                <Link to="/services" className="font-weight-bolder">
+                  handyman services
+                </Link>
+                , and{' '}
+                <Link to="/services" className="font-weight-bolder">
+                  construction management
                 </Link>
                 .
               </p>
               <p>
-                Our team of experts will ensure that water is channeled away
-                from the foundation to preserve the structural integrity of your
-                residential home or commercial business.
+                We cover a large array of services, but we never subcontract
+                them out. This way, you'll know who you are dealing with and who
+                is actually doing the work.
               </p>
               <p>
-                We specialize in uniquely designed{' '}
-                <Link to="/seamless-gutters" className="font-weight-bolder">
-                  seamless gutters
-                </Link>
-                , which we create on-site to match the exact measurements of
-                your home. As the name suggests, these continuous rain gutters
-                have no seams, thus exponentially reducing the chance of leaks.
-                This makes them a very popular choice among home and business
-                owners.
+                If you have a home improvement project in mind, please feel free
+                to reach out to us anytime and we'll be glad to help. Our
+                experience will lead you in the right direction and make sure
+                the work gets done right the first time.
               </p>
             </Container>
           </Col>
         </Row>
         <Container className="checklist mt-4 my-lg-5 p-3 p-lg-3 justify-content-center align-items-center drop-shadow rounded">
-          <h3 className="mb-3">Our Gutter Services</h3>
+          <h3 className="mb-3">Our Home Improvement Services</h3>
           <hr className="divider pb-3" />
           <Row noGutters={true}>
             <Col xs={12} md={4}>
-              <p className="font-weight-bold">We Offer:</p>
+              <p className="font-weight-bold">Exterior Services:</p>
               <ul className="check mb-5">
-                <li>Gutter installation</li>
-                <li>Seamless gutter installation</li>
-                <li>Downspout installation</li>
-                <li>Gutter cleaning</li>
-                <li>Gutter repair</li>
+                <li>Deck & porch construction</li>
+                <li>Window & door installation</li>
+                <li>Roof & siding replacement & repair</li>
+                <li>Fencing & retaining wall installation</li>
+                <li>Exterior painting</li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
-              <p className="font-weight-bold">We Provide:</p>
+              <p className="font-weight-bold">Interior Services:</p>
               <ul className="check mb-5">
-                <li>
-                  Premium gutter materials such as{' '}
-                  <strong>[insert materials]</strong>
-                </li>
-                <li>
-                  Various <strong>[insert options for gutter services]</strong>
-                </li>
-                <li>
-                  Payment options such as{' '}
-                  <strong>[insert payment options]</strong>
-                </li>
-                <li>
-                  Massachusetts licensing & full-coverage liability insurance
-                </li>
+                <li>Door installation</li>
+                <li>Flooring & tiling installation</li>
+                <li>Interior painting</li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
-              <p className="font-weight-bold">We Deliver:</p>
+              <p className="font-weight-bold">Other Services:</p>
               <ul className="check mb-5">
-                <li>Clear communication</li>
-                <li>Accurate schedules & timelines</li>
-                <li>Competitive pricing</li>
-                <li>Beautiful design & curb appeal</li>
-                <li>100% satisfaction guaranteed</li>
+                <li>Debris removal, clean-out, haul-away</li>
+                <li>Handyman services</li>
+                <li>Construction management</li>
               </ul>
             </Col>
           </Row>
           <h4 className="bg-secondary p-3 text-white mb-0">
-            Common Gutter Installation Questions
+            Common Home Improvement Questions
           </h4>
           <Accordion>
             <Card className="accordion-animation">
@@ -110,7 +109,7 @@ const Home__Services__Gutters = ({ className }) => {
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <span className="accordionText">How much do gutters cost?</span>
+                <span className="accordionText">Question #1</span>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="0">
                 <Card.Body>
@@ -126,7 +125,7 @@ const Home__Services__Gutters = ({ className }) => {
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <span className="accordionText">How do you clean gutters?</span>
+                <span className="accordionText">Question #2</span>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="1">
                 <Card.Body>
@@ -142,7 +141,7 @@ const Home__Services__Gutters = ({ className }) => {
                 <span className="mr-3">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <span className="accordionText">Can you paint gutters?</span>
+                <span className="accordionText">Question #3</span>
               </Accordion.Toggle>
               <Accordion.Collapse eventKey="2">
                 <Card.Body>
@@ -161,7 +160,7 @@ const Home__Services__Gutters = ({ className }) => {
           className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
         >
           <i className="text-center text-secondary fas fa-4x fa-tools my-4"></i>
-          <h2>Are you interested in our gutter services?</h2>
+          <h2>Are you interested in our home improvement services?</h2>
           <p className="lead font-weight-bold">
             Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
           </p>
@@ -179,7 +178,7 @@ const Home__Services__Gutters = ({ className }) => {
               <div className="text-center text-lg-left mt-5 mb-4 ml-md-2">
                 <Button
                   btnlink="/contact-us"
-                  btnlabel="Get A Gutter Quote"
+                  btnlabel="Get A Free Quote"
                   btn={true}
                 />
               </div>
@@ -191,4 +190,4 @@ const Home__Services__Gutters = ({ className }) => {
   );
 };
 
-export default Home__Services__Gutters;
+export default Home__Services__Other;

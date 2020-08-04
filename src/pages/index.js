@@ -4,12 +4,13 @@ import SEO from '../components/seo';
 import Home__Banner from '../components/Page__Home/Home__Banner/Home__Banner';
 import Home__Trust from '../components/Page__Home/Home__Trust/Home__Trust';
 import Home__Company from '../components/Page__Home/Home__Company/Home__Company';
-import Home__Services__Roofing from '../components/Page__Home/Home__Services/Home__Services__Roofing';
-import Home__Services__Siding from '../components/Page__Home/Home__Services/Home__Services__Siding';
-import Home__Services__Gutters from '../components/Page__Home/Home__Services/Home__Services__Gutters';
-import Home__Services__Insulation from '../components/Page__Home/Home__Services/Home__Services__Insulation';
-import Home__Reviews from '../components/Page__Home/Home__Reviews/Home__Reviews';
+import Home__ReviewsLynne from '../components/Page__Home/Home__Reviews/Home__ReviewsLynne';
 import Home__Services__General from '../components/Page__Home/Home__Services/Home__Services__General';
+import Home__ReviewsJorg from '../components/Page__Home/Home__Reviews/Home__ReviewsJorg';
+import Home__Services__Gutters from '../components/Page__Home/Home__Services/Home__Services__Gutters';
+import Home__ReviewsInsulation from '../components/Page__Home/Home__Reviews/Home__ReviewsInsulation';
+import Home__Services__Insulation from '../components/Page__Home/Home__Services/Home__Services__Insulation';
+import Home__Services__Other from '../components/Page__Home/Home__Services/Home__Services__Other';
 
 const IndexPage = () => {
   return (
@@ -22,12 +23,14 @@ const IndexPage = () => {
       <Home__Banner className="bg-img-home" />
       <Home__Trust />
       <Home__Company />
-      <Home__Reviews id="home-reviews-section" />
+      <Home__ReviewsLynne />
       <Home__Services__General />
-      {/* <Home__Services__Roofing /> */}
-      <Home__Services__Siding />
+      <Home__ReviewsJorg />
       <Home__Services__Gutters />
+      <Home__ReviewsInsulation />
       <Home__Services__Insulation />
+      <Home__ReviewsInsulation />
+      <Home__Services__Other />
     </Layout>
   );
 };

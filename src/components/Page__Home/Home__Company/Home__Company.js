@@ -52,7 +52,7 @@ const Home__Company = ({ className }) => {
                 large frame-to-finish building jobs to small installation
                 projects.
               </p>
-              <Container className="checklist mt-5 p-3 p-lg-3 justify-content-center align-items-center rounded">
+              <Container className="checklist mt-5 p-3 justify-content-center align-items-center rounded">
                 <h3>Why We're Different</h3>
                 <ul className="check">
                   <li>
@@ -113,7 +113,7 @@ const Home__Company = ({ className }) => {
         </Row>
         <Container
           fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow border-top border-bottom border-light"
+          className="text-center mt-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
         >
           <ImgMdhLogo className="text-center my-4 no-drop-shadow" />
           <h2>Are you looking for a local construction company?</h2>
@@ -124,7 +124,7 @@ const Home__Company = ({ className }) => {
             <Col xs={12} md={6}>
               <div className="text-center text-lg-right mt-5 mr-md-2">
                 <Button
-                  btnlink="/services"
+                  btnlink="/about"
                   btnlabel="See More About Us"
                   btnsolid={false}
                 />

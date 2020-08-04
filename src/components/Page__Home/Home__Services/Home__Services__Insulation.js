@@ -8,54 +8,44 @@ import Button from '../../Button/Button';
 const Home__Services__Insulation = ({ className }) => {
   return (
     <section className="section-no-margin" id="home-insulation-section">
-      <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
+      <Container fluid className="px-0">
         <Row noGutters={true}>
-          <Col
-            className="mt-5 mt-lg-0 drop-shadow order-1 order-lg-1"
-            xs={12}
-            md={6}
-          >
+          <Col className="drop-shadow order-1 order-lg-2" xs={12} md={6}>
             <ImgMassSaveInsulationServices />
           </Col>
-          <Col className="py-3 pb-lg-5 order-2 order-lg-2" xs={12} md={6}>
+          <Col className="py-3 py-lg-5 order-2 order-lg-1" xs={12} md={6}>
             <Container className="px-lg-5">
-              <h2>Your Local Mass Save Insulation Contractor</h2>
+              <h2>Your Mass Save Insulation Contractor</h2>
               <div className="text-center">
                 <ImgMassSave className="mt-3 mb-5 drop-shadow" />
               </div>
               <p>
                 MDH Construction is proud to be a{' '}
-                <Link to="/mass-save" className="font-weight-bolder">
+                <Link to="/services" className="font-weight-bolder">
                   Mass Save Partner
                 </Link>{' '}
                 working with Massachusetts residential customers and business
                 owners to provide energy-efficient services such as{' '}
-                <Link to="/insulation" className="font-weight-bolder">
+                <Link to="/services" className="font-weight-bolder">
                   insulation installation
                 </Link>{' '}
                 and{' '}
-                <Link to="/weatherization" className="font-weight-bolder">
+                <Link to="/services" className="font-weight-bolder">
                   weatherization
                 </Link>
                 .
               </p>
               <p>
                 We offer various types of insulation, including{' '}
-                <Link to="/blown-in-insulation" className="font-weight-bolder">
+                <Link to="/services" className="font-weight-bolder">
                   blown-in insulation
                 </Link>
                 ,{' '}
-                <Link
-                  to="/reflective-insulation"
-                  className="font-weight-bolder"
-                >
+                <Link to="/services" className="font-weight-bolder">
                   reflective insulation
                 </Link>
                 , and{' '}
-                <Link
-                  to="/batt-and-rolled-insulation"
-                  className="font-weight-bolder"
-                >
+                <Link to="/services" className="font-weight-bolder">
                   batt and rolled insulation
                 </Link>
                 .
@@ -89,16 +79,30 @@ const Home__Services__Insulation = ({ className }) => {
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Provide:</p>
               <ul className="check mb-5">
-                <li>Premium materials</li>
-                <li>Various insulation types & styles</li>
-                <li>Testing & diagnostics</li>
+                <li>
+                  Premium insulation materials such as{' '}
+                  <strong>[insert materials]</strong>
+                </li>
+                <li>
+                  Various{' '}
+                  <strong>[insert options for insulation services]</strong>
+                </li>
+                <li>
+                  Payment options such as{' '}
+                  <strong>[insert payment options]</strong>
+                </li>
+                <li>
+                  Massachusetts licensing & full-coverage liability insurance
+                </li>
               </ul>
             </Col>
             <Col xs={12} md={4}>
               <p className="font-weight-bold">We Deliver:</p>
               <ul className="check mb-5">
-                <li>Reliable & durable insulation</li>
-                <li>Professional energy-efficiency</li>
+                <li>Clear communication</li>
+                <li>Accurate schedules & timelines</li>
+                <li>Competitive pricing</li>
+                <li>Beautiful design & curb appeal</li>
                 <li>100% satisfaction guaranteed</li>
               </ul>
             </Col>
@@ -166,7 +170,7 @@ const Home__Services__Insulation = ({ className }) => {
 
         <Container
           fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow border-top border-bottom border-secondary"
+          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
         >
           <i className="text-center text-secondary fas fa-4x fa-tools my-4"></i>
           <h2>Are you interested in our insulation services?</h2>
@@ -178,7 +182,7 @@ const Home__Services__Insulation = ({ className }) => {
               <div className="text-center text-lg-right mt-5 mr-md-2">
                 <Button
                   btnlink="/services"
-                  btnlabel="See More Insulation Info"
+                  btnlabel="See All Of Our Services"
                   btnsolid={false}
                 />
               </div>

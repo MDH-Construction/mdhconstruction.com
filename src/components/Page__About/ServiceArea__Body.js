@@ -6,11 +6,6 @@ const ServiceArea__Body = ({ className }) => {
   return (
     <section id="about-page">
       <Container>
-        <p className="lead text-center pb-5">
-          Centrally located on the coast of Massachusetts, MDH Construction
-          services the following Boston area, South Shore, and Cape Cod towns
-          (including all local villages):
-        </p>
         <Container className="bg-white border drop-shadow p-md-3 mt-5">
           <h3 className="bg-contact-bar p-3 text-white">
             <span className="drop-shadow">Plymouth County</span>

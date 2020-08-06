@@ -73,13 +73,13 @@ const BlogPage = ({ pageContext, location }) => {
         textLeftTwo="We've got answers!"
         textRight={
           <p>
-            Check back regularly for our blog posts on home improvement tips,
-            tricks, and information!
+            Check back regularly for our blog posts on{' '}
+            <strong>home improvement tips, tricks, and information</strong>!
             <br />
             <br />
-            We'll help answer common questions and show you how to do proper
-            installations, removals, and cleanings of everything from gutters,
-            insulation, new construction projects, and more.
+            We'll <strong>help answer common questions</strong> and show you how
+            to do proper installations, removals, and cleanings of everything
+            from gutters, insulation, new construction projects, and more.
           </p>
         }
       />

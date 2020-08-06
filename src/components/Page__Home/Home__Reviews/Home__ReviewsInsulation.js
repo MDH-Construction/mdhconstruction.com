@@ -9,7 +9,7 @@ const Home__ReviewsInsulation = ({ className }) => {
     <section className="py-5 section-no-margin" id="home-reviews-section">
       <h2 className="text-white">5-Star Insulation Reviews</h2>
       <hr className="divider" />
-      <Container className="p-1 p-lg-3 rounded my-5 drop-shadow">
+      <Container className="p-1 p-lg-3 rounded my-3 drop-shadow">
         <Row noGutters className="p-3">
           <Col
             xs={12}
@@ -35,7 +35,7 @@ const Home__ReviewsInsulation = ({ className }) => {
           </Col>
         </Row>
       </Container>
-      <Container className="text-center mt-5">
+      <Container className="text-center my-4">
         <Button
           btnlink="/testimonials"
           btnlabel="Read More 5-Star Reviews"

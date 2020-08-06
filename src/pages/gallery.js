@@ -159,15 +159,16 @@ const GalleryPage = ({ pageContext, location }) => {
         textLeftTwo="completed work!"
         textRight={
           <p>
-            We take great pride in our work and love to display our completed
-            construction projects!
+            We take great pride in our work and{' '}
+            <strong>love to display our completed construction projects</strong>
+            !
             <br />
             <br />
             Take a look at our gallery to get ideas for your next home
             improvement project or just to see our craftsmanship.
             <br />
             <br />
-            If you see anything you like, please let us know!
+            <strong>If you see anything you like, please let us know</strong>!
           </p>
         }
       />

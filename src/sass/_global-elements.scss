@@ -4,6 +4,9 @@
 
 ul.check {
   list-style-image: url(../images/check-mark-mdh-construction-plymouth-ma.png);
+  li {
+    padding-left: 0.3em;
+  }
 }
 
 hr.divider {

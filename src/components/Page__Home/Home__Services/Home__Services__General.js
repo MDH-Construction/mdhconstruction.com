@@ -64,7 +64,7 @@ const Home__Services__General = ({ className }) => {
         <Row className="mx-1 mx-lg-0">
           <Col>
             <Container className="checklist mt-4 my-lg-5 p-3 justify-content-center align-items-center drop-shadow rounded">
-              <h3 className="mb-3">Our General Contractor Services</h3>
+              <h3 className="mb-3">Our General Contracting Services</h3>
               <hr className="divider pb-3" />
               <Row noGutters={true}>
                 <Col xs={12} md={4}>

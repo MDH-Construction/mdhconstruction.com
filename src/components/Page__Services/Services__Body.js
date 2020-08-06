@@ -2,9 +2,15 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import Button from '../Button/Button';
-import ImgExteriorServices from '../Images/img-exterior-services';
-import ImgInteriorServices from '../Images/img-interior-services';
-import ImgInsulationServices from '../Images/img-insulation-services';
+import ImgServicesFullConstruction from '../Images/Pages/Services/img-services-full-construction';
+import ImgServicesNewAdditions from '../Images/Pages/Services/img-services-new-additions';
+import ImgServicesRenovations from '../Images/Pages/Services/img-services-renovations';
+import ImgServicesGutters from '../Images/Pages/Services/img-services-gutters';
+import ImgServicesInsulation from '../Images/Pages/Services/img-services-insulation';
+import ImgServicesWindows from '../Images/Pages/Services/img-services-windows';
+import ImgServicesRoofing from '../Images/Pages/Services/img-services-roofing';
+import ImgServicesDecks from '../Images/Pages/Services/img-services-decks';
+import ImgServicesPainting from '../Images/Pages/Services/img-services-painting';
 
 const Services__Body = ({ className }) => {
   return (
@@ -18,22 +24,22 @@ const Services__Body = ({ className }) => {
                 <br />
                 Construction
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgExteriorServices />
+              <Container className="p-0">
+                <ImgServicesFullConstruction />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Residential homes</li>
+                    <li>Commercial buildings</li>
+                    <li>Detached garages</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Full Construction Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
             <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
@@ -42,22 +48,22 @@ const Services__Body = ({ className }) => {
                 <br />
                 Additions
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgExteriorServices />
+              <Container className="p-0">
+                <ImgServicesNewAdditions />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Rooms, living spaces, attics</li>
+                    <li>Additional floors</li>
+                    <li>Attached garages</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our New Additions Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
             <Col className="bg-white mx-3 px-0 drop-shadow rounded">
@@ -65,22 +71,22 @@ const Services__Body = ({ className }) => {
                 Renovations
                 <br />& Remodeling
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgInteriorServices />
+              <Container className="p-0">
+                <ImgServicesRenovations />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Large interior renovations</li>
+                    <li>Kitchens, bathrooms, basements</li>
+                    <li>Custom trim & molding</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Renovation & Remodeling Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
           </Row>
@@ -91,22 +97,22 @@ const Services__Body = ({ className }) => {
                 Gutters &<br />
                 Downspouts
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgExteriorServices />
+              <Container className="p-0">
+                <ImgServicesGutters />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Gutter installation, cleaning, repair</li>
+                    <li>Seamless gutter installation</li>
+                    <li>Downspout installation</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Gutter & Downspout Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
             <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
@@ -114,22 +120,23 @@ const Services__Body = ({ className }) => {
                 Insulation &<br />
                 Weatherization
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgInsulationServices />
+              <Container className="p-0">
+                <ImgServicesInsulation />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Mass Save insulation program</li>
+                    <li>Batt & rolled, reflective, blown-in</li>
+                    <li>Air sealing, weather stripping</li>
+                    <li>Thermal imaging, blower door diagnostics</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Insulation & Weatherization Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
             <Col className="bg-white mx-3 px-0 drop-shadow rounded">
@@ -137,22 +144,23 @@ const Services__Body = ({ className }) => {
                 Windows
                 <br />& Doors
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgExteriorServices />
+              <Container className="p-0">
+                <ImgServicesWindows />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>New window installation</li>
+                    <li>Replacement window installation</li>
+                    <li>Interior door installation</li>
+                    <li>Exterior door installation</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Window & Door Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
           </Row>
@@ -163,22 +171,23 @@ const Services__Body = ({ className }) => {
                 Roofing
                 <br />& Siding
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgExteriorServices />
+              <Container className="p-0">
+                <ImgServicesRoofing />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Roof installation, replacement, repair</li>
+                    <li>Asphalt & wood shingles</li>
+                    <li>Siding installation, replacement, repair</li>
+                    <li>Vinyl, wood, fiber-cement siding</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Roofing & Siding Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
             <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
@@ -187,22 +196,23 @@ const Services__Body = ({ className }) => {
                 <br />
                 Living
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgExteriorServices />
+              <Container className="p-0">
+                <ImgServicesDecks />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Deck construction</li>
+                    <li>Porch construction</li>
+                    <li>Fencing installation</li>
+                    <li>Retainer wall installation</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Outdoor Living Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
             <Col className="bg-white mx-3 px-0 drop-shadow rounded">
@@ -211,22 +221,23 @@ const Services__Body = ({ className }) => {
                 <br />
                 Services
               </h2>
-              <Container className="pt-0 pb-3 px-0">
-                <ImgInteriorServices />
+              <Container className="p-0">
+                <ImgServicesPainting />
                 <Container className="container-text px-3">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                    nostrum libero repudiandae quia voluptatibus rem asperiores
-                    doloribus, quam.
-                  </p>
+                  <ul className="check pl-4">
+                    <li>Construction management</li>
+                    <li>Interior and exterior painting</li>
+                    <li>Debris removal, clean out, haul away</li>
+                    <li>Handyman services</li>
+                  </ul>
                 </Container>
-                <Container className="text-center mb-4">
+                {/* <Container className="text-center mb-4">
                   <Button
                     btnlink="/services"
                     btnlabel="See Our Other Home & Business Services"
                     btn={true}
                   />
-                </Container>
+                </Container> */}
               </Container>
             </Col>
           </Row>

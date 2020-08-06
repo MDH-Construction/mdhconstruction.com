@@ -13,7 +13,6 @@ const Testimonials__Body = ({ className }) => {
       <Container>
         <Container className="px-0 py-5 py-lg-5">
           <h2 className="display-4">What People Are Saying...</h2>
-
           <Container className="p-1 p-lg-3 bg-secondary rounded my-5 drop-shadow">
             <Row noGutters className="p-3">
               <Col xs={12} lg={4} className="order-1 order-lg-1">

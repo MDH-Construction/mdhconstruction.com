@@ -16,7 +16,7 @@ const Body__Banner = ({
       className="text-container lead bg-white clip-triangle-down px-0 mb-5"
     >
       <Row noGutters>
-        <Col lg={6}>
+        <Col lg={6} className="d-none d-lg-flex flex-column">
           <BackgroundImage
             Tag="div"
             className="h-100 body-banner-img-gradient"

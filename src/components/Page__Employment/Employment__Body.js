@@ -11,8 +11,8 @@ const Employment__Body = ({ className }) => {
       <Container fluid>
         <Row className="mb-5 pb-5">
           <Col lg={6} className="mx-auto">
-            <Container className="text-center mb-4 p-lg-5">
-              <ImgMDHLogoFluid className="no-drop-shadow mx-3 mx-lg-5" />
+            <Container className="text-center p-lg-5">
+              <ImgMDHLogoFluid className="no-drop-shadow w-50 mx-auto" />
             </Container>
             <Container className="checklist p-3 p-lg-4 mb-5 justify-content-center align-items-center">
               <h3>We Offer Our Employees:</h3>
@@ -34,8 +34,6 @@ const Employment__Body = ({ className }) => {
             </Container>
           </Col>
           <Col className="p-5" xs={12} lg={6}>
-            <h2 className="drop-shadow mb-2">Indeed Featured Review</h2>
-            <hr className="divider mb-5" />
             <ImgEmploymentReview className="drop-shadow rounded border" />
           </Col>
         </Row>

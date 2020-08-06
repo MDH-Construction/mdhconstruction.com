@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
-import ImgGutterServices from '../../Images/Pages/Home/img-gutter-services';
+import ImgWindowReplacement from '../../Images/Pages/Home/img-window-replacement';
 import ImgFullyLicensed from '../../Images/Logos/img-fully-licensed';
 import Button from '../../Button/Button';
 
@@ -11,7 +11,7 @@ const Home__Services__Other = ({ className }) => {
       <Container fluid className="px-0">
         <Row noGutters={true}>
           <Col className="drop-shadow order-1 order-lg-1" xs={12} md={6}>
-            <ImgGutterServices />
+            <ImgWindowReplacement />
           </Col>
           <Col className="py-3 py-lg-5 order-2 order-lg-2" xs={12} md={6}>
             <Container className="px-lg-5">
@@ -94,7 +94,7 @@ const Home__Services__Other = ({ className }) => {
             <Col xs={12} md={4}>
               <p className="font-weight-bold">Other Services:</p>
               <ul className="check mb-5">
-                <li>Debris removal, clean-out, haul-away</li>
+                <li>Debris removal, clean out, haul away</li>
                 <li>Handyman services</li>
                 <li>Construction management</li>
               </ul>

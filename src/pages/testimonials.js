@@ -70,18 +70,22 @@ const TestimonialsPage = ({ pageContext, location }) => {
         className=""
         fluid={imageDataBodyBanner}
         alt="MDH Construction Services"
-        textLeftOne="Check out our"
+        textLeftOne="Read our"
         textLeftTwo="5-star reviews!"
         textRight={
           <p>
-            At MDH Construction we establish lasting relationships with our
-            clients because of our high-quality and reliable service. When you
-            work with us you’ll become a customer for life, because superior
-            craftsmanship and unmatched customer care are our top priorities.
+            At MDH Construction we establish{' '}
+            <strong>lasting relationships with our clients</strong> because of
+            our high-quality and reliable service. When you work with us you’ll
+            become a customer for life, because superior craftsmanship and
+            unmatched customer care are our top priorities.
             <br />
             <br />
-            Supported by our Better Business Bureau A+ rating — as well as
-            customer reviews on Google, Facebook, HomeAdvisor, and Angie's List
+            Supported by our Better Business Bureau A+ rating —{' '}
+            <strong>
+              as well as 5-star customer reviews on Google, Facebook,
+              HomeAdvisor, and Angie's List
+            </strong>{' '}
             — MDH Construction is consistently a top-rated contractor of
             superior home improvement, remodeling, and commercial construction
             services.

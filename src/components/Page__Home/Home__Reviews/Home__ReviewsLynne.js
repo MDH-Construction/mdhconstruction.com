@@ -25,7 +25,7 @@ const Home__ReviewsLynne = ({ className }) => {
           </Col>
         </Row>
       </Container>
-      <Container className="text-center mt-5">
+      <Container className="text-center my-4">
         <Button
           btnlink="/testimonials"
           btnlabel="Read More 5-Star Reviews"

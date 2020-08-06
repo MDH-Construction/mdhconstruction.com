@@ -70,19 +70,20 @@ const EmploymentPage = ({ pageContext, location }) => {
         className=""
         fluid={imageDataBodyBanner}
         alt="MDH Construction Services"
-        textLeftOne="We Are"
-        textLeftTwo="Hiring!"
+        textLeftOne="We are hiring."
+        textLeftTwo="Call us today!"
         textRight={
           <p>
-            At MDH Construction we know that a company is only as good its
-            people. That is why we've built a team of tradesmen who care deeply
-            about the quality of their work and the clients we serve.
+            At MDH Construction we know that{' '}
+            <strong>a company is only as good its people</strong>. That is why
+            we've built a team of tradesmen who care deeply about the quality of
+            their work and the clients we serve.
             <br />
             <br />
             If you have a set of skills that relate to the home improvement,
             remodeling, or commercial construction industries — and you believe
-            in quality workmanship and stellar customer care — we want to hear
-            from you!
+            in quality workmanship and stellar customer care —{' '}
+            <strong>we want to hear from you</strong>!
             <br />
             <br />
             Please send your resume to{' '}

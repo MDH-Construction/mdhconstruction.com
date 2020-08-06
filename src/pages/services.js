@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
-import Services__Body from '../components/Page__Services/Services__Body';
 import Body__Banner from '../components/Layout/Body/Body__Banner';
+import Services__Body from '../components/Page__Services/Services__Body';
 
 const ServicesPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
@@ -73,16 +73,21 @@ const ServicesPage = ({ pageContext, location }) => {
         textLeftTwo="Give us a call!"
         textRight={
           <p>
-            MDH Construction has the knowledge and expertise to handle any home
-            improvement, remodeling, or commercial construction project.
+            MDH Construction has the knowledge and expertise to handle any{' '}
+            <strong>
+              home improvement, remodeling, or commercial construction project
+            </strong>
+            .
             <br />
             <br />
             Whether the job is large or small, we take great pride in our
             craftsmanship and want to help you meet your goals.
             <br />
             <br />
-            Our highly skilled professionals can assist you with a broad range
-            of services, including:
+            Our <strong>
+              highly skilled professionals can assist you
+            </strong>{' '}
+            with a broad range of services, including:
           </p>
         }
       />

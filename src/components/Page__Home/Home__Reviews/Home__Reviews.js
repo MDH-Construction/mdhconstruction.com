@@ -1,12 +1,39 @@
 import React from 'react';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Container, Row, Col, Carousel, CarouselItem } from 'react-bootstrap';
+import BackgroundImage from 'gatsby-background-image';
 import ImgJorg from '../../Images/Pages/Testimonials/img-jorg-steinhage';
 import ImgFranklin from '../../Images/Pages/Testimonials/img-franklin-t';
 import Button from '../../Button/Button';
 
 const Home__Reviews = ({ className }) => {
+  const data = useStaticQuery(graphql`
+    query Home__ReviewsQ {
+      masthead: file(
+        relativePath: {
+          eq: "images/pages/home/asphalt-shingles-siding-roofing-mdh-construction-plymouth-massachusetts.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
+
+  const imageData = data.masthead.childImageSharp.fluid;
+
   return (
-    <section className="py-5 section-no-margin" id="home-reviews-section">
+    <BackgroundImage
+      Tag="section"
+      className="py-5 section-no-margin"
+      fluid={imageData}
+      backgroundColor={`#040e18`}
+      alt="John Grattan SEO & Web Design homepage background section - computer screen with SEO stats"
+    >
+      {/* <section className="py-5 section-no-margin" id="home-reviews-section"> */}
       <Container className="py-5 px-2 py-lg-5">
         <Carousel
           interval={null}
@@ -71,7 +98,8 @@ const Home__Reviews = ({ className }) => {
           <Button btnlink="/" btnlabel="Read More 5-Star Reviews" btn={true} />
         </div>
       </Container>
-    </section>
+      {/* </section> */}
+    </BackgroundImage>
   );
 };
 

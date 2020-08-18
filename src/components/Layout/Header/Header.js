@@ -24,7 +24,7 @@ const Header = ({ className, fluid, hOne, hTwo, alt, btnlabel }) => {
                 {hTwo}
               </h2>
               <Container className="text-center mt-5">
-                <Button btnlink="/" btnlabel={btnlabel} btn={true} />
+                <Button btnlink="/contact-us" btnlabel={btnlabel} btn={true} />
               </Container>
             </Col>
           </Row>

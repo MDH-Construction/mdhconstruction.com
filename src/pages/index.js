@@ -11,6 +11,7 @@ import Home__Services__Gutters from '../components/Page__Home/Home__Services/Hom
 import Home__ReviewsInsulation from '../components/Page__Home/Home__Reviews/Home__ReviewsInsulation';
 import Home__Services__Insulation from '../components/Page__Home/Home__Services/Home__Services__Insulation';
 import Home__Services__Other from '../components/Page__Home/Home__Services/Home__Services__Other';
+import Home__ServicesCTA from '../components/Page__Home/Home__ServicesCTA/Home__ServicesCTA';
 
 const IndexPage = () => {
   return (
@@ -25,12 +26,32 @@ const IndexPage = () => {
       <Home__Company />
       <Home__ReviewsLynne />
       <Home__Services__General />
+      <Home__ServicesCTA
+        hTwo="Are You Interested In Our General Contracting Services?"
+        btnOutlineLabel="See All Services"
+        btnSolidLabel="Get A Free Quote"
+      />
       <Home__ReviewsJorg />
       <Home__Services__Gutters />
+      <Home__ServicesCTA
+        hTwo="Are You Interested In Our Gutter Services?"
+        btnOutlineLabel="See All Services"
+        btnSolidLabel="Get A Gutter Quote"
+      />
       <Home__ReviewsInsulation />
       <Home__Services__Insulation />
+      <Home__ServicesCTA
+        hTwo="Are You Interested In Our Insulation Services?"
+        btnOutlineLabel="See All Of Our Services"
+        btnSolidLabel="Get An Insulation Quote"
+      />
       <Home__ReviewsInsulation />
       <Home__Services__Other />
+      <Home__ServicesCTA
+        hTwo="Are You Interested In Our Home Improvement Services?"
+        btnOutlineLabel="See All Services"
+        btnSolidLabel="Get A Free Quote"
+      />
     </Layout>
   );
 };

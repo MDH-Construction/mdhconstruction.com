@@ -12,7 +12,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
     query WhoWeArePageQ {
       masthead: file(
         relativePath: {
-          eq: "images/about-mdh-construction-general-contractor-plymouth-ma.jpg"
+          eq: "images/pages/about/who-we-are/who-we-are-general-contractor-mdh-construction-plymouth-massachusetts.jpg"
         }
       ) {
         childImageSharp {
@@ -67,17 +67,21 @@ const WhoWeArePage = ({ pageContext, location }) => {
         textLeftTwo="Construction Company"
         textRight={
           <p>
-            MDH Construction is a full-service, licensed and insured, general
-            contractor and construction company located in Plymouth,
-            Massachusetts.
+            MDH Construction is a{' '}
+            <strong>
+              full-service, licensed and insured, general contractor and
+              construction company
+            </strong>{' '}
+            located in Plymouth, Massachusetts.
             <br />
             <br />
-            We offer a wide range of services in the areas of home improvement,
-            remodeling, and commercial construction.
+            We are a <strong>family owned and operated business</strong> with a
+            wide range of services including of home improvement, remodeling,
+            and commercial construction.
             <br />
             <br />
-            Our service area covers much of eastern Massachusetts, including the
-            Boston area, South Shore, and Cape Cod.
+            Our service area covers much of eastern Massachusetts, including the{' '}
+            <strong>Boston area, South Shore, and Cape Cod</strong>.
           </p>
         }
       />

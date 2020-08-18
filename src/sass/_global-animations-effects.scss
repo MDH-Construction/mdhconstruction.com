@@ -8,6 +8,16 @@
   }
 }
 
+.scale-up-sm {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $primary !important;
+    transform: scale(1.1);
+  }
+}
+
 .no-drop-shadow {
   filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0)) !important;
   & img {

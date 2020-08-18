@@ -68,6 +68,46 @@ body {
   }
 }
 
+.bg-img-dark-gradient {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out(#000000, 0.4)} 0%,
+    #{fade-out(#000000, 0.4)} 100%
+  ) !important;
+  background-position: center !important;
+  background-repeat: repeat !important;
+  background-attachment: scroll !important;
+  background-size: inherit !important;
+  opacity: 1 !important;
+
+  @include media-breakpoint-up(md) {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
+}
+
+.bg-img-dark-gradient-20 {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out(#000000, 0.8)} 0%,
+    #{fade-out(#000000, 0.8)} 100%
+  ) !important;
+  background-position: center !important;
+  background-repeat: repeat !important;
+  background-attachment: scroll !important;
+  background-size: inherit !important;
+  opacity: 1 !important;
+
+  @include media-breakpoint-up(md) {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
+}
+
 .bg-img-page-top {
   height: 50%;
   padding-top: 10rem;

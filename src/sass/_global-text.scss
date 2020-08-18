@@ -72,6 +72,12 @@ p {
   }
 }
 
+.hover-primary > a {
+  &:hover {
+    color: $primary !important;
+  }
+}
+
 .fa-mobile-4x {
   font-size: 3em;
 }

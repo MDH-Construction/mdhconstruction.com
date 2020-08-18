@@ -7,18 +7,17 @@ import Button from '../../Button/Button';
 
 const Home__Services__Gutters = ({ className }) => {
   return (
-    <section className="section-no-margin" id="home-gutters-section">
+    <section className="section-no-margin-bottom" id="home-gutters-section">
       <Container fluid className="px-0">
-        <Row noGutters={true}>
-          <Col className="drop-shadow order-1 order-lg-1" xs={12} md={6}>
+        <Row noGutters>
+          <Col className="drop-shadow order-1 order-lg-2" xs={12} md={6}>
             <ImgGutterServices />
           </Col>
-          <Col className="py-3 py-lg-5 order-2 order-lg-2" xs={12} md={6}>
+          <Col className="order-2 order-lg-1" xs={12} md={6}>
             <Container className="px-lg-5">
-              <h2>Your Gutter Installation Experts</h2>
-              <div className="text-center">
-                <ImgFullyLicensed className="mt-3 mb-5 drop-shadow" />
-              </div>
+              <h2 className="display-4 font-weight-bold">
+                Your Gutter Installation Experts
+              </h2>
               <p>
                 MDH Construction provides all your gutter services such as{' '}
                 <Link to="/services" className="font-weight-bolder">
@@ -57,7 +56,7 @@ const Home__Services__Gutters = ({ className }) => {
             </Container>
           </Col>
         </Row>
-        <Container className="checklist mt-4 my-lg-5 p-3 p-lg-3 justify-content-center align-items-center drop-shadow rounded">
+        {/* <Container className="checklist mt-4 my-lg-5 p-3 p-lg-3 justify-content-center align-items-center drop-shadow rounded">
           <h3 className="mb-3">Our Gutter Services</h3>
           <hr className="divider pb-3" />
           <Row noGutters={true}>
@@ -154,38 +153,7 @@ const Home__Services__Gutters = ({ className }) => {
               </Accordion.Collapse>
             </Card>
           </Accordion>
-        </Container>
-
-        <Container
-          fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
-        >
-          <i className="text-center text-secondary fas fa-4x fa-tools my-4"></i>
-          <h2>Are you interested in our gutter services?</h2>
-          <p className="lead font-weight-bold">
-            Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
-          </p>
-          <Row noGutters={true}>
-            <Col xs={12} md={6}>
-              <div className="text-center text-lg-right mt-5 mr-md-2">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See All Services"
-                  btnsolid={false}
-                />
-              </div>
-            </Col>
-            <Col xs={12} md={6}>
-              <div className="text-center text-lg-left mt-5 mb-4 ml-md-2">
-                <Button
-                  btnlink="/contact-us"
-                  btnlabel="Get A Gutter Quote"
-                  btn={true}
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        </Container> */}
       </Container>
     </section>
   );

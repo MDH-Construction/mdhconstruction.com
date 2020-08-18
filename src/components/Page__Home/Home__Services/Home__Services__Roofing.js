@@ -56,7 +56,7 @@ const Home__Services__Roofing = ({ className }) => {
             <ImgRoofingServices />
           </Col>
         </Row>
-        <Container className="checklist mt-4 my-lg-5 p-3 p-lg-3 justify-content-center align-items-center drop-shadow rounded">
+        {/* <Container className="checklist mt-4 my-lg-5 p-3 p-lg-3 justify-content-center align-items-center drop-shadow rounded">
           <h3 className="mb-3">Our Roofing Services</h3>
           <hr className="divider pb-3" />
           <Row noGutters={true}>
@@ -145,38 +145,7 @@ const Home__Services__Roofing = ({ className }) => {
               </Accordion.Collapse>
             </Card>
           </Accordion>
-        </Container>
-
-        <Container
-          fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow border-top border-bottom border-secondary"
-        >
-          <i className="text-center text-secondary fas fa-4x fa-tools my-4"></i>
-          <h2>Are you interested in our roofing services?</h2>
-          <p className="lead font-weight-bold">
-            Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
-          </p>
-          <Row noGutters={true}>
-            <Col xs={12} md={6}>
-              <div className="text-center text-lg-right mt-5 mr-md-2">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See More Roofing Info"
-                  btnsolid={false}
-                />
-              </div>
-            </Col>
-            <Col xs={12} md={6}>
-              <div className="text-center text-lg-left mt-5 mb-4 ml-md-2">
-                <Button
-                  btnlink="/contact-us"
-                  btnlabel="Get A Roofing Quote"
-                  btn={true}
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        </Container> */}
       </Container>
     </section>
   );

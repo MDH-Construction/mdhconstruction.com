@@ -7,18 +7,17 @@ import Button from '../../Button/Button';
 
 const Home__Services__General = ({ className }) => {
   return (
-    <section className="section-no-margin" id="home-general-section">
+    <section className="section-no-margin-bottom" id="home-general-section">
       <Container fluid className="px-0">
-        <Row noGutters={true}>
-          <Col className="drop-shadow order-1 order-lg-2" xs={12} md={6}>
+        <Row noGutters>
+          <Col className="drop-shadow order-1 order-lg-1" xs={12} md={6}>
             <ImgGeneralServices />
           </Col>
-          <Col className="py-3 py-lg-5 order-2 order-lg-1" xs={12} md={6}>
+          <Col className="order-2 order-lg-2" xs={12} md={6}>
             <Container className="px-lg-5">
-              <h2>Your Local General Contractor</h2>
-              <div className="text-center">
-                <ImgFullyLicensed className="mt-3 mb-5 drop-shadow" />
-              </div>
+              <h2 className="display-4 font-weight-bold">
+                Your Local General Contractor
+              </h2>
               <p>
                 MDH Construction delivers affordable, high-quality general
                 contractor services such as{' '}
@@ -61,7 +60,8 @@ const Home__Services__General = ({ className }) => {
             </Container>
           </Col>
         </Row>
-        <Row className="mx-1 mx-lg-0">
+
+        {/* <Row className="mx-1 mx-lg-0">
           <Col>
             <Container className="checklist mt-4 my-lg-5 p-3 justify-content-center align-items-center drop-shadow rounded">
               <h3 className="mb-3">Our General Contracting Services</h3>
@@ -174,38 +174,7 @@ const Home__Services__General = ({ className }) => {
               </Accordion>
             </Container>
           </Col>
-        </Row>
-
-        <Container
-          fluid
-          className="text-center my-4 my-lg-0 px-lg-0 py-5 bg-white drop-shadow"
-        >
-          <i className="text-center text-secondary fas fa-4x fa-tools mb-4"></i>
-          <h2>Are you interested in our general contracting services?</h2>
-          <p className="lead font-weight-bold">
-            Call us today at <a href="tel:+17742696002">(774) 269-6002</a> or...
-          </p>
-          <Row noGutters={true}>
-            <Col xs={12} md={6}>
-              <div className="text-center text-lg-right mt-5 mr-md-2">
-                <Button
-                  btnlink="/services"
-                  btnlabel="See All Services"
-                  btnsolid={false}
-                />
-              </div>
-            </Col>
-            <Col xs={12} md={6}>
-              <div className="text-center text-lg-left mt-5 ml-md-2">
-                <Button
-                  btnlink="/contact-us"
-                  btnlabel="Get A Free Quote"
-                  btn={true}
-                />
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        </Row> */}
       </Container>
     </section>
   );

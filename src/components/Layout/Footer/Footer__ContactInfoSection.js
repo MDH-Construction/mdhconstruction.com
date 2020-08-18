@@ -1,16 +1,41 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
+import BackgroundImage from 'gatsby-background-image';
 
 const Footer__ContactInfoSection = () => {
+  const data = useStaticQuery(graphql`
+    query Footer__ContactInfoSectionQ {
+      masthead: file(
+        relativePath: {
+          eq: "images/pages/home/wood-shingles-siding-roofing-mdh-construction-plymouth-massachusetts.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `);
+
+  const imageData = data.masthead.childImageSharp.fluid;
+
   return (
-    <section className="footer-contact-info-section py-0 pt-5 py-lg-5 section-no-margin">
+    <BackgroundImage
+      Tag="section"
+      className="footer-contact-info-section py-0 pt-5 py-lg-5 section-no-margin"
+      fluid={imageData}
+      backgroundColor={`#040e18`}
+      alt="John Grattan SEO & Web Design homepage background section - computer screen with SEO stats"
+    >
       <Container className="p-5">
-        <h2 className="text-white mb-5 drop-shadow">
+        <h2 className="display-4 font-weight-bold text-white mb-5 drop-shadow-darker">
           Getting Started Is Easy!
         </h2>
         <Row className="justify-content-center">
-          <Col className="mb-5 mb-lg-0" xs={12} md={4}>
+          <Col className="mb-5 mb-lg-0 drop-shadow-darker" xs={12} md={4}>
             <Container className="bg-primary p-3 text-center text-white">
               <span className="font-weight-bold lead drop-shadow">Step 1:</span>
             </Container>
@@ -34,7 +59,7 @@ const Footer__ContactInfoSection = () => {
               </p>
             </Container>
           </Col>
-          <Col className="mb-5 mb-lg-0" xs={12} md={4}>
+          <Col className="mb-5 mb-lg-0 drop-shadow-darker" xs={12} md={4}>
             <Container className="bg-primary p-3 text-center text-white">
               <span className="font-weight-bold lead drop-shadow">Step 2:</span>
             </Container>
@@ -49,7 +74,7 @@ const Footer__ContactInfoSection = () => {
               </p>
             </Container>
           </Col>
-          <Col className="mb-5 mb-lg-0" xs={12} md={4}>
+          <Col className="mb-5 mb-lg-0 drop-shadow-darker" xs={12} md={4}>
             <Container className="bg-primary p-3 text-center text-white">
               <span className="font-weight-bold lead drop-shadow">Step 3:</span>
             </Container>
@@ -65,7 +90,7 @@ const Footer__ContactInfoSection = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </BackgroundImage>
   );
 };
 

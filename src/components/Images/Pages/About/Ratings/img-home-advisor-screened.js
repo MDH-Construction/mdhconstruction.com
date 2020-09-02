@@ -12,7 +12,7 @@ const ImgHomeAdvisorScreened = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, height: 125) {
+          fixed(quality: 90, height: 125) {
             ...GatsbyImageSharpFixed
           }
         }

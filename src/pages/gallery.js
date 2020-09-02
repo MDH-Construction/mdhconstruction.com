@@ -133,7 +133,7 @@ const GalleryPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Gallery | Licensed General Contractor from Plymouth, MA"
+        title="Wow! View Our Completed Construction Projects | Plymouth, MA"
         description="Gallery | Licensed General Contractor from Plymouth, MA"
         canonicalLink="https://www.mdhconstruction.com/gallery/"
       />
@@ -174,19 +174,19 @@ const GalleryPage = ({ pageContext, location }) => {
       />
       <section className="section-container" id="gallery-page">
         <Container className="mb-5 pb-5">
-          <h2>Before & After</h2>
+          <h2 className="display-4 font-weight-bold">Before & After</h2>
           <Gallery images={beforeAfterImages} />
         </Container>
         <Container className="mb-5 pb-5">
-          <h2>Deck Construction</h2>
+          <h2 className="display-4 font-weight-bold">Deck Construction</h2>
           <Gallery images={deckImages} />
         </Container>
         <Container className="mb-5 pb-5">
-          <h2>Kitchen Remodeling</h2>
+          <h2 className="display-4 font-weight-bold">Kitchen Remodeling</h2>
           <Gallery images={kitchenImages} />
         </Container>
         <Container className="mb-5">
-          <h2>Bathroom Remodeling</h2>
+          <h2 className="display-4 font-weight-bold">Bathroom Remodeling</h2>
           <Gallery images={bathroomImages} />
         </Container>
       </section>

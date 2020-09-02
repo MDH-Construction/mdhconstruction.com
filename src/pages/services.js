@@ -47,7 +47,7 @@ const ServicesPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Services | Licensed General Contractor from Plymouth, MA"
+        title="Services - Decks, Gutters, Insulation, Remodel | Plymouth, MA"
         description="Services | Licensed General Contractor from Plymouth, MA"
         canonicalLink="https://www.mdhconstruction.com/services/"
       />

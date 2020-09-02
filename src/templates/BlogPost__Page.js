@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Img from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Helmet from 'react-helmet';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -75,21 +76,26 @@ const BlogPostTemplate = ({ data }) => {
         date={post.frontmatter.date}
         timeToRead={post.timeToRead}
       />
-      <Container className="mt-5">
-        <div className="drop-shadow p-3 mb-5 bg-white rounded">
-          <Link className="font-weight-bold" to="/">
-            Home
-          </Link>
-          <span className="mx-3 text-secondary">/</span>
-          <Link className="font-weight-bold" to="/blog">
-            Blog
-          </Link>
-          <span className="mx-3 text-secondary">/</span>
+      <Container
+        fluid
+        className="drop-shadow text-center p-3 mb-5 bg-breadcrumb-bar"
+      >
+        <Link to="/">
+          <span className="breadcrumb__link">Home</span>
+        </Link>
+        <span className="mx-2 text-dark">/</span>
+        <Link to="/blog">
+          <span className="breadcrumb__link">Blog</span>
+        </Link>
+        <span className="mx-2 text-dark">/</span>
 
-          <span className="text-secondary">{post.frontmatter.title}</span>
-        </div>
+        <span className="breadcrumb__link__active">
+          {post.frontmatter.title}
+        </span>
+      </Container>
+      <Container className="mt-5">
         <Row className="mx-0 px-0 mb-5 mb-lg-0 container justify-content-center">
-          <Col lg={9} className="px-0 pr-lg-5">
+          <Col lg={9} className="px-0 pr-lg-5 mb-5">
             <Img
               className="container mb-5 drop-shadow-dark rounded"
               fluid={post.frontmatter.image.childImageSharp.fluid}
@@ -101,8 +107,9 @@ const BlogPostTemplate = ({ data }) => {
             <p className="text-dark font-weight-bold text-center mb-4">
               Share this article!
             </p>
-            <Row className="justify-content-around mb-5">
-              <Col className="text-center" xs={12} md={8} lg={12}>
+            <Row noGutters className="justify-content-between mb-5 text-center">
+              <Col xs={3}>
+                {' '}
                 <FacebookShareButton
                   url={post.frontmatter.url}
                   size={32}
@@ -114,6 +121,9 @@ const BlogPostTemplate = ({ data }) => {
                     round={true}
                   />
                 </FacebookShareButton>
+              </Col>
+              <Col xs={3}>
+                {' '}
                 <TwitterShareButton
                   url={post.frontmatter.url}
                   size={32}
@@ -125,6 +135,9 @@ const BlogPostTemplate = ({ data }) => {
                     round={true}
                   />
                 </TwitterShareButton>
+              </Col>
+              <Col xs={3}>
+                {' '}
                 <LinkedinShareButton
                   url={post.frontmatter.url}
                   size={32}
@@ -136,6 +149,9 @@ const BlogPostTemplate = ({ data }) => {
                     round={true}
                   />
                 </LinkedinShareButton>
+              </Col>
+              <Col xs={3}>
+                {' '}
                 <EmailShareButton
                   url={post.frontmatter.url}
                   size={32}
@@ -157,23 +173,34 @@ const BlogPostTemplate = ({ data }) => {
             </Col>
             <div className="text-center text-dark mt-3">
               <strong className="">{post.frontmatter.author}</strong>
-              <small className="d-block mt-0">[NEED JOB TITLE]</small>
+              <small className="d-block mt-0">Owner</small>
             </div>
             <hr className="light" />
             <p className="text-left text-dark">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
-              eius minima inventore sunt, omnis quidem quod. Eveniet odio
-              officiis id modi fugit tempora ab unde neque sapiente debitis,
-              harum accusantium.
+              Michael Maher is the owner of MDH Construction and currently
+              resides in Plymouth, MA.
             </p>
             <p className="text-left text-dark">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A,
-              mollitia tenetur beatae possimus, dolorum dolores non distinctio
-              libero tempora provident totam? Alias distinctio sed accusamus rem
-              minus animi explicabo reprehenderit?
+              He is a licensed home improvement contractor and construction
+              supervisor.
+            </p>
+            <p className="text-left text-dark">
+              Michael specializes in home remodeling, seamless gutter
+              installations, and home insulation projects.
+            </p>
+            <p className="text-left text-dark">
+              If you are interested in speaking with Michael, please call{' '}
+              <a className="" href="tel:+17742696002">
+                (774) 269-6002
+              </a>
+              .
             </p>
             <div className="text-center mb-3 mt-4">
-              <Button btnlabel="About Us" btnlink="/about" btnsolid={true} />
+              <Button
+                btnlabel="Learn More"
+                btnlink="/who-we-are"
+                btnsolid={true}
+              />
             </div>
           </div>
         </Row>

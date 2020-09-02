@@ -30,9 +30,9 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
   const structuredDataLocalBusiness = `{
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
-    "name": "John Grattan SEO & Web Design",
+    "name": "MDH Construction",
     "priceRange": "$100 - $500",
-    "description": "John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Website Design and Web Development to small businesses throughout Massachusetts, from Boston to Plymouth.",
+    "description": "MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!",
     "image":
       "https://johngrattan.com/static/8cad32f9172e09f0099b1a68e49be910/bc59e/john-grattan-circle-headshot-green.png",
     "telephone": "+1-401 216 9868",
@@ -66,7 +66,7 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      // titleTemplate={`%s | ${site.siteMetadata.title}`}
     >
       <link rel="canonical" href={canonicalLink} />
 

@@ -12,7 +12,7 @@ const ImgMDHLogoFluid = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }

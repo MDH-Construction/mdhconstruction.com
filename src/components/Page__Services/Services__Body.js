@@ -17,8 +17,13 @@ const Services__Body = ({ className }) => {
     <section className="section-container" id="services-page">
       <Container fluid className="px-0">
         <Container className="">
-          <Row className="py-5">
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+          <Row className="py-5 px-3 px-lg-0">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Full
                 <br />
@@ -42,7 +47,12 @@ const Services__Body = ({ className }) => {
                 </Container> */}
               </Container>
             </Col>
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 New
                 <br />
@@ -66,7 +76,12 @@ const Services__Body = ({ className }) => {
                 </Container> */}
               </Container>
             </Col>
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Renovations
                 <br />& Remodeling
@@ -91,8 +106,13 @@ const Services__Body = ({ className }) => {
             </Col>
           </Row>
 
-          <Row className="pt-lg-5 pb-lg-5 pt-0">
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+          <Row className="pt-lg-5 px-3 px-lg-0 pb-lg-5 pt-0">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Gutters &<br />
                 Downspouts
@@ -115,7 +135,12 @@ const Services__Body = ({ className }) => {
                 </Container> */}
               </Container>
             </Col>
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Insulation &<br />
                 Weatherization
@@ -139,7 +164,12 @@ const Services__Body = ({ className }) => {
                 </Container> */}
               </Container>
             </Col>
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Windows
                 <br />& Doors
@@ -165,8 +195,13 @@ const Services__Body = ({ className }) => {
             </Col>
           </Row>
 
-          <Row className="py-5">
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+          <Row className="py-5 px-3 px-lg-0">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Roofing
                 <br />& Siding
@@ -190,7 +225,12 @@ const Services__Body = ({ className }) => {
                 </Container> */}
               </Container>
             </Col>
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded mb-5 mb-lg-0">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Outdoor
                 <br />
@@ -215,7 +255,12 @@ const Services__Body = ({ className }) => {
                 </Container> */}
               </Container>
             </Col>
-            <Col className="bg-white mx-3 px-0 drop-shadow rounded">
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded"
+            >
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Other
                 <br />

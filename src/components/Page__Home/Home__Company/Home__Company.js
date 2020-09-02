@@ -18,40 +18,35 @@ const Home__Company = ({ className }) => {
                 Your Local Construction Company
               </h2>
               <p>
-                MDH Construction remains committed to superior craftsmanship and
-                unmatched customer care. Our team of highly qualified tradesmen
-                takes great pride in their work. Centrally located in{' '}
-                <Link
-                  to="/plymouth-ma-construction"
-                  className="font-weight-bolder"
-                >
+                Since 2014,{' '}
+                <Link to="/who-we-are" className="font-weight-bolder">
+                  MDH Construction
+                </Link>{' '}
+                has remained committed to superior craftsmanship and unmatched
+                customer care. Our team of highly qualified tradesmen takes
+                great pride in their work. Centrally located in{' '}
+                <Link to="/service-area" className="font-weight-bolder">
                   Plymouth, Massachusetts
                 </Link>
                 , we service the{' '}
-                <Link
-                  to="/boston-ma-construction"
-                  className="font-weight-bolder"
-                >
-                  Boston area
-                </Link>
-                ,{' '}
-                <Link
-                  to="/south-shore-construction"
-                  className="font-weight-bolder"
-                >
+                <Link to="/service-area" className="font-weight-bolder">
+                  Boston
+                </Link>{' '}
+                area,{' '}
+                <Link to="/service-area" className="font-weight-bolder">
                   South Shore
                 </Link>
                 , and{' '}
-                <Link
-                  to="/cape-cod-construction"
-                  className="font-weight-bolder"
-                >
+                <Link to="/service-area" className="font-weight-bolder">
                   Cape Cod
                 </Link>
                 . We specialize in a wide variety of home improvement,
-                remodeling, and commercial construction services — ranging from
-                large frame-to-finish building jobs to small installation
-                projects.
+                remodeling, and commercial{' '}
+                <Link to="/services" className="font-weight-bolder">
+                  construction services
+                </Link>{' '}
+                — ranging from large frame-to-finish building jobs to small
+                installation projects.
               </p>
               <Container className="checklist mt-5 p-3 mb-5 mb-lg-0 justify-content-center align-items-center rounded">
                 <h3>Why We're Different</h3>
@@ -67,16 +62,28 @@ const Home__Company = ({ className }) => {
                     <span className="font-weight-bold text-secondary">
                       INSURED
                     </span>{' '}
-                    with full-coverage liability insurance and maintain workers'
-                    compensation
+                    with{' '}
+                    <Link
+                      to="/employment"
+                      className="font-weight-bolder underline"
+                    >
+                      full-coverage liability insurance
+                    </Link>{' '}
+                    and maintain workers' compensation
                   </li>
                   <li>
                     {' '}
                     <span className="font-weight-bold text-secondary">
                       HIRE LOCAL
                     </span>{' '}
-                    expert tradesman and provide employees with regular,
-                    continuing education
+                    expert tradesman and provide{' '}
+                    <Link
+                      to="/employment"
+                      className="font-weight-bolder underline"
+                    >
+                      employees
+                    </Link>{' '}
+                    with regular, continuing education
                   </li>
                   <li>
                     {' '}
@@ -111,7 +118,7 @@ const Home__Company = ({ className }) => {
               </Container>
             </Container>
           </Col>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={6} className="d-none d-lg-block">
             <ImgTruck />
           </Col>
         </Row>
@@ -126,8 +133,7 @@ const Home__Company = ({ className }) => {
             <Link to="/who-we-are">
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Learn More
-                <br />
-                About Us
+                <br /> About Us
               </h2>
               <Container className="p-0">
                 <ImgTruckCloseUp />
@@ -142,8 +148,7 @@ const Home__Company = ({ className }) => {
           >
             <Link to="/services">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                See Our
-                <br />
+                See Our <br />
                 Services
               </h2>
               <Container className="p-0">
@@ -160,8 +165,7 @@ const Home__Company = ({ className }) => {
             <Link to="/testimonials">
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Read Our
-                <br />
-                Reviews
+                <br /> Reviews
               </h2>
               <Container className="p-0">
                 <ImgFiveStarReviews />
@@ -176,8 +180,7 @@ const Home__Company = ({ className }) => {
           >
             <Link to="/contact-us">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Get A
-                <br />
+                Get A <br />
                 Free Quote
               </h2>
               <Container className="p-0">

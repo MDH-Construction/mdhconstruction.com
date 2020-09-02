@@ -34,9 +34,9 @@ const AboutPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="About Us | Licensed General Contractor from Plymouth, MA"
+        title="A Family Owned Construction Business Located in Plymouth, MA"
         description="About Us | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/about/"
+        canonicalLink="https://www.mdhconstruction.com/who-we-are"
       />
       <Header
         Tag="header"

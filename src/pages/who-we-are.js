@@ -45,9 +45,9 @@ const WhoWeArePage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Who We Are | Licensed General Contractor from Plymouth, MA"
+        title="A Family Owned Construction Business Located in Plymouth, MA"
         description="Who We Are | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/who-we-are/"
+        canonicalLink="https://www.mdhconstruction.com/who-we-are"
       />
       <Header
         Tag="header"

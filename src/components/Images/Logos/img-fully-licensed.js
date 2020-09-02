@@ -12,7 +12,7 @@ const ImgFullyLicensed = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, width: 185, height: 147) {
+          fixed(quality: 90, width: 185, height: 147) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -24,7 +24,7 @@ const ImgFullyLicensed = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, width: 110, height: 87) {
+          fixed(quality: 90, width: 110, height: 87) {
             ...GatsbyImageSharpFixed
           }
         }

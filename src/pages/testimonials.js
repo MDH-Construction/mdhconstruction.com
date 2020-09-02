@@ -16,7 +16,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -48,9 +48,9 @@ const TestimonialsPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Testimonials | 5-Star Reviews on Google, FB, HomeAdvisor"
+        title="5-Star Ratings - Google, Facebook, HomeAdvisor | Plymouth, MA"
         description="Testimonials | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/testimonials/"
+        canonicalLink="https://www.mdhconstruction.com/testimonials"
       />
       <Header
         Tag="header"

@@ -2,20 +2,21 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
 import ImgGeneralServices from '../../Images/Pages/Home/img-general-services';
-import ImgFullyLicensed from '../../Images/Logos/img-fully-licensed';
-import Button from '../../Button/Button';
 
 const Home__Services__General = ({ className }) => {
   return (
     <section className="section-no-margin-bottom" id="home-general-section">
       <Container fluid className="px-0">
         <Row noGutters>
-          <Col className="drop-shadow order-1 order-lg-1" xs={12} md={6}>
+          <h2 className="display-4 font-weight-bold d-lg-none mx-auto">
+            Your Local General Contractor
+          </h2>
+          <Col className="drop-shadow order-1 order-lg-1 mb-5" xs={12} lg={6}>
             <ImgGeneralServices />
           </Col>
-          <Col className="order-2 order-lg-2" xs={12} md={6}>
+          <Col className="order-2 order-lg-2" xs={12} lg={6}>
             <Container className="px-lg-5">
-              <h2 className="display-4 font-weight-bold">
+              <h2 className="display-4 font-weight-bold d-none d-lg-block">
                 Your Local General Contractor
               </h2>
               <p>
@@ -60,121 +61,6 @@ const Home__Services__General = ({ className }) => {
             </Container>
           </Col>
         </Row>
-
-        {/* <Row className="mx-1 mx-lg-0">
-          <Col>
-            <Container className="checklist mt-4 my-lg-5 p-3 justify-content-center align-items-center drop-shadow rounded">
-              <h3 className="mb-3">Our General Contracting Services</h3>
-              <hr className="divider pb-3" />
-              <Row noGutters={true}>
-                <Col xs={12} md={4}>
-                  <p className="font-weight-bold">We Offer:</p>
-                  <ul className="check mb-5">
-                    <li>Full construction</li>
-                    <li>New additions</li>
-                    <li>Multi-room</li>
-                    <li>Basement remodeling</li>
-                    <li>Kitchen remodeling</li>
-                    <li>Bathroom remodeling</li>
-                    <li>Custom trim & molding</li>
-                  </ul>
-                </Col>
-                <Col xs={12} md={4}>
-                  <p className="font-weight-bold">We Provide:</p>
-                  <ul className="check mb-5">
-                    <li>
-                      Premium construction materials such as{' '}
-                      <strong>[insert materials]</strong>
-                    </li>
-                    <li>
-                      Various{' '}
-                      <strong>
-                        [insert options for general contracting services]
-                      </strong>
-                    </li>
-                    <li>
-                      Payment options such as{' '}
-                      <strong>[insert payment options]</strong>
-                    </li>
-                    <li>
-                      Massachusetts licensing & full-coverage liability
-                      insurance
-                    </li>
-                  </ul>
-                </Col>
-                <Col xs={12} md={4}>
-                  <p className="font-weight-bold">We Deliver:</p>
-                  <ul className="check mb-5">
-                    <li>Clear communication</li>
-                    <li>Accurate schedules & timelines</li>
-                    <li>Competitive pricing</li>
-                    <li>Beautiful design & curb appeal</li>
-                    <li>100% satisfaction guaranteed</li>
-                  </ul>
-                </Col>
-              </Row>
-              <h4 className="bg-secondary p-3 text-white mb-0">
-                Common General Contractor Questions
-              </h4>
-              <Accordion>
-                <Card className="accordion-animation">
-                  <Accordion.Toggle as={Card.Header} eventKey="0">
-                    <span className="mr-3">
-                      <i className="fas fa-plus-circle text-primary accordionIcon"></i>
-                    </span>
-                    <span className="accordionText">
-                      What is a general contractor?
-                    </span>
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="0">
-                    <Card.Body>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Id dolor quod aut ab repellat et soluta fugit autem, sint
-                      excepturi dolorem, doloribus eveniet quisquam quam
-                      consectetur qui repellendus nulla commodi.
-                    </Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-                <Card className="accordion-animation">
-                  <Accordion.Toggle as={Card.Header} eventKey="1">
-                    <span className="mr-3">
-                      <i className="fas fa-plus-circle text-primary accordionIcon"></i>
-                    </span>
-                    <span className="accordionText">
-                      What does a general contractor do?
-                    </span>
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="1">
-                    <Card.Body>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Id dolor quod aut ab repellat et soluta fugit autem, sint
-                      excepturi dolorem, doloribus eveniet quisquam quam
-                      consectetur qui repellendus nulla commodi.
-                    </Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-                <Card className="accordion-animation">
-                  <Accordion.Toggle as={Card.Header} eventKey="2">
-                    <span className="mr-3">
-                      <i className="fas fa-plus-circle text-primary accordionIcon"></i>
-                    </span>
-                    <span className="accordionText">
-                      How much does a general contractor charge?
-                    </span>
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="2">
-                    <Card.Body>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Id dolor quod aut ab repellat et soluta fugit autem, sint
-                      excepturi dolorem, doloribus eveniet quisquam quam
-                      consectetur qui repellendus nulla commodi.
-                    </Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-              </Accordion>
-            </Container>
-          </Col>
-        </Row> */}
       </Container>
     </section>
   );

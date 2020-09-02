@@ -12,7 +12,7 @@ const Home__ReviewsJorg = ({ className }) => {
     query Home__ReviewsJorgQ {
       masthead: file(
         relativePath: {
-          eq: "images/pages/home/asphalt-shingles-siding-roofing-mdh-construction-plymouth-massachusetts.jpg"
+          eq: "images/pages/home/asphalt-shingles-brown-siding-roofing-mdh-construction-plymouth-massachusetts.jpg"
         }
       ) {
         childImageSharp {
@@ -35,7 +35,7 @@ const Home__ReviewsJorg = ({ className }) => {
       alt="Asphalt shingles for roof replacement and roof repair services by MDH Construction in Plymouth, MA"
     >
       <Container className="py-5 px-0">
-        <h2 className="display-4 font-weight-bold text-white drop-shadow-darker mb-4">
+        <h2 className="display-4 font-weight-bold text-white drop-shadow-darker mb-4 px-2 px-lg-0">
           5-Star Mass Save Insulation Review
         </h2>
         <hr className="divider-long" />

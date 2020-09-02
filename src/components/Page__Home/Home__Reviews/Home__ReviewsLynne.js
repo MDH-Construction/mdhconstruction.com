@@ -34,7 +34,7 @@ const Home__ReviewsLynne = ({ className }) => {
       alt="Asphalt shingles for roof replacement and roof repair services by MDH Construction in Plymouth, MA"
     >
       <Container className="py-5 px-0">
-        <h2 className="display-4 font-weight-bold text-white drop-shadow-darker mb-4">
+        <h2 className="display-4 font-weight-bold text-white drop-shadow-darker mb-4 px-2 px-lg-0">
           5-Star Home Improvement Review
         </h2>
         <hr className="divider-long" />
@@ -48,7 +48,24 @@ const Home__ReviewsLynne = ({ className }) => {
                 reviewImage={
                   <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                 }
-                reviewBody="Michael and his crews have been awesome to work with for our home improvements. They have been amazing at keeping the areas they have worked on clean when they leave for the day, they are fast, efficient, and we’re very happy with the work done so far. There were some snags with getting the lumber due to Covid-19, but Michael kept us informed along the way and was able to get every we needed. He had a solution to keep our project on track if he couldn’t, which was awesome. We even threw a couple extra projects on because they have been so easy to work with. Highly recommend giving Michael a call for any of your house projects."
+                reviewBody={
+                  <span>
+                    Michael and his crews have been awesome to work with for our
+                    home improvements. They have been amazing at keeping the
+                    areas they have worked on clean when they leave for the day,{' '}
+                    <strong>
+                      they are fast, efficient, and we’re very happy with the
+                      work done so far
+                    </strong>
+                    . There were some snags with getting the lumber due to
+                    Covid-19, but Michael kept us informed along the way and was
+                    able to get every we needed. He had a solution to keep our
+                    project on track if he couldn’t, which was awesome. We even
+                    threw a couple extra projects on because they have been so
+                    easy to work with. Highly recommend giving Michael a call
+                    for any of your house projects.
+                  </span>
+                }
                 reviewName="Jessica Lynne"
               />
             </Col>

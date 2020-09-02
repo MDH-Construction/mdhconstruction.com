@@ -10,9 +10,9 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
-    title: `MDH Construction | Roofing, Siding, Insulation | Plymouth, MA`,
-    description: `John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
-    author: `John Grattan SEO & Web Design`,
+    title: `MDH Construction | Licensed General Contractor | Plymouth, MA`,
+    description: `MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!`,
+    author: `MDH Construction`,
     image: `images/mdh-construction-general-contractor-plymouth-ma-logo.jpg`,
     siteUrl,
   },
@@ -25,7 +25,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
-
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md'],
+      },
+    },
     {
       resolve: `gatsby-plugin-breadcrumb`,
       options: {
@@ -47,12 +52,7 @@ module.exports = {
     //       'https://johngrattan.us19.list-manage.com/subscribe/post?u=15d6d54f80db22fad48ed30c5&amp;id=d5ba0314c8',
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: ['.mdx', '.md'],
-      },
-    },
+
     // {
     //   resolve: 'gatsby-plugin-google-tagmanager',
     //   options: {
@@ -125,7 +125,7 @@ module.exports = {
         background_color: `#1a1b41`,
         theme_color: `#baff29`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-mdh-construction.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon-mdh-construction.png`,
       },
     },
     {

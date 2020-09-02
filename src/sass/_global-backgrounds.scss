@@ -36,6 +36,10 @@ body {
   background-color: $bgContactBarColor;
 }
 
+.bg-breadcrumb-bar {
+  background-color: $bgBreadcrumbBarColor;
+}
+
 .bg-dark-blue {
   background-color: $darkBlue;
 }
@@ -95,9 +99,9 @@ body {
     #{fade-out(#000000, 0.8)} 100%
   ) !important;
   background-position: center !important;
-  background-repeat: repeat !important;
+  background-repeat: no-repeat !important;
   background-attachment: scroll !important;
-  background-size: inherit !important;
+  background-size: cover !important;
   opacity: 1 !important;
 
   @include media-breakpoint-up(md) {

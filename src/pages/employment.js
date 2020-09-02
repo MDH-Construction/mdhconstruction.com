@@ -48,7 +48,7 @@ const EmploymentPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Employment | Competitive Pay, Bonuses & Incentives, PTO"
+        title="We Are Hiring! Construction Jobs, PTO, Bonuses | Plymouth, MA"
         description="If you have a set of skills that relate to the home improvement, remodeling, or commercial construction industries, we want to hear from you!"
         canonicalLink="https://www.mdhconstruction.com/employment/"
       />

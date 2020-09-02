@@ -11,10 +11,7 @@ const Contact__Body = ({ className }) => {
           <FormContactPage />
         </Container>
       </Col>
-      <Container
-        fluid
-        className="bg-white border-top border-bottom border-secondary"
-      >
+      {/* <Container fluid className="bg-white">
         <Row>
           <Col className="py-3 py-md-5" xs={12} md={12}>
             <Container>
@@ -57,10 +54,10 @@ const Contact__Body = ({ className }) => {
             </Container>
           </Col>
         </Row>
-      </Container>
-      <Container className="pt-5 mt-5">
-        <Row className="mb-5">
-          <Col xs={12} md={6}>
+      </Container> */}
+      <Container fluid className="pt-5 mt-5 px-0">
+        <Row noGutters className="mb-5 bg-dark">
+          <Col xs={12} md={6} className="p-5">
             <Container className="bg-white border border-primary p-3 p-lg-3">
               <h3 className="bg-contact-bar text-white p-2">
                 <span className="drop-shadow">Contact Us Today</span>
@@ -153,7 +150,9 @@ const Contact__Body = ({ className }) => {
         </Row>
       </Container>
       <Container className="py-5 my-5">
-        <h2 className="mb-5">Need Directions to Our Office?</h2>
+        <h2 className="mb-5 display-4 font-weight-bold">
+          Need Directions to Our Office?
+        </h2>
         <Accordion>
           <Card className="accordion-animation">
             <Accordion.Toggle as={Card.Header} eventKey="0">

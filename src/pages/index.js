@@ -12,14 +12,15 @@ import Home__ReviewsInsulation from '../components/Page__Home/Home__Reviews/Home
 import Home__Services__Insulation from '../components/Page__Home/Home__Services/Home__Services__Insulation';
 import Home__Services__Other from '../components/Page__Home/Home__Services/Home__Services__Other';
 import Home__ServicesCTA from '../components/Page__Home/Home__ServicesCTA/Home__ServicesCTA';
+import Home__ReviewsFranklin from '../components/Page__Home/Home__Reviews/Home__ReviewsFranklin';
 
 const IndexPage = () => {
   return (
     <Layout>
       <SEO
         title="MDH Construction | Licensed General Contractor | Plymouth, MA"
-        description="MDH Construction is a licensed general contractor in Plymouth, MA. Services include new construction, roofing, siding, gutter installation, Mass Save insulation, and more."
-        canonicalLink="https://www.mdhconstruction.com/"
+        description="MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!"
+        canonicalLink="https://www.mdhconstruction.com"
       />
       <Home__Banner className="bg-img-home" />
       <Home__Trust />
@@ -45,7 +46,7 @@ const IndexPage = () => {
         btnOutlineLabel="See All Of Our Services"
         btnSolidLabel="Get An Insulation Quote"
       />
-      <Home__ReviewsInsulation />
+      <Home__ReviewsFranklin />
       <Home__Services__Other />
       <Home__ServicesCTA
         hTwo="Are You Interested In Our Home Improvement Services?"

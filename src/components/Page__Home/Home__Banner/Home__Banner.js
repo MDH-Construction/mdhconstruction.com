@@ -35,7 +35,7 @@ const Home__Banner = ({ className }) => {
     >
       <Container id="home-banner-section" className="h-100">
         <Row className="h-100 align-items-center justify-content-center text-center">
-          <Col lg={6} className="align-self-center">
+          <Col xs={12} lg={6} className="align-self-center">
             <h2 className="px-sm-5 px-3 p-lg-3 mb-2 mb-lg-0 drop-shadow-darker font-weight-bold">
               Superior Craftsmanship & Unmatched Customer Care
             </h2>
@@ -45,7 +45,7 @@ const Home__Banner = ({ className }) => {
               <span className="text-primary">Plymouth, MA</span>
             </h1>
           </Col>
-          <Col lg={6}>
+          <Col xs={12} md={8} lg={6}>
             <FormHomePage />
           </Col>
         </Row>

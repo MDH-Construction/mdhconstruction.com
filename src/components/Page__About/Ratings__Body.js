@@ -16,13 +16,13 @@ const Ratings__Body = ({ className }) => {
   return (
     <section className="section-no-margin-bottom" id="about-page-ratings">
       <Container fluid className="px-0 mx-0">
-        <h2 className="display-4 pb-4">
+        <h2 className="display-4 pb-5">
           Trusted by Top Industry Organizations
         </h2>
         <Row className=" px-0 mx-0">
-          <Col xs={12} lg={6} className="bg-light mx-0 px-0">
+          <Col xs={12} lg={6} className="bg-light mx-0 px-0 order-1 order-lg-1">
             <Container className="py-5">
-              <h2>Better Business Bureau</h2>
+              <h2 className="mb-4">Better Business Bureau</h2>
               <p>
                 The Better Business Bureau (BBB) has been the gold standard for
                 consumers to check a company's credibility since 1912.
@@ -48,9 +48,9 @@ const Ratings__Body = ({ className }) => {
               </Row>
             </Container>
           </Col>
-          <Col xs={12} lg={6} className="bg-dark mx-0 px-0">
+          <Col xs={12} lg={6} className="bg-dark mx-0 px-0 order-2 order-lg-2">
             <Container className="py-5">
-              <h2 className="text-primary">HomeAdvisor</h2>
+              <h2 className="text-primary mb-4">HomeAdvisor</h2>
               <p className="text-white">
                 HomeAdvisor is an online marketplace with the goal of connecting
                 homeowners with local service professionals. Each company is
@@ -84,9 +84,9 @@ const Ratings__Body = ({ className }) => {
 
       <Container fluid className="px-0 mx-0">
         <Row className=" px-0 mx-0">
-          <Col xs={12} lg={6} className="bg-dark mx-0 px-0">
+          <Col xs={12} lg={6} className="bg-dark mx-0 px-0 order-4 order-lg-3">
             <Container className="py-5">
-              <h2 className="text-primary">Angie's List</h2>
+              <h2 className="text-primary mb-4">Angie's List</h2>
               <p className="text-white">
                 Since 1995, Angie's List has been an online directory allowing
                 consumers to read and publish reviews of local businesses and
@@ -106,9 +106,9 @@ const Ratings__Body = ({ className }) => {
               </Row>
             </Container>
           </Col>
-          <Col xs={12} lg={6} className="bg-light mx-0 px-0">
+          <Col xs={12} lg={6} className="bg-light mx-0 px-0 order-3 order-lg-4">
             <Container className="py-5">
-              <h2>Mass Save</h2>
+              <h2 className="mb-4">Mass Save</h2>
               <p>
                 Mass Save has been consistently advancing energy efficiency
                 first throughout Massachusetts to help residents and businesses

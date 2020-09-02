@@ -2,18 +2,18 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const ImgBBBTrans = ({ className }) => {
+const ImgBlogDiyHome = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ImgBBBTransQ {
+    query ImgBlogDiyHomeQ {
       image: file(
         relativePath: {
-          eq: "images/bbb-better-business-buraeu-logo-trans-mdh-construction-plymouth-ma.png"
+          eq: "images/diy-home-improvement-mdh-construction-plymouth-ma.jpg"
         }
       ) {
         id
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -23,10 +23,10 @@ const ImgBBBTrans = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="MDH Construction is an A+ Rated company by the Better Business Beraeu in Plymouth, MA"
+      alt="DIY home improvement blog by MDH Construction in Plymouth, MA"
       className={className}
     />
   );
 };
 
-export default ImgBBBTrans;
+export default ImgBlogDiyHome;

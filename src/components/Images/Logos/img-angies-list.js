@@ -12,7 +12,7 @@ const ImgAngiesList = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, width: 128, height: 126) {
+          fixed(quality: 90, width: 128, height: 126) {
             ...GatsbyImageSharpFixed
           }
         }

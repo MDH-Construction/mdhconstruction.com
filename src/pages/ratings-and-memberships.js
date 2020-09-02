@@ -45,9 +45,9 @@ const RatingsPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Ratings And Memberships | Licensed General Contractor from Plymouth, MA"
+        title="Rated A+ on BBB, Top HomeAdvisor, Mass Save | Plymouth, MA"
         description="Ratings And Memberships | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/ratings-and-memberships/"
+        canonicalLink="https://www.mdhconstruction.com/ratings-and-memberships"
       />
       <Header
         Tag="header"

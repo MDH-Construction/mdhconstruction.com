@@ -12,7 +12,7 @@ const ImgTopRatedMenu = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, width: 200, height: 175) {
+          fixed(quality: 90, width: 200, height: 175) {
             ...GatsbyImageSharpFixed
           }
         }

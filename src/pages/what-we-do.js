@@ -31,9 +31,9 @@ const WhatWeDoPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="What We Do | Licensed General Contractor from Plymouth, MA"
+        title="Licensed Contractor, Full Liability Insurance | Plymouth, MA"
         description="What We Do | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/what-we-do/"
+        canonicalLink="https://www.mdhconstruction.com/what-we-do"
       />
       <Header
         Tag="header"

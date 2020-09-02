@@ -12,7 +12,7 @@ const ImgBBBRating = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, height: 200) {
+          fixed(quality: 90, height: 200) {
             ...GatsbyImageSharpFixed
           }
         }

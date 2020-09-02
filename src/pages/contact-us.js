@@ -27,16 +27,16 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us | Licensed General Contractor from Plymouth, MA"
+        title="Contact Us Today For a FREE In-Home Estimate | Plymouth, MA"
         description="Please feel free to give us a call, send us an email, or fill out our contact form and we'll be sure to answer any of your questions, comments, or concerns."
-        canonicalLink="https://www.mdhconstruction.com/contact-us/"
+        canonicalLink="https://www.mdhconstruction.com/contact-us"
       />
       <Header__Contact
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
         hOne="Contact MDH Construction"
-        hTwo="A Reliable, Family Owned And Operated Business"
+        hTwo="Fill Out Our Form Or Give Us A Call At (774) 269-6002"
         alt="Contact MDH Construction"
       />
       <Contact__Body />

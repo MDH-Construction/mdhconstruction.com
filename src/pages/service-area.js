@@ -16,7 +16,7 @@ const ServiceAreaPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const ServiceAreaPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -45,9 +45,9 @@ const ServiceAreaPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Service Area | Licensed General Contractor from Plymouth, MA"
+        title="Service Area - Plymouth, MA, Plymouth County, Bristol County"
         description="Service Area | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/service-area/"
+        canonicalLink="https://www.mdhconstruction.com/service-area"
       />
       <Header
         Tag="header"

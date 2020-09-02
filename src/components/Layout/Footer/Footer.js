@@ -30,34 +30,37 @@ const Footer = () => {
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
               <h5 className="text-uppercase mb-4">Navigation</h5>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/about">
                 About
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/who-we-are">
                 Who We Are
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/what-we-do">
                 Licensing and Insurance
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link
+                className="d-flex footer-link"
+                to="/ratings-and-memberships"
+              >
                 Ratings and Memberships
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/service-area">
                 Service Area
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/services">
                 Services
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/gallery">
                 Gallery
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/testimonials">
                 Testimonials
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/employment">
                 Employment
               </Link>
-              <Link className="d-flex footer-link" to="/">
+              <Link className="d-flex footer-link" to="/contact-us">
                 Contact
               </Link>
             </Col>
@@ -68,26 +71,26 @@ const Footer = () => {
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Partners</h5>
+              <h5 className="text-uppercase mb-4">Memberships</h5>
               <div className="text-sans-serif d-flex py-12">
-                <a href="#">HomeAdvisor</a>
+                <Link to="/ratings-and-memberships">HomeAdvisor</Link>
               </div>
               <div className="text-sans-serif d-flex py-12">
-                <a href="#">AngiesList</a>
+                <Link to="/ratings-and-memberships">Angie's List</Link>
               </div>
               <div className="text-sans-serif d-flex py-12">
-                <a href="#">BuildZoom</a>
+                <Link to="/ratings-and-memberships">Mass Save</Link>
               </div>
               <div className="text-sans-serif d-flex py-12">
-                <a href="#">Mass Save</a>
+                <Link to="/ratings-and-memberships">BBB</Link>
               </div>
 
               <h5 className="text-uppercase mt-5 mb-4">Social Media</h5>
               <div className="text-sans-serif d-flex py-2">
-                <a href="#">
+                <a href="https://www.facebook.com/MDHConst">
                   <i className="fab fa-2x fa-facebook mr-3"></i>
                 </a>
-                <a className="my-auto" href="#">
+                <a className="my-auto" href="https://www.facebook.com/MDHConst">
                   <span className="ml-1 my-auto">Facebook</span>
                 </a>
               </div>
@@ -117,19 +120,38 @@ const Footer = () => {
             >
               <h5 className="text-uppercase mb-4">Company</h5>
               <div className="text-sans-serif pt-2 d-flex mb-2">
-                <i className="fas fa-address-card mt-1"></i>
-                <Link to="/" className="ml-3">
+                <a
+                  href="https://www.google.com/maps?cid=1822779321272037188"
+                  target="_blank"
+                >
+                  <i className="fas fa-address-card mt-1"></i>
+                </a>
+
+                <a
+                  href="https://www.google.com/maps?cid=1822779321272037188"
+                  target="_blank"
+                  className="ml-3"
+                >
                   MDH Construction
-                </Link>
+                </a>
               </div>
               <div className="text-sans-serif pt-2 d-flex mb-2">
-                <i className="fas fa-phone mt-1"></i>
+                <a href="tel:+17742696002">
+                  <i className="fas fa-phone mt-1"></i>
+                </a>
+
                 <a className="ml-3" href="tel:+17742696002">
                   (774) 269-6002
                 </a>
               </div>
               <div className="text-sans-serif pt-2 d-flex mb-2">
-                <i className="fas fa-envelope mt-1"></i>
+                <a
+                  href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
+                  target="_blank"
+                >
+                  <i className="fas fa-envelope mt-1"></i>
+                </a>
+
                 <a
                   className="ml-3"
                   href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
@@ -143,7 +165,9 @@ const Footer = () => {
                 </a>
               </div>
               <div className="text-sans-serif pt-2 d-flex mb-2">
-                <i className="fas fa-map-marker-alt mt-1"></i>
+                <a href="https://goo.gl/maps/Q5eUufFZPqPNvxPLA" target="_blank">
+                  <i className="fas fa-map-marker-alt mt-1"></i>
+                </a>
                 <a
                   className="ml-1-25"
                   href="https://goo.gl/maps/Q5eUufFZPqPNvxPLA"
@@ -203,7 +227,7 @@ const Footer = () => {
                   </Link>
                   , Inc. All Rights Reserved
                   <span className="d-block">
-                    Home Improvement Contractor License: 183807{' '}
+                    Home Improvement Contractor License: 183807
                   </span>
                   <span className="d-block">
                     Construction Supervisors License: 109089
@@ -214,9 +238,14 @@ const Footer = () => {
                 {' '}
                 <p>
                   Design by{' '}
-                  <Link className="text-primary font-weight-bold" to="/">
-                    {data.site.siteMetadata.author}
-                  </Link>
+                  <a
+                    href="https://johngrattan.com/"
+                    target="_blank"
+                    rel="nofollow"
+                    className="text-primary font-weight-bold"
+                  >
+                    John Grattan SEO & Web Design
+                  </a>
                 </p>
               </Col>
             </Row>

@@ -12,7 +12,7 @@ const ImgMassSave = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, width: 151, height: 126) {
+          fixed(quality: 90, width: 150, height: 126) {
             ...GatsbyImageSharpFixed
           }
         }

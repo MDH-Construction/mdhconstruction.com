@@ -12,7 +12,7 @@ const ImgJorg = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 100, width: 50, height: 50) {
+          fixed(quality: 90, width: 50, height: 50) {
             ...GatsbyImageSharpFixed
           }
         }

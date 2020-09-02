@@ -7,12 +7,12 @@ import ImgEmploymentReview from '../Images/Pages/Employment/img-employment-revie
 
 const Employment__Body = ({ className }) => {
   return (
-    <section className="section-container" id="about-page">
+    <section className="section-no-margin-bottom" id="about-page">
       <Container fluid>
         <Row className="mb-5 pb-5">
           <Col lg={6} className="mx-auto">
             <Container className="text-center p-lg-5">
-              <ImgMDHLogoFluid className="no-drop-shadow w-50 mx-auto" />
+              <ImgMDHLogoFluid className="no-drop-shadow w-50 mx-auto mb-5 mb-lg-0" />
             </Container>
             <Container className="checklist p-3 p-lg-4 mb-5 justify-content-center align-items-center">
               <h3>We Offer Our Employees:</h3>
@@ -33,11 +33,11 @@ const Employment__Body = ({ className }) => {
               </Row>
             </Container>
           </Col>
-          <Col className="p-5" xs={12} lg={6}>
+          <Col className="p-2 p-lg-5" xs={12} lg={6}>
             <ImgEmploymentReview className="drop-shadow rounded border" />
           </Col>
         </Row>
-        <Row>
+        <Row className="mb-lg-5">
           <Container className="bg-white border rounded p-3 pt-5 pt-md-3 drop-shadow mb-md-5">
             <h2 className="bg-headline-bar text-white p-3 mt-5 mt-md-0">
               <span className="drop-shadow">Current Openings</span>

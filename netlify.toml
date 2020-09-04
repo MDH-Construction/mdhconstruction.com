@@ -12,3 +12,4 @@
   from = "/about"
   to = "/who-we-are"
   status = 301
+  force = true

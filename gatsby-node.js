@@ -1,14 +1,7 @@
 const path = require('path');
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage, createRedirect } = actions;
-
-  createRedirect({
-    fromPath: 'https://letmeseemysite.com/about',
-    toPath: 'https://letmeseemysite.com/who-we-are',
-    isPermanent: true,
-    force: true,
-  });
+  const { createPage } = actions;
 
   const postTemplate = path.resolve('src/templates/BlogPost__Page.js');
 

@@ -8,13 +8,17 @@ import Button from '../../Button/Button';
 const Home__Services__Gutters = ({ className }) => {
   return (
     <section className="section-no-margin-bottom" id="home-gutters-section">
-      <Container fluid className="px-0">
+      <Container fluid className="px-0 px-lg-5">
         <Row noGutters>
           <h2 className="display-4 font-weight-bold d-lg-none mx-auto">
             Your Gutter Installation Experts
           </h2>
-          <Col className="drop-shadow order-1 order-lg-2 mb-5" xs={12} lg={6}>
-            <ImgGutterServices />
+          <Col
+            className="drop-shadow order-1 order-lg-2 mb-5 px-3 px-lg-0"
+            xs={12}
+            lg={6}
+          >
+            <ImgGutterServices className="solid-shadow-primary-bottom-right" />
           </Col>
           <Col className="order-2 order-lg-1" xs={12} lg={6}>
             <Container className="px-lg-5">

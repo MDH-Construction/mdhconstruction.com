@@ -15,7 +15,7 @@ const AboutPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -36,14 +36,14 @@ const AboutPage = ({ pageContext, location }) => {
       <SEO
         title="A Family Owned Construction Business Located in Plymouth, MA"
         description="About Us | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/who-we-are"
+        canonicalLink="https://www.mdhconstruction.com/about"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="About MDH Construction"
-        hTwo="A Reliable, Family Owned And Operated Business"
+        textMain="About MDH Construction"
+        textSecondary="A Reliable, Family Owned And Operated Business"
         alt="About MDH Construction"
       />
       <Breadcrumb

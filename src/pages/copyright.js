@@ -15,7 +15,7 @@ const CopyrightPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -36,14 +36,14 @@ const CopyrightPage = ({ pageContext, location }) => {
       <SEO
         title="Oops! This Page Cannot Be Found | MDH Construction"
         description="404 Not Found | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/404/"
+        canonicalLink="https://www.mdhconstruction.com/copyright"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Oops...Something Went Wrong!"
-        hTwo="This page cannot be found"
+        textMain="Oops...Something Went Wrong!"
+        textSecondary="This page cannot be found"
         alt="404 Error - Oops! This Page Cannot Be Found"
       />
       <Breadcrumb

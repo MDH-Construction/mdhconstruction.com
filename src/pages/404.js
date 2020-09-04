@@ -15,7 +15,7 @@ const NotFoundPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -36,14 +36,14 @@ const NotFoundPage = ({ pageContext, location }) => {
       <SEO
         title="Something Went Wrong! Page Cannot Be Found | MDH Construction"
         description="404 Not Found | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/404/"
+        canonicalLink="https://www.mdhconstruction.com/404"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Something Went Wrong!"
-        hTwo="This page cannot be found"
+        textMain="Something Went Wrong!"
+        textSecondary="This page cannot be found"
         alt="404 Error - Oops! This Page Cannot Be Found"
       />
       <Breadcrumb

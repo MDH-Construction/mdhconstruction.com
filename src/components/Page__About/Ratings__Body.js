@@ -21,7 +21,7 @@ const Ratings__Body = ({ className }) => {
         </h2>
         <Row className=" px-0 mx-0">
           <Col xs={12} lg={6} className="bg-light mx-0 px-0 order-1 order-lg-1">
-            <Container className="py-5">
+            <Container className="py-5 px-lg-5">
               <h2 className="mb-4">Better Business Bureau</h2>
               <p>
                 The Better Business Bureau (BBB) has been the gold standard for
@@ -35,7 +35,8 @@ const Ratings__Body = ({ className }) => {
                   filed with the BBB.
                 </strong>
               </p>
-              <Row className="mt-5 mb-3 mx-auto text-center drop-shadow">
+
+              <Row className="mt-5 mb-3 text-center drop-shadow">
                 <Col xs={12} md={4} className="mb-3 mb-lg-0">
                   <ImgBBBAcc />
                 </Col>
@@ -49,7 +50,7 @@ const Ratings__Body = ({ className }) => {
             </Container>
           </Col>
           <Col xs={12} lg={6} className="bg-dark mx-0 px-0 order-2 order-lg-2">
-            <Container className="py-5">
+            <Container className="py-5 px-lg-5">
               <h2 className="text-primary mb-4">HomeAdvisor</h2>
               <p className="text-white">
                 HomeAdvisor is an online marketplace with the goal of connecting
@@ -85,7 +86,7 @@ const Ratings__Body = ({ className }) => {
       <Container fluid className="px-0 mx-0">
         <Row className=" px-0 mx-0">
           <Col xs={12} lg={6} className="bg-dark mx-0 px-0 order-4 order-lg-3">
-            <Container className="py-5">
+            <Container className="py-5 px-lg-5">
               <h2 className="text-primary mb-4">Angie's List</h2>
               <p className="text-white">
                 Since 1995, Angie's List has been an online directory allowing
@@ -107,7 +108,7 @@ const Ratings__Body = ({ className }) => {
             </Container>
           </Col>
           <Col xs={12} lg={6} className="bg-light mx-0 px-0 order-3 order-lg-4">
-            <Container className="py-5">
+            <Container className="py-5 px-lg-5">
               <h2 className="mb-4">Mass Save</h2>
               <p>
                 Mass Save has been consistently advancing energy efficiency

@@ -5,17 +5,29 @@ import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import WhatWeDo__Body from '../components/Page__About/WhatWeDo__Body';
+import Body__Banner from '../components/Layout/Body/Body__Banner';
 
 const WhatWeDoPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
     query WhatWeDoPageQ {
       masthead: file(
         relativePath: {
-          eq: "images/about-mdh-construction-general-contractor-plymouth-ma.jpg"
+          eq: "images/pages/about/what-we-do/licensing-insurance-home-improvement-contractor-mdh-construction-plymouth-ma.jpg"
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+      bgimg: file(
+        relativePath: {
+          eq: "images/pages/about/what-we-do/mdh-construction-massachusetts-boston-ma-plymouth-ma.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -24,6 +36,8 @@ const WhatWeDoPage = ({ pageContext, location }) => {
   `);
 
   const imageDataHeader = data.masthead.childImageSharp.fluid;
+  const imageDataBodyBanner = data.bgimg.childImageSharp.fluid;
+
   const {
     breadcrumb: { crumbs },
   } = pageContext;
@@ -39,11 +53,35 @@ const WhatWeDoPage = ({ pageContext, location }) => {
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Licensing and Insurance"
-        hTwo="Fully Licensed in Massachusetts & Full Coverage Liability Insurance"
-        alt="What We Do"
+        textMain="Licensing and Insurance"
+        textSecondary="Fully Licensed in Massachusetts With Full Coverage Liability Insurance"
+        alt="MDH Construction is fully licensed and insured home improvement contractor and supervisor in Massachusetts"
       />
       <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="What We Do" />
+      <Body__Banner
+        Tag="div"
+        className=""
+        fluid={imageDataBodyBanner}
+        alt="MDH Construction Services"
+        textLeftOne="Licensed Contractor in"
+        textLeftTwo="Massachusetts"
+        textRight={
+          <p>
+            MDH Construction’s licensing status{' '}
+            <strong>provides proof that we meet industry training</strong>{' '}
+            standards for general contracting and construction supervision.
+            <br />
+            <br />
+            <strong>
+              These licenses also allow MDH Construction to pull the necessary
+              permits to complete a project
+            </strong>{' '}
+            — something an unlicensed contractor is unable to do. Furthermore,
+            our licenses hold us responsible for ensuring that our work meets
+            local building codes.
+          </p>
+        }
+      />
       <WhatWeDo__Body />
     </Layout>
   );

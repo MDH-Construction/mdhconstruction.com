@@ -10,10 +10,10 @@ import ImgGetFreeQuote from '../../Images/Pages/Home/img-get-free-quote';
 const Home__Company = ({ className }) => {
   return (
     <section className="section-container" id="home-company-section">
-      <Container fluid className="px-0">
+      <Container fluid className="px-0 px-lg-5">
         <Row noGutters>
           <Col xs={12} lg={6}>
-            <Container>
+            <Container className="px-lg-5">
               <h2 className="display-4 font-weight-bold">
                 Your Local Construction Company
               </h2>
@@ -119,11 +119,11 @@ const Home__Company = ({ className }) => {
             </Container>
           </Col>
           <Col xs={12} lg={6} className="d-none d-lg-block">
-            <ImgTruck />
+            <ImgTruck className="solid-shadow-primary-bottom-right" />
           </Col>
         </Row>
 
-        <Row className="mx-1 mx-lg-5 py-5">
+        <Row className="mx-1 mx-lg-5 mt-lg-5 py-5">
           <Col
             xs={12}
             md={6}

@@ -29,7 +29,9 @@ const Footer = () => {
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Navigation</h5>
+              <p className="text-uppercase mb-4 text-primary lead font-weight-bold">
+                Navigation
+              </p>
               <Link className="d-flex footer-link" to="/about">
                 About
               </Link>
@@ -71,45 +73,53 @@ const Footer = () => {
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Memberships</h5>
-              <div className="text-sans-serif d-flex py-12">
+              <p className="text-uppercase mb-4 text-primary lead font-weight-bold">
+                Memberships
+              </p>
+              <Container className="px-0 text-sans-serif d-flex py-12">
                 <Link to="/ratings-and-memberships">HomeAdvisor</Link>
-              </div>
-              <div className="text-sans-serif d-flex py-12">
+              </Container>
+              <Container className="px-0 text-sans-serif d-flex py-12">
                 <Link to="/ratings-and-memberships">Angie's List</Link>
-              </div>
-              <div className="text-sans-serif d-flex py-12">
+              </Container>
+              <Container className="px-0 text-sans-serif d-flex py-12">
                 <Link to="/ratings-and-memberships">Mass Save</Link>
-              </div>
-              <div className="text-sans-serif d-flex py-12">
+              </Container>
+              <Container className="px-0 text-sans-serif d-flex py-12">
                 <Link to="/ratings-and-memberships">BBB</Link>
-              </div>
+              </Container>
 
-              <h5 className="text-uppercase mt-5 mb-4">Social Media</h5>
-              <div className="text-sans-serif d-flex py-2">
-                <a href="https://www.facebook.com/MDHConst">
+              <p className="text-uppercase mt-5 mb-4 text-primary lead font-weight-bold">
+                Social Media
+              </p>
+              <Container className="px-0 text-sans-serif d-flex py-2">
+                <a
+                  href="https://www.facebook.com/MDHConst"
+                  target="_blank"
+                  rel="nofollow"
+                >
                   <i className="fab fa-2x fa-facebook mr-3"></i>
                 </a>
                 <a className="my-auto" href="https://www.facebook.com/MDHConst">
                   <span className="ml-1 my-auto">Facebook</span>
                 </a>
-              </div>
-              <div className="text-sans-serif d-flex py-2">
-                <a href="#">
+              </Container>
+              <Container className="px-0 text-sans-serif d-flex py-2">
+                <a href="#" target="_blank" rel="nofollow">
                   <i className="fab fa-2x fa-instagram mr-3"></i>
                 </a>
                 <a className="my-auto" href="#">
                   <span className="ml-2 my-auto">Instagram</span>
                 </a>
-              </div>
-              <div className="text-sans-serif d-flex py-2">
-                <a href="#">
+              </Container>
+              <Container className="px-0 text-sans-serif d-flex py-2">
+                <a href="#" target="_blank" rel="nofollow">
                   <i className="fab fa-2x fa-youtube mr-3"></i>
                 </a>
                 <a className="my-auto" href="#">
                   <span className="my-auto">YouTube</span>
                 </a>
-              </div>
+              </Container>
             </Col>
 
             <Col
@@ -118,11 +128,14 @@ const Footer = () => {
               lg={4}
               className="text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark"
             >
-              <h5 className="text-uppercase mb-4">Company</h5>
-              <div className="text-sans-serif pt-2 d-flex mb-2">
+              <p className="text-uppercase mb-4 text-primary lead font-weight-bold">
+                Company
+              </p>
+              <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
                 <a
                   href="https://www.google.com/maps?cid=1822779321272037188"
                   target="_blank"
+                  rel="nofollow"
                 >
                   <i className="fas fa-address-card mt-1"></i>
                 </a>
@@ -130,12 +143,13 @@ const Footer = () => {
                 <a
                   href="https://www.google.com/maps?cid=1822779321272037188"
                   target="_blank"
+                  rel="nofollow"
                   className="ml-3"
                 >
                   MDH Construction
                 </a>
-              </div>
-              <div className="text-sans-serif pt-2 d-flex mb-2">
+              </Container>
+              <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
                 <a href="tel:+17742696002">
                   <i className="fas fa-phone mt-1"></i>
                 </a>
@@ -143,11 +157,12 @@ const Footer = () => {
                 <a className="ml-3" href="tel:+17742696002">
                   (774) 269-6002
                 </a>
-              </div>
-              <div className="text-sans-serif pt-2 d-flex mb-2">
+              </Container>
+              <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
                 <a
                   href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
                   target="_blank"
+                  rel="nofollow"
                 >
                   <i className="fas fa-envelope mt-1"></i>
                 </a>
@@ -156,6 +171,7 @@ const Footer = () => {
                   className="ml-3"
                   href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
                   target="_blank"
+                  rel="nofollow"
                 >
                   michael.maher
                   <wbr />
@@ -163,22 +179,27 @@ const Footer = () => {
                   <wbr />
                   .com
                 </a>
-              </div>
-              <div className="text-sans-serif pt-2 d-flex mb-2">
-                <a href="https://goo.gl/maps/Q5eUufFZPqPNvxPLA" target="_blank">
+              </Container>
+              <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
+                <a
+                  href="https://goo.gl/maps/Q5eUufFZPqPNvxPLA"
+                  target="_blank"
+                  rel="nofollow"
+                >
                   <i className="fas fa-map-marker-alt mt-1"></i>
                 </a>
                 <a
                   className="ml-1-25"
                   href="https://goo.gl/maps/Q5eUufFZPqPNvxPLA"
                   target="_blank"
+                  rel="nofollow"
                 >
                   186 S Meadow Rd #2,
                   <br />
                   Plymouth, MA 02360
                 </a>
-              </div>
-              <div className="text-sans-serif pt-2 d-flex mb-2">
+              </Container>
+              <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
                 <i className="fas fa-clock mt-2"></i>
                 <Table className="ml-2" borderless size="sm">
                   <tbody>
@@ -212,11 +233,11 @@ const Footer = () => {
                     </tr>
                   </tbody>
                 </Table>
-              </div>
+              </Container>
             </Col>
           </Row>
         </Container>
-        <div className="bg-dark">
+        <Container fluid className="bg-dark">
           <Container className="py-3 text-sans-serif">
             <Row className="justify-content-between align-items-baseline pt-3">
               <Col xs={12} md={12} className="small text-center">
@@ -250,7 +271,7 @@ const Footer = () => {
               </Col>
             </Row>
           </Container>
-        </div>
+        </Container>
       </section>
     </footer>
   );

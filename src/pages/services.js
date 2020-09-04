@@ -16,7 +16,7 @@ const ServicesPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const ServicesPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -47,16 +47,16 @@ const ServicesPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Services - Decks, Gutters, Insulation, Remodel | Plymouth, MA"
-        description="Services | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/services/"
+        title="Decks, Gutters, Insulation, Remodel & More | Plymouth, MA"
+        description="MDH Construction has the knowledge & expertise to handle any home improvement, remodeling, or commercial construction project. Call 774-269-6002 for free quotes"
+        canonicalLink="https://www.mdhconstruction.com/services"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Construction Services"
-        hTwo="Gutters, Insulation, Decks, Windows, Doors & More"
+        textMain="Construction Services"
+        textSecondary="Gutters, Insulation, Decks, Windows, Doors & More"
         alt="MDH Construction Services"
       />
       <Breadcrumb

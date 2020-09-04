@@ -6,22 +6,21 @@ const ServiceArea__Body = ({ className }) => {
   return (
     <section id="about-page">
       <Container>
-        {/* <Row className="mx-1 mx-lg-0">
-          <Col> */}
-        <Container className="checklist mt-4 my-lg-5 p-3 justify-content-center align-items-center drop-shadow rounded">
-          <h3 className="mb-3 display-4 font-weight-bold">Our Service Areas</h3>
-          <hr className="divider pb-3" />
-
-          <h4 className="bg-secondary p-3 text-white mb-0">
+        <Container className="mt-4 my-lg-5 p-3 justify-content-center align-items-center drop-shadow rounded">
+          <h2 className="bg-secondary p-3 text-white mb-0">
             Massachusetts Counties
-          </h4>
+          </h2>
           <Accordion>
             <Card className="accordion-animation">
-              <Accordion.Toggle as={Card.Header} eventKey="0">
-                <span className="mr-3">
+              <Accordion.Toggle
+                className="d-flex align-content-center"
+                as={Card.Header}
+                eventKey="0"
+              >
+                <span className="mr-3 mt-1">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <h3 className="accordionText text-left font-weight-normal d-inline-block">
+                <h3 className="accordionText mb-2 text-left font-weight-normal d-inline-block">
                   Plymouth County
                 </h3>
               </Accordion.Toggle>
@@ -72,11 +71,15 @@ const ServiceArea__Body = ({ className }) => {
               </Accordion.Collapse>
             </Card>
             <Card className="accordion-animation">
-              <Accordion.Toggle as={Card.Header} eventKey="1">
-                <span className="mr-3">
+              <Accordion.Toggle
+                className="d-flex align-content-center"
+                as={Card.Header}
+                eventKey="1"
+              >
+                <span className="mr-3 mt-1">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <h3 className="accordionText text-left font-weight-normal d-inline-block">
+                <h3 className="accordionText mb-2 text-left font-weight-normal d-inline-block">
                   Bristol County
                 </h3>
               </Accordion.Toggle>
@@ -119,11 +122,15 @@ const ServiceArea__Body = ({ className }) => {
               </Accordion.Collapse>
             </Card>
             <Card className="accordion-animation">
-              <Accordion.Toggle as={Card.Header} eventKey="2">
-                <span className="mr-3">
+              <Accordion.Toggle
+                className="d-flex align-content-center"
+                as={Card.Header}
+                eventKey="2"
+              >
+                <span className="mr-3 mt-1">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <h3 className="accordionText text-left font-weight-normal d-inline-block">
+                <h3 className="accordionText mb-2 text-left font-weight-normal d-inline-block">
                   Barnstable County
                 </h3>
               </Accordion.Toggle>
@@ -161,11 +168,15 @@ const ServiceArea__Body = ({ className }) => {
               </Accordion.Collapse>
             </Card>
             <Card className="accordion-animation">
-              <Accordion.Toggle as={Card.Header} eventKey="3">
-                <span className="mr-3">
+              <Accordion.Toggle
+                className="d-flex align-content-center"
+                as={Card.Header}
+                eventKey="3"
+              >
+                <span className="mr-3 mt-1">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <h3 className="accordionText text-left font-weight-normal d-inline-block">
+                <h3 className="accordionText mb-2 text-left font-weight-normal d-inline-block">
                   Norfolk County
                 </h3>
               </Accordion.Toggle>
@@ -217,11 +228,15 @@ const ServiceArea__Body = ({ className }) => {
               </Accordion.Collapse>
             </Card>
             <Card className="accordion-animation">
-              <Accordion.Toggle as={Card.Header} eventKey="4">
-                <span className="mr-3">
+              <Accordion.Toggle
+                className="d-flex align-content-center"
+                as={Card.Header}
+                eventKey="4"
+              >
+                <span className="mr-3 mt-1">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <h3 className="accordionText text-left font-weight-normal d-inline-block">
+                <h3 className="accordionText mb-2 text-left font-weight-normal d-inline-block">
                   Suffolk County
                 </h3>
               </Accordion.Toggle>
@@ -247,11 +262,15 @@ const ServiceArea__Body = ({ className }) => {
               </Accordion.Collapse>
             </Card>
             <Card className="accordion-animation">
-              <Accordion.Toggle as={Card.Header} eventKey="5">
-                <span className="mr-3">
+              <Accordion.Toggle
+                className="d-flex align-content-center"
+                as={Card.Header}
+                eventKey="5"
+              >
+                <span className="mr-3 mt-1">
                   <i className="fas fa-plus-circle text-primary accordionIcon"></i>
                 </span>
-                <h3 className="accordionText text-left font-weight-normal d-inline-block">
+                <h3 className="accordionText mb-2 text-left font-weight-normal d-inline-block">
                   Middlesex County
                 </h3>
               </Accordion.Toggle>
@@ -330,8 +349,6 @@ const ServiceArea__Body = ({ className }) => {
             </Card>
           </Accordion>
         </Container>
-        {/* </Col>
-        </Row> */}
       </Container>
     </section>
   );

@@ -12,8 +12,8 @@ const ImgBBBRating = ({ className }) => {
       ) {
         id
         childImageSharp {
-          fixed(quality: 90, height: 200) {
-            ...GatsbyImageSharpFixed
+          fluid(quality: 90, maxWidth: 1920) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
@@ -22,7 +22,7 @@ const ImgBBBRating = ({ className }) => {
 
   return (
     <Img
-      fixed={data.image.childImageSharp.fixed}
+      fluid={data.image.childImageSharp.fluid}
       alt="MDH Construction is an accredited construction company in Plymouth, MA with the Better Business Buraeu BBB and has an A+ Rating"
       className={className}
     />

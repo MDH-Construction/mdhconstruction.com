@@ -11,50 +11,6 @@ const Contact__Body = ({ className }) => {
           <FormContactPage />
         </Container>
       </Col>
-      {/* <Container fluid className="bg-white">
-        <Row>
-          <Col className="py-3 py-md-5" xs={12} md={12}>
-            <Container>
-              <h2 className="mb-5">Have Any Questions?</h2>
-              <Row>
-                <Col xs={12} md={6} className="mb-5 mb-md-0">
-                  <div className="text-center">
-                    <i className="text-secondary fas fa-mobile-4x fa-question-circle mb-3"></i>
-                  </div>
-                  <p>
-                    At MDH Construction, customer care is our highest priority.
-                    Please feel free to give us a{' '}
-                    <a href="tel:+17742696002">call</a>, send us an{' '}
-                    <a
-                      href="mailto:michael.maher@mdhconstruction.com?Subject=Important%20Email%20From%20Website"
-                      target="_blank"
-                    >
-                      email
-                    </a>
-                    , or fill out our contact form and we'll be sure to answer
-                    any of your questions, comments, or concerns.
-                  </p>
-                </Col>
-                <Col xs={12} md={6}>
-                  <div className="text-center">
-                    <i className="text-secondary fas fa-mobile-4x fa-handshake mb-3"></i>
-                  </div>
-                  <p>
-                    Let's talk about our <Link to="/services">services</Link>{' '}
-                    and your next construction project. We offer free price
-                    estimates, accurate timelines, and recommendations. Our
-                    knowledge and experience can help you with materials,
-                    styles, and designs.
-                  </p>
-                </Col>
-              </Row>
-              <p className="mt-5 lead font-weight-bold text-center">
-                We look forward to hearing from you!
-              </p>
-            </Container>
-          </Col>
-        </Row>
-      </Container> */}
       <Container fluid className="pt-5 mt-5 px-0">
         <Row noGutters className="mb-5 bg-dark">
           <Col xs={12} md={6} className="p-5">

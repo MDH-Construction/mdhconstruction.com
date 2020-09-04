@@ -48,6 +48,7 @@ const Home__ReviewsLynne = ({ className }) => {
                 reviewImage={
                   <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                 }
+                reviewTitle="Project: Deck Construction, Home Improvement"
                 reviewBody={
                   <span>
                     Michael and his crews have been awesome to work with for our

@@ -16,7 +16,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -53,8 +53,8 @@ const WhoWeArePage = ({ pageContext, location }) => {
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Who We Are"
-        hTwo="A Reliable, Family Owned And Operated Business"
+        textMain="Who We Are"
+        textSecondary="A Reliable, Family Owned And Operated Business"
         alt="Who We Are"
       />
       <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Who We Are" />
@@ -67,7 +67,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
         textLeftTwo="Construction Company"
         textRight={
           <p>
-            MDH Construction is a{' '}
+            Since 2014, MDH Construction has been a{' '}
             <strong>
               full-service, licensed and insured, general contractor and
               construction company

@@ -47,15 +47,24 @@ const Home__ReviewsJorg = ({ className }) => {
             <Col xs={12} lg={8} className="order-2 order-lg-1 bg-light">
               <ReviewBox
                 reviewImage={<ImgJorg />}
-                reviewTitle="Positive: Professionalism, Punctuality, Quality,
-      	                  Responsiveness, Value"
-                reviewBody="The MDH team did a great job improving the insulation of our
-      	                  home. They had a crew of 5 people out today and did a quality
-      	                  and efficient job. I highly recommend this company and the
-      	                  Mass save program to improve the insulation of your home. The
-      	                  house already feels warmer with almost no air drafts. I am
-      	                  confident we will be saving a substantial amount on our energy
-      	                  bills."
+                reviewTitle="Project: Mass Save Home Insulation Program"
+                reviewBody={
+                  <span>
+                    Positive: Professionalism, Punctuality, Quality,
+                    Responsiveness, Value.
+                    <br />
+                    <strong>
+                      The MDH team did a great job improving the insulation of
+                      our home
+                    </strong>
+                    . They had a crew of 5 people out today and did a quality
+                    and efficient job. I highly recommend this company and the
+                    Mass save program to improve the insulation of your home.
+                    The house already feels warmer with almost no air drafts. I
+                    am confident we will be saving a substantial amount on our
+                    energy bills.
+                  </span>
+                }
                 reviewName="Jörg Steinhagen"
               />
             </Col>

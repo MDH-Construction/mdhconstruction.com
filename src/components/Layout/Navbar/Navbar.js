@@ -110,7 +110,12 @@ export default class Header extends React.Component {
                     </Col>
                   </Row>
                 </li>
-                <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
+                <li className="nav-item d-none d-lg-inline nav-li-m-top">
+                  <Link className="nav-link text-uppercase" to="/services">
+                    Services
+                  </Link>
+                </li>
+                {/* <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
                   <Link className="nav-link text-uppercase" to="/services">
                     Services <i className="fas fa-angle-down ml-1"></i>
                   </Link>
@@ -155,7 +160,7 @@ export default class Header extends React.Component {
                       </Link>
                     </Col>
                   </Row>
-                </li>
+                </li> */}
                 <li className="nav-item d-none d-lg-inline nav-li-m-top">
                   <Link className="nav-link text-uppercase" to="/gallery">
                     Gallery

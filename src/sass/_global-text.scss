@@ -78,6 +78,10 @@ p {
   }
 }
 
+nav-link.active > h3 {
+  color: white !important;
+}
+
 .fa-mobile-4x {
   font-size: 3em;
 }
@@ -108,6 +112,10 @@ p {
 
 .text-white-75 {
   color: fade-out($white, 0.25);
+}
+
+.text-brown {
+  color: $h2Color;
 }
 
 .breadcrumb {
@@ -151,11 +159,20 @@ p {
   font-weight: 700;
 }
 
+.display-5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 @include media-breakpoint-up(lg) {
   .fa-mobile-4x {
     font-size: 4em;
   }
   .body-banner-text {
     font-size: 2.4em;
+  }
+  .display-5 {
+    font-size: calc(0.5rem + 1.5vw);
   }
 }

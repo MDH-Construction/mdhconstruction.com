@@ -23,6 +23,7 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
+                  reviewTitle="Project: Deck Construction, Home Improvement"
                   reviewBody={
                     <span>
                       Michael and his crews have been awesome to work with for
@@ -56,15 +57,24 @@ const Testimonials__Body = ({ className }) => {
               <Col xs={12} lg={8} className="order-2 order-lg-1 bg-light">
                 <ReviewBox
                   reviewImage={<ImgJorg />}
-                  reviewTitle="Positive: Professionalism, Punctuality, Quality,
-                        Responsiveness, Value"
-                  reviewBody="The MDH team did a great job improving the insulation of our
-                        home. They had a crew of 5 people out today and did a quality
-                        and efficient job. I highly recommend this company and the
-                        Mass save program to improve the insulation of your home. The
-                        house already feels warmer with almost no air drafts. I am
-                        confident we will be saving a substantial amount on our energy
-                        bills."
+                  reviewTitle="Project: Mass Save Home Insulation Program"
+                  reviewBody={
+                    <span>
+                      Positive: Professionalism, Punctuality, Quality,
+                      Responsiveness, Value.
+                      <br />
+                      <strong>
+                        The MDH team did a great job improving the insulation of
+                        our home
+                      </strong>
+                      . They had a crew of 5 people out today and did a quality
+                      and efficient job. I highly recommend this company and the
+                      Mass save program to improve the insulation of your home.
+                      The house already feels warmer with almost no air drafts.
+                      I am confident we will be saving a substantial amount on
+                      our energy bills.
+                    </span>
+                  }
                   reviewName="Jörg Steinhagen"
                 />
               </Col>
@@ -82,7 +92,20 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="I had the pleasure of being referred to this company via ********. I couldn't be more pleased with the insulation job and the crew. They were prompt, courteous, professional and very respectful. I was kept informed every step of the way. Excellent job and employees!"
+                  reviewTitle="Project: Home Insulation & Weatherization"
+                  reviewBody={
+                    <span>
+                      I had the pleasure of being referred to this company via
+                      ********.{' '}
+                      <strong>
+                        I couldn't be more pleased with the insulation job and
+                        the crew
+                      </strong>
+                      . They were prompt, courteous, professional and very
+                      respectful. I was kept informed every step of the way.
+                      Excellent job and employees!
+                    </span>
+                  }
                   reviewName="Lisa H"
                 />
               </Col>
@@ -91,7 +114,20 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="My husband and I recently had the pleasure of using this company to have blown in insulation added in our attic. I can't say enough about the professionalism of the 2 men who punctually arrived at our home to do the work. They were friendly, knowledgeable, and definitely neat. It was truly refreshing to do business with this company."
+                  reviewTitle="Project: Home Insulation & Weatherization"
+                  reviewBody={
+                    <span>
+                      My husband and I recently had the pleasure of using this
+                      company to have blown in insulation added in our attic. I
+                      can't say enough about the professionalism of the 2 men
+                      who punctually arrived at our home to do the work. They
+                      were friendly, knowledgeable, and definitely neat.{' '}
+                      <strong>
+                        It was truly refreshing to do business with this company
+                      </strong>
+                      .
+                    </span>
+                  }
                   reviewName="Brenda D"
                 />
               </Col>
@@ -110,7 +146,25 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: New Windows"
-                  reviewBody="I have never had a contractor over my house that was like these guys. To begin, they were exactly on time. Their mannerism was very professional. They are very respectful. The job was well done. When we ran into a problem, they actually cared and took action to take care of it. They moved my furniture for me out of the way to do their work and also moved it back nicely when they were done. They did not leave any messes and they respected my property. They even did me an extra favor by taking my shutter off my window for me that was too up high for me to reach. They are hard workers and they do a great job. I would recommend them to anyone!"
+                  reviewBody={
+                    <span>
+                      I have never had a contractor over my house that was like
+                      these guys. To begin, they were exactly on time. Their
+                      mannerism was very professional. They are very respectful.
+                      The job was well done.{' '}
+                      <strong>
+                        When we ran into a problem, they actually cared and took
+                        action to take care of it
+                      </strong>
+                      . They moved my furniture for me out of the way to do
+                      their work and also moved it back nicely when they were
+                      done. They did not leave any messes and they respected my
+                      property. They even did me an extra favor by taking my
+                      shutter off my window for me that was too up high for me
+                      to reach. They are hard workers and they do a great job. I
+                      would recommend them to anyone!
+                    </span>
+                  }
                   reviewName="Alyssa H"
                 />
               </Col>
@@ -118,12 +172,21 @@ const Testimonials__Body = ({ className }) => {
                 <ReviewBox
                   reviewImage={<ImgFranklin />}
                   reviewTitle="Project: Remodel or Renovate One or More Rooms"
-                  reviewBody="I was very pleased with Matt and his team. Matt was always
-                    very responsive and reasonable. He did a full renovation of my
-                    house and came out on budget. There weren't any of the horror
-                    stories you hear about going into such a project. Everything
-                    came out great, and Matt always picked up the phone throughout
-                    the project whenever I had questions. Outstanding job!"
+                  reviewBody={
+                    <span>
+                      I was very pleased with Matt and his team. Matt was always
+                      very responsive and reasonable. He did a full renovation
+                      of my house and came out on budget. There weren't any of
+                      the horror stories you hear about going into such a
+                      project.{' '}
+                      <strong>
+                        Everything came out great, and Matt always picked up the
+                        phone
+                      </strong>{' '}
+                      throughout the project whenever I had questions.
+                      Outstanding job!
+                    </span>
+                  }
                   reviewName="Franklin T"
                 />
               </Col>
@@ -142,7 +205,22 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Replace Interior Doors"
-                  reviewBody="They installed 6 interior door slabs, 4 slabs provided by contractor and 2 slabs and all hardware by us. They sent the proposal in a timely fashion and we accepted the proposal and sent deposit on 5/23. We set up the date for install for 6/1. They were on time. They covered the floor with a cloth as it was raining out and cleaned up as they went along. They were very polite and friendly and the place was spotless when they left. We are very happy with our new doors."
+                  reviewBody={
+                    <span>
+                      They installed 6 interior door slabs, 4 slabs provided by
+                      contractor and 2 slabs and all hardware by us. They sent
+                      the proposal in a timely fashion and we accepted the
+                      proposal and sent deposit on 5/23. We set up the date for
+                      install for 6/1. They were on time.{' '}
+                      <strong>
+                        They covered the floor with a cloth as it was raining
+                        out and cleaned up as they went along
+                      </strong>
+                      . They were very polite and friendly and the place was
+                      spotless when they left. We are very happy with our new
+                      doors.
+                    </span>
+                  }
                   reviewName="Janet S"
                 />
               </Col>
@@ -152,7 +230,13 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Upgrade Blown-In Insulation"
-                  reviewBody="They were very thorough and professional and paid a lot of attention to the little things like sealing the rim joists and outlet boxes."
+                  reviewBody={
+                    <span>
+                      <strong>They were very thorough and professional</strong>{' '}
+                      and paid a lot of attention to the little things like
+                      sealing the rim joists and outlet boxes.
+                    </span>
+                  }
                   reviewName="Arthur C"
                 />
               </Col>
@@ -171,7 +255,12 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Replace Seamless Metal Gutters"
-                  reviewBody="Quality work. Polite and quick. Hired again for gutter covers!"
+                  reviewBody={
+                    <span>
+                      Quality work. Polite and quick.{' '}
+                      <strong>Hired again for gutter covers</strong>!
+                    </span>
+                  }
                   reviewName="Stacy M"
                 />
               </Col>
@@ -181,7 +270,11 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Repair or Replace Section of Seamless Metal Gutters"
-                  reviewBody="Repercussions.mdid an excellent job"
+                  reviewBody={
+                    <span>
+                      Repercussions.mdid an <strong>excellent job</strong>
+                    </span>
+                  }
                   reviewName="George G"
                 />
               </Col>
@@ -200,7 +293,13 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Upgrade Batt, Rolled or Reflective Insulation"
-                  reviewBody="Responsive, professional, good value for money. These guys are top notch."
+                  reviewBody={
+                    <span>
+                      Responsive, professional,{' '}
+                      <strong>good value for money</strong>. These guys are top
+                      notch.
+                    </span>
+                  }
                   reviewName="Peter A"
                 />
               </Col>
@@ -210,7 +309,13 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Upgrade Batt, Rolled or Reflective Insulation"
-                  reviewBody="They showed up on time, did the job as I had requested promptly and efficiently, cleaned up after themselves, and charged a fair price."
+                  reviewBody={
+                    <span>
+                      <strong>They showed up on time</strong>, did the job as I
+                      had requested promptly and efficiently, cleaned up after
+                      themselves, and charged a fair price.
+                    </span>
+                  }
                   reviewName="George L"
                 />
               </Col>
@@ -229,7 +334,14 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Replace Weatherstripping"
-                  reviewBody="Although the project was a small one, they treated it as important to do correctly"
+                  reviewBody={
+                    <span>
+                      Although the project was a small one,{' '}
+                      <strong>
+                        they treated it as important to do correctly
+                      </strong>
+                    </span>
+                  }
                   reviewName="Roger Y"
                 />
               </Col>
@@ -239,7 +351,12 @@ const Testimonials__Body = ({ className }) => {
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
                   reviewTitle="Project: Install or Upgrade Blown-In Insulation"
-                  reviewBody="Showed up on time..answered all questions..kind guys...cleaned up...highly recommended"
+                  reviewBody={
+                    <span>
+                      Showed up on time..answered all questions..kind
+                      guys...cleaned up...<strong>highly recommended</strong>
+                    </span>
+                  }
                   reviewName="Shawn M"
                 />
               </Col>
@@ -257,7 +374,16 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="MDH built a beautiful mantel around my fire place. I showed the builder a picture of what I wanted and he built it exactly the same. I would highly recommend MDH. They are also very nice people to work with."
+                  reviewTitle="Project: Remodel, Home Improvement"
+                  reviewBody={
+                    <span>
+                      MDH built a beautiful mantel around my fire place. I
+                      showed the builder a picture of what I wanted and he built
+                      it exactly the same.{' '}
+                      <strong>I would highly recommend MDH</strong>. They are
+                      also very nice people to work with.
+                    </span>
+                  }
                   reviewName="Roxanne Pepe"
                 />
               </Col>
@@ -266,7 +392,14 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="I recommend this company because they just donated 400 protective face mask to the hospital staff to protect them from the Coronavirus"
+                  reviewTitle="Project: Donation"
+                  reviewBody={
+                    <span>
+                      I recommend this company because they just{' '}
+                      <strong>donated 400 protective face mask</strong> to the
+                      hospital staff to protect them from the Coronavirus
+                    </span>
+                  }
                   reviewName="Cheryl Gorveatt"
                 />
               </Col>
@@ -284,7 +417,13 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="Awesome guys. Great work. Would totally recommend"
+                  reviewTitle="Project: Seamless Gutters"
+                  reviewBody={
+                    <span>
+                      Awesome guys. Great work.{' '}
+                      <strong>Would totally recommend</strong>
+                    </span>
+                  }
                   reviewName="Josh Ziegler"
                 />
               </Col>
@@ -293,7 +432,13 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="They are fast, efficient ,and very reasonably priced"
+                  reviewTitle="Project: Deck Construction, Home Improvement"
+                  reviewBody={
+                    <span>
+                      They are fast, efficient ,and{' '}
+                      <strong>very reasonably priced</strong>
+                    </span>
+                  }
                   reviewName="Charlene Ellis"
                 />
               </Col>
@@ -311,7 +456,14 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewBody="The best! In and out in 5 minutes. Scale house staff very helpful. The old timer at de tipping floor very helpful too"
+                  reviewTitle="Project: Floor Replacement, Remodel"
+                  reviewBody={
+                    <span>
+                      <strong>The best</strong>! In and out in 5 minutes. Scale
+                      house staff very helpful. The old timer at de tipping
+                      floor very helpful too
+                    </span>
+                  }
                   reviewName="Milo M Goodman"
                 />
               </Col>
@@ -320,6 +472,7 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
+                  reviewTitle="Project: Seamless Gutters"
                   reviewBody="Great guys"
                   reviewName="Jason Kuhn"
                 />
@@ -338,8 +491,15 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewTitle="Category: Remodeling, Basement Waterproofing"
-                  reviewBody="They did a great job. The workmen were decent, friendly, skilled and professional. They were prompt, working when expected and cleaned up after doing the job each day. We are highly satisfied."
+                  reviewTitle="Project: Remodeling, Basement Waterproofing"
+                  reviewBody={
+                    <span>
+                      They did a great job. The workmen were decent, friendly,
+                      skilled and professional. They were prompt,{' '}
+                      <strong>working when expected and cleaned up</strong>{' '}
+                      after doing the job each day. We are highly satisfied.
+                    </span>
+                  }
                   reviewName="Angie's List"
                 />
               </Col>
@@ -348,8 +508,12 @@ const Testimonials__Body = ({ className }) => {
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                   }
-                  reviewTitle="Category: Remodeling, Roofing"
-                  reviewBody="Excellent, fast and reasonably priced"
+                  reviewTitle="Project: Remodeling, Roofing"
+                  reviewBody={
+                    <span>
+                      Excellent, fast and <strong>reasonably priced</strong>
+                    </span>
+                  }
                   reviewName="Angie's List"
                 />
               </Col>

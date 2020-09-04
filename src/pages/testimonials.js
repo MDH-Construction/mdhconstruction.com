@@ -49,15 +49,15 @@ const TestimonialsPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="5-Star Ratings - Google, Facebook, HomeAdvisor | Plymouth, MA"
-        description="Testimonials | Licensed General Contractor from Plymouth, MA"
+        description="Supported by our BBB A+ rating and 5-star reviews on Google, Facebook, HomeAdvisor, and Angie's List, MDH Construction is consistently a top-rated contractor."
         canonicalLink="https://www.mdhconstruction.com/testimonials"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Testimonials"
-        hTwo="5-Star Reviews on Google, Facebook, BBB, HomeAdvisor, Angie's List"
+        textMain="Testimonials"
+        textSecondary="5-Star Reviews on Google, Facebook, BBB, HomeAdvisor, Angie's List"
         alt="Testimonials"
       />
       <Breadcrumb

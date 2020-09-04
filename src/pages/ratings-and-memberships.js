@@ -16,7 +16,7 @@ const RatingsPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const RatingsPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -46,15 +46,15 @@ const RatingsPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="Rated A+ on BBB, Top HomeAdvisor, Mass Save | Plymouth, MA"
-        description="Ratings And Memberships | Licensed General Contractor from Plymouth, MA"
+        description="The service quality is supported by our business ratings, certifications, and professional memberships with BBB, Mass Save, HomeAdvisor, Angie's List, & more."
         canonicalLink="https://www.mdhconstruction.com/ratings-and-memberships"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Ratings And Memberships"
-        hTwo="Better Business Bureau, Mass Save, Home Advisor, & More"
+        textMain="Ratings And Memberships"
+        textSecondary="Better Business Bureau, Mass Save, Home Advisor, & More"
         alt="Ratings And Memberships"
       />
       <Breadcrumb

@@ -16,7 +16,7 @@ const ThanksPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -37,7 +37,7 @@ const ThanksPage = ({ pageContext, location }) => {
       <SEO
         title="Thanks | 5-Star Reviews on Google, FB, HomeAdvisor"
         description="Thanks | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/thanks/"
+        canonicalLink="https://www.mdhconstruction.com/thanks"
       />
       <Helmet>
         <meta name="robots" content="noindex" />
@@ -46,8 +46,8 @@ const ThanksPage = ({ pageContext, location }) => {
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Thanks"
-        hTwo="Thank You"
+        textMain="Thanks"
+        textSecondary="Thank You"
         alt="Thanks"
       />
       <Breadcrumb

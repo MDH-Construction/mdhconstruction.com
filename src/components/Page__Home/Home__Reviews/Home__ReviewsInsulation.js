@@ -49,17 +49,18 @@ const Home__ReviewsInsulation = ({ className }) => {
                 reviewImage={
                   <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                 }
+                reviewTitle="Project: Home Insulation & Weatherization"
                 reviewBody={
                   <span>
                     I had the pleasure of being referred to this company via
-                    ********. I couldn't be more pleased with the insulation job
-                    and the crew.{' '}
+                    ********.{' '}
                     <strong>
-                      They were prompt, courteous, professional and very
-                      respectful
+                      I couldn't be more pleased with the insulation job and the
+                      crew
                     </strong>
-                    . I was kept informed every step of the way. Excellent job
-                    and employees!
+                    . They were prompt, courteous, professional and very
+                    respectful. I was kept informed every step of the way.
+                    Excellent job and employees!
                   </span>
                 }
                 reviewName="Lisa H"
@@ -70,16 +71,18 @@ const Home__ReviewsInsulation = ({ className }) => {
                 reviewImage={
                   <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
                 }
+                reviewTitle="Project: Home Insulation & Weatherization"
                 reviewBody={
                   <span>
                     My husband and I recently had the pleasure of using this
                     company to have blown in insulation added in our attic. I
                     can't say enough about the professionalism of the 2 men who
-                    punctually arrived at our home to do the work.{' '}
+                    punctually arrived at our home to do the work. They were
+                    friendly, knowledgeable, and definitely neat.{' '}
                     <strong>
-                      They were friendly, knowledgeable, and definitely neat
+                      It was truly refreshing to do business with this company
                     </strong>
-                    . It was truly refreshing to do business with this company.
+                    .
                   </span>
                 }
                 reviewName="Brenda D"

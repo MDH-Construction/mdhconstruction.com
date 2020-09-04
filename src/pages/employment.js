@@ -16,7 +16,7 @@ const EmploymentPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const EmploymentPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -49,15 +49,15 @@ const EmploymentPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="We Are Hiring! Construction Jobs, PTO, Bonuses | Plymouth, MA"
-        description="If you have a set of skills that relate to the home improvement, remodeling, or commercial construction industries, we want to hear from you!"
-        canonicalLink="https://www.mdhconstruction.com/employment/"
+        description="If you have a set of skills related to the home improvement, remodeling, or commercial construction industries, we want to hear from you! Call (774) 269-6002"
+        canonicalLink="https://www.mdhconstruction.com/employment"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Employment at MDH Construction"
-        hTwo="Join Our Team of Expert Tradesmen"
+        textMain="Employment at MDH Construction"
+        textSecondary="Join Our Team of Expert Tradesmen"
         alt="About MDH Construction"
       />
       <Breadcrumb

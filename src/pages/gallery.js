@@ -18,7 +18,7 @@ const GalleryPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -35,7 +35,7 @@ const GalleryPage = ({ pageContext, location }) => {
               thumb: fluid(maxWidth: 500, maxHeight: 300) {
                 ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(quality: 100, maxWidth: 1024) {
+              full: fluid(quality: 90, maxWidth: 1024) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -52,7 +52,7 @@ const GalleryPage = ({ pageContext, location }) => {
               thumb: fluid(maxWidth: 270, maxHeight: 270) {
                 ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(quality: 100, maxWidth: 1024) {
+              full: fluid(quality: 90, maxWidth: 1024) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -69,7 +69,7 @@ const GalleryPage = ({ pageContext, location }) => {
               thumb: fluid(maxWidth: 270, maxHeight: 270) {
                 ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(quality: 100, maxWidth: 1024) {
+              full: fluid(quality: 90, maxWidth: 1024) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -86,7 +86,7 @@ const GalleryPage = ({ pageContext, location }) => {
               thumb: fluid(maxWidth: 270, maxHeight: 270) {
                 ...GatsbyImageSharpFluid_withWebp
               }
-              full: fluid(quality: 100, maxWidth: 1024) {
+              full: fluid(quality: 90, maxWidth: 1024) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }
@@ -99,7 +99,7 @@ const GalleryPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -134,15 +134,15 @@ const GalleryPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="Wow! View Our Completed Construction Projects | Plymouth, MA"
-        description="Gallery | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/gallery/"
+        description="We take great pride in our work and love displaying completed construction projects! View our gallery for home improvement ideas or to see our craftsmanship."
+        canonicalLink="https://www.mdhconstruction.com/gallery"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Construction Project Gallery"
-        hTwo="Before & After Photos, Decks, Remodels, & More"
+        textMain="Construction Project Gallery"
+        textSecondary="Before & After Photos, Decks, Remodels, & More"
         alt="Gallery MDH Construction"
       />
       <Breadcrumb

@@ -2,12 +2,12 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const ImgBBBReviews = ({ className }) => {
+const ImgCustomerCare = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ImgBBBReviewsQ {
+    query ImgCustomerCareQ {
       image: file(
         relativePath: {
-          eq: "images/ratings-bbb-better-business-buraeu-5-star-reviews-mdh-construction-plymouth-ma.png"
+          eq: "images/pages/about/who-we-are/customer-care-general-contractor-mdh-construction-plymouth-ma.jpg"
         }
       ) {
         id
@@ -23,10 +23,10 @@ const ImgBBBReviews = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="MDH Construction is an accredited construction company in Plymouth, MA with the Better Business Buraeu BBB and has multiple 5 star reviews"
+      alt="MDH Construction makes unmatched customer care a top priority while servicing Plymouth, MA"
       className={className}
     />
   );
 };
 
-export default ImgBBBReviews;
+export default ImgCustomerCare;

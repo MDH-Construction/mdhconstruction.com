@@ -37,7 +37,7 @@ const FormContactPage = ({ formname }) => {
       id="form-contact-page"
       action="/thanks"
     >
-      <h3 className="mb-1 mt-3 mt-lg-0">Request A Free Quote</h3>
+      <h2 className="text-secondary mb-1 mt-3 mt-lg-0">Request A Free Quote</h2>
       <hr className="divider pb-3 drop-shadow" />
       <input type="hidden" name="form-name" value="form-contact-page" />
       <Form.Row>

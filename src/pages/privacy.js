@@ -15,7 +15,7 @@ const PrivacyPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -36,14 +36,14 @@ const PrivacyPage = ({ pageContext, location }) => {
       <SEO
         title="Privacy Policy | Your Privacy Is Critically Important To Us"
         description="Privacy Policy | Your Privacy Is Critically Important To Us"
-        canonicalLink="https://www.mdhconstruction.com/privacy/"
+        canonicalLink="https://www.mdhconstruction.com/privacy"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Privacy Policy"
-        hTwo="Your privacy is critically important to us"
+        textMain="Privacy Policy"
+        textSecondary="Your privacy is critically important to us"
         alt="Privacy"
       />
       <Breadcrumb

@@ -16,9 +16,7 @@ const ReviewBox = ({ reviewImage, reviewTitle, reviewBody, reviewName }) => {
           </span>
         </Col>
         <Container className="px-1 px-lg-0 pt-3">
-          <p className="font-italic font-weight-bold mt-3 px-md-5">
-            {reviewTitle}
-          </p>
+          <p className="text-brown mt-3 px-md-5 mb-4">{reviewTitle}</p>
           <p className="font-italic mt-3 px-0 px-lg-5">"{reviewBody}"</p>
           <p className="font-weight-bold text-primary text-right px-md-5">
             — {reviewName}

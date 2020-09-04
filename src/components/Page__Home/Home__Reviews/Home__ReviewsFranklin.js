@@ -53,19 +53,20 @@ const Home__ReviewsFranklin = ({ className }) => {
                 reviewBody={
                   <span>
                     I have never had a contractor over my house that was like
-                    these guys. To begin, they were exactly on time.{' '}
+                    these guys. To begin, they were exactly on time. Their
+                    mannerism was very professional. They are very respectful.
+                    The job was well done.{' '}
                     <strong>
-                      Their mannerism was very professional. They are very
-                      respectful. The job was well done
+                      When we ran into a problem, they actually cared and took
+                      action to take care of it
                     </strong>
-                    . When we ran into a problem, they actually cared and took
-                    action to take care of it. They moved my furniture for me
-                    out of the way to do their work and also moved it back
-                    nicely when they were done. They did not leave any messes
-                    and they respected my property. They even did me an extra
-                    favor by taking my shutter off my window for me that was too
-                    up high for me to reach. They are hard workers and they do a
-                    great job. I would recommend them to anyone!
+                    . They moved my furniture for me out of the way to do their
+                    work and also moved it back nicely when they were done. They
+                    did not leave any messes and they respected my property.
+                    They even did me an extra favor by taking my shutter off my
+                    window for me that was too up high for me to reach. They are
+                    hard workers and they do a great job. I would recommend them
+                    to anyone!
                   </span>
                 }
                 reviewName="Alyssa H"

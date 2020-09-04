@@ -15,18 +15,12 @@ import ImgServicesPainting from '../Images/Pages/Services/img-services-painting'
 const Services__Body = ({ className }) => {
   return (
     <section className="section-container" id="services-page">
-      <Container fluid className="px-0">
-        <Container className="">
-          <Row className="py-5 px-3 px-lg-0">
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
-            >
+      <Container>
+        <Row className="py-5 px-3 px-lg-0">
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Full
-                <br />
+                Full <br />
                 Construction
               </h2>
               <Container className="p-0">
@@ -38,24 +32,14 @@ const Services__Body = ({ className }) => {
                     <li>Detached garages</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Full Construction Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
-            >
+            </Container>
+          </Col>
+
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                New
-                <br />
+                New <br />
                 Additions
               </h2>
               <Container className="p-0">
@@ -67,24 +51,14 @@ const Services__Body = ({ className }) => {
                     <li>Attached garages</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our New Additions Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded"
-            >
+            </Container>
+          </Col>
+
+          <Col xs={12} lg={4} className="mx-0 px-3">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Renovations
-                <br />& Remodeling
+                Renovations <br />& Remodeling
               </h2>
               <Container className="p-0">
                 <ImgServicesRenovations />
@@ -95,27 +69,16 @@ const Services__Body = ({ className }) => {
                     <li>Custom trim & molding</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Renovation & Remodeling Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-          </Row>
+            </Container>
+          </Col>
+        </Row>
 
-          <Row className="pt-lg-5 px-3 px-lg-0 pb-lg-5 pt-0">
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
-            >
+        <Row className="pt-lg-5 px-3 px-lg-0 pb-lg-5 pt-0">
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Gutters &<br />
-                Downspouts
+                Gutters &<br /> Downspouts
               </h2>
               <Container className="p-0">
                 <ImgServicesGutters />
@@ -126,24 +89,14 @@ const Services__Body = ({ className }) => {
                     <li>Downspout installation</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Gutter & Downspout Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
-            >
+            </Container>
+          </Col>
+
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Insulation &<br />
-                Weatherization
+                Insulation &<br /> Weatherization
               </h2>
               <Container className="p-0">
                 <ImgServicesInsulation />
@@ -155,24 +108,14 @@ const Services__Body = ({ className }) => {
                     <li>Thermal imaging, blower door diagnostics</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Insulation & Weatherization Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded"
-            >
+            </Container>
+          </Col>
+
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Windows
-                <br />& Doors
+                Windows <br />& Doors
               </h2>
               <Container className="p-0">
                 <ImgServicesWindows />
@@ -184,27 +127,16 @@ const Services__Body = ({ className }) => {
                     <li>Exterior door installation</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Window & Door Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-          </Row>
+            </Container>
+          </Col>
+        </Row>
 
-          <Row className="py-5 px-3 px-lg-0">
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
-            >
+        <Row className="py-5 px-3 px-lg-0">
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Roofing
-                <br />& Siding
+                Roofing <br />& Siding
               </h2>
               <Container className="p-0">
                 <ImgServicesRoofing />
@@ -216,24 +148,14 @@ const Services__Body = ({ className }) => {
                     <li>Vinyl, wood, fiber-cement siding</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Roofing & Siding Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded mb-5 mb-lg-0"
-            >
+            </Container>
+          </Col>
+
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Outdoor
-                <br />
+                Outdoor <br />
                 Living
               </h2>
               <Container className="p-0">
@@ -246,24 +168,14 @@ const Services__Body = ({ className }) => {
                     <li>Retainer wall installation</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Outdoor Living Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-            <Col
-              xs={12}
-              md={6}
-              lg={4}
-              className="bg-white mx-0 mx-lg-3 px-0 drop-shadow rounded"
-            >
+            </Container>
+          </Col>
+
+          <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
+            <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">
-                Other
-                <br />
+                Other <br />
                 Services
               </h2>
               <Container className="p-0">
@@ -276,78 +188,10 @@ const Services__Body = ({ className }) => {
                     <li>Handyman services</li>
                   </ul>
                 </Container>
-                {/* <Container className="text-center mb-4">
-                  <Button
-                    btnlink="/services"
-                    btnlabel="See Our Other Home & Business Services"
-                    btn={true}
-                  />
-                </Container> */}
               </Container>
-            </Col>
-          </Row>
-        </Container>
-        {/* <h2>Renovations and Remodeling</h2>
-        <ul>
-          <li>Large renovations</li>
-          <li>Kitchen remodeling</li>
-          <li>Bathroom remodeling</li>
-          <li>Basement remodeling and finishing</li>
-          <li>Custom trim and molding</li>
-        </ul>
-
-        <h2>Gutters And Downspouts</h2>
-
-        <li>Seamless gutter installation</li>
-        <li>Downspout installation</li>
-        <li>Gutter cleaning</li>
-        <li>Gutter Repair</li>
-
-        <h2>Windows and Doors</h2>
-
-        <li>New window installation</li>
-        <li>Replacement window installation</li>
-        <li>Interior door installation</li>
-        <li>Exterior door installation</li>
-
-        <h2>Flooring and Tile</h2>
-
-        <li>Wood flooring installation</li>
-        <li>Laminate flooring installation</li>
-        <li>Stone flooring installation</li>
-        <li>Ceramic and natural stone tile installation</li>
-
-        <h2>Outdoor Living</h2>
-
-        <li>Deck and patio construction</li>
-        <li>Porch construction</li>
-        <li>Fencing installation</li>
-        <li>Retaining wall installation</li>
-
-        <h2>Weatherization and Insulation</h2>
-
-        <li>Air sealing</li>
-        <li>Weather stripping</li>
-        <li>Thermal imaging</li>
-        <li>Blower door diagnostics</li>
-        <li>Batt and rolled insulation installation</li>
-        <li>Reflective insulation installation</li>
-        <li>Blown-in insulation installation</li>
-
-        <h2>Roofing and Siding</h2>
-
-        <li>Vinyl siding installation</li>
-        <li>Wood siding installation</li>
-        <li>Fiber-cement siding installation</li>
-        <li>Asphalt shingle roofing installation</li>
-        <li>Wood shingle roofing installation</li>
-
-        <h2>Other Services</h2>
-
-        <li>Construction management</li>
-        <li>Interior and exterior painting</li>
-        <li>Handyman services</li>
-        <li>Debris removal, clean out, haul away</li> */}
+            </Container>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

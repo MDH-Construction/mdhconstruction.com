@@ -16,7 +16,7 @@ const BlogPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -27,7 +27,7 @@ const BlogPage = ({ pageContext, location }) => {
         }
       ) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
+          fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -47,16 +47,16 @@ const BlogPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Construction Blog | Construction Blog"
-        description="Construction Blog | Construction Blog"
-        canonicalLink="https://www.mdhconstruction.com/blog/"
+        title="Home Improvement & Construction Blog | Plymouth, MA"
+        description="For DIY home improvement tips, tricks, guides, and inspiration for your renovation projects, check our blog! We answer common questions and share our knowledge."
+        canonicalLink="https://www.mdhconstruction.com/blog"
       />
       <Header
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        hOne="Construction Blog"
-        hTwo="Let's Talk About General Contractors, New Construction, Roofing, Siding, Gutters, Insulation, and More"
+        textMain="Construction Blog"
+        textSecondary="Let's Talk About General Contractors, New Construction, Roofing, Siding, Gutters, Insulation, and More"
         alt="Construction Blog"
       />
       <Breadcrumb

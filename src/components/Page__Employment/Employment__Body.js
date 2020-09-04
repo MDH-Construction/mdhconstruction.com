@@ -15,7 +15,7 @@ const Employment__Body = ({ className }) => {
               <ImgMDHLogoFluid className="no-drop-shadow w-50 mx-auto mb-5 mb-lg-0" />
             </Container>
             <Container className="checklist p-3 p-lg-4 mb-5 justify-content-center align-items-center">
-              <h3>We Offer Our Employees:</h3>
+              <h2 className="text-secondary">We Offer Our Employees:</h2>
               <Row>
                 <Col xs={12} lg={6}>
                   <ul className="check mb-2">

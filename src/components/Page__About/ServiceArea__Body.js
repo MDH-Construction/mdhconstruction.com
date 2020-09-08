@@ -1,16 +1,76 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
+import ImgMdhTruckMenu from '../Images/Nav/img-mdh-truck-menu';
+import ImgLicensedMenu from '../Images/Nav/img-licensed-menu';
+import ImgTopRatedMenu from '../Images/Nav/img-top-rated-menu';
+import ImgServiceAreaMenu from '../Images/Nav/img-service-area-menu';
 
 const ServiceArea__Body = ({ className }) => {
   return (
     <section id="about-page">
       <Container>
-        <Container className="mt-4 my-lg-5 p-3 justify-content-center align-items-center drop-shadow rounded">
-          <h2 className="bg-secondary p-3 text-white mb-0">
-            Massachusetts Counties
-          </h2>
-          <Accordion>
+        <Row className="about-dropdown about-dropdown-menu px-2 px-lg-0 py-5 mt-0 mb-5 rounded drop-shadow text-center">
+          <Col lg={3}>
+            <Link to="/who-we-are">
+              <div className="text-center p-3 bg-dark-gray">
+                <ImgMdhTruckMenu className="border rounded" />
+              </div>
+            </Link>
+            <Link
+              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
+              to="/who-we-are"
+            >
+              Who <br />
+              We Are
+            </Link>
+          </Col>
+          <Col lg={3}>
+            <Link to="/what-we-do">
+              <div className="text-center p-3 bg-dark-gray">
+                <ImgLicensedMenu className="border rounded" />
+              </div>
+            </Link>
+            <Link
+              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
+              to="/what-we-do"
+            >
+              Licensing <br />
+              And Insurance
+            </Link>
+          </Col>
+          <Col lg={3}>
+            <Link to="/ratings-and-memberships">
+              <div className="text-center p-3 bg-dark-gray">
+                <ImgTopRatedMenu className="border rounded" />
+              </div>
+            </Link>
+            <Link
+              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
+              to="/ratings-and-memberships"
+            >
+              Ratings And <br />
+              Memberships
+            </Link>
+          </Col>
+          <Col lg={3}>
+            <Link to="/service-area">
+              <div className="text-center p-3 bg-dark-gray">
+                <ImgServiceAreaMenu className="border rounded" />
+              </div>
+            </Link>
+            <Link
+              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
+              to="/service-area"
+            >
+              Service <br />
+              Area
+            </Link>
+          </Col>
+        </Row>
+        <Container className="mt-4 my-lg-5 p-3 justify-content-center align-items-center rounded">
+          <h2 className="display-4 pb-5">Massachusetts Counties We Service</h2>
+          <Accordion className="drop-shadow">
             <Card className="accordion-animation">
               <Accordion.Toggle
                 className="d-flex align-content-center"

@@ -89,10 +89,10 @@ const EmploymentPage = ({ pageContext, location }) => {
             Please send your resume to{' '}
             <a
               className="font-weight-bold"
-              href="mailto:michael.maher@mdhconstruction.com?Subject=Job%20Email%20From%20Website"
+              href="mailto:jobs@mdhconstruction.com?Subject=Job%20Email%20From%20Website"
               target="_blank"
             >
-              michael.maher
+              jobs
               <wbr />
               @mdhconstruction.com
             </a>

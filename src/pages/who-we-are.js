@@ -63,8 +63,8 @@ const WhoWeArePage = ({ pageContext, location }) => {
         className=""
         fluid={imageDataBodyBanner}
         alt="MDH Construction Services"
-        textLeftOne="Your Local"
-        textLeftTwo="Construction Company"
+        textLeftOne="Your local"
+        textLeftTwo="construction company"
         textRight={
           <p>
             Since 2014, MDH Construction has been a{' '}

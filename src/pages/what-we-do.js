@@ -63,7 +63,7 @@ const WhatWeDoPage = ({ pageContext, location }) => {
         className=""
         fluid={imageDataBodyBanner}
         alt="MDH Construction Services"
-        textLeftOne="Licensed Contractor in"
+        textLeftOne="Licensed contractor in"
         textLeftTwo="Massachusetts"
         textRight={
           <p>

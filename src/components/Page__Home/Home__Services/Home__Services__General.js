@@ -25,7 +25,7 @@ const Home__Services__General = ({ className }) => {
               </h2>
               <p>
                 MDH Construction delivers affordable, high-quality general
-                contractor services such as{' '}
+                contracting services such as{' '}
                 <Link to="/services" className="font-weight-bolder">
                   full construction
                 </Link>

@@ -69,7 +69,7 @@ const ServicesPage = ({ pageContext, location }) => {
         className=""
         fluid={imageDataBodyBanner}
         alt="MDH Construction Services"
-        textLeftOne="Got service questions?"
+        textLeftOne="Got any questions?"
         textLeftTwo="Give us a call!"
         textRight={
           <p>

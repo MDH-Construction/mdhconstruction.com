@@ -361,3 +361,30 @@
     }
   }
 }
+
+// Secondary Nav Menu for About Pages
+
+.about-dropdown {
+  // opacity: 0;
+  transition: all 1s ease-in-out !important;
+}
+
+.about-dropdown-menu {
+  z-index: 1;
+  left: 0;
+  opacity: 1;
+  a {
+    color: $navDropdownText !important;
+    background-color: $navDropdownTextBg !important;
+    &:hover {
+      color: $navDropdownTextHover !important;
+      background-color: $navDropdownTextBgHover !important;
+    }
+    img {
+      transition: all 0.2s ease-in-out !important;
+      &:hover {
+        transform: scale(1.2) !important;
+      }
+    }
+  }
+}

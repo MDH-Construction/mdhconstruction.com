@@ -52,7 +52,7 @@ export default class Header extends React.Component {
               <Nav className="navbar-nav ml-auto mt-2 my-lg-0 ">
                 {/* Desktop Menu */}
                 <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/about">
+                  <Link className="nav-link text-uppercase" to="/who-we-are">
                     About <i className="fas fa-angle-down ml-1"></i>
                   </Link>
                   <Row className="my-dropdown-menu px-2 py-3 mt-0 rounded drop-shadow">
@@ -205,7 +205,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/about">
+                <Link to="/who-we-are">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">

@@ -27,37 +27,72 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
 
   const metaDescription = description || site.siteMetadata.description;
 
-  const structuredDataLocalBusiness = `{
-    "@context": "http://schema.org",
-    "@type": "LocalBusiness",
-    "name": "MDH Construction",
-    "priceRange": "$100 - $500",
-    "description": "MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!",
-    "image":
-      "https://johngrattan.com/static/8cad32f9172e09f0099b1a68e49be910/bc59e/john-grattan-circle-headshot-green.png",
-    "telephone": "+1-401 216 9868",
-    "email": "contact@johngrattan.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "30 Roosevelt Road",
-      "addressLocality": "Plymouth",
-      "addressRegion": "MA",
-      "addressCountry": "US",
-      "postalCode": "02360"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "41.9359701",
-      "longitude": "-70.7228474"
-    },
-    "hasMap": "https://www.google.com/maps/place/John+Grattan+SEO+%26+Web+Design/@41.9359701,-70.7228474,15z/data=!4m5!3m4!1s0x0:0xbffcbd1521f630a0!8m2!3d41.9359701!4d-70.7228474",
-    "openingHours": "Mo, Tu, We, Th, Fr 09:00-17:00",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "telephone": "+1-401 216 9868"
-    },
-    "url": "https://johngrattan.com/"
+  const structuredDataLocalBusiness = `
+  {
+    "@context": "https://schema.org",
+    "@graph":
+    [
+      {
+        "@type": "LocalBusiness",
+        "name": "MDH Construction",
+        "image": "",
+        "@id": "",
+        "url": "https://www.mdhconstruction.com",
+        "telephone": "(774) 269-6002",
+        "priceRange": "100-500",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "186 S Meadow Rd #2",
+          "addressLocality": "Plymouth",
+          "addressRegion": "MA",
+          "postalCode": "02360",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.917958,
+          "longitude": -70.724978
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "MDH Construction",
+        "url": "https://www.mdhconstruction.com",
+        "logo": "",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "(774) 269-6002",
+          "contactType": "customer service",
+          "contactOption": "TollFree",
+          "areaServed": "US",
+          "availableLanguage": "en"
+        },
+        "sameAs": "https://www.facebook.com/MDHConst"
+      },
+      {
+        "@type": "WebSite",
+        "name": "MDH Construction",
+        "url": "https://www.mdhconstruction.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
   }`;
 
   return (

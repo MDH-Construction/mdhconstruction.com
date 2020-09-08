@@ -27,7 +27,10 @@ const Home__Services__Insulation = ({ className }) => {
               </h2>
               <p>
                 MDH Construction is proud to be a{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link
+                  to="/ratings-and-memberships"
+                  className="font-weight-bolder"
+                >
                   Mass Save Partner
                 </Link>{' '}
                 working with Massachusetts residential customers and business

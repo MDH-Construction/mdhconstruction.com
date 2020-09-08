@@ -32,9 +32,6 @@ const Footer = () => {
               <p className="text-uppercase mb-4 text-primary lead font-weight-bold">
                 Navigation
               </p>
-              <Link className="d-flex footer-link" to="/about">
-                About
-              </Link>
               <Link className="d-flex footer-link" to="/who-we-are">
                 Who We Are
               </Link>

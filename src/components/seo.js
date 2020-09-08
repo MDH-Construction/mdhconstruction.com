@@ -41,9 +41,9 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
           "@type": "ImageObject",
           "@id": "https://www.mdhconstruction.com/#logo",
           "inLanguage": "en-US",
-          "url": "",
-          "width": 700,
-          "height": 200,
+          "url": "https://www.mdhconstruction.com/#logo",
+          "width": 140,
+          "height": 45,
           "caption": "MDH Construction"
         },
         "image": {
@@ -128,7 +128,7 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
         "image": {
           "@type": "ImageObject",
           "name": "MDH Construction image",
-          "url": ""
+          "url": "https://www.mdhconstruction.com/#logo"
         },
         "ContactPoint": {
           "@type": "ContactPoint",
@@ -150,7 +150,7 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
         "url": "https://www.mdhconstruction.com",
         "currenciesAccepted": "USD",
         "hasMap": "https://www.google.com/maps?cid=1822779321272037188",
-        "logo": "",
+        "logo": "https://www.mdhconstruction.com/#logo",
         "serviceArea": {
           "@type": "GeoCircle",
           "name": "MDH Construction service area",

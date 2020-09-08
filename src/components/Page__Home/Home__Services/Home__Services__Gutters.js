@@ -51,7 +51,7 @@ const Home__Services__Gutters = ({ className }) => {
               </p>
               <p>
                 We specialize in uniquely designed{' '}
-                <Link to="/seamless-gutters" className="font-weight-bolder">
+                <Link to="/services" className="font-weight-bolder">
                   seamless gutters
                 </Link>
                 , which we create on-site to match the exact measurements of

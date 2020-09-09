@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Privacy__Body from '../components/Page__Privacy/Privacy__Body';
+import { Helmet } from 'react-helmet';
 
 const PrivacyPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
@@ -35,9 +36,12 @@ const PrivacyPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="Privacy Policy | Your Privacy Is Critically Important To Us"
-        description="Privacy Policy | Your Privacy Is Critically Important To Us"
+        description=""
         canonicalLink="https://www.mdhconstruction.com/privacy"
       />
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <Header
         Tag="header"
         className="bg-img-page-top"

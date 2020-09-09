@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
-const FormContactPage = ({ formname }) => {
+const FormContactPage = () => {
   const [contact, setContact] = useState({
     firstName: '',
     lastName: '',
@@ -30,12 +30,11 @@ const FormContactPage = ({ formname }) => {
     <Form
       name="form-contact-page"
       method="POST"
-      action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="rounded shadow p-2 p-md-4 bg-texture-3"
       id="form-contact-page"
-      action="/thanks"
+      action="/thank-you"
     >
       <h2 className="text-secondary mb-1 mt-3 mt-lg-0">Request A Free Quote</h2>
       <hr className="divider pb-3 drop-shadow" />

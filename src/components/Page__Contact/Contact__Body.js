@@ -11,9 +11,9 @@ const Contact__Body = ({ className }) => {
           <FormContactPage />
         </Container>
       </Col>
-      <Container fluid className="pt-5 mt-5 px-0">
+      <Container fluid className="pt-5 mt-5 pb-5 pb-lg-0 px-0">
         <Row noGutters className="mb-5 bg-dark">
-          <Col xs={12} md={6} className="p-5">
+          <Col xs={12} md={6} className="p-3 p-lg-5">
             <Container className="bg-white border border-primary p-3 p-lg-3">
               <h3 className="bg-contact-bar text-white p-2">
                 <span className="drop-shadow">Contact Us Today</span>

@@ -130,6 +130,10 @@ const GalleryPage = ({ pageContext, location }) => {
     ({ node }) => node.childImageSharp
   );
 
+  const lightboxOptions = {
+    imageCaption: 'MDH Construction Gallery',
+  };
+
   return (
     <Layout>
       <SEO
@@ -182,19 +186,22 @@ const GalleryPage = ({ pageContext, location }) => {
       <section className="section-container" id="gallery-page">
         <Container className="mb-5 pb-5">
           <h2 className="display-4 font-weight-bold">Before & After</h2>
-          <Gallery images={beforeAfterImages} />
+          <Gallery
+            images={beforeAfterImages}
+            lightboxOptions={lightboxOptions}
+          />
         </Container>
         <Container className="mb-5 pb-5">
           <h2 className="display-4 font-weight-bold">Deck Construction</h2>
-          <Gallery images={deckImages} />
+          <Gallery images={deckImages} lightboxOptions={lightboxOptions} />
         </Container>
         <Container className="mb-5 pb-5">
           <h2 className="display-4 font-weight-bold">Kitchen Remodeling</h2>
-          <Gallery images={kitchenImages} />
+          <Gallery images={kitchenImages} lightboxOptions={lightboxOptions} />
         </Container>
         <Container className="mb-5">
           <h2 className="display-4 font-weight-bold">Bathroom Remodeling</h2>
-          <Gallery images={bathroomImages} />
+          <Gallery images={bathroomImages} lightboxOptions={lightboxOptions} />
         </Container>
       </section>
     </Layout>

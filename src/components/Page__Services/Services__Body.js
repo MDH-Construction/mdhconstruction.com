@@ -132,7 +132,7 @@ const Services__Body = ({ className }) => {
           </Col>
         </Row>
 
-        <Row className="py-5 px-3 px-lg-0">
+        <Row className="pt-lg-5 px-3 px-lg-0 pb-lg-5 pt-0">
           <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
             <Container className="bg-white drop-shadow rounded mx-0 px-0">
               <h2 className="bg-secondary text-white py-3 mb-0">

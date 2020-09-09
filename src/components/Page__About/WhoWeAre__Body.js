@@ -5,82 +5,21 @@ import ImgTruck from '../Images/Pages/Home/img-truck';
 import Button from '../Button/Button';
 import ImgCraftsmanship from '../Images/Pages/About/WhoWeAre/img-craftsmanship';
 import ImgCustomerCare from '../Images/Pages/About/WhoWeAre/img-customer-care';
-import ImgMdhTruckMenu from '../Images/Nav/img-mdh-truck-menu';
-import ImgLicensedMenu from '../Images/Nav/img-licensed-menu';
-import ImgTopRatedMenu from '../Images/Nav/img-top-rated-menu';
-import ImgServiceAreaMenu from '../Images/Nav/img-service-area-menu';
+import AboutNav from '../AboutNav/AboutNav';
 
 const WhoWeAre__Body = ({ className }) => {
   return (
     <section className="section-container" id="about-page">
       <Container>
-        <Row className="about-dropdown about-dropdown-menu px-2 px-lg-0 py-5 mt-0 mb-5 rounded drop-shadow text-center">
-          <Col lg={3}>
-            <Link to="/who-we-are">
-              <div className="text-center p-3 bg-dark-gray">
-                <ImgMdhTruckMenu className="border rounded" />
-              </div>
-            </Link>
-            <Link
-              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-              to="/who-we-are"
-            >
-              Who <br />
-              We Are
-            </Link>
-          </Col>
-          <Col lg={3}>
-            <Link to="/what-we-do">
-              <div className="text-center p-3 bg-dark-gray">
-                <ImgLicensedMenu className="border rounded" />
-              </div>
-            </Link>
-            <Link
-              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-              to="/what-we-do"
-            >
-              Licensing <br />
-              And Insurance
-            </Link>
-          </Col>
-          <Col lg={3}>
-            <Link to="/ratings-and-memberships">
-              <div className="text-center p-3 bg-dark-gray">
-                <ImgTopRatedMenu className="border rounded" />
-              </div>
-            </Link>
-            <Link
-              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-              to="/ratings-and-memberships"
-            >
-              Ratings And <br />
-              Memberships
-            </Link>
-          </Col>
-          <Col lg={3}>
-            <Link to="/service-area">
-              <div className="text-center p-3 bg-dark-gray">
-                <ImgServiceAreaMenu className="border rounded" />
-              </div>
-            </Link>
-            <Link
-              className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-              to="/service-area"
-            >
-              Service <br />
-              Area
-            </Link>
-          </Col>
-        </Row>
-
+        <AboutNav />
         <h2 className="display-4">Our Values</h2>
         <Row className="my-5 py-5">
-          <Col className="order-1 order-lg-1">
-            <Container>
+          <Col xs={12} lg={6} className="order-1 order-lg-1">
+            <Container className="mb-5 mb-lg-0">
               <ImgCraftsmanship className="solid-shadow-secondary-top-left" />
             </Container>
           </Col>
-          <Col className="order-2 order-lg-1">
+          <Col xs={12} lg={6} className="order-2 order-lg-1">
             <Container>
               <h3 className="mb-3">Superior Craftsmanship</h3>
               <hr className="divider mb-4" />
@@ -105,12 +44,12 @@ const WhoWeAre__Body = ({ className }) => {
           </Col>
         </Row>
         <Row className="my-5 py-5">
-          <Col className="order-1 order-lg-2">
-            <Container>
+          <Col xs={12} lg={6} className="order-1 order-lg-2">
+            <Container className="mb-5 mb-lg-0">
               <ImgCustomerCare className="solid-shadow-secondary-bottom-right" />
             </Container>
           </Col>
-          <Col className="order-2 order-lg-1">
+          <Col xs={12} lg={6} className="order-2 order-lg-1">
             <Container>
               <h3 className="mb-3">Unmatched Customer Care</h3>
               <hr className="divider mb-4" />

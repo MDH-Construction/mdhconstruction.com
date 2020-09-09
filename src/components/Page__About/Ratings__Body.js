@@ -11,74 +11,14 @@ import ImgBBBAcc from '../Images/Pages/About/Ratings/img-bbb-acc';
 import ImgBBBReviews from '../Images/Pages/About/Ratings/img-bbb-reviews';
 import ImgAngiesList from '../Images/Logos/img-angies-list';
 import ImgMassSave from '../Images/Logos/img-mass-save';
-import ImgMdhTruckMenu from '../Images/Nav/img-mdh-truck-menu';
-import ImgLicensedMenu from '../Images/Nav/img-licensed-menu';
-import ImgTopRatedMenu from '../Images/Nav/img-top-rated-menu';
-import ImgServiceAreaMenu from '../Images/Nav/img-service-area-menu';
+import AboutNav from '../AboutNav/AboutNav';
 
 const Ratings__Body = ({ className }) => {
   return (
     <section className="section-no-margin-bottom" id="about-page-ratings">
       <Container fluid className="px-0 mx-0">
         <Container>
-          <Row className="about-dropdown about-dropdown-menu px-2 px-lg-0 py-5 mt-0 mb-5 rounded drop-shadow text-center">
-            <Col lg={3}>
-              <Link to="/who-we-are">
-                <div className="text-center p-3 bg-dark-gray">
-                  <ImgMdhTruckMenu className="border rounded" />
-                </div>
-              </Link>
-              <Link
-                className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-                to="/who-we-are"
-              >
-                Who <br />
-                We Are
-              </Link>
-            </Col>
-            <Col lg={3}>
-              <Link to="/what-we-do">
-                <div className="text-center p-3 bg-dark-gray">
-                  <ImgLicensedMenu className="border rounded" />
-                </div>
-              </Link>
-              <Link
-                className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-                to="/what-we-do"
-              >
-                Licensing <br />
-                And Insurance
-              </Link>
-            </Col>
-            <Col lg={3}>
-              <Link to="/ratings-and-memberships">
-                <div className="text-center p-3 bg-dark-gray">
-                  <ImgTopRatedMenu className="border rounded" />
-                </div>
-              </Link>
-              <Link
-                className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-                to="/ratings-and-memberships"
-              >
-                Ratings And <br />
-                Memberships
-              </Link>
-            </Col>
-            <Col lg={3}>
-              <Link to="/service-area">
-                <div className="text-center p-3 bg-dark-gray">
-                  <ImgServiceAreaMenu className="border rounded" />
-                </div>
-              </Link>
-              <Link
-                className="nav-link px-3 py-2 text-uppercase text-center bg-primary text-white font-weight-bold"
-                to="/service-area"
-              >
-                Service <br />
-                Area
-              </Link>
-            </Col>
-          </Row>
+          <AboutNav />
         </Container>
         <h2 className="display-4 pb-5">
           Trusted by Top Industry Organizations

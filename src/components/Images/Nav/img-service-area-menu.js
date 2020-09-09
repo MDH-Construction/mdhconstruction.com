@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 const ImgServiceAreaMenu = ({ className }) => {
   const data = useStaticQuery(graphql`
     query ImgServiceAreaMenuQ {
-      image: file(
+      imageDesktop: file(
         relativePath: {
           eq: "images/mdh-construction-service-area-plymouth-boston-massachusetts.jpg"
         }
@@ -17,12 +17,35 @@ const ImgServiceAreaMenu = ({ className }) => {
           }
         }
       }
+      imageMobile: file(
+        relativePath: {
+          eq: "images/mdh-construction-service-area-plymouth-boston-massachusetts.jpg"
+        }
+      ) {
+        id
+        childImageSharp {
+          fixed(quality: 90, width: 150, height: 132) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
     }
   `);
 
+  const sources = [
+    {
+      ...data.imageMobile.childImageSharp.fixed,
+      media: `(max-width: 767px)`,
+    },
+    {
+      ...data.imageDesktop.childImageSharp.fixed,
+      media: `(min-width: 768px)`,
+    },
+  ];
+
   return (
     <Img
-      fixed={data.image.childImageSharp.fixed}
+      fixed={sources}
       alt="A map of Massachusetts showing MDH Construction's service area from Boston, MA to Plymouth, MA."
       className={className}
     />

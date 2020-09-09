@@ -41,14 +41,14 @@ const BlogPostTemplate = ({ data }) => {
       "name": "${post.frontmatter.author}"
     },
     "datePublished": "${post.frontmatter.date}",
-    "image": "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg",
+    "image": "https://www.mdhconstruction.com/",
     "url": "${post.frontmatter.url}",
     "publisher": {
       "@type": "Organization",
-      "name": "John Grattan SEO & Web Design",
+      "name": "MDH Construction",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg"
+        "url": "https://www.mdhconstruction.com"
       }
     },
     "headline" : "${post.frontmatter.title}",

@@ -5,7 +5,7 @@ import Img from 'gatsby-image';
 const ImgLicensedMenu = ({ className }) => {
   const data = useStaticQuery(graphql`
     query ImgLicensedMenuQ {
-      image: file(
+      imageDesktop: file(
         relativePath: {
           eq: "images/mdh-construction-fully-licensed-insured-plymouth-ma-menu.png"
         }
@@ -17,12 +17,35 @@ const ImgLicensedMenu = ({ className }) => {
           }
         }
       }
+      imageMobile: file(
+        relativePath: {
+          eq: "images/mdh-construction-fully-licensed-insured-plymouth-ma-menu.png"
+        }
+      ) {
+        id
+        childImageSharp {
+          fixed(quality: 90, width: 150, height: 132) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `);
 
+  const sources = [
+    {
+      ...data.imageMobile.childImageSharp.fixed,
+      media: `(max-width: 767px)`,
+    },
+    {
+      ...data.imageDesktop.childImageSharp.fixed,
+      media: `(min-width: 768px)`,
+    },
+  ];
+
   return (
     <Img
-      fixed={data.image.childImageSharp.fixed}
+      fixed={sources}
       alt="MDH Construction is a fully licensed and insured in Massachusetts, servicing Boston, MA to Plymouth, MA."
       className={className}
     />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
-const FormHomePage = ({ formname }) => {
+const FormHomePage = () => {
   const [contact, setContact] = useState({
     firstName: '',
     lastName: '',
@@ -34,7 +34,7 @@ const FormHomePage = ({ formname }) => {
       data-netlify-honeypot="bot-field"
       className="border border-primary rounded shadow p-2 p-md-4 bg-texture-3"
       id="form-home-page"
-      action="/thanks"
+      action="/thank-you"
     >
       <h3 className="mb-1 mt-3 mt-lg-0">Request A Free Quote</h3>
       <hr className="divider pb-3 drop-shadow" />

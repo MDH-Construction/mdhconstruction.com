@@ -37,7 +37,7 @@ const PrivacyPage = ({ pageContext, location }) => {
       <SEO
         title="Privacy Policy | Your Privacy Is Critically Important To Us"
         description=""
-        canonicalLink="https://www.mdhconstruction.com/privacy"
+        canonicalLink="https://www.mdhconstruction.com/privacy/"
       />
       <Helmet>
         <meta name="robots" content="noindex" />

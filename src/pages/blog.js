@@ -49,7 +49,7 @@ const BlogPage = ({ pageContext, location }) => {
       <SEO
         title="Home Improvement & Construction Blog | Plymouth, MA"
         description="For DIY home improvement tips, tricks, guides, and inspiration for your renovation projects, check our blog! We answer common questions and share our knowledge"
-        canonicalLink="https://www.mdhconstruction.com/blog"
+        canonicalLink="https://www.mdhconstruction.com/blog/"
       />
       <Header
         Tag="header"

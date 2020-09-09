@@ -49,7 +49,7 @@ const ServicesPage = ({ pageContext, location }) => {
       <SEO
         title="Decks, Gutters, Insulation, Remodel & More | Plymouth, MA"
         description="MDH Construction has the knowledge & expertise to handle any home improvement, remodeling, or commercial construction project. Call 774-269-6002 for free quotes"
-        canonicalLink="https://www.mdhconstruction.com/services"
+        canonicalLink="https://www.mdhconstruction.com/services/"
       />
       <Header
         Tag="header"

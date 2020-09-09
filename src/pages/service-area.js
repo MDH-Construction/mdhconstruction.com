@@ -47,7 +47,7 @@ const ServiceAreaPage = ({ pageContext, location }) => {
       <SEO
         title="Service Areas: Plymouth, MA, Plymouth County, Bristol County"
         description="MDH Construction's office is located at 186 South Meadow Rd #2, Plymouth, MA 02360 and we service Plymouth County, South Shore, Cape Cod, and the Boston area."
-        canonicalLink="https://www.mdhconstruction.com/service-area"
+        canonicalLink="https://www.mdhconstruction.com/service-area/"
       />
       <Header
         Tag="header"

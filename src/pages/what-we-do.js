@@ -47,7 +47,7 @@ const WhatWeDoPage = ({ pageContext, location }) => {
       <SEO
         title="Licensed Contractor, Full Liability Insurance | Plymouth, MA"
         description="MDH Construction is a fully licensed home improvement contractor & construction supervisor in Massachusetts. We also carry full-coverage liability insurance."
-        canonicalLink="https://www.mdhconstruction.com/what-we-do"
+        canonicalLink="https://www.mdhconstruction.com/what-we-do/"
       />
       <Header
         Tag="header"

@@ -29,7 +29,7 @@ const ContactPage = () => {
       <SEO
         title="Contact Us Today For a FREE In-Home Estimate | Plymouth, MA"
         description="Let's talk about your next project! Call us at (774) 269-6002, send an email, or complete our form to receive a free quote, make an appointment and get started!"
-        canonicalLink="https://www.mdhconstruction.com/contact-us"
+        canonicalLink="https://www.mdhconstruction.com/contact-us/"
       />
       <Header__Contact
         Tag="header"

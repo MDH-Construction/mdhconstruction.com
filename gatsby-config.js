@@ -1,6 +1,6 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://letmeseemysite.com',
+  URL: NETLIFY_SITE_URL = 'https://wwww.mdhconstruction.com',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
@@ -49,44 +49,13 @@ module.exports = {
         ],
       },
     },
-
-    // {
-    //   resolve: 'gatsby-plugin-mailchimp',
-    //   options: {
-    //     endpoint:
-    //       'https://johngrattan.us19.list-manage.com/subscribe/post?u=15d6d54f80db22fad48ed30c5&amp;id=d5ba0314c8',
-    //   },
-    // },
-
-    // {
-    //   resolve: 'gatsby-plugin-google-tagmanager',
-    //   options: {
-    //     id: 'GTM-PFKLK3Q',
-
-    //     // Include GTM in development.
-    //     // Defaults to false meaning GTM will only be loaded in production.
-    //     includeInDevelopment: false,
-
-    //     // datalayer to be set before GTM is loaded
-    //     // should be an object or a function that is executed in the browser
-    //     // Defaults to null
-    //     defaultDataLayer: { platform: 'gatsby' },
-
-    //     // Specify optional GTM environment details.
-    //     // gtmAuth: 'JG_GTM_ENV_AUTH_STRING',
-    //     // gtmPreview: 'JG_GTM_ENV_PREVIEW',
-    //     // dataLayerName: 'JG_GTM_DATA_LAYER',
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            // CHANGE TO THIS WHEN LIVE
-            // policy: [{ userAgent: '*' }],
-            policy: [{ userAgent: '*', disallow: ['/'] }],
+            policy: [{ userAgent: '*' }],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],
@@ -101,12 +70,12 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: 'UA-157734045-1',
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-70467283-1',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

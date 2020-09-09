@@ -204,9 +204,6 @@ function SEO({
 
       <meta name="description" content={metaDescription} />
 
-      {/* REMOVE WHEN LIVE */}
-      <meta name="robots" content="noindex" />
-
       {/* Open Graph tags */}
       <meta property="og:url" content={siteUrl} />
       <meta property="og:type" content="website" />

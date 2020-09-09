@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
@@ -58,7 +58,7 @@ const EmploymentPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Employment at MDH Construction"
         textSecondary="Join Our Team of Expert Tradesmen"
-        alt="About MDH Construction"
+        alt="MDH Construction employees leaving a job site in Plymouth, MA after working on gutter installion, deck construction, and home insulation."
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -69,12 +69,12 @@ const EmploymentPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="A person cirlcing a help wanted ad in the newspaper with a pen."
         textLeftOne="We are hiring."
         textLeftTwo="Call us today!"
         textRight={
           <p>
-            At MDH Construction we know that{' '}
+            At <Link to="/who-we-are">MDH Construction</Link> we know that{' '}
             <strong>a company is only as good its people</strong>. That is why
             we've built a team of tradesmen who care deeply about the quality of
             their work and the clients we serve.

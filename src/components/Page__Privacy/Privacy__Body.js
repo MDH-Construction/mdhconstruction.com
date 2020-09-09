@@ -8,7 +8,7 @@ const Privacy__Body = ({ className }) => {
     <section id="about-page">
       <Container className="p-lg-5">
         <Container className="mx-auto py-3 px-5">
-          <h2 className="mt-2">Welcome to Our Privacy Policy</h2>
+          <h2 className="mt-2 display-4">Welcome to Our Privacy Policy</h2>
           <hr className="divider my-4" />
         </Container>
         <h3 className="text-left pt-5 pb-4">
@@ -18,15 +18,16 @@ const Privacy__Body = ({ className }) => {
           It is MDH Construction's policy to respect your privacy regarding any
           information We may collect while operating Our website. This Privacy
           Policy applies to <Link to="/">https://www.mdhconstruction.com</Link>{' '}
-          (hereinafter, "We", "Us", "Our" or "https://www.mdhconstruction.com").
-          We respect your privacy and We're committed to protecting personally
-          identifiable information you may provide Us through the Website. We
-          have adopted this privacy policy ("Privacy Policy") to explain what
-          information may be collected on Our Website, how We use this
-          information, and under what circumstances We may disclose the
-          information to third parties. This Privacy Policy applies only to
-          information We collect through the Website and does not apply to our
-          collection of information from other sources.
+          (hereinafter, "We", "Us", "Our" or "
+          <Link to="/">https://www.mdhconstruction.com</Link>"). We respect your
+          privacy and We're committed to protecting personally identifiable
+          information you may provide Us through the Website. We have adopted
+          this privacy policy ("Privacy Policy") to explain what information may
+          be collected on Our Website, how We use this information, and under
+          what circumstances We may disclose the information to third parties.
+          This Privacy Policy applies only to information We collect through the
+          Website and does not apply to our collection of information from other
+          sources.
         </p>
         <p>
           This Privacy Policy sets forth the general rules and policies
@@ -50,9 +51,10 @@ const Privacy__Body = ({ className }) => {
         <p>
           MDH Construction also collects potentially personally-identifying
           information like Internet Protocol (IP) addresses for logged in users
-          and for users leaving comments on https://www.mdhconstruction.com blog
-          posts. MDH Construction only discloses logged in user and commenter IP
-          addresses under the same circumstances that it uses and discloses
+          and for users leaving comments on{' '}
+          <Link to="/">https://www.mdhconstruction.com</Link> blog posts. MDH
+          Construction only discloses logged in user and commenter IP addresses
+          under the same circumstances that it uses and discloses
           personally-identifying information as described below.
         </p>
         <h3 className="text-left pt-5 pb-4">
@@ -63,9 +65,9 @@ const Privacy__Body = ({ className }) => {
           MDH Construction in ways that require MDH Construction to gather
           personally-identifying information. The amount and type of information
           that MDH Construction gathers depends on the nature of the
-          interaction. For example, We ask visitors who sign up for a blog at
-          https://www.mdhconstruction.com to provide a username and email
-          address.
+          interaction. For example, We ask visitors who sign up for a blog at{' '}
+          <Link to="/">https://www.mdhconstruction.com</Link> to provide a
+          username and email address.
         </p>
         <h3 className="text-left pt-5 pb-4">Security</h3>
         <p>
@@ -91,16 +93,16 @@ const Privacy__Body = ({ className }) => {
           Our Website uses Google Ads for Remarketing
         </h3>
         <p>
-          https://www.mdhconstruction.com uses the remarketing services to
-          advertise on third party websites (including Google) to previous
-          visitors to Our site. It could mean that We advertise to previous
-          visitors who haven't completed a task on Our site, for example using
-          the contact form to make an enquiry. This could be in the form of an
-          advertisement on the Google search results page, or a site in the
-          Google Display Network. Third-party vendors, including Google, use
-          cookies to serve ads based on someone's past visits. Of course, any
-          data collected will be used in accordance with Our own privacy policy
-          and Google's privacy policy.
+          <Link to="/">https://www.mdhconstruction.com</Link> uses the
+          remarketing services to advertise on third party websites (including
+          Google) to previous visitors to Our site. It could mean that We
+          advertise to previous visitors who haven't completed a task on Our
+          site, for example using the contact form to make an enquiry. This
+          could be in the form of an advertisement on the Google search results
+          page, or a site in the Google Display Network. Third-party vendors,
+          including Google, use cookies to serve ads based on someone's past
+          visits. Of course, any data collected will be used in accordance with
+          Our own privacy policy and Google's privacy policy.
         </p>
         <p>
           You can set preferences for how Google advertises to you using the
@@ -126,13 +128,13 @@ const Privacy__Body = ({ className }) => {
           A cookie is a string of information that a website stores on a
           visitor's computer, and that the visitor's browser provides to the
           website each time the visitor returns. MDH Construction uses cookies
-          to help MDH Construction identify and track visitors, their usage of
-          https://www.mdhconstruction.com, and their website access preferences.
-          MDH Construction visitors who do not wish to have cookies placed on
-          their computers should set their browsers to refuse cookies before
-          using MDH Construction's websites, with the drawback that certain
-          features of MDH Construction's websites may not function properly
-          without the aid of cookies.
+          to help MDH Construction identify and track visitors, their usage of{' '}
+          <Link to="/">https://www.mdhconstruction.com</Link>, and their website
+          access preferences. MDH Construction visitors who do not wish to have
+          cookies placed on their computers should set their browsers to refuse
+          cookies before using MDH Construction's websites, with the drawback
+          that certain features of MDH Construction's websites may not function
+          properly without the aid of cookies.
         </p>
         <p>
           By continuing to navigate Our website without changing your cookie
@@ -150,8 +152,8 @@ const Privacy__Body = ({ className }) => {
         </p>
         <Container className="pt-5 px-0 px-lg-5">
           <p className="text-center mb-5 lead font-weight-bold">
-            If you have any questions about this Privacy Policy, please contact
-            us:
+            If you have any questions about this Privacy Policy, please{' '}
+            <Link to="/">contact us</Link>.
           </p>
           <Container className="bg-white border border-primary p-3 p-lg-3">
             <h3 className="text-center bg-contact-bar text-white p-2">

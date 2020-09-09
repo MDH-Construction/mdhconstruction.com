@@ -15,10 +15,10 @@ const Testimonials__Body = ({ className }) => {
           <h2 className="display-4">What People Are Saying...</h2>
           <Container className="p-1 p-lg-3 bg-secondary rounded my-5 drop-shadow">
             <Row noGutters className="p-3">
-              <Col xs={12} lg={4} className="order-1 order-lg-1">
+              <Col xs={12} lg={5} className="order-1 order-lg-1">
                 <ImgJessicaLynneDeck />
               </Col>
-              <Col xs={12} lg={8} className="order-2 order-lg-2 bg-light">
+              <Col xs={12} lg={7} className="order-2 order-lg-2 bg-light">
                 <ReviewBox
                   reviewImage={
                     <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>

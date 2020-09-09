@@ -45,6 +45,7 @@ const Blog__Section = ({ className }) => {
                 <Img
                   className="mb-2"
                   fluid={post.node.frontmatter.image.childImageSharp.fluid}
+                  alt="MDH Construction blog post thumbnail"
                 />
               </Link>
               <div>

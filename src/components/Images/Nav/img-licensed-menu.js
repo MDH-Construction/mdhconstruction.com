@@ -23,7 +23,7 @@ const ImgLicensedMenu = ({ className }) => {
   return (
     <Img
       fixed={data.image.childImageSharp.fixed}
-      alt="MDH Construction fully licensed and insured in Massachusetts, servicing Boston, MA to Plymouth, MA"
+      alt="MDH Construction is a fully licensed and insured in Massachusetts, servicing Boston, MA to Plymouth, MA."
       className={className}
     />
   );

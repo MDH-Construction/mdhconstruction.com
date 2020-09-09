@@ -23,7 +23,7 @@ const ImgMdhTruckMenu = ({ className }) => {
   return (
     <Img
       fixed={data.image.childImageSharp.fixed}
-      alt="MDH Construction has trucks servicing Massachusetts, located in Plymouth, MA"
+      alt="The MDH Construction truck servicing a home improvement project in Plymouth, Massachusetts"
       className={className}
     />
   );

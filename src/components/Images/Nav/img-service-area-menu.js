@@ -23,7 +23,7 @@ const ImgServiceAreaMenu = ({ className }) => {
   return (
     <Img
       fixed={data.image.childImageSharp.fixed}
-      alt="MDH Construction service area throughout Massachusetts, from Boston, MA to Plymouth, MA"
+      alt="A map of Massachusetts showing MDH Construction's service area from Boston, MA to Plymouth, MA."
       className={className}
     />
   );

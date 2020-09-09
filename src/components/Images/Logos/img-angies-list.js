@@ -23,7 +23,7 @@ const ImgAngiesList = ({ className }) => {
   return (
     <Img
       fixed={data.image.childImageSharp.fixed}
-      alt="MDH Construction has an A Rating with Angies List in Plymouth, MA"
+      alt="MDH Construction has an A Rating with Angie's List in Plymouth, MA"
       className={className}
     />
   );

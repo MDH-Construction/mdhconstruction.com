@@ -23,7 +23,7 @@ const ImgCraftsmanship = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="MDH Construction guarantees superior craftsmanship from our professionally trained staff in Plymouth, MA"
+      alt="MDH Construction employee hammering at a job site with superior craftsmanship and professional training in Plymouth, MA."
       className={className}
     />
   );

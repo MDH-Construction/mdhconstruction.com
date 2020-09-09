@@ -55,7 +55,7 @@ const ServiceAreaPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Service Area in Massachusetts"
         textSecondary="Plymouth, Bristol, Barnstable County, & More"
-        alt="Service Area"
+        alt="Map of Massachusetts, showing MDH Construction's service areas from Boston, MA to Plymouth, MA."
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -66,7 +66,7 @@ const ServiceAreaPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="Massachusetts seal logo"
         textLeftOne="Centrally located in"
         textLeftTwo="Plymouth, MA"
         textRight={

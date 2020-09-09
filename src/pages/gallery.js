@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { Container } from 'react-bootstrap';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Gallery from '@browniebroke/gatsby-image-gallery';
@@ -143,7 +143,7 @@ const GalleryPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Construction Project Gallery"
         textSecondary="Before & After Photos, Decks, Remodels, & More"
-        alt="Gallery MDH Construction"
+        alt="Gallery images of MDH Construction projects throughout Massachusetts"
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -154,7 +154,7 @@ const GalleryPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="A new deck built by MDH Construction at a residential home in Plymouth, MA."
         textLeftOne="Check out our"
         textLeftTwo="completed work!"
         textRight={
@@ -164,11 +164,18 @@ const GalleryPage = ({ pageContext, location }) => {
             !
             <br />
             <br />
-            Take a look at our gallery to get ideas for your next home
-            improvement project or just to see our craftsmanship.
+            Take a look at our gallery to get ideas for your next{' '}
+            <Link to="/services">home improvement project</Link> or just to see
+            our craftsmanship.
             <br />
             <br />
-            <strong>If you see anything you like, please let us know</strong>!
+            <strong>
+              If you see anything you like, feel free to{' '}
+              <Link to="/contact-us" className="font-weight-normal">
+                contact us
+              </Link>
+            </strong>
+            !
           </p>
         }
       />

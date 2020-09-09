@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col } from 'react-bootstrap';
 import ImgMDHLogoFluid from '../Images/Logos/img-mdh-logo-fluid';
-import ButtonExternal from '../ButtonExternal/ButtonExternal';
 import ImgEmploymentReview from '../Images/Pages/Employment/img-employment-review';
 
 const Employment__Body = ({ className }) => {

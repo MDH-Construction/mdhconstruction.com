@@ -43,8 +43,8 @@ const PrivacyPage = ({ pageContext, location }) => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         textMain="Privacy Policy"
-        textSecondary="Your privacy is critically important to us"
-        alt="Privacy"
+        textSecondary="Please Read Our Privacy Policy Before Using Our Site"
+        alt="Metal padlock signifying privacy among our users"
       />
       <Breadcrumb
         crumbs={crumbs}

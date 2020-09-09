@@ -29,7 +29,7 @@ const Footer__ContactFormSection = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="New home construction services like roofing by MDH Construction Plymouth, MA"
+      alt="A MDH Construction job site in Plymouth, MA building a new home."
     >
       <Container>
         <Row className="justify-content-center">

@@ -2,12 +2,12 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const ImgCustomerCare = ({ className }) => {
+const ImgArrowLeft = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ImgCustomerCareQ {
+    query ImgArrowLeftQ {
       image: file(
         relativePath: {
-          eq: "images/pages/about/who-we-are/customer-care-general-contractor-mdh-construction-plymouth-ma.jpg"
+          eq: "images/pages/contact/arrow-left-mdh-construction-plymouth-ma.png"
         }
       ) {
         id
@@ -23,10 +23,10 @@ const ImgCustomerCare = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="MDH Construction employee taking down notes with a home owner, emphasizing unmatched customer care while servicing Plymouth, MA."
+      alt="Arrow pointing to our contact form to request a free in-home quote for your next construction project"
       className={className}
     />
   );
 };
 
-export default ImgCustomerCare;
+export default ImgArrowLeft;

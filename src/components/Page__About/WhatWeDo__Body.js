@@ -111,7 +111,7 @@ const WhatWeDo__Body = ({ className }) => {
               </h2>
               <p className="text-white">
                 MDH Construction also carries full-coverage liability insurance
-                and we maintain works' compensation on our employees.
+                and we maintain workers' compensation on our employees.
               </p>
               <p className="text-white">
                 <strong>

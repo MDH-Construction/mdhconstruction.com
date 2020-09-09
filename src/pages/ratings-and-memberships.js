@@ -55,7 +55,7 @@ const RatingsPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Ratings And Memberships"
         textSecondary="Better Business Bureau, Mass Save, Home Advisor, & More"
-        alt="Ratings And Memberships"
+        alt="An MDH Construction job site in Plymouth, MA building a new home."
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -66,7 +66,7 @@ const RatingsPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="Gold stars on a wooden table"
         textLeftOne="A local company"
         textLeftTwo="you can rely on"
         textRight={

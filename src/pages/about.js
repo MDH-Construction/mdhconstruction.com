@@ -5,6 +5,7 @@ import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import About__Body from '../components/Page__About/About__Body';
+import { Helmet } from 'react-helmet';
 
 const AboutPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
@@ -38,6 +39,9 @@ const AboutPage = ({ pageContext, location }) => {
         description="About Us | Licensed General Contractor from Plymouth, MA"
         canonicalLink="https://www.mdhconstruction.com/about"
       />
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <Header
         Tag="header"
         className="bg-img-page-top"

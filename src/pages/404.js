@@ -35,7 +35,7 @@ const NotFoundPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="Something Went Wrong! Page Cannot Be Found | MDH Construction"
-        description="404 Not Found | Licensed General Contractor from Plymouth, MA"
+        description=""
         canonicalLink="https://www.mdhconstruction.com/404"
       />
       <Header

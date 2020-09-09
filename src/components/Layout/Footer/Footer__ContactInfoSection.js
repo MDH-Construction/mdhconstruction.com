@@ -28,7 +28,7 @@ const Footer__ContactInfoSection = () => {
       className="footer-contact-info-section py-0 pt-5 py-lg-5 section-no-margin"
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="John Grattan SEO & Web Design homepage background section - computer screen with SEO stats"
+      alt="Wooden shingles used for home improvement projects throughout Plymouth, MA"
     >
       <Container className="p-5">
         <h2 className="display-4 font-weight-bold text-white mb-5 drop-shadow-darker">

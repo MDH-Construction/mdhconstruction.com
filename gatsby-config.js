@@ -42,6 +42,10 @@ module.exports = {
             pathname: '/ratings-and-memberships',
             crumbLabel: 'Ratings and Memberships',
           },
+          {
+            pathname: '/thank-you',
+            crumbLabel: 'Thank You',
+          },
         ],
       },
     },

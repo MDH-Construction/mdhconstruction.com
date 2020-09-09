@@ -125,9 +125,15 @@ const Contact__Body = ({ className }) => {
                 Continue on MA-3 South, then take exit 6B Samoset St. Continue
                 on Samoset St for 1.2 miles and turn left onto 7 Hills Rd,
                 followed by a slight right onto Federal Furnace Rd. Turn right
-                onto S Meadow Rd and continue for 1.7 miles. Our MDH
-                Construction office is located on the left at 186 S Meadow Rd,
-                Plymouth, MA 02360.
+                onto S Meadow Rd and continue for 1.7 miles. Our{' '}
+                <a
+                  href="https://www.google.com/maps?cid=1822779321272037188"
+                  target="_blank"
+                  className="underline font-weight-bold"
+                >
+                  MDH Construction office
+                </a>{' '}
+                is located on the left at 186 S Meadow Rd, Plymouth, MA 02360.
                 <div className="text-sans-serif d-flex mt-5 mb-4 justify-content-center">
                   <i className="text-secondary fas fa-2x fa-directions"></i>
                   <a
@@ -158,8 +164,15 @@ const Contact__Body = ({ className }) => {
                 the fork, follow signs for Samoset St. Continue on Samoset St
                 for 1.3 miles and turn left onto 7 Hills Rd, followed by a
                 slight right onto Federal Furnace Rd. Turn right onto S Meadow
-                Rd and continue for 1.7 miles. Our MDH Construction office is
-                located on the left at 186 S Meadow Rd, Plymouth, MA 02360.
+                Rd and continue for 1.7 miles. Our{' '}
+                <a
+                  href="https://www.google.com/maps?cid=1822779321272037188"
+                  target="_blank"
+                  className="underline font-weight-bold"
+                >
+                  MDH Construction office
+                </a>{' '}
+                is located on the left at 186 S Meadow Rd, Plymouth, MA 02360.
                 <div className="text-sans-serif d-flex mt-5 mb-4 justify-content-center">
                   <i className="text-secondary fas fa-2x fa-directions"></i>
                   <a
@@ -188,9 +201,15 @@ const Contact__Body = ({ className }) => {
                 I-195 East to Wareham, then take exit 22B toward I-495
                 North/Marlboro. Merge onto I-495 North, then take exit 2 for
                 MA-58 North toward Carver/Plymouth. Turn left to stay on MA-58
-                North and follow to S Meadow Rd in Plymouth. Our MDH
-                Construction office is located on the right at 186 S Meadow Rd,
-                Plymouth, MA 02360.
+                North and follow to S Meadow Rd in Plymouth. Our{' '}
+                <a
+                  href="https://www.google.com/maps?cid=1822779321272037188"
+                  target="_blank"
+                  className="underline font-weight-bold"
+                >
+                  MDH Construction office
+                </a>{' '}
+                is located on the right at 186 S Meadow Rd, Plymouth, MA 02360.
                 <div className="text-sans-serif d-flex mt-5 mb-4 justify-content-center">
                   <i className="text-secondary fas fa-2x fa-directions"></i>
                   <a
@@ -225,8 +244,15 @@ const Contact__Body = ({ className }) => {
                 3rd exit and stay on US-44 E. Take the MA-58 exit toward
                 Carver/Plympton, turn left onto Plymouth St, then continue onto
                 Center St. Turn left onto Pond St, followed by a left onto to S
-                Meadow Rd in Plymouth. Our MDH Construction office is located on
-                the right at 186 S Meadow Rd, Plymouth, MA 02360.
+                Meadow Rd in Plymouth. Our{' '}
+                <a
+                  href="https://www.google.com/maps?cid=1822779321272037188"
+                  target="_blank"
+                  className="underline font-weight-bold"
+                >
+                  MDH Construction office
+                </a>{' '}
+                is located on the right at 186 S Meadow Rd, Plymouth, MA 02360.
                 <div className="text-sans-serif d-flex mt-5 mb-4 justify-content-center">
                   <i className="text-secondary fas fa-2x fa-directions"></i>
                   <a

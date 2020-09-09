@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -57,7 +57,7 @@ const ServicesPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Construction Services"
         textSecondary="Gutters, Insulation, Decks, Windows, Doors & More"
-        alt="MDH Construction Services"
+        alt="An MDH Construction job site in Plymouth, MA with crews working on a roof repair."
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -68,7 +68,7 @@ const ServicesPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="A hammer, nailes, ruler, and blueprints laying on a wooden table."
         textLeftOne="Got any questions?"
         textLeftTwo="Give us a call!"
         textRight={
@@ -84,8 +84,12 @@ const ServicesPage = ({ pageContext, location }) => {
             craftsmanship and want to help you meet your goals.
             <br />
             <br />
-            Our <strong>
-              highly skilled professionals can assist you
+            Our{' '}
+            <strong>
+              <Link to="/who-we-are" className="font-weight-normal">
+                highly skilled professionals
+              </Link>{' '}
+              can assist you
             </strong>{' '}
             with a broad range of services, including:
           </p>

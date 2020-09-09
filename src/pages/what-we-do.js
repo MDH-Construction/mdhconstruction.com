@@ -46,7 +46,7 @@ const WhatWeDoPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="Licensed Contractor, Full Liability Insurance | Plymouth, MA"
-        description="What We Do | Licensed General Contractor from Plymouth, MA"
+        description="MDH Construction is a fully licensed home improvement contractor & construction supervisor in Massachusetts. We also carry full-coverage liability insurance."
         canonicalLink="https://www.mdhconstruction.com/what-we-do"
       />
       <Header
@@ -55,14 +55,14 @@ const WhatWeDoPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Licensing and Insurance"
         textSecondary="Fully Licensed in Massachusetts With Full Coverage Liability Insurance"
-        alt="MDH Construction is fully licensed and insured home improvement contractor and supervisor in Massachusetts"
+        alt="An MDH Construction job site in Plymouth, MA working on a roof replacement."
       />
       <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="What We Do" />
       <Body__Banner
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="A map of Massachusetts, showing where MDH Construction services home and business owners."
         textLeftOne="Licensed contractor in"
         textLeftTwo="Massachusetts"
         textRight={

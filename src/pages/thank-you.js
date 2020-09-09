@@ -3,13 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Helmet from 'react-helmet';
-import Header from '../components/Layout/Header/Header';
+import HeaderContact from '../components/Layout/Header/Header__Contact';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
-import Thanks__Body from '../components/Page__Thanks/Thanks__Body';
+import ThankYou__Body from '../components/Page__ThankYou/ThankYou__Body';
 
-const ThanksPage = ({ pageContext, location }) => {
+const ThankYouPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
-    query ThanksPageQ {
+    query ThankYouPageQ {
       masthead: file(
         relativePath: {
           eq: "images/reviews-google-facebook-home-advisor-mdh-construction-plymouth-ma.jpg"
@@ -35,29 +35,26 @@ const ThanksPage = ({ pageContext, location }) => {
   return (
     <Layout>
       <SEO
-        title="Thanks | 5-Star Reviews on Google, FB, HomeAdvisor"
-        description="Thanks | Licensed General Contractor from Plymouth, MA"
-        canonicalLink="https://www.mdhconstruction.com/thanks"
+        title="Thank You! | MDH Construction | Plymouth, MA"
+        description=""
+        canonicalLink="https://www.mdhconstruction.com/thank-you"
       />
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
-      <Header
+      <HeaderContact
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        textMain="Thanks"
-        textSecondary="Thank You"
+        textMain="Thank You!"
+        textSecondary="We will be contacting your shortly"
         alt="Thanks"
+        btnlabel="Return Home"
       />
-      <Breadcrumb
-        crumbs={crumbs}
-        crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
-      />
-      <Thanks__Body />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Thank You" />
+      <ThankYou__Body />
     </Layout>
   );
 };
 
-export default ThanksPage;
+export default ThankYouPage;

@@ -1,16 +1,17 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({ description, lang, meta, title, canonicalLink }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  canonicalLink,
+  image,
+  siteUrl,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +20,8 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
             title
             description
             author
+            image
+            siteUrl
           }
         }
       }
@@ -196,7 +199,6 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
         lang,
       }}
       title={title}
-      // titleTemplate={`%s | ${site.siteMetadata.title}`}
     >
       <link rel="canonical" href={canonicalLink} />
 
@@ -206,9 +208,11 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
       <meta name="robots" content="noindex" />
 
       {/* Open Graph tags */}
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
-      <meta property="og:type" content="website" />
+      <meta property="og:image" content={image} />
 
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />

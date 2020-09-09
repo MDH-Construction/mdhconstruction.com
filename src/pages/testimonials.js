@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
@@ -58,7 +58,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Testimonials"
         textSecondary="5-Star Reviews on Google, Facebook, BBB, HomeAdvisor, Angie's List"
-        alt="Testimonials"
+        alt="5-Star Reviews on Google, Facebook, BBB, HomeAdvisor, Angie's List"
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -69,26 +69,30 @@ const TestimonialsPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="A happy home owner giving the thumbs up because she is satisfied with MDH Construction's customer service."
         textLeftOne="Read our"
         textLeftTwo="5-star reviews!"
         textRight={
           <p>
-            At MDH Construction we establish{' '}
+            At <Link to="/who-we-are">MDH Construction</Link> we establish{' '}
             <strong>lasting relationships with our clients</strong> because of
             our high-quality and reliable service. When you work with us you’ll
             become a customer for life, because superior craftsmanship and
             unmatched customer care are our top priorities.
             <br />
             <br />
-            Supported by our Better Business Bureau A+ rating —{' '}
+            Supported by our{' '}
+            <Link to="/ratings-and-memberships">
+              Better Business Bureau A+ rating
+            </Link>{' '}
+            —{' '}
             <strong>
               as well as 5-star customer reviews on Google, Facebook,
               HomeAdvisor, and Angie's List
             </strong>{' '}
             — MDH Construction is consistently a top-rated contractor of
-            superior home improvement, remodeling, and commercial construction
-            services.
+            superior home improvement, remodeling, and{' '}
+            <Link to="/services">commercial construction services</Link>.
           </p>
         }
       />

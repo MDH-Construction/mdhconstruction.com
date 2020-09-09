@@ -62,6 +62,9 @@ const Footer = () => {
               <Link className="d-flex footer-link" to="/contact-us">
                 Contact
               </Link>
+              <Link className="d-flex footer-link" to="/privacy">
+                Privacy
+              </Link>
             </Col>
 
             <Col

@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
@@ -48,7 +48,7 @@ const BlogPage = ({ pageContext, location }) => {
     <Layout>
       <SEO
         title="Home Improvement & Construction Blog | Plymouth, MA"
-        description="For DIY home improvement tips, tricks, guides, and inspiration for your renovation projects, check our blog! We answer common questions and share our knowledge."
+        description="For DIY home improvement tips, tricks, guides, and inspiration for your renovation projects, check our blog! We answer common questions and share our knowledge"
         canonicalLink="https://www.mdhconstruction.com/blog"
       />
       <Header
@@ -57,7 +57,7 @@ const BlogPage = ({ pageContext, location }) => {
         fluid={imageDataHeader}
         textMain="Construction Blog"
         textSecondary="Let's Talk About General Contractors, New Construction, Roofing, Siding, Gutters, Insulation, and More"
-        alt="Construction Blog"
+        alt="A wooden table with construction tools and paint brushes."
       />
       <Breadcrumb
         crumbs={crumbs}
@@ -68,7 +68,7 @@ const BlogPage = ({ pageContext, location }) => {
         Tag="div"
         className=""
         fluid={imageDataBodyBanner}
-        alt="MDH Construction Services"
+        alt="An MDH Construction employee using a triangular ruler to draw a line on wood with a pencil."
         textLeftOne="Got any questions?"
         textLeftTwo="We've got answers!"
         textRight={
@@ -80,6 +80,11 @@ const BlogPage = ({ pageContext, location }) => {
             We'll <strong>help answer common questions</strong> and show you how
             to do proper installations, removals, and cleanings of everything
             from gutters, insulation, new construction projects, and more.
+            <br />
+            <br />
+            If you need any help with these types of{' '}
+            <Link to="/services">construction services</Link>, please feel free
+            to <Link to="/contact-us">contact us</Link>!
           </p>
         }
       />

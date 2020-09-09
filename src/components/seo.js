@@ -44,7 +44,7 @@ function SEO({
           "@type": "ImageObject",
           "@id": "https://www.mdhconstruction.com/#logo",
           "inLanguage": "en-US",
-          "url": "https://www.mdhconstruction.com/#logo",
+          "url": "https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png",
           "width": 140,
           "height": 45,
           "caption": "MDH Construction"
@@ -131,7 +131,7 @@ function SEO({
         "image": {
           "@type": "ImageObject",
           "name": "MDH Construction image",
-          "url": "https://www.mdhconstruction.com/#logo"
+          "url": "https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png"
         },
         "ContactPoint": {
           "@type": "ContactPoint",
@@ -153,7 +153,7 @@ function SEO({
         "url": "https://www.mdhconstruction.com",
         "currenciesAccepted": "USD",
         "hasMap": "https://www.google.com/maps?cid=1822779321272037188",
-        "logo": "https://www.mdhconstruction.com/#logo",
+        "logo": "https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png",
         "serviceArea": {
           "@type": "GeoCircle",
           "name": "MDH Construction service area",

@@ -10,15 +10,15 @@
 
 # Redirects About page to Who We Are page
 [[redirects]]
-    from = "https://letmeseemysite.com/about"
-    to = "https://letmeseemysite.com/who-we-are"
+    from = "https://www.mdhconstruction.com/about"
+    to = "https://www.mdhconstruction.com/who-we-are"
     status = 301
     force = true
 
 # Redirects About page to Who We Are page
 [[redirects]]
-    from = "https://letmeseemysite.com/login"
-    to = "https://letmeseemysite.com"
+    from = "https://www.mdhconstruction.com/login"
+    to = "https://www.mdhconstruction.com"
     status = 301
     force = true
 

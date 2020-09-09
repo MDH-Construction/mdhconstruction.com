@@ -139,7 +139,7 @@ const GalleryPage = ({ pageContext, location }) => {
       <SEO
         title="Wow! View Our Completed Construction Projects | Plymouth, MA"
         description="We take great pride in our work and love displaying completed construction projects! View our gallery for home improvement ideas or to see our craftsmanship."
-        canonicalLink="https://www.mdhconstruction.com/gallery"
+        canonicalLink="https://www.mdhconstruction.com/gallery/"
       />
       <Header
         Tag="header"

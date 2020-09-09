@@ -47,7 +47,7 @@ const RatingsPage = ({ pageContext, location }) => {
       <SEO
         title="Rated A+ on BBB, Top HomeAdvisor, Mass Save | Plymouth, MA"
         description="The service quality is supported by our business ratings, certifications, and professional memberships with BBB, Mass Save, HomeAdvisor, Angie's List, & more."
-        canonicalLink="https://www.mdhconstruction.com/ratings-and-memberships"
+        canonicalLink="https://www.mdhconstruction.com/ratings-and-memberships/"
       />
       <Header
         Tag="header"

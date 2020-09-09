@@ -37,7 +37,7 @@ const ThankYouPage = ({ pageContext, location }) => {
       <SEO
         title="Thank You! | MDH Construction | Plymouth, MA"
         description=""
-        canonicalLink="https://www.mdhconstruction.com/thank-you"
+        canonicalLink="https://www.mdhconstruction.com/thank-you/"
       />
       <Helmet>
         <meta name="robots" content="noindex" />

@@ -20,7 +20,7 @@ const IndexPage = () => {
       <SEO
         title="MDH Construction | Licensed General Contractor | Plymouth, MA"
         description="MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!"
-        canonicalLink="https://www.mdhconstruction.com"
+        canonicalLink="https://www.mdhconstruction.com/"
       />
       <Home__Banner className="bg-img-home" />
       <Home__Trust />

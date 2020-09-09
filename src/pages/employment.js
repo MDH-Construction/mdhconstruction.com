@@ -50,7 +50,7 @@ const EmploymentPage = ({ pageContext, location }) => {
       <SEO
         title="We Are Hiring! Construction Jobs, PTO, Bonuses | Plymouth, MA"
         description="If you have a set of skills related to the home improvement, remodeling, or commercial construction industries, we want to hear from you! Call (774) 269-6002"
-        canonicalLink="https://www.mdhconstruction.com/employment"
+        canonicalLink="https://www.mdhconstruction.com/employment/"
       />
       <Header
         Tag="header"

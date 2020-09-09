@@ -36,7 +36,7 @@ const NotFoundPage = ({ pageContext, location }) => {
       <SEO
         title="Something Went Wrong! Page Cannot Be Found | MDH Construction"
         description=""
-        canonicalLink="https://www.mdhconstruction.com/404"
+        canonicalLink="https://www.mdhconstruction.com/404/"
       />
       <Header
         Tag="header"

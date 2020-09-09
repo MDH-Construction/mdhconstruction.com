@@ -47,7 +47,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
       <SEO
         title="A Family Owned Construction Business Located in Plymouth, MA"
         description="Since 2014, MDH Construction has been a full-service, licensed & insured, general contractor & construction company in Plymouth, MA with 5-star customer reviews"
-        canonicalLink="https://www.mdhconstruction.com/who-we-are"
+        canonicalLink="https://www.mdhconstruction.com/who-we-are/"
       />
       <Header
         Tag="header"

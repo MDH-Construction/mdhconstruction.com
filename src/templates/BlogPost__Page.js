@@ -48,7 +48,7 @@ const BlogPostTemplate = ({ data }) => {
       "name": "MDH Construction",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.mdhconstruction.com"
+        "url": "https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png"
       }
     },
     "headline" : "${post.frontmatter.title}",

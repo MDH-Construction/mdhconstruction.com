@@ -13,7 +13,7 @@ module.exports = {
     title: `MDH Construction | Licensed General Contractor | Plymouth, MA`,
     description: `MDH Construction is a licensed general contractor in Plymouth, MA, servicing gutters, insulation, decks, remodels, additions. Call today for your FREE estimate!`,
     author: `MDH Construction`,
-    image: `images/mdh-construction-general-contractor-plymouth-ma-logo.jpg`,
+    image: `https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png`,
     siteUrl,
   },
   plugins: [

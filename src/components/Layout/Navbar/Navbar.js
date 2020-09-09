@@ -304,7 +304,7 @@ export default class Header extends React.Component {
                       >
                         <a
                           className="nav-button text-uppercase drop-shadow-dark"
-                          href="tel:+14012169868"
+                          href="tel:+17742696002"
                         >
                           <i className="fas fa-phone mr-3 text-white"></i>Call
                         </a>

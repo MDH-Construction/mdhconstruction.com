@@ -38,16 +38,7 @@ module.exports = {
       options: {
         useAutoGen: true,
         usePathPrefix: '/',
-        crumbLabelUpdates: [
-          {
-            pathname: '/ratings-and-memberships',
-            crumbLabel: 'Ratings and Memberships',
-          },
-          {
-            pathname: '/thank-you',
-            crumbLabel: 'Thank You',
-          },
-        ],
+        trailingSlashes: true,
       },
     },
     {

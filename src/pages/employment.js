@@ -41,9 +41,6 @@ const EmploymentPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -60,11 +57,7 @@ const EmploymentPage = ({ pageContext, location }) => {
         textSecondary="Join Our Team of Expert Tradesmen"
         alt="MDH Construction employees leaving a job site in Plymouth, MA after working on gutter installion, deck construction, and home insulation."
       />
-      <Breadcrumb
-        crumbs={crumbs}
-        crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
-      />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Employment" />
       <Body__Banner
         Tag="div"
         className=""

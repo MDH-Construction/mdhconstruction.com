@@ -113,9 +113,6 @@ const GalleryPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   const beforeAfterImages = data.beforeAfterImages.edges.map(
     ({ node }) => node.childImageSharp
@@ -149,11 +146,7 @@ const GalleryPage = ({ pageContext, location }) => {
         textSecondary="Before & After Photos, Decks, Remodels, & More"
         alt="Gallery images of MDH Construction projects throughout Massachusetts"
       />
-      <Breadcrumb
-        crumbs={crumbs}
-        crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
-      />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Gallery" />
       <Body__Banner
         Tag="div"
         className=""

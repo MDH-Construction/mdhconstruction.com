@@ -40,9 +40,6 @@ const BlogPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -59,11 +56,7 @@ const BlogPage = ({ pageContext, location }) => {
         textSecondary="Let's Talk About General Contractors, New Construction, Roofing, Siding, Gutters, Insulation, and More"
         alt="A wooden table with construction tools and paint brushes."
       />
-      <Breadcrumb
-        crumbs={crumbs}
-        crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
-      />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Blog" />
       <Body__Banner
         Tag="div"
         className=""

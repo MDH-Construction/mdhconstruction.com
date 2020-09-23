@@ -28,9 +28,6 @@ const ThankYouPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>

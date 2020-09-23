@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import WhatWeDo__Body from '../components/Page__About/WhatWeDo__Body';
 import Body__Banner from '../components/Layout/Body/Body__Banner';
 

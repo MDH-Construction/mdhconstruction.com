@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
+import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Privacy__Body from '../components/Page__Privacy/Privacy__Body';
-import { Helmet } from 'react-helmet';
 
 const PrivacyPage = ({ pageContext, location }) => {
   const data = useStaticQuery(graphql`
@@ -28,9 +28,6 @@ const PrivacyPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -50,11 +47,7 @@ const PrivacyPage = ({ pageContext, location }) => {
         textSecondary="Please Read Our Privacy Policy Before Using Our Site"
         alt="Metal padlock signifying privacy among our users"
       />
-      <Breadcrumb
-        crumbs={crumbs}
-        crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
-      />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Privacy" />
       <Privacy__Body />
     </Layout>
   );

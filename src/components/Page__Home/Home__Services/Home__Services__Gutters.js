@@ -27,19 +27,19 @@ const Home__Services__Gutters = ({ className }) => {
               </h2>
               <p>
                 MDH Construction provides all your gutter services such as{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   gutter installation
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   downspout installation
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   gutter cleaning
                 </Link>
                 , and{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   gutter repair
                 </Link>
                 .
@@ -51,7 +51,7 @@ const Home__Services__Gutters = ({ className }) => {
               </p>
               <p>
                 We specialize in uniquely designed{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   seamless gutters
                 </Link>
                 , which we create on-site to match the exact measurements of

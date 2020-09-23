@@ -73,7 +73,8 @@ const RatingsPage = ({ pageContext, location }) => {
           <p>
             At MDH Construction, we take great pride in our craftsmanship and
             customer care —{' '}
-            <strong>our reputation means everything to us</strong>.
+            <strong>our reputation means everything to us</strong>
+            .
             <br />
             <br />
             MDH Construction is{' '}

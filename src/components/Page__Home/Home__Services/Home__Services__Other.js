@@ -28,35 +28,35 @@ const Home__Services__Other = ({ className }) => {
               <p>
                 MDH Construction offers all of your exterior & interior home
                 improvement services from{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   deck construction
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   window installation
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   door installation
                 </Link>
                 , and{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   roof repair
                 </Link>
                 , to{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   flooring and tiling
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   interior & exterior painting
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   handyman services
                 </Link>
                 , and{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   construction management
                 </Link>
                 .

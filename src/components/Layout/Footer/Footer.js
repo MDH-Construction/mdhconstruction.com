@@ -32,37 +32,37 @@ const Footer = () => {
               <p className="text-uppercase mb-4 text-primary lead font-weight-bold">
                 Navigation
               </p>
-              <Link className="d-flex footer-link" to="/who-we-are">
+              <Link className="d-flex footer-link" to="/who-we-are/">
                 Who We Are
               </Link>
-              <Link className="d-flex footer-link" to="/what-we-do">
+              <Link className="d-flex footer-link" to="/what-we-do/">
                 Licensing and Insurance
               </Link>
               <Link
                 className="d-flex footer-link"
-                to="/ratings-and-memberships"
+                to="/ratings-and-memberships/"
               >
                 Ratings and Memberships
               </Link>
-              <Link className="d-flex footer-link" to="/service-area">
+              <Link className="d-flex footer-link" to="/service-area/">
                 Service Area
               </Link>
-              <Link className="d-flex footer-link" to="/services">
+              <Link className="d-flex footer-link" to="/services/">
                 Services
               </Link>
-              <Link className="d-flex footer-link" to="/gallery">
+              <Link className="d-flex footer-link" to="/gallery/">
                 Gallery
               </Link>
-              <Link className="d-flex footer-link" to="/testimonials">
+              <Link className="d-flex footer-link" to="/testimonials/">
                 Testimonials
               </Link>
-              <Link className="d-flex footer-link" to="/employment">
+              <Link className="d-flex footer-link" to="/employment/">
                 Employment
               </Link>
-              <Link className="d-flex footer-link" to="/contact-us">
+              <Link className="d-flex footer-link" to="/contact-us/">
                 Contact
               </Link>
-              <Link className="d-flex footer-link" to="/privacy">
+              <Link className="d-flex footer-link" to="/privacy/">
                 Privacy
               </Link>
             </Col>
@@ -77,16 +77,16 @@ const Footer = () => {
                 Memberships
               </p>
               <Container className="px-0 text-sans-serif d-flex py-12">
-                <Link to="/ratings-and-memberships">HomeAdvisor</Link>
+                <Link to="/ratings-and-memberships/">HomeAdvisor</Link>
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-12">
-                <Link to="/ratings-and-memberships">Angie's List</Link>
+                <Link to="/ratings-and-memberships/">Angie's List</Link>
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-12">
-                <Link to="/ratings-and-memberships">Mass Save</Link>
+                <Link to="/ratings-and-memberships/">Mass Save</Link>
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-12">
-                <Link to="/ratings-and-memberships">BBB</Link>
+                <Link to="/ratings-and-memberships/">BBB</Link>
               </Container>
 
               <p className="text-uppercase mt-5 mb-4 text-primary lead font-weight-bold">
@@ -98,7 +98,7 @@ const Footer = () => {
                   target="_blank"
                   rel="nofollow"
                 >
-                  <i className="fab fa-2x fa-facebook mr-3"></i>
+                  <i className="fab fa-2x fa-facebook mr-3" />
                 </a>
                 <a className="my-auto" href="https://www.facebook.com/MDHConst">
                   <span className="ml-1 my-auto">Facebook</span>
@@ -106,7 +106,7 @@ const Footer = () => {
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-2">
                 <a href="#" target="_blank" rel="nofollow">
-                  <i className="fab fa-2x fa-instagram mr-3"></i>
+                  <i className="fab fa-2x fa-instagram mr-3" />
                 </a>
                 <a className="my-auto" href="#">
                   <span className="ml-2 my-auto">Instagram</span>
@@ -114,7 +114,7 @@ const Footer = () => {
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-2">
                 <a href="#" target="_blank" rel="nofollow">
-                  <i className="fab fa-2x fa-youtube mr-3"></i>
+                  <i className="fab fa-2x fa-youtube mr-3" />
                 </a>
                 <a className="my-auto" href="#">
                   <span className="my-auto">YouTube</span>
@@ -137,7 +137,7 @@ const Footer = () => {
                   target="_blank"
                   rel="nofollow"
                 >
-                  <i className="fas fa-address-card mt-1"></i>
+                  <i className="fas fa-address-card mt-1" />
                 </a>
 
                 <a
@@ -151,7 +151,7 @@ const Footer = () => {
               </Container>
               <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
                 <a href="tel:+17742696002">
-                  <i className="fas fa-phone mt-1"></i>
+                  <i className="fas fa-phone mt-1" />
                 </a>
 
                 <a className="ml-3" href="tel:+17742696002">
@@ -164,7 +164,7 @@ const Footer = () => {
                   target="_blank"
                   rel="nofollow"
                 >
-                  <i className="fas fa-envelope mt-1"></i>
+                  <i className="fas fa-envelope mt-1" />
                 </a>
 
                 <a
@@ -186,7 +186,7 @@ const Footer = () => {
                   target="_blank"
                   rel="nofollow"
                 >
-                  <i className="fas fa-map-marker-alt mt-1"></i>
+                  <i className="fas fa-map-marker-alt mt-1" />
                 </a>
                 <a
                   className="ml-1-25"
@@ -200,7 +200,7 @@ const Footer = () => {
                 </a>
               </Container>
               <Container className="px-0 text-sans-serif pt-2 d-flex mb-2">
-                <i className="fas fa-clock mt-2"></i>
+                <i className="fas fa-clock mt-2" />
                 <Table className="ml-2" borderless size="sm">
                   <tbody>
                     <tr>

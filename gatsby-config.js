@@ -1,10 +1,10 @@
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://wwww.mdhconstruction.com',
+  URL: NETLIFY_SITE_URL = `https://wwww.mdhconstruction.com`,
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env;
-const isNetlifyProduction = NETLIFY_ENV === 'production';
+const isNetlifyProduction = NETLIFY_ENV === `production`;
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
@@ -26,6 +26,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-force-trailing-slashes`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -37,25 +38,20 @@ module.exports = {
       options: {
         useAutoGen: true,
         usePathPrefix: '/',
-        crumbLabelUpdates: [
-          {
-            pathname: '/ratings-and-memberships',
-            crumbLabel: 'Ratings and Memberships',
-          },
-          {
-            pathname: '/thank-you',
-            crumbLabel: 'Thank You',
-          },
-        ],
+        trailingSlashes: true,
       },
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
+        host: 'https://www.mdhconstruction.com',
+        sitemap: 'https://www.mdhconstruction.com/sitemap.xml',
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [{ userAgent: '*' }],
+            policy: [
+              { userAgent: '*', disallow: ['/thank-you/', '/privacy/'] },
+            ],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],

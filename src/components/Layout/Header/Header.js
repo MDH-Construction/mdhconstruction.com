@@ -16,7 +16,7 @@ const Header = ({
       Tag="header"
       className={className}
       fluid={fluid}
-      backgroundColor={`#040e18`}
+      backgroundColor="#040e18"
       textMain={textMain}
       textSecondary={textSecondary}
       alt={alt}
@@ -30,7 +30,7 @@ const Header = ({
               {textSecondary}
             </span>
             <Container className="text-center mt-5">
-              <Button btnlink="/contact-us" btnlabel={btnlabel} btn={true} />
+              <Button btnlink="/contact-us/" btnlabel={btnlabel} btn />
             </Container>
           </Col>
         </Row>

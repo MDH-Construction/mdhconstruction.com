@@ -40,9 +40,6 @@ const ServicesPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -59,11 +56,7 @@ const ServicesPage = ({ pageContext, location }) => {
         textSecondary="Gutters, Insulation, Decks, Windows, Doors & More"
         alt="An MDH Construction job site in Plymouth, MA with crews working on a roof repair."
       />
-      <Breadcrumb
-        crumbs={crumbs}
-        crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
-      />
+      <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Services" />
       <Body__Banner
         Tag="div"
         className=""
@@ -86,7 +79,7 @@ const ServicesPage = ({ pageContext, location }) => {
             <br />
             Our{' '}
             <strong>
-              <Link to="/who-we-are" className="font-weight-normal">
+              <Link to="/who-we-are/" className="font-weight-normal">
                 highly skilled professionals
               </Link>{' '}
               can assist you

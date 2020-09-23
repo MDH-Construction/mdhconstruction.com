@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Missing__Body from '../components/Page__Missing/Missing__Body';
 
 const NotFoundPage = ({ pageContext, location }) => {
@@ -27,15 +27,12 @@ const NotFoundPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
       <SEO
         title="Something Went Wrong! Page Cannot Be Found | MDH Construction"
-        description=""
+        description="Something Went Wrong! This page cannot be found"
         canonicalLink="https://www.mdhconstruction.com/404/"
       />
       <Header
@@ -49,7 +46,7 @@ const NotFoundPage = ({ pageContext, location }) => {
       <Breadcrumb
         crumbs={crumbs}
         crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
+        crumbLabel="404 Error - Page Missing"
       />
       <Missing__Body />
     </Layout>

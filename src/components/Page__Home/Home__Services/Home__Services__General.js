@@ -26,27 +26,27 @@ const Home__Services__General = ({ className }) => {
               <p>
                 MDH Construction delivers affordable, high-quality general
                 contracting services such as{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   full construction
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   new additions
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   basement remodels
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   kitchen remodels
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   bathroom remodels
                 </Link>
                 , and{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   custom trim & molding
                 </Link>{' '}
                 for residential homes and commercial buildings.

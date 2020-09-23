@@ -35,7 +35,7 @@ const WhoWeAre__Body = ({ className }) => {
                 towards quality over quantity.
               </p>
               <p>
-                We also support our <Link to="/employment">employees</Link>{' '}
+                We also support our <Link to="/employment/">employees</Link>{' '}
                 through our continuing education program, which allows them to
                 hone their trade, learn about new products and technologies, and
                 stay up-to-date on local building codes.
@@ -71,7 +71,7 @@ const WhoWeAre__Body = ({ className }) => {
               <p className="mt-4 mt-lg-0">
                 If you have home improvement, remodeling, or commercial
                 construction needs, please don't hesitate to{' '}
-                <Link to="/contact-us">contact us</Link> for a free estimate.
+                <Link to="/contact-us/">contact us</Link> for a free estimate.
               </p>
             </Container>
           </Col>

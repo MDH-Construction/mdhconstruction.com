@@ -11,11 +11,11 @@
 # Redirects About page to Who We Are page
 [[redirects]]
     from = "https://www.mdhconstruction.com/about"
-    to = "https://www.mdhconstruction.com/who-we-are"
+    to = "https://www.mdhconstruction.com/who-we-are/"
     status = 301
     force = true
 
-# Redirects About page to Who We Are page
+# Redirects Login page to Home
 [[redirects]]
     from = "https://www.mdhconstruction.com/login"
     to = "https://www.mdhconstruction.com"

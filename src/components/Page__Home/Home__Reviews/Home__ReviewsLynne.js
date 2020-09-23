@@ -30,7 +30,7 @@ const Home__ReviewsLynne = ({ className }) => {
       Tag="section"
       className="py-5 section-no-margin bg-img-dark-gradient-20"
       fluid={imageData}
-      backgroundColor={`#040e18`}
+      backgroundColor="#040e18"
       alt="Asphalt shingles for roof replacement and roof repair services by MDH Construction in Plymouth, MA"
     >
       <Container className="py-5 px-0">
@@ -46,7 +46,7 @@ const Home__ReviewsLynne = ({ className }) => {
             <Col xs={12} lg={8} className="order-2 order-lg-2 bg-light">
               <ReviewBox
                 reviewImage={
-                  <i className="text-dark fas fa-3x fa-user-circle mb-2"></i>
+                  <i className="text-dark fas fa-3x fa-user-circle mb-2" />
                 }
                 reviewTitle="Project: Deck Construction, Home Improvement"
                 reviewBody={
@@ -74,9 +74,9 @@ const Home__ReviewsLynne = ({ className }) => {
         </Container>
         <Container className="text-center my-4">
           <Button
-            btnlink="/testimonials"
+            btnlink="/testimonials/"
             btnlabel="Read More 5-Star Reviews"
-            btn={true}
+            btn
           />
         </Container>
       </Container>

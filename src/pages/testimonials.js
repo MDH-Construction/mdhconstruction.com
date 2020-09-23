@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Testimonials__Body from '../components/Page__Testimonials/Testimonials__Body';
 import Body__Banner from '../components/Layout/Body/Body__Banner';
 
@@ -41,9 +41,6 @@ const TestimonialsPage = ({ pageContext, location }) => {
   const {
     breadcrumb: { crumbs },
   } = pageContext;
-  const customCrumbLabel = location.pathname.replace('/', '');
-  const crumbCapitalized =
-    customCrumbLabel.charAt(0).toUpperCase() + customCrumbLabel.slice(1);
 
   return (
     <Layout>
@@ -63,7 +60,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
       <Breadcrumb
         crumbs={crumbs}
         crumbSeparator="/"
-        crumbLabel={crumbCapitalized}
+        crumbLabel="Testimonials"
       />
       <Body__Banner
         Tag="div"
@@ -74,7 +71,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
         textLeftTwo="5-star reviews!"
         textRight={
           <p>
-            At <Link to="/who-we-are">MDH Construction</Link> we establish{' '}
+            At <Link to="/who-we-are/">MDH Construction</Link> we establish{' '}
             <strong>lasting relationships with our clients</strong> because of
             our high-quality and reliable service. When you work with us you’ll
             become a customer for life, because superior craftsmanship and
@@ -82,7 +79,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
             <br />
             <br />
             Supported by our{' '}
-            <Link to="/ratings-and-memberships">
+            <Link to="/ratings-and-memberships/">
               Better Business Bureau A+ rating
             </Link>{' '}
             —{' '}
@@ -92,7 +89,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
             </strong>{' '}
             — MDH Construction is consistently a top-rated contractor of
             superior home improvement, remodeling, and{' '}
-            <Link to="/services">commercial construction services</Link>.
+            <Link to="/services/">commercial construction services</Link>.
           </p>
         }
       />

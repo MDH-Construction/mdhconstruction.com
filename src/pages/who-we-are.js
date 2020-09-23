@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import WhoWeAre__Body from '../components/Page__About/WhoWeAre__Body';
 import Body__Banner from '../components/Layout/Body/Body__Banner';
 
@@ -70,7 +70,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
             Since 2014, MDH Construction has been a{' '}
             <strong>
               full-service,{' '}
-              <Link className="font-weight-normal" to="/what-we-do">
+              <Link className="font-weight-normal" to="/what-we-do/">
                 licensed and insured
               </Link>
               , general contractor and construction company
@@ -79,7 +79,7 @@ const WhoWeArePage = ({ pageContext, location }) => {
             <br />
             <br />
             We are a <strong>family owned and operated business</strong> with a
-            wide range of <Link to="/services">construction services</Link>{' '}
+            wide range of <Link to="/services/">construction services</Link>{' '}
             including of home improvement, remodeling, and commercial
             construction.
             <br />

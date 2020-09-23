@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Employment__Body from '../components/Page__Employment/Employment__Body';
 import Body__Banner from '../components/Layout/Body/Body__Banner';
 
@@ -74,16 +74,17 @@ const EmploymentPage = ({ pageContext, location }) => {
         textLeftTwo="Call us today!"
         textRight={
           <p>
-            At <Link to="/who-we-are">MDH Construction</Link> we know that{' '}
-            <strong>a company is only as good its people</strong>. That is why
-            we've built a team of tradesmen who care deeply about the quality of
-            their work and the clients we serve.
+            At <Link to="/who-we-are/">MDH Construction</Link> we know that{' '}
+            <strong>a company is only as good its people</strong>
+            . That is why we've built a team of tradesmen who care deeply about
+            the quality of their work and the clients we serve.
             <br />
             <br />
             If you have a set of skills that relate to the home improvement,
             remodeling, or commercial construction industries — and you believe
             in quality workmanship and stellar customer care —{' '}
-            <strong>we want to hear from you</strong>!
+            <strong>we want to hear from you</strong>
+            !
             <br />
             <br />
             Please send your resume to{' '}

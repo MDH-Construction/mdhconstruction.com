@@ -169,13 +169,13 @@ const GalleryPage = ({ pageContext, location }) => {
             <br />
             <br />
             Take a look at our gallery to get ideas for your next{' '}
-            <Link to="/services">home improvement project</Link> or just to see
+            <Link to="/services/">home improvement project</Link> or just to see
             our craftsmanship.
             <br />
             <br />
             <strong>
               If you see anything you like, feel free to{' '}
-              <Link to="/contact-us" className="font-weight-normal">
+              <Link to="/contact-us/" className="font-weight-normal">
                 contact us
               </Link>
             </strong>

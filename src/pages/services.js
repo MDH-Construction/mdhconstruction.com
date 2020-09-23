@@ -86,7 +86,7 @@ const ServicesPage = ({ pageContext, location }) => {
             <br />
             Our{' '}
             <strong>
-              <Link to="/who-we-are" className="font-weight-normal">
+              <Link to="/who-we-are/" className="font-weight-normal">
                 highly skilled professionals
               </Link>{' '}
               can assist you

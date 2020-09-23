@@ -27,15 +27,15 @@ const Home__Services__Siding = ({ className }) => {
                 MDH Construction can help protect your residential home or
                 commercial buildings from the outside elements with various
                 siding options such as{' '}
-                <Link to="/vinyl-siding" className="font-weight-bolder">
+                <Link to="/vinyl-siding/" className="font-weight-bolder">
                   vinyl siding
                 </Link>
                 ,{' '}
-                <Link to="/wood-siding" className="font-weight-bolder">
+                <Link to="/wood-siding/" className="font-weight-bolder">
                   wood siding
                 </Link>
                 , and{' '}
-                <Link to="/fiber-cement-siding" className="font-weight-bolder">
+                <Link to="/fiber-cement-siding/" className="font-weight-bolder">
                   fiber-cement siding
                 </Link>
                 .
@@ -49,15 +49,15 @@ const Home__Services__Siding = ({ className }) => {
               </p>
               <p>
                 Contact us today if you need any siding services such as{' '}
-                <Link to="/roof-installation" className="font-weight-bolder">
+                <Link to="/roof-installation/" className="font-weight-bolder">
                   siding installation
                 </Link>
                 ,{' '}
-                <Link to="/roof-replacement" className="font-weight-bolder">
+                <Link to="/roof-replacement/" className="font-weight-bolder">
                   siding replacement
                 </Link>
                 , or{' '}
-                <Link to="/roof-repair" className="font-weight-bolder">
+                <Link to="/roof-repair/" className="font-weight-bolder">
                   siding repair
                 </Link>
                 .

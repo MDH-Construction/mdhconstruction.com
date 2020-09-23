@@ -23,7 +23,7 @@ const FormHomePage = () => {
     findUs,
   } = contact;
 
-  const handleChange = e =>
+  const handleChange = (e) =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
   return (
@@ -34,7 +34,7 @@ const FormHomePage = () => {
       data-netlify-honeypot="bot-field"
       className="border border-primary rounded shadow p-2 p-md-4 bg-texture-3"
       id="form-home-page"
-      action="/thank-you"
+      action="/thank-you/"
     >
       <h3 className="mb-1 mt-3 mt-lg-0">Request A Free Quote</h3>
       <hr className="divider pb-3 drop-shadow" />

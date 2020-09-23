@@ -19,30 +19,30 @@ const Home__Company = ({ className }) => {
               </h2>
               <p>
                 Since 2014,{' '}
-                <Link to="/who-we-are" className="font-weight-bolder">
+                <Link to="/who-we-are/" className="font-weight-bolder">
                   MDH Construction
                 </Link>{' '}
                 has remained committed to superior craftsmanship and unmatched
                 customer care. Our team of highly qualified tradesmen takes
                 great pride in their work. Centrally located in{' '}
-                <Link to="/service-area" className="font-weight-bolder">
+                <Link to="/service-area/" className="font-weight-bolder">
                   Plymouth, Massachusetts
                 </Link>
                 , we service the{' '}
-                <Link to="/service-area" className="font-weight-bolder">
+                <Link to="/service-area/" className="font-weight-bolder">
                   Boston
                 </Link>{' '}
                 area,{' '}
-                <Link to="/service-area" className="font-weight-bolder">
+                <Link to="/service-area/" className="font-weight-bolder">
                   South Shore
                 </Link>
                 , and{' '}
-                <Link to="/service-area" className="font-weight-bolder">
+                <Link to="/service-area/" className="font-weight-bolder">
                   Cape Cod
                 </Link>
                 . We specialize in a wide variety of home improvement,
                 remodeling, and commercial{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   construction services
                 </Link>{' '}
                 — ranging from large frame-to-finish building jobs to small
@@ -64,7 +64,7 @@ const Home__Company = ({ className }) => {
                     </span>{' '}
                     with{' '}
                     <Link
-                      to="/employment"
+                      to="/employment/"
                       className="font-weight-bolder underline"
                     >
                       full-coverage liability insurance
@@ -78,7 +78,7 @@ const Home__Company = ({ className }) => {
                     </span>{' '}
                     expert tradesman and provide{' '}
                     <Link
-                      to="/employment"
+                      to="/employment/"
                       className="font-weight-bolder underline"
                     >
                       employees
@@ -130,7 +130,7 @@ const Home__Company = ({ className }) => {
             lg={3}
             className="px-2 drop-shadow rounded mb-5 mb-lg-0 scale-up-sm hover-primary"
           >
-            <Link to="/who-we-are">
+            <Link to="/who-we-are/">
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Learn More
                 <br /> About Us
@@ -146,7 +146,7 @@ const Home__Company = ({ className }) => {
             lg={3}
             className="px-2 drop-shadow rounded mb-5 mb-lg-0 scale-up-sm hover-primary"
           >
-            <Link to="/services">
+            <Link to="/services/">
               <h2 className="bg-secondary text-white py-3 mb-0">
                 See Our <br />
                 Services
@@ -162,7 +162,7 @@ const Home__Company = ({ className }) => {
             lg={3}
             className="px-2 drop-shadow rounded mb-5 mb-lg-0 scale-up-sm hover-primary"
           >
-            <Link to="/testimonials">
+            <Link to="/testimonials/">
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Read Our
                 <br /> Reviews
@@ -178,7 +178,7 @@ const Home__Company = ({ className }) => {
             lg={3}
             className="px-2 drop-shadow rounded mb-lg-0 scale-up-sm hover-primary"
           >
-            <Link to="/contact-us">
+            <Link to="/contact-us/">
               <h2 className="bg-secondary text-white py-3 mb-0">
                 Get A <br />
                 Free Quote

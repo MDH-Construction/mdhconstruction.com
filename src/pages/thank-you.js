@@ -1,10 +1,10 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import Helmet from 'react-helmet';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Helmet from 'react-helmet';
 import HeaderContact from '../components/Layout/Header/Header__Contact';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import ThankYou__Body from '../components/Page__ThankYou/ThankYou__Body';
 
 const ThankYouPage = ({ pageContext, location }) => {
@@ -47,7 +47,7 @@ const ThankYouPage = ({ pageContext, location }) => {
         className="bg-img-page-top"
         fluid={imageDataHeader}
         textMain="Thank You!"
-        textSecondary="We will be contacting your shortly"
+        textSecondary="We will be contacting you shortly"
         alt="Thanks"
         btnlabel="Return Home"
       />

@@ -52,58 +52,58 @@ export default class Header extends React.Component {
               <Nav className="navbar-nav ml-auto mt-2 my-lg-0 ">
                 {/* Desktop Menu */}
                 <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/who-we-are">
+                  <Link className="nav-link text-uppercase" to="/who-we-are/">
                     About <i className="fas fa-angle-down ml-1"></i>
                   </Link>
                   <Row className="my-dropdown-menu px-2 py-3 mt-0 rounded drop-shadow">
                     <Col lg={3}>
-                      <Link to="/who-we-are">
+                      <Link to="/who-we-are/">
                         <div className="text-center p-3 bg-dark-gray">
                           <ImgMdhTruckMenu className="border rounded" />
                         </div>
                       </Link>
                       <Link
                         className="nav-link px-3 py-2 text-uppercase text-center"
-                        to="/who-we-are"
+                        to="/who-we-are/"
                       >
                         Who We Are
                       </Link>
                     </Col>
                     <Col lg={3}>
-                      <Link to="/what-we-do">
+                      <Link to="/what-we-do/">
                         <div className="text-center p-3 bg-dark-gray">
                           <ImgLicensedMenu className="border rounded" />
                         </div>
                       </Link>
                       <Link
                         className="nav-link px-3 py-2 text-uppercase text-center"
-                        to="/what-we-do"
+                        to="/what-we-do/"
                       >
                         Licensing And Insurance
                       </Link>
                     </Col>
                     <Col lg={3}>
-                      <Link to="/ratings-and-memberships">
+                      <Link to="/ratings-and-memberships/">
                         <div className="text-center p-3 bg-dark-gray">
                           <ImgTopRatedMenu className="border rounded" />
                         </div>
                       </Link>
                       <Link
                         className="nav-link px-3 py-2 text-uppercase text-center"
-                        to="/ratings-and-memberships"
+                        to="/ratings-and-memberships/"
                       >
                         Ratings And Memberships
                       </Link>
                     </Col>
                     <Col lg={3}>
-                      <Link to="/service-area">
+                      <Link to="/service-area/">
                         <div className="text-center p-3 bg-dark-gray">
                           <ImgServiceAreaMenu className="border rounded" />
                         </div>
                       </Link>
                       <Link
                         className="nav-link px-3 py-2 text-uppercase text-center"
-                        to="/service-area"
+                        to="/service-area/"
                       >
                         Service Area
                       </Link>
@@ -111,12 +111,12 @@ export default class Header extends React.Component {
                   </Row>
                 </li>
                 <li className="nav-item d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/services">
+                  <Link className="nav-link text-uppercase" to="/services/">
                     Services
                   </Link>
                 </li>
                 {/* <li className="nav-item my-dropdown d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/services">
+                  <Link className="nav-link text-uppercase" to="/services/">
                     Services <i className="fas fa-angle-down ml-1"></i>
                   </Link>
                   <Row className="my-dropdown-menu px-2 py-3 mt-0 rounded drop-shadow">
@@ -162,29 +162,29 @@ export default class Header extends React.Component {
                   </Row>
                 </li> */}
                 <li className="nav-item d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/gallery">
+                  <Link className="nav-link text-uppercase" to="/gallery/">
                     Gallery
                   </Link>
                 </li>
                 <li className="nav-item d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/testimonials">
+                  <Link className="nav-link text-uppercase" to="/testimonials/">
                     Testimonials
                   </Link>
                 </li>
                 <li className="nav-item d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/employment">
+                  <Link className="nav-link text-uppercase" to="/employment/">
                     Employment
                   </Link>
                 </li>
                 <li className="nav-item d-none d-lg-inline nav-li-m-top">
-                  <Link className="nav-link text-uppercase" to="/blog">
+                  <Link className="nav-link text-uppercase" to="/blog/">
                     Blog
                   </Link>
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
                   <Link
                     className="btn-nav nav-link text-uppercase py-2 ml-4 drop-shadow pointer"
-                    to="/contact-us"
+                    to="/contact-us/"
                   >
                     <span className="drop-shadow">Contact</span>
                   </Link>
@@ -205,7 +205,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/who-we-are">
+                <Link to="/who-we-are/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">
@@ -217,7 +217,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/services">
+                <Link to="/services/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">
@@ -229,7 +229,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/gallery">
+                <Link to="/gallery/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">
@@ -241,7 +241,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/testimonials">
+                <Link to="/testimonials/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">
@@ -253,7 +253,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/employment">
+                <Link to="/employment/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">
@@ -265,7 +265,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/blog">
+                <Link to="/blog/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Container className="bg-secondary border-menu-item">
                       <div className="d-flex">
@@ -277,7 +277,7 @@ export default class Header extends React.Component {
                     </Container>
                   </li>
                 </Link>
-                <Link to="/contact-us">
+                <Link to="/contact-us/">
                   <li className="nav-item mx-3 d-lg-none">
                     <Row>
                       <Container>

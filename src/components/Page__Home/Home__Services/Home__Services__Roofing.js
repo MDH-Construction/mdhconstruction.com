@@ -9,7 +9,7 @@ const Home__Services__Roofing = ({ className }) => {
   return (
     <section className="section-no-margin" id="home-roofing-section">
       <Container fluid className="px-lg-0 mb-5 mt-5 mt-lg-0">
-        <Row noGutters={true}>
+        <Row noGutters>
           <Col className="py-3 py-lg-5 order-2 order-lg-1" xs={12} md={6}>
             <Container className="px-lg-5">
               <h2>Your Local Roofing Contractor</h2>
@@ -19,15 +19,15 @@ const Home__Services__Roofing = ({ className }) => {
               <p>
                 MDH Construction delivers affordable, high-quality roofing
                 services such as{' '}
-                <Link to="/roof-replacement" className="font-weight-bolder">
+                <Link to="/roof-replacement/" className="font-weight-bolder">
                   roof replacement
                 </Link>
                 ,{' '}
-                <Link to="/roof-installation" className="font-weight-bolder">
+                <Link to="/roof-installation/" className="font-weight-bolder">
                   roof installation
                 </Link>
                 , and{' '}
-                <Link to="/roof-repair" className="font-weight-bolder">
+                <Link to="/roof-repair/" className="font-weight-bolder">
                   roof repair
                 </Link>{' '}
                 on residential homes and commercial buildings.
@@ -40,12 +40,12 @@ const Home__Services__Roofing = ({ className }) => {
               <p>
                 Years of industry experience within Massachusetts has refined
                 our{' '}
-                <Link to="/roof-inspection" className="font-weight-bolder">
+                <Link to="/roof-inspection/" className="font-weight-bolder">
                   roof inspection
                 </Link>{' '}
                 process and allows us to quickly identify improper installations
                 and core problems that result in{' '}
-                <Link to="/roof-leaks" className="font-weight-bolder">
+                <Link to="/roof-leaks/" className="font-weight-bolder">
                   roof leaks
                 </Link>
                 , exposure to elements, and inadequate attic ventilation.

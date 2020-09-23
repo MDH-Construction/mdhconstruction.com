@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Blog__Body from '../components/Page__Blog/Blog__Body';
 import Body__Banner from '../components/Layout/Body/Body__Banner';
 
@@ -74,7 +74,8 @@ const BlogPage = ({ pageContext, location }) => {
         textRight={
           <p>
             Check back regularly for our blog posts on{' '}
-            <strong>home improvement tips, tricks, and information</strong>!
+            <strong>home improvement tips, tricks, and information</strong>
+            !
             <br />
             <br />
             We'll <strong>help answer common questions</strong> and show you how
@@ -83,8 +84,9 @@ const BlogPage = ({ pageContext, location }) => {
             <br />
             <br />
             If you need any help with these types of{' '}
-            <Link to="/services">construction services</Link>, please feel free
-            to <Link to="/contact-us">contact us</Link>!
+            <Link to="/services/">construction services</Link>, please feel free
+            to
+            <Link to="/contact-us/">contact us</Link>!
           </p>
         }
       />

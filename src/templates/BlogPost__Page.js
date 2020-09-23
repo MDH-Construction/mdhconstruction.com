@@ -6,11 +6,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Helmet from 'react-helmet';
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Blog__PostHeader from '../components/Page__Blog/Blog__PostHeader';
-import ImgMdhLogoFluid from '../components/Images/Logos/img-mdh-logo-fluid';
-import Button from '../components/Button/Button';
 import {
   EmailShareButton,
   EmailIcon,
@@ -21,6 +16,11 @@ import {
   TwitterShareButton,
   TwitterIcon,
 } from 'react-share';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Blog__PostHeader from '../components/Page__Blog/Blog__PostHeader';
+import ImgMdhLogoFluid from '../components/Images/Logos/img-mdh-logo-fluid';
+import Button from '../components/Button/Button';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
@@ -84,7 +84,7 @@ const BlogPostTemplate = ({ data }) => {
           <span className="breadcrumb__link">Home</span>
         </Link>
         <span className="mx-2 text-dark">/</span>
-        <Link to="/blog">
+        <Link to="/blog/">
           <span className="breadcrumb__link">Blog</span>
         </Link>
         <span className="mx-2 text-dark">/</span>
@@ -115,11 +115,7 @@ const BlogPostTemplate = ({ data }) => {
                   size={32}
                   className="pointer drop-shadow px-md-3"
                 >
-                  <FacebookIcon
-                    url={post.frontmatter.url}
-                    size={32}
-                    round={true}
-                  />
+                  <FacebookIcon url={post.frontmatter.url} size={32} round />
                 </FacebookShareButton>
               </Col>
               <Col xs={3}>
@@ -129,11 +125,7 @@ const BlogPostTemplate = ({ data }) => {
                   size={32}
                   className="pointer drop-shadow px-md-3"
                 >
-                  <TwitterIcon
-                    url={post.frontmatter.url}
-                    size={32}
-                    round={true}
-                  />
+                  <TwitterIcon url={post.frontmatter.url} size={32} round />
                 </TwitterShareButton>
               </Col>
               <Col xs={3}>
@@ -143,11 +135,7 @@ const BlogPostTemplate = ({ data }) => {
                   size={32}
                   className="pointer drop-shadow px-md-3"
                 >
-                  <LinkedinIcon
-                    url={post.frontmatter.url}
-                    size={32}
-                    round={true}
-                  />
+                  <LinkedinIcon url={post.frontmatter.url} size={32} round />
                 </LinkedinShareButton>
               </Col>
               <Col xs={3}>
@@ -157,11 +145,7 @@ const BlogPostTemplate = ({ data }) => {
                   size={32}
                   className="pointer drop-shadow px-md-3"
                 >
-                  <EmailIcon
-                    url={post.frontmatter.url}
-                    size={32}
-                    round={true}
-                  />
+                  <EmailIcon url={post.frontmatter.url} size={32} round />
                 </EmailShareButton>
               </Col>
             </Row>
@@ -196,11 +180,7 @@ const BlogPostTemplate = ({ data }) => {
               .
             </p>
             <div className="text-center mb-3 mt-4">
-              <Button
-                btnlabel="Learn More"
-                btnlink="/who-we-are"
-                btnsolid={true}
-              />
+              <Button btnlabel="Learn More" btnlink="/who-we-are/" btnsolid />
             </div>
           </div>
         </Row>

@@ -23,7 +23,7 @@ const FormFooter = () => {
     findUs,
   } = contact;
 
-  const handleChange = e =>
+  const handleChange = (e) =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
   return (
@@ -35,7 +35,7 @@ const FormFooter = () => {
         data-netlify-honeypot="bot-field"
         className="border border-secondary rounded shadow mx-lg-0 p-2 p-md-5 bg-texture-3"
         id="form-footer"
-        action="/thank-you"
+        action="/thank-you/"
       >
         <h2 className="text-secondary mb-1 mt-4 mt-md-0">
           Request A Free Quote

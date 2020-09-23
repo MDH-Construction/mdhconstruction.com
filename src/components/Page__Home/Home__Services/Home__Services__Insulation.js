@@ -28,33 +28,33 @@ const Home__Services__Insulation = ({ className }) => {
               <p>
                 MDH Construction is proud to be a{' '}
                 <Link
-                  to="/ratings-and-memberships"
+                  to="/ratings-and-memberships/"
                   className="font-weight-bolder"
                 >
                   Mass Save Partner
                 </Link>{' '}
                 working with Massachusetts residential customers and business
                 owners to provide energy-efficient services such as{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   insulation installation
                 </Link>{' '}
                 and{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   weatherization
                 </Link>
                 .
               </p>
               <p>
                 We offer various types of insulation, including{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   blown-in insulation
                 </Link>
                 ,{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   reflective insulation
                 </Link>
                 , and{' '}
-                <Link to="/services" className="font-weight-bolder">
+                <Link to="/services/" className="font-weight-bolder">
                   batt and rolled insulation
                 </Link>
                 .

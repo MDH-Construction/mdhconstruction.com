@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Header from '../components/Layout/Header/Header';
-import { Breadcrumb } from 'gatsby-plugin-breadcrumb';
 import Missing__Body from '../components/Page__Missing/Missing__Body';
 
 const NotFoundPage = ({ pageContext, location }) => {

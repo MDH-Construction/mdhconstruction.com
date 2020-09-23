@@ -78,8 +78,7 @@ const BlogPage = ({ pageContext, location }) => {
             <br />
             If you need any help with these types of{' '}
             <Link to="/services/">construction services</Link>, please feel free
-            to
-            <Link to="/contact-us/">contact us</Link>!
+            to <Link to="/contact-us/">contact us</Link>!
           </p>
         }
       />

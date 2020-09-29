@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: [`/about/`, `/thank-you/`],
+        exclude: [`/about/`, `/thank-you/`, `/privacy/`],
       },
     },
     {

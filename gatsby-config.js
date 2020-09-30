@@ -27,6 +27,14 @@ module.exports = {
     `gatsby-plugin-netlify`,
     `gatsby-plugin-force-trailing-slashes`,
     {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-W8D3WTB',
+        includeInDevelopment: false,
+        defaultDataLayer: { platform: 'gatsby' },
+      },
+    },
+    {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         exclude: [`/about/`, `/thank-you/`, `/privacy/`],
@@ -69,12 +77,6 @@ module.exports = {
             host: null,
           },
         },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-70467283-1',
       },
     },
     {

@@ -18,7 +18,6 @@ module.exports = {
     phoneDisplay: `(774) 269-6002`,
     phoneHref: `tel:+17742696002`,
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-mdx`,

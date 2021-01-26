@@ -15,7 +15,10 @@ module.exports = {
     author: `MDH Construction`,
     image: `https://www.mdhconstruction.com/static/800f75406d914563f0f442893d90d280/df308/mdh-construction-general-contractor-plymouth-ma-logo.png`,
     siteUrl,
+    phoneDisplay: `(774) 269-6002`,
+    phoneHref: `tel:+17742696002`,
   },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-mdx`,
@@ -37,7 +40,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: [`/about/`, `/thank-you/`, `/privacy/`],
+        exclude: [`/about/`, `/thank-you/`],
       },
     },
     {
@@ -62,9 +65,7 @@ module.exports = {
         resolveEnv: () => NETLIFY_ENV,
         env: {
           production: {
-            policy: [
-              { userAgent: '*', disallow: ['/thank-you/', '/privacy/'] },
-            ],
+            policy: [{ userAgent: '*', disallow: ['/thank-you/'] }],
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],

@@ -15,13 +15,13 @@
 @import '../sass/global-elements';
 @import '../sass/global-size-spacing';
 @import '../sass/global-text';
-@import './Layout/Navbar/Navbar';
-@import './Button/Button';
-@import './Layout/Footer/Footer';
+@import './layouts/navbars/Navbar';
+@import './common/buttons/Button';
+@import './common/CallBtn';
+@import './layouts/footers/Footer';
 @import '../sass/seo-blog';
 
-@import './Page__Home/Styles/Page__Home';
-@import './Page__Contact/Page__Contact';
-@import './Page__Gallery/Page__Gallery';
-@import './Page__Blog/Page__Blog';
-@import './Blog/Styles/Blog';
+@import './views/home/Page__Home';
+@import './views/Page__Contact';
+@import './views/Page__Gallery';
+@import './views/blog/Page__Blog';

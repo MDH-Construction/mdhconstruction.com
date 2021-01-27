@@ -3,7 +3,7 @@ const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const postTemplate = path.resolve('src/templates/BlogPost__Page.js');
+  const postTemplate = path.resolve('src/templates/BlogPost__Page.jsx');
 
   return graphql(`
     {
@@ -23,7 +23,7 @@ exports.createPages = ({ actions, graphql }) => {
         }
       }
     }
-  `).then(res => {
+  `).then((res) => {
     if (res.errors) {
       return Promise.reject(res.errors);
     }

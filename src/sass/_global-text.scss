@@ -11,7 +11,11 @@ h6 {
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
+  margin-block-start: 0 !important;
+  margin-block-end: 1em !important;
+  margin-inline-start: 0em !important;
+  margin-inline-end: 0em !important;
 }
 
 h1 {
@@ -20,10 +24,19 @@ h1 {
 
 h2 {
   color: $h2Color;
+  margin-bottom: 1.2em !important;
 }
 
 h3 {
   color: $h3Color;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 1em !important;
+  margin-block-end: 1em !important;
 }
 
 a {
@@ -48,6 +61,10 @@ p {
       text-decoration-color: $primary !important;
     }
   }
+}
+
+body ul {
+  margin-block-end: 2em !important;
 }
 
 .no-decoration {
@@ -165,6 +182,12 @@ nav-link.active > h3 {
   line-height: 1.2;
 }
 
+.display-6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 @include media-breakpoint-up(lg) {
   .fa-mobile-4x {
     font-size: 4em;
@@ -174,5 +197,9 @@ nav-link.active > h3 {
   }
   .display-5 {
     font-size: calc(0.5rem + 1.5vw);
+  }
+
+  .display-6 {
+    font-size: calc(0.5rem + 1.2vw);
   }
 }

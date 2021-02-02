@@ -1,0 +1,28 @@
+.sidebar-nav {
+  background-color: $bgBreadcrumbBarColor;
+  margin-bottom: 3em;
+  & > ul {
+    list-style-type: none !important;
+    margin: 0;
+    padding: 1em;
+    & > li {
+      padding: 0.5em 0 1em 0;
+      border-bottom: 1px solid $dark;
+    }
+    & > li:last-child {
+      padding: 0.5em 0 0 0;
+      border-bottom: none;
+    }
+  }
+  & a {
+    color: $light;
+    font-size: 1.2em;
+    &:hover {
+      color: $primary !important;
+    }
+  }
+  & i {
+    color: $primary;
+    filter: drop-shadow(1px 1px 1px black);
+  }
+}

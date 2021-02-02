@@ -16,7 +16,9 @@ const Contact = ({ className, fluid, textMain, textSecondary, alt }) => {
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
           <div className="col-lg-10 align-items-center justify-content-center">
-            <h1 className="font-weight-bold drop-shadow-darker">{textMain}</h1>
+            <h1 className="font-weight-bold drop-shadow-darker mb-3">
+              {textMain}
+            </h1>
             <span className="display-5 text-white font-weight-bold drop-shadow-darker">
               {textSecondary}
             </span>

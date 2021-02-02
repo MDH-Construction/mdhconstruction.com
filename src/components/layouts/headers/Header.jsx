@@ -25,7 +25,9 @@ const Header = ({
       <Container>
         <Row className="align-items-center justify-content-center text-center">
           <Col lg={10} className="align-items-center justify-content-center">
-            <h1 className="font-weight-bold drop-shadow-darker">{textMain}</h1>
+            <h1 className="font-weight-bold drop-shadow-darker mb-3">
+              {textMain}
+            </h1>
             <span className="display-5 text-white font-weight-bold drop-shadow-darker">
               {textSecondary}
             </span>

@@ -105,8 +105,8 @@ const GuttersPage = ({ pageContext, location }) => {
         Tag="header"
         className="bg-img-page-top"
         fluid={imageDataHeader}
-        textMain="Rain Gutter Services"
-        textSecondary="Gutter Cleaning, Gutter Installation, & More "
+        textMain="Gutter Installation, Gutter Cleaning, Gutter Repair Services"
+        textSecondary="Gutter services for residential homes and businesses"
         alt="Gutter clogged with leaves and debris, in need of a gutter service from MDH Construction"
       />
       <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Gutters" />

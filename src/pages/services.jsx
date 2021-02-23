@@ -102,7 +102,7 @@ const ServicesPage = ({ pageContext, location }) => {
       <section className="section-container" id="services-page">
         <Container>
           <Row className="py-5 px-3 px-lg-0">
-            <Col xs={12} lg={4} className="mx-0 px-3">
+            <Col xs={12} lg={4} className="mx-0 px-3 mb-5 mb-lg-0">
               <CardImage
                 title={
                   <>

@@ -118,7 +118,7 @@ const ServicesPage = ({ pageContext, location }) => {
                   </>
                 }
                 anchor="See Full Construction Services"
-                link="#"
+                link="/full-construction/"
               >
                 <ImgServicesFullConstruction />
               </CardImage>

@@ -34,18 +34,7 @@ const GuttersPage = ({ pageContext, location }) => {
           }
         }
       }
-      bgimg: file(
-        relativePath: {
-          eq: "images/pages/gutters/gutter-companies-gutter-company-mdh-construction.jpg"
-        }
-      ) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      imgGutterContractor: file(
+      imgFirst: file(
         relativePath: {
           eq: "images/pages/gutters/gutter-companies-rain-gutter-contractor-mdh-construction.jpg"
         }
@@ -60,9 +49,8 @@ const GuttersPage = ({ pageContext, location }) => {
   `);
 
   const phoneNumber = data.phoneNumber.siteMetadata;
-  const imageDataHeader = data.masthead.childImageSharp.fluid;
-  const imgGutterContractor = data.imgGutterContractor.childImageSharp.fluid;
-  const imageDataBodyBanner = data.bgimg.childImageSharp.fluid;
+  const imgMasthead = data.masthead.childImageSharp.fluid;
+  const imgFirst = data.imgFirst.childImageSharp.fluid;
   const {
     breadcrumb: { crumbs },
   } = pageContext;
@@ -104,28 +92,12 @@ const GuttersPage = ({ pageContext, location }) => {
       <Header
         Tag="header"
         className="bg-img-page-top"
-        fluid={imageDataHeader}
+        fluid={imgMasthead}
         textMain="Gutter Installation, Gutter Cleaning, Gutter Repair Services"
         textSecondary="Gutter services for residential homes and businesses"
         alt="Gutter clogged with leaves and debris, in need of a gutter service from MDH Construction"
       />
       <Breadcrumb crumbs={crumbs} crumbSeparator="/" crumbLabel="Gutters" />
-      {/* <Banner
-        Tag="div"
-        className=""
-        fluid={imageDataBodyBanner}
-        alt="Gutter system on residential home roof for rain drainage"
-        textLeftOne="Need a gutter system?"
-        textLeftTwo="Give us a call!"
-        textRight={
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            consectetur delectus modi qui distinctio nesciunt illo at,
-            voluptatum blanditiis nemo numquam reiciendis libero maxime quo unde
-            harum expedita voluptates eligendi.
-          </p>
-        }
-      /> */}
       <Body
         bodyContent={
           <BodyContent>
@@ -142,7 +114,7 @@ const GuttersPage = ({ pageContext, location }) => {
                 seasonal cleaning, a simple repair, or a whole new gutter system
                 — we got you covered. MDH Construction is one of the most
                 trusted names in the industry because{' '}
-                <strong>we do not employ sub-contractors</strong>. We to do the
+                <strong>we do not employ sub-contractors</strong>. We do the
                 work, we offer affordable rates, and we guarantee quality
                 workmanship that will last season to season, year after year.
               </p>
@@ -169,7 +141,7 @@ const GuttersPage = ({ pageContext, location }) => {
               </p>
               <div className="py-5">
                 <Img
-                  fluid={imgGutterContractor}
+                  fluid={imgFirst}
                   title="MDH Construction gutter professional working on a home gutter system"
                   alt="MDH Construction gutter professional working on a home gutter system"
                 />

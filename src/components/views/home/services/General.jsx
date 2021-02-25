@@ -26,7 +26,7 @@ const General = ({ className }) => {
               <p>
                 MDH Construction delivers affordable, high-quality general
                 contracting services such as{' '}
-                <Link to="/services/" className="font-weight-bolder">
+                <Link to="/full-construction/" className="font-weight-bolder">
                   full construction
                 </Link>
                 ,{' '}

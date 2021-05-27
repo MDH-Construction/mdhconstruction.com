@@ -64,8 +64,10 @@ const ThankYouPage = ({ pageContext, location }) => {
                     working with you.
                   </p>
                   <p className="lead mb-5">
-                    At the moment, we are approximately 3 weeks out before
-                    approaching any new in-home estimates or projects.
+                    At the moment, we are very busy and completely booked for
+                    the entire summer. Please note, the earliest we can schedule
+                    new projects is the fall. We apologize for any inconvenience
+                    this may cause.
                   </p>
                   <p className="lead font-italic text-right mb-0">
                     Thanks,

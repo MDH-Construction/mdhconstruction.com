@@ -201,7 +201,7 @@ const ServicesPage = ({ pageContext, location }) => {
                 }
                 list={
                   <>
-                    <li>Mass Save insulation program</li>
+                    <li>Home Insulation</li>
                     <li>Batt & rolled, reflective, blown-in</li>
                     <li>Air sealing, weather stripping</li>
                     <li>Thermal imaging, blower door diagnostics</li>

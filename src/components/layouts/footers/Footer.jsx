@@ -83,9 +83,6 @@ const Footer = () => {
                 <Link to="/ratings-and-memberships/">Angie's List</Link>
               </Container>
               <Container className="px-0 text-sans-serif d-flex py-12">
-                <Link to="/ratings-and-memberships/">Mass Save</Link>
-              </Container>
-              <Container className="px-0 text-sans-serif d-flex py-12">
                 <Link to="/ratings-and-memberships/">BBB</Link>
               </Container>
 

@@ -162,11 +162,8 @@ const FormSidebar = () => {
             <option value="Interior: Flooring/Tiling">
               Interior: Flooring/Tiling
             </option>
-            <option
-              value="Weatherization: Insulation/Mass Save Program"
-              className="bg-light"
-            >
-              Weatherization: Insulation/Mass Save Program
+            <option value="Weatherization: Insulation" className="bg-light">
+              Weatherization: Insulation
             </option>
             <option value="Weatherization: Air Sealing/Stripping/Diagnostics">
               Weatherization: Air Sealing/Stripping/Diagnostics

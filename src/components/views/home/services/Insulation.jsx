@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Container, Row, Col, Accordion, Card } from 'react-bootstrap';
 import ImgMassSaveInsulationServices from '../../../images/pages/home/img-mass-save-insulation-services';
-import ImgMassSave from '../../../images/logos/img-mass-save';
 
 const Insulation = ({ className }) => {
   return (
@@ -10,7 +9,7 @@ const Insulation = ({ className }) => {
       <Container fluid className="px-0 px-lg-5">
         <Row noGutters>
           <h2 className="display-4 font-weight-bold d-lg-none mx-auto">
-            Your Mass Save Insulation Contractor
+            Your Home Insulation Contractor
           </h2>
           <Col
             className="drop-shadow order-1 order-lg-1 mb-5 px-3 px-lg-0"
@@ -22,16 +21,10 @@ const Insulation = ({ className }) => {
           <Col className="order-2 order-lg-2" xs={12} lg={6}>
             <Container className="px-lg-5">
               <h2 className="display-4 font-weight-bold d-none d-lg-block">
-                Your Mass Save Insulation Contractor
+                Your Home Insulation Contractor
               </h2>
               <p>
-                MDH Construction is proud to be a{' '}
-                <Link
-                  to="/ratings-and-memberships/"
-                  className="font-weight-bolder"
-                >
-                  Mass Save Partner
-                </Link>{' '}
+                MDH Construction is an experienced home insulation company
                 working with Massachusetts residential customers and business
                 owners to provide energy-efficient services such as{' '}
                 <Link to="/services/" className="font-weight-bolder">

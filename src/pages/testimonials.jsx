@@ -148,7 +148,7 @@ const TestimonialsPage = ({ pageContext, location }) => {
                 <Col xs={12} lg={8} className="order-2 order-lg-1 bg-light">
                   <ReviewBox
                     reviewImage={<ImgJorg />}
-                    reviewTitle="Project: Mass Save Home Insulation Program"
+                    reviewTitle="Project: Home Insulation"
                     reviewBody={
                       <span>
                         Positive: Professionalism, Punctuality, Quality,

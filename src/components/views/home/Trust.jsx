@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image';
 import ImgHomeAdvisor from '../../images/logos/img-home-advisor';
 import ImgAngiesList from '../../images/logos/img-angies-list';
-import ImgMassSave from '../../images/logos/img-mass-save';
 import ImgBBB from '../../images/logos/img-bbb';
 
 const Trust = ({ className }) => {
@@ -41,17 +40,14 @@ const Trust = ({ className }) => {
         </span>
         <hr className="divider mt-2 pb-3 drop-shadow-darker" />
         <Row className="justify-content-center">
-          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={3}>
+          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={4}>
             <ImgBBB />
           </Col>
-          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={3}>
+          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={4}>
             <ImgAngiesList />
           </Col>
-          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={3}>
+          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={4}>
             <ImgHomeAdvisor />
-          </Col>
-          <Col className="mb-3 mb-lg-0 mx-auto" xs={'6'} lg={3}>
-            <ImgMassSave />
           </Col>
         </Row>
       </Container>

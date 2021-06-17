@@ -36,7 +36,7 @@ const Jorg = ({ className }) => {
     >
       <Container className="py-5 px-0">
         <h2 className="display-4 font-weight-bold text-white drop-shadow-darker mb-4 px-2 px-lg-0">
-          5-Star Mass Save Insulation Review
+          5-Star Home Insulation Review
         </h2>
         <hr className="divider-long" />
         <Container className="p-1 p-lg-3 rounded my-3 drop-shadow">
@@ -47,7 +47,7 @@ const Jorg = ({ className }) => {
             <Col xs={12} lg={8} className="order-2 order-lg-1 bg-light">
               <ReviewBox
                 reviewImage={<ImgJorg />}
-                reviewTitle="Project: Mass Save Home Insulation Program"
+                reviewTitle="Project: Home Insulation Program"
                 reviewBody={
                   <span>
                     Positive: Professionalism, Punctuality, Quality,
